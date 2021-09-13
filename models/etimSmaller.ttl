@@ -1,0 +1,37 @@
+PREFIX etim: <https://www.etim-international.com/#>
+etim:EC002878 etim:hasSynonym "Pairs of diodes" .
+etim:EC002878 etim:hasSynonym "Diodemodule" .
+etim:EC002878 etim:hasSynonym "Diodeblock" .
+etim:EC002878 etim:hasSynonym "Diode module" .
+etim:EC002878 etim:hasSynonym "Component module" .
+etim:EC002878 etim:hasDescription "Diode module" .
+etim:EC002878 etim:hasGroupId etim:EG000012 .
+etim:EC000880 etim:hasSynonym "Seal" .
+etim:EC000880 etim:hasSynonym "Plumb seal" .
+etim:EC000880 etim:hasDescription "Seal" .
+etim:EC000880 etim:hasGroupId etim:EG000050 .
+etim:EC012123 etim:hasSynonym "Pen-board" .
+etim:EC012123 etim:hasSynonym "Markerboard" .
+etim:EC012123 etim:hasGroupId etim:EG000040 .
+etim:EC012123 etim:hasSynonym "Greaseboard" .
+etim:EC012123 etim:hasDescription "Whiteboard" .
+etim:EC012123 etim:hasSynonym "Dry-wipe board" .
+etim:EC012123 etim:hasSynonym "Whiteboard" .
+etim:EC012123 etim:hasSynonym "Magnetic whiteboard" .
+etim:EC012123 etim:hasSynonym "Cork/pin board" .
+etim:EC012123 etim:hasSynonym "Dry-erase board" .
+etim:EC000690 etim:hasSynonym "Video projector" .
+etim:EC000690 etim:hasSynonym "Projector" .
+etim:EC000690 etim:hasDescription "Video projector" .
+etim:EC000690 etim:hasGroupId etim:EG000041 .
+etim:EC002688 etim:hasSynonym "Reflector" .
+etim:EC002688 etim:hasSynonym "Accessories for air heater (electric)" .
+etim:EC002688 etim:hasSynonym "Accessories for electric air heater" .
+etim:EC002688 etim:hasSynonym "Slotted nozzle" .
+etim:EC002688 etim:hasSynonym "Welding shoe" .
+etim:EC002688 etim:hasSynonym "Accessories for hot air gun" .
+etim:EC002688 etim:hasSynonym "Reducing nose" .
+etim:EC002688 etim:hasSynonym "Welding nozzle" .
+etim:EC002688 etim:hasSynonym "Spare parts for hot air gun" .
+etim:EC002688 etim:hasSynonym "Cutting nozzle" .
+etim:EC002688 etim:hasSynonym "Hot air gun (electrical)" .

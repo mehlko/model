@@ -1,0 +1,372 @@
+PREFIX etim: <https://www.etim-international.com/#>
+etim:EC002878 etim:hasSynonym "Pairs of diodes" .
+etim:EC002878 etim:hasSynonym "Diodemodule" .
+etim:EC002878 etim:hasSynonym "Diodeblock" .
+etim:EC002878 etim:hasSynonym "Diode module" .
+etim:EC002878 etim:hasSynonym "Component module" .
+etim:EC002878 etim:hasDescription "Diode module" .
+etim:EC002878 etim:hasGroupId etim:EG000012 .
+etim:EC000880 etim:hasSynonym "Seal" .
+etim:EC000880 etim:hasSynonym "Plumb seal" .
+etim:EC000880 etim:hasDescription "Seal" .
+etim:EC000880 etim:hasGroupId etim:EG000050 .
+etim:EC012123 etim:hasSynonym "Pen-board" .
+etim:EC012123 etim:hasSynonym "Markerboard" .
+etim:EC012123 etim:hasGroupId etim:EG000040 .
+etim:EC012123 etim:hasSynonym "Greaseboard" .
+etim:EC012123 etim:hasDescription "Whiteboard" .
+etim:EC012123 etim:hasSynonym "Dry-wipe board" .
+etim:EC012123 etim:hasSynonym "Whiteboard" .
+etim:EC012123 etim:hasSynonym "Magnetic whiteboard" .
+etim:EC012123 etim:hasSynonym "Cork/pin board" .
+etim:EC012123 etim:hasSynonym "Dry-erase board" .
+etim:EC000690 etim:hasSynonym "Video projector" .
+etim:EC000690 etim:hasSynonym "Projector" .
+etim:EC000690 etim:hasDescription "Video projector" .
+etim:EC000690 etim:hasGroupId etim:EG000041 .
+etim:EC002688 etim:hasSynonym "Reflector" .
+etim:EC002688 etim:hasSynonym "Accessories for air heater (electric)" .
+etim:EC002688 etim:hasSynonym "Accessories for electric air heater" .
+etim:EC002688 etim:hasSynonym "Slotted nozzle" .
+etim:EC002688 etim:hasSynonym "Welding shoe" .
+etim:EC002688 etim:hasSynonym "Accessories for hot air gun" .
+etim:EC002688 etim:hasSynonym "Reducing nose" .
+etim:EC002688 etim:hasSynonym "Welding nozzle" .
+etim:EC002688 etim:hasSynonym "Spare parts for hot air gun" .
+etim:EC002688 etim:hasSynonym "Cutting nozzle" .
+etim:EC002688 etim:hasSynonym "Hot air gun (electrical)" .
+etim:EC002688 etim:hasSynonym "Deflection nozzle" .
+etim:EC002688 etim:hasSynonym "Accessories/spare parts for hot air gun" .
+etim:EC002688 etim:hasGroupId etim:EG020002 .
+etim:EC002688 etim:hasSynonym "Soldering reflector" .
+etim:EC002688 etim:hasSynonym "Angle nozzle" .
+etim:EC002688 etim:hasDescription "Accessories/spare parts for hot air gun" .
+etim:EC002688 etim:hasSynonym "Wide angle beam reflector" .
+etim:EC002688 etim:hasSynonym "Glass fibre reflector" .
+etim:EC003832 etim:hasSynonym "Door opening restrictor" .
+etim:EC003832 etim:hasDescription "Door opening restrictor" .
+etim:EC003832 etim:hasGroupId etim:EG020004 .
+etim:EC001594 etim:hasSynonym "Year clock" .
+etim:EC001594 etim:hasSynonym "Week clock" .
+etim:EC001594 etim:hasSynonym "Timer clock" .
+etim:EC001594 etim:hasSynonym "Timer" .
+etim:EC001594 etim:hasSynonym "Time switch for domestic switching devices" .
+etim:EC001594 etim:hasSynonym "Mechanical time switch for domestic switching devices" .
+etim:EC001594 etim:hasSynonym "Electronic time switch for domestic switching devices" .
+etim:EC001594 etim:hasDescription "Time switch for domestic switching devices" .
+etim:EC001594 etim:hasGroupId etim:EG000013 .
+etim:EC002498 etim:hasSynonym "Switch off time delay" .
+etim:EC002498 etim:hasSynonym "Accessories/spare parts for low-voltage switch technology" .
+etim:EC002498 etim:hasSynonym "Interlocking" .
+etim:EC002498 etim:hasSynonym "Mounting assembly" .
+etim:EC002498 etim:hasSynonym "Connection technique" .
+etim:EC002498 etim:hasSynonym "Grommet" .
+etim:EC002498 etim:hasSynonym "Coupling piece for switch axle" .
+etim:EC002498 etim:hasSynonym "Spark cap" .
+etim:EC002498 etim:hasSynonym "Slide-in technique" .
+etim:EC002498 etim:hasSynonym "Device labeling system" .
+etim:EC002498 etim:hasSynonym "Coding part" .
+etim:EC002498 etim:hasSynonym "Power current connection" .
+etim:EC002498 etim:hasSynonym "Bottom duct" .
+etim:EC002498 etim:hasSynonym "Frame clamp" .
+etim:EC002498 etim:hasSynonym "Converter" .
+etim:EC002498 etim:hasSynonym "Connection clamp" .
+etim:EC002498 etim:hasSynonym "Voltage detector" .
+etim:EC002498 etim:hasSynonym "Mechanical locking" .
+etim:EC002498 etim:hasSynonym "Diode bloc" .
+etim:EC002498 etim:hasDescription "Accessories/spare parts for low-voltage switch technology" .
+etim:EC002498 etim:hasSynonym "Communication and measuring function" .
+etim:EC002498 etim:hasSynonym "Adapter plate" .
+etim:EC002498 etim:hasSynonym "Connection system" .
+etim:EC002498 etim:hasSynonym "Coupling piece for switch operating shaft" .
+etim:EC002498 etim:hasSynonym "Distance frame" .
+etim:EC002498 etim:hasSynonym "Ventilator module for industrial heating control systems" .
+etim:EC002498 etim:hasSynonym "Spare parts for low-voltage switch technology" .
+etim:EC002498 etim:hasSynonym "Front plate" .
+etim:EC002498 etim:hasSynonym "Wall mount" .
+etim:EC002498 etim:hasGroupId etim:EG000017 .
+etim:EC002498 etim:hasSynonym "Connecting bridge" .
+etim:EC002498 etim:hasSynonym "Connection piece for switch operating shaft" .
+etim:EC002498 etim:hasSynonym "Wall mount station" .
+etim:EC002498 etim:hasSynonym "Mounting tool" .
+etim:EC002498 etim:hasSynonym "Contact set" .
+etim:EC002498 etim:hasSynonym "Blind cover frame" .
+etim:EC002498 etim:hasSynonym "Mounting wrench" .
+etim:EC002498 etim:hasSynonym "Verbindingsstuk schakelaaras" .
+etim:EC002498 etim:hasSynonym "Mechanical locking mechanism" .
+etim:EC002498 etim:hasSynonym "Mounting set" .
+etim:EC002498 etim:hasSynonym "Control cable connection" .
+etim:EC002498 etim:hasSynonym "4-pole" .
+etim:EC002498 etim:hasSynonym "End piece" .
+etim:EC002498 etim:hasSynonym "Plug insert technique" .
+etim:EC002498 etim:hasSynonym "Auxiliary conductor plug and socket device" .
+etim:EC002498 etim:hasSynonym "Wall mount panel" .
+etim:EC002498 etim:hasSynonym "Neutral terminal" .
+etim:EC002498 etim:hasSynonym "Distance holder" .
+etim:EC002498 etim:hasSynonym "Arc explosion chamber (arc chute)" .
+etim:EC002498 etim:hasSynonym "Shock protection cover" .
+etim:EC002498 etim:hasSynonym "Locking clip" .
+etim:EC002498 etim:hasSynonym "Installation set" .
+etim:EC002498 etim:hasSynonym "Current transformer" .
+etim:EC002498 etim:hasSynonym "Connection terminal" .
+etim:EC002498 etim:hasSynonym "Clamp cover" .
+etim:EC002498 etim:hasSynonym "Connector" .
+etim:EC002498 etim:hasSynonym "Blade terminal" .
+etim:EC002498 etim:hasSynonym "Coding plate" .
+etim:EC002498 etim:hasSynonym "Cover" .
+etim:EC002498 etim:hasSynonym "Remote potentiometer" .
+etim:EC002498 etim:hasSynonym "Key actuation" .
+etim:EC002498 etim:hasSynonym "4th pole" .
+etim:EC002498 etim:hasSynonym "Cover plate" .
+etim:EC002498 etim:hasSynonym "Switching cycle counter" .
+etim:EC002498 etim:hasSynonym "Test device" .
+etim:EC002498 etim:hasSynonym "Plug-in end socket" .
+etim:EC002498 etim:hasSynonym "Coil" .
+etim:EC002498 etim:hasSynonym "Switching piece" .
+etim:EC002498 etim:hasSynonym "Accessories for low-voltage switch technology" .
+etim:EC002498 etim:hasSynonym "Axle lead-through" .
+etim:EC002498 etim:hasSynonym "Filter" .
+etim:EC002498 etim:hasSynonym "EMV-interference suppression module" .
+etim:EC003642 etim:hasSynonym "Promotional t-shirt" .
+etim:EC003642 etim:hasSynonym "Warning protection T-shirt" .
+etim:EC003642 etim:hasSynonym "Work T-shirt" .
+etim:EC003642 etim:hasSynonym "Doctor's T-shirt" .
+etim:EC003642 etim:hasSynonym "Antistatic T-shirt" .
+etim:EC003642 etim:hasSynonym "Occupation clothing" .
+etim:EC003642 etim:hasSynonym "Casual T-shirt" .
+etim:EC003642 etim:hasSynonym "Casual clothes" .
+etim:EC003642 etim:hasSynonym "T-Shirt" .
+etim:EC003642 etim:hasDescription "T-Shirt" .
+etim:EC003642 etim:hasSynonym "Casual shirt" .
+etim:EC003642 etim:hasSynonym "Medical shirt" .
+etim:EC003642 etim:hasSynonym "Casual working clothes" .
+etim:EC003642 etim:hasGroupId etim:EG000046 .
+etim:EC004546 etim:hasSynonym "Sewage pip fixture" .
+etim:EC004546 etim:hasSynonym "Drianpipe fixture" .
+etim:EC004546 etim:hasSynonym "Drain pipe support for concrete floor" .
+etim:EC004546 etim:hasDescription "Drain pipe support for concrete floor" .
+etim:EC004546 etim:hasGroupId etim:EG000010 .
+etim:EC003452 etim:hasSynonym "Cutting disc set" .
+etim:EC003452 etim:hasDescription "Cutting disc set" .
+etim:EC003452 etim:hasGroupId etim:EG020000 .
+etim:EC011961 etim:hasSynonym "Sales display" .
+etim:EC011961 etim:hasSynonym "Hole saw stand" .
+etim:EC011961 etim:hasSynonym "Glass rack" .
+etim:EC011961 etim:hasSynonym "Floor stand with small plastic boxes" .
+etim:EC011961 etim:hasSynonym "Floor stand" .
+etim:EC011961 etim:hasSynonym "Display stand" .
+etim:EC011961 etim:hasDescription "Display stand" .
+etim:EC011961 etim:hasGroupId etim:EG000060 .
+etim:EC004356 etim:hasSynonym "Power drill" .
+etim:EC004356 etim:hasSynonym "Indexable drill shank" .
+etim:EC004356 etim:hasDescription "Indexable drill shank" .
+etim:EC004356 etim:hasGroupId etim:EG020019 .
+etim:EC003262 etim:hasSynonym "Casing convector radiator" .
+etim:EC003262 etim:hasDescription "Casing convector radiator" .
+etim:EC003262 etim:hasGroupId etim:EG015710 .
+etim:EC004166 etim:hasSynonym "2 way distributor" .
+etim:EC004166 etim:hasSynonym "Quick hose connection" .
+etim:EC004166 etim:hasSynonym "Tap adaptor" .
+etim:EC004166 etim:hasSynonym "Water stop" .
+etim:EC004166 etim:hasSynonym "Thread piece" .
+etim:EC004166 etim:hasSynonym "Garden hose quick coupling" .
+etim:EC004166 etim:hasSynonym "Garden tube coupling" .
+etim:EC004166 etim:hasGroupId etim:EG015510 .
+etim:EC004166 etim:hasDescription "Garden hose quick connector" .
+etim:EC004166 etim:hasSynonym "Garden hose quick connector" .
+etim:EC003072 etim:hasSynonym "Window-sill brick" .
+etim:EC003072 etim:hasDescription "Window-sill brick" .
+etim:EC003072 etim:hasGroupId etim:EG020550 .
+etim:EC011391 etim:hasSynonym "Small storage water heater" .
+etim:EC011391 etim:hasSynonym "Hanging boiler" .
+etim:EC011391 etim:hasSynonym "Night power boiler" .
+etim:EC011391 etim:hasSynonym "Hot water device" .
+etim:EC011391 etim:hasSynonym "Free standing model" .
+etim:EC011391 etim:hasSynonym "Cylinder" .
+etim:EC011391 etim:hasDescription "Hot tap water boiler electric" .
+etim:EC011391 etim:hasSynonym "Water heater" .
+etim:EC011391 etim:hasSynonym "Boiler, electric" .
+etim:EC011391 etim:hasSynonym "Vertical storage tank" .
+etim:EC011391 etim:hasSynonym "Kitchen boiler" .
+etim:EC011391 etim:hasSynonym "Hotfill" .
+etim:EC011391 etim:hasSynonym "Hot water tank (electric)" .
+etim:EC011391 etim:hasSynonym "Electric boiler" .
+etim:EC011391 etim:hasSynonym "Electro boiler" .
+etim:EC011391 etim:hasSynonym "Boiler electric" .
+etim:EC011391 etim:hasSynonym "Hot water-frees standing storage tank" .
+etim:EC011391 etim:hasSynonym "Standby boiler" .
+etim:EC011391 etim:hasSynonym "Boiling water boiler" .
+etim:EC011391 etim:hasGroupId etim:EG015210 .
+etim:EC011391 etim:hasSynonym "Built-under device" .
+etim:EC011391 etim:hasSynonym "Hot water unit" .
+etim:EC011391 etim:hasSynonym "Boiling water" .
+etim:EC011391 etim:hasSynonym "Under sink device" .
+etim:EC011391 etim:hasSynonym "Table storage tank" .
+etim:EC011391 etim:hasSynonym "Hot water cylinder" .
+etim:EC011391 etim:hasSynonym "Hot water boiler electric" .
+etim:EC011391 etim:hasSynonym "Boiler" .
+etim:EC011391 etim:hasSynonym "Wall storage tank" .
+etim:EC011391 etim:hasSynonym "Hot tap water boiler electric" .
+etim:EC011391 etim:hasSynonym "Hot water tank" .
+etim:EC011391 etim:hasSynonym "Direct fired boiler" .
+etim:EC012295 etim:hasSynonym "Z-profile aluminium" .
+etim:EC012295 etim:hasSynonym "Z aluminium" .
+etim:EC012295 etim:hasSynonym "Z-profile, aluminium" .
+etim:EC012295 etim:hasGroupId etim:EG019710 .
+etim:EC012295 etim:hasSynonym "Z-profile" .
+etim:EC012295 etim:hasDescription "Z-profile, aluminium" .
+etim:EC012295 etim:hasSynonym "Z" .
+etim:EC012295 etim:hasSynonym "Aluminum profile" .
+etim:EC012295 etim:hasSynonym "Profile aluminium" .
+etim:EC012295 etim:hasSynonym "Aluminium Z-profile" .
+etim:EC012295 etim:hasSynonym "Z-aluminium" .
+etim:EC000101 etim:hasSynonym "Mounting rail" .
+etim:EC000101 etim:hasSynonym "Light-track" .
+etim:EC000101 etim:hasSynonym "Copper pipe" .
+etim:EC000101 etim:hasSynonym "Busbar" .
+etim:EC000101 etim:hasDescription "Light-track" .
+etim:EC000101 etim:hasGroupId etim:EG000030 .
+etim:EC010608 etim:hasSynonym "Sheathed O ring seal" .
+etim:EC010608 etim:hasDescription "Sheathed O ring seal" .
+etim:EC010608 etim:hasGroupId etim:EG015910 .
+etim:EC001005 etim:hasSynonym "Clamp spring" .
+etim:EC001005 etim:hasSynonym "Retaining bracket" .
+etim:EC001005 etim:hasSynonym "Clamp piece" .
+etim:EC001005 etim:hasDescription "Mounting material for cable support system" .
+etim:EC001005 etim:hasSynonym "Mounting material" .
+etim:EC001005 etim:hasSynonym "Tray mounting" .
+etim:EC001005 etim:hasSynonym "Clip" .
+etim:EC001005 etim:hasSynonym "Mounting bracket" .
+etim:EC001005 etim:hasSynonym "Mounting corner" .
+etim:EC001005 etim:hasSynonym "Mounting material for cable support system" .
+etim:EC001005 etim:hasGroupId etim:EG000004 .
+etim:EC001005 etim:hasSynonym "Clamp" .
+etim:EC010418 etim:hasSynonym "PTFE lip for PTFE lip seal" .
+etim:EC010418 etim:hasDescription "PTFE lip for PTFE lip seal" .
+etim:EC010418 etim:hasGroupId etim:EG015910 .
+etim:EC010038 etim:hasSynonym "Round shower wall" .
+etim:EC010038 etim:hasDescription "Round shower wall" .
+etim:EC010038 etim:hasGroupId etim:EG017920 .
+etim:EC001937 etim:hasSynonym "Edge protection tape" .
+etim:EC001937 etim:hasSynonym "Cable protection for installation duct" .
+etim:EC001937 etim:hasDescription "Cable protection for installation duct" .
+etim:EC001937 etim:hasGroupId etim:EG000006 .
+etim:EC000843 etim:hasSynonym "Sound generator" .
+etim:EC000843 etim:hasSynonym "Alarm signal" .
+etim:EC000843 etim:hasDescription "Alarm signal" .
+etim:EC000843 etim:hasGroupId etim:EG000035 .
+etim:EC001747 etim:hasSynonym "Solar inverter" .
+etim:EC001747 etim:hasSynonym "Photovoltaics DC/AC grid inverter" .
+etim:EC001747 etim:hasSynonym "DC/AC grid inverter for renewable energy" .
+etim:EC001747 etim:hasSynonym "DC/AC grid inverter" .
+etim:EC001747 etim:hasDescription "DC/AC grid inverter" .
+etim:EC001747 etim:hasGroupId etim:EG000055 .
+etim:EC000653 etim:hasSynonym "Micro cassette" .
+etim:EC000653 etim:hasSynonym "Dictaphone" .
+etim:EC000653 etim:hasSynonym "Compact cassette (analogue)" .
+etim:EC000653 etim:hasDescription "Dictaphone" .
+etim:EC000653 etim:hasGroupId etim:EG000038 .
+etim:EC002701 etim:hasSynonym "Blu-ray-player/-recorder" .
+etim:EC002701 etim:hasDescription "Blu-ray-player/-recorder" .
+etim:EC002701 etim:hasGroupId etim:EG000041 .
+etim:EC003605 etim:hasSynonym "End piece" .
+etim:EC003605 etim:hasSynonym "Wall flush duct system" .
+etim:EC003605 etim:hasSynonym "Outer corner" .
+etim:EC003605 etim:hasSynonym "Coupler" .
+etim:EC003605 etim:hasSynonym "Plasterboard wall installation trunking system" .
+etim:EC003605 etim:hasGroupId etim:EG000006 .
+etim:EC003605 etim:hasSynonym "Inner corner" .
+etim:EC003605 etim:hasSynonym "Accessories for wall duct system, wall integrated" .
+etim:EC003605 etim:hasSynonym "Wall-mounted device installation trunking system" .
+etim:EC003605 etim:hasSynonym "Flat bend" .
+etim:EC003605 etim:hasSynonym "Wall duct system, wall integrated" .
+etim:EC003605 etim:hasSynonym "Cover for outer corner" .
+etim:EC003605 etim:hasDescription "Wall duct system, wall integrated" .
+etim:EC003605 etim:hasSynonym "Mounting holder" .
+etim:EC001367 etim:hasSynonym "Rotary hammer (battery)" .
+etim:EC001367 etim:hasSynonym "Battery rotary hammer" .
+etim:EC001367 etim:hasSynonym "Battery machine" .
+etim:EC001367 etim:hasDescription "Rotary hammer (battery)" .
+etim:EC001367 etim:hasGroupId etim:EG000051 .
+etim:EG020100 etim:hasGroupDescription "Building - Finishing materials" .
+etim:EC002511 etim:hasSynonym "Climatic side panel (switchgear cabinet)" .
+etim:EC002511 etim:hasSynonym "Climate control side panel (enclosure/cabinet)" .
+etim:EC002511 etim:hasDescription "Climate control side panel (enclosure/cabinet)" .
+etim:EC002511 etim:hasGroupId etim:EG000011 .
+etim:EC000273 etim:hasSynonym "Wiring set" .
+etim:EC000273 etim:hasSynonym "Cable tree" .
+etim:EC000273 etim:hasSynonym "Cable harness" .
+etim:EC000273 etim:hasDescription "Cable tree" .
+etim:EC000273 etim:hasGroupId etim:EG000023 .
+etim:EC003415 etim:hasSynonym "Tiler breaking pliers" .
+etim:EC003415 etim:hasDescription "Tiler breaking pliers" .
+etim:EC003415 etim:hasGroupId etim:EG020000 .
+etim:EC001177 etim:hasSynonym "Protective plastic hose" .
+etim:EC001177 etim:hasSynonym "Protective hose" .
+etim:EC001177 etim:hasDescription "Protective plastic hose" .
+etim:EC001177 etim:hasGroupId etim:EG000003 .
+etim:EC002321 etim:hasSynonym "Wall mounting plate for tube clamps" .
+etim:EC002321 etim:hasDescription "Wall mounting plate for tube clamps" .
+etim:EC002321 etim:hasGroupId etim:EG000010 .
+etim:EC004319 etim:hasSynonym "Ground laying tool" .
+etim:EC004319 etim:hasSynonym "Laminate floor laying tool" .
+etim:EC004319 etim:hasDescription "Laying tool for parquet/laminate floor" .
+etim:EC004319 etim:hasGroupId etim:EG000050 .
+etim:EC004319 etim:hasSynonym "Floor lay clamp" .
+etim:EC004319 etim:hasSynonym "Diagonal floor lay adapter" .
+etim:EC004319 etim:hasSynonym "Parquet floor laying tool" .
+etim:EC004319 etim:hasSynonym "Laying tool for parquet/laminate floor" .
+etim:EC004319 etim:hasSynonym "Laying tool parquet/laminate floor" .
+etim:EC004319 etim:hasSynonym "Spacer" .
+etim:EC004319 etim:hasSynonym "Floor lay master" .
+etim:EC000083 etim:hasSynonym "Transition piece for installation tube/installation duct" .
+etim:EC000083 etim:hasSynonym "Transition cover section for installation duct" .
+etim:EC000083 etim:hasSynonym "Surface mounting junction box for installation duct" .
+etim:EC000083 etim:hasDescription "Transition cover section for installation duct" .
+etim:EC000083 etim:hasGroupId etim:EG000006 .
+etim:EC003225 etim:hasSynonym "Filling element system floor" .
+etim:EC003225 etim:hasDescription "Filling element system floor" .
+etim:EC003225 etim:hasGroupId etim:EG020600 .
+etim:EC004129 etim:hasSynonym "Box wagon" .
+etim:EC004129 etim:hasSynonym "Tipping container" .
+etim:EC004129 etim:hasSynonym "Ground flap container" .
+etim:EC004129 etim:hasSynonym "Folding floor container" .
+etim:EC004129 etim:hasSynonym "Flap bottom container" .
+etim:EC004129 etim:hasSynonym "Storage and factory equipment" .
+etim:EC004129 etim:hasSynonym "Compact tipping container" .
+etim:EC004129 etim:hasSynonym "Tilting skip" .
+etim:EC004129 etim:hasSynonym "Sheet metal box wagon" .
+etim:EC004129 etim:hasGroupId etim:EG015120 .
+etim:EC004129 etim:hasSynonym "Hinged floor container" .
+etim:EC004129 etim:hasSynonym "Flap container" .
+etim:EC004129 etim:hasDescription "Hinged floor container" .
+etim:EC004129 etim:hasSynonym "Storage container" .
+etim:EC004129 etim:hasSynonym "Folding bottom container" .
+etim:EC011734 etim:hasSynonym "Exhaust bowl for urinal" .
+etim:EC011734 etim:hasDescription "Exhaust bowl for urinal" .
+etim:EC011734 etim:hasGroupId etim:EG017910 .
+etim:EC002131 etim:hasSynonym "Steel wire brush" .
+etim:EC002131 etim:hasSynonym "Stainless steel brush" .
+etim:EC002131 etim:hasDescription "Wire brush" .
+etim:EC002131 etim:hasGroupId etim:EG000050 .
+etim:EC002131 etim:hasSynonym "Wire brush" .
+etim:EC002131 etim:hasSynonym "File brush" .
+etim:EC002131 etim:hasSynonym "Handstick brush" .
+etim:EC002131 etim:hasSynonym "Copper brush" .
+etim:EC002131 etim:hasSynonym "Brush" .
+etim:EC002131 etim:hasSynonym "Hand brush" .
+etim:EC002131 etim:hasSynonym "Brass brush" .
+etim:EC010640 etim:hasGroupId etim:EG019710 .
+etim:EC010640 etim:hasDescription "Clamping strip section" .
+etim:EC010640 etim:hasSynonym "Rubber profile" .
+etim:EC010640 etim:hasSynonym "Filler profile" .
+etim:EC010640 etim:hasSynonym "Rubber clamping profile" .
+etim:EC010640 etim:hasSynonym "Sealing profile" .
+etim:EC010640 etim:hasSynonym "Clamping strip section" .
+etim:EC010640 etim:hasSynonym "Edge protection profile" .
+etim:EC010640 etim:hasSynonym "Finger guard profile" .
+etim:EC010640 etim:hasSynonym "Clamp profile" .
+etim:EC010640 etim:hasSynonym "Rubber filler profile" .
+etim:EC011544 etim:hasSynonym "Flue gas wall duct" .
+etim:EC011544 etim:hasDescription "Flue gas wall duct" .
+
