@@ -1,0 +1,97 @@
+PREFIX model: <http://uni-ko-ld.de/ist/model#>
+PREFIX prod: <http://uni-ko-ld.de/ist/product#>
+PREFIX proc: <http://uni-ko-ld.de/ist/process#>
+PREFIX res: <http://uni-ko-ld.de/ist/resource#>
+PREFIX prop: <http://uni-ko-ld.de/ist/property#>
+PREFIX rdfs: <http://www.w3.org/TR/rdf-schema/>
+
+### Product Repo
+prod:RadarSensor001 rdf:type model:Product
+prod:RadarSensor001 rdf:label "Sensor"
+prod:RadarSensor001 rdf:label "Radar Sensor"
+#
+prod:FlashedRadarSensor001 rdf:type model:Product
+prod:FlashedRadarSensor001 rdf:label "Flashed Radar Sensor"
+#
+prod:PlasticCaseTop001 rdf:type model:Product
+prod:PlasticCaseTop001 rdf:label "Plastic Case Top"
+prod:PlasticCaseTop001 rdf:label "Plastic Cover Top"
+#
+prod:PlasticCaseBottom001 rdf:type model:Product
+prod:PlasticCaseBottom001 rdf:label "Plastic Case Bottom"
+prod:PlasticCaseBottom001 rdf:label "Plastic Cover Bottom"
+#
+prod:AssembledSensor001 rdf:type model:Product
+prod:AssembledSensor001 rdf:label "Assembled Radae Sensor"
+#
+prod:SealedSensor001 rdf:type model:Product
+prod:SealedSensor001 rdf:label "Sealed Sensor"
+#
+prod:TestedProduct001 rdf:type model:Product
+prod:TestedProduct001 rdf:label "Tested Product"
+
+
+### Product Repo
+#
+prop:Firware001 rdf:type prop:Property
+prop:Firware001 rdf:label 'Firmware'
+prop:Firware001 rdf:label 'Firware  Version'
+#
+prop:Position001 rdf:type prop:Property
+prop:Position001 rdf:label 'Position'
+prop:Position001 rdf:label 'Location'
+#
+prop:Force001 rdf:type prop:Property
+prop:Force001 rdf:label 'Force'
+prop:Force001 rdf:label 'Strength'
+#
+prop:Temperature001 rdf:type prop:Property
+prop:Temperature001 rdf:label 'Temperature'
+prop:Temperature001 rdf:label 'Heat'
+#
+prop:LeakageRate001 rdf:type prop:Property
+prop:LeakageRate001 rdf:label 'Leakage Rate'
+#
+prop:Temperature001 rdf:type prop:Property
+prop:Temperature001 rdf:label 'Temperature'
+prop:Temperature001 rdf:label 'Heat'
+
+
+
+### Resource Repo
+res:FirmwareFlasher001 rdf:type res:Resource
+res:FirmwareFlasher001 rdf:label 'Firmware Flasher'
+res:FirmwareFlasher001 rdf:label 'Flasher'
+#
+res:Placer001 rdf:type res:Resource
+res:Placer001 rdf:label 'Placer'
+#
+res:Screwer001 rdf:type res:Resource
+res:Screwer001 rdf:label 'Screwer'
+res:Screwer001 rdf:label 'Fastener'
+#
+res:UltrasonicWelder001 rdf:type res:Resource
+res:UltrasonicWelder001 rdf:label 'Ultrasonic Welder'
+#
+res:PressureTester001 rdf:type res:Resource
+res:PressureTester001 rdf:label 'Pressure Tester'
+#
+res:Scale001 rdf:type res:Resource
+res:Scale001 rdf:label 'Scale'
+
+### Process Repo
+proc:SensorFlashing001
+proc:SensorFlashing001 rdf:type proc:Process
+proc:SensorFlashing001 rdf:label 'Flashing'
+#
+proc:CaseAssembly001
+proc:CaseAssembly001 rdf:type proc:Process
+proc:CaseAssembly001 rdf:label 'FlashCaseAssembly'
+#
+proc:UltrasonicCaseSealing001
+proc:UltrasonicCaseSealing001 rdf:type proc:Process
+proc:UltrasonicCaseSealing001 rdf:label 'Ultrasonic Case Sealing'
+#
+proc:QualityControl001
+proc:QualityControl001 rdf:type proc:Process
+proc:QualityControl001 rdf:label 'Quality Control'
