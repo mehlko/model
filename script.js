@@ -117,12 +117,8 @@ class MyAutocomplete extends React.Component {
 
 let presets = [
   {
-    inputModelUrl: 'https://mehlko.github.io/models/inputModel.ttl',
-    factUrl: 'https://mehlko.github.io/models/exampleFacts.ttl'
-  },
-  {
-    inputModelUrl: 'https://mehlko.github.io/models/inputModel.ttl',
-    factUrl: 'https://mehlko.github.io/models/exampleFacts.ttl'
+    inputModelUrl: 'https://mehlko.github.io/model/models/inputModel.ttl',
+    factUrl: 'https://mehlko.github.io/model/models/exampleFacts.ttl'
   }
 ];
 
@@ -223,16 +219,21 @@ class ProductionLine extends React.Component {
   };
 
   loadInputModel = event => {
-    log('load input mdoel');
-    var queryString = `
-    PREFIX etim: <https://www.etim-international.com/#>
+    var queryString2 = `
+    PREFIX model: <http://uni-ko-ld.de/ist/model#>
     SELECT ?process  WHERE {
-     ?process model:hasNextProcess ?nextProcess .
-     MINUS {?process model:hasNextProcess ?process} .
+      ?process model:hasNextProcess ?nextProcess .
+      MINUS {?process model:hasNextProcess ?process} .
     } LIMIT 10`;
+    var queryString = `
+    PREFIX model: <http://uni-ko-ld.de/ist/model#>
+    SELECT *  WHERE {
+      ?process model:hasNextProcess+ ?mid .
+    } LIMIT 10`;
+    log('load input mdoel' + this.state.inputModelUrl);
     Comunica.newEngine()
       .query(queryString, {
-        sources: [this.state.inputModelUrl]
+        sources: ['https://mehlko.github.io/models/inputModel.ttl']
       })
       .then(function(result) {
         log(result);
@@ -248,6 +249,7 @@ class ProductionLine extends React.Component {
           log('query finished');
         });
       });
+    log('done loading input model');
   };
 
   render() {

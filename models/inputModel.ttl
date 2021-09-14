@@ -9,6 +9,7 @@ proc:sensorFlashing model:hasMeasurement prop:firmwareVersion.
 proc:sensorFlashing model:hasConstraint prop:firmwareVersion.
 proc:sensorFlashing model:hasOutputProduct prod:flashedRadarSensor.
 proc:sensorFlashing model:hasNextProcess proc:caseAssembly.
+#
 proc:caseAssembly model:hasInputProduct prod:flashedRadarSensor.
 proc:caseAssembly model:hasResource res:placer.
 proc:caseAssembly model:hasResource res:screwer.
@@ -17,3 +18,6 @@ proc:caseAssembly model:hasMeasurement prop:force.
 proc:caseAssembly model:hasConstraint prop:position.
 proc:caseAssembly model:hasConstraint prop:force.
 proc:caseAssembly model:hasOutputProduct prod:assembledSensor.
+proc:caseAssembly model:hasNextProcess proc:ultrasonicCaseSealing.
+proc:ultrasonicCaseSealing model:hasNextProcess proc:qualityControl.
+#
