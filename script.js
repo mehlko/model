@@ -1,5 +1,5 @@
 //models are here: https://github.com/mehlko/models
-
+parser = new N3.Parser();
 const logLevel = 1;
 const {
   Button,
