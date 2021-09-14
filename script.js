@@ -228,12 +228,15 @@ class ProductionLine extends React.Component {
     var queryString = `
     PREFIX model: <http://uni-ko-ld.de/ist/model#>
     SELECT *  WHERE {
-      ?process model:hasNextProcess+ ?mid .
+      ?process model:hasNextProcess* ?mid .
+      ?process model:hasNextProcess* ?mid .
     } LIMIT 10`;
-    log('load input mdoel' + this.state.inputModelUrl);
+    log(
+      'load input mdoel ' + this.state.inputModelUrl + ' ' + this.state.factUrl
+    );
     Comunica.newEngine()
       .query(queryString, {
-        sources: ['https://mehlko.github.io/models/inputModel.ttl']
+        sources: [this.state.inputModelUrl, this.state.factUrl]
       })
       .then(function(result) {
         log(result);
