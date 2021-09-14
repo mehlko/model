@@ -1,11 +1,18 @@
 //models are here: https://github.com/mehlko/models
 
 const store = new N3.Store();
-console.log(store.size);
-Comunica.newEngine().query('COPY DEFAULT TO <http://example.org/named>', {
-  sources: ['https://mehlko.github.io/models/model.ttl'],
-  destination: store
-}).updateResult;
+async function test() {
+  console.log(store.size);
+  const result = await (await Comunica.newEngine().query(
+    'COPY DEFAULT TO <http://example.org/named>',
+    {
+      sources: ['https://mehlko.github.io/models/model.ttl'],
+      destination: store
+    }
+  )).updateResult;
+  console.log(store.size);
+}
+test();
 
 const parser = new N3.Parser();
 parser.parse(
@@ -18,7 +25,6 @@ parser.parse(
     else console.log("# That's all, folks!", prefixes);
   }
 );
-
 
 const logLevel = 1;
 const {
