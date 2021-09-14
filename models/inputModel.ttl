@@ -18,6 +18,8 @@ proc:caseAssembly model:hasMeasurement prop:force.
 proc:caseAssembly model:hasConstraint prop:position.
 proc:caseAssembly model:hasConstraint prop:force.
 proc:caseAssembly model:hasOutputProduct prod:assembledSensor.
+#
 proc:caseAssembly model:hasNextProcess proc:ultrasonicCaseSealing.
+#
 proc:ultrasonicCaseSealing model:hasNextProcess proc:qualityControl.
 #
