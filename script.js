@@ -222,13 +222,41 @@ class ProductionLine extends React.Component {
     log(this.state.inputModelUrl);
   };
 
+  loadInputModel = event => {
+    log('load input mdoel');
+    var queryString = `
+    PREFIX etim: <https://www.etim-international.com/#>
+    SELECT ?process  WHERE {
+     ?process model:hasNextProcess ?nextProcess .
+     MINUS {?process model:hasNextProcess ?process} .
+    } LIMIT 10`;
+    Comunica.newEngine()
+      .query(queryString, {
+        sources: [this.state.inputModelUrl]
+      })
+      .then(function(result) {
+        log(result);
+        //read results
+        result.bindingsStream.on('data', data => {
+          log(data);
+          log(data.get('?process').value);
+        });
+        result.bindingsStream.on('error', error => {
+          console.error(error);
+        });
+        result.bindingsStream.on('end', () => {
+          log('query finished');
+        });
+      });
+  };
+
   render() {
     return (
       <Container maxWidth="sm">
         <Typography variant="h4">Production Line Analyzer</Typography>
         <Box className="setup">
           <Typography variant="h6">Setup</Typography>
-          <FormControl>
+          <FormControl fullWidth>
             <InputLabel id="presetLabel">Preset</InputLabel>
             <Select
               labelId="presetLabel"
@@ -249,6 +277,9 @@ class ProductionLine extends React.Component {
               value={this.state.factUrl}
               onChange={this.onFactUrlChange}
             />
+            <Button variant="contained" onClick={this.loadInputModel}>
+              Load Input Model
+            </Button>
           </FormControl>
         </Box>
 
