@@ -32,7 +32,10 @@ prod:SealedSensor001 rdfs:label "Sealed Sensor".
 prod:TestedProduct001 rdf:type model:Product.
 prod:TestedProduct001 rdfs:label "Tested Product".
 
+
+
 ### Process Repo
+
 proc:SensorFlashing001 rdf:type proc:Process.
 proc:SensorFlashing001 rdfs:label 'Flashing'.
 #
@@ -48,6 +51,7 @@ proc:QualityControl001 rdfs:label 'Quality Control'.
 
 
 ### Resource Repo
+
 res:FirmwareFlasher001 rdf:type res:Resource.
 res:FirmwareFlasher001 rdfs:label 'Firmware Flasher'.
 res:FirmwareFlasher001 rdfs:label 'Flasher'.
@@ -69,8 +73,9 @@ res:Scale001 rdf:type res:Resource.
 res:Scale001 rdfs:label 'Scale'.
 
 
+
 ### Property Repo
-#
+
 prop:Firware001 rdf:type prop:Property.
 prop:Firware001 rdfs:label 'Firmware'.
 prop:Firware001 rdfs:label 'Firware  Version'.

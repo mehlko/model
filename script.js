@@ -219,18 +219,21 @@ class ProductionLine extends React.Component {
   };
 
   loadInputModel = event => {
-    var queryString2 = `
-    PREFIX model: <http://uni-ko-ld.de/ist/model#>
-    SELECT ?process  WHERE {
-      ?process model:hasNextProcess ?nextProcess .
-      MINUS {?process model:hasNextProcess ?process} .
-    } LIMIT 10`;
+    var queryAllString = `
+    SELECT * WHERE {
+      ?subject ?predicate ?object .
+    }`;
     var queryString = `
     PREFIX model: <http://uni-ko-ld.de/ist/model#>
-    SELECT *  WHERE {
-      ?process model:hasNextProcess* ?mid .
-      ?process model:hasNextProcess* ?mid .
-    } LIMIT 10`;
+    PREFIX proc: <http://uni-ko-ld.de/ist/process#>
+    PREFIX rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+    PREFIX rdfs:   <http://www.w3.org/2000/01/rdf-schema#>
+    SELECT ?process WHERE {
+      ?firstProcess rdf:type proc:Process .
+      ?firstProcess model:hasNextProcess ?nextProcess .
+      MINUS {[] model:hasNextProcess ?firstProcess} .
+      ?firstProcess model:hasNextProcess* ?process .
+    }`;
     log(
       'load input mdoel ' + this.state.inputModelUrl + ' ' + this.state.factUrl
     );
@@ -238,19 +241,53 @@ class ProductionLine extends React.Component {
       .query(queryString, {
         sources: [this.state.inputModelUrl, this.state.factUrl]
       })
-      .then(function(result) {
-        log(result);
-        //read results
-        result.bindingsStream.on('data', data => {
-          log(data);
-          log(data.get('?process').value);
+      .then(async result => {
+        var productionLine = await result.bindings();
+        log(productionLine);
+        var newProductionLine = { processes: [] };
+
+        productionLine.map(process => {
+          log(process.get('?process').value);
+
+          //update
+          newProductionLine.processes = [
+            ...newProductionLine.processes,
+            {
+              name: process.get('?process').value
+            }
+          ];
+          //set state
+          this.setState({
+            productionLine: newProductionLine
+          });
         });
-        result.bindingsStream.on('error', error => {
-          console.error(error);
-        });
-        result.bindingsStream.on('end', () => {
-          log('query finished');
-        });
+
+        Comunica.newEngine()
+          .query(queryAllString, {
+            sources: [this.state.inputModelUrl]
+          })
+          .then(async result => {
+            var allFacts = await result.bindings();
+
+            allFacts.map(fact => {
+              log(
+                fact.get('?subject').value +
+                  '  ' +
+                  fact.get('?predicate').value +
+                  '  ' +
+                  fact.get('?object').value
+              );
+              switch (fact.get('?predicate').value) {
+                case 'http://uni-ko-ld.de/ist/model#hasInputProduct':
+                  log('#####################################');
+
+                  break;
+
+                default:
+                  break;
+              }
+            });
+          });
       });
     log('done loading input model');
   };
