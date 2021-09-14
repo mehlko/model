@@ -119,6 +119,10 @@ let presets = [
   {
     inputModelUrl: 'https://mehlko.github.io/model/models/inputModel.ttl',
     factUrl: 'https://mehlko.github.io/model/models/exampleFacts.ttl'
+  },
+  {
+    inputModelUrl: 'https://mehlko.github.io/model/models/inputModel.ttl',
+    factUrl: 'https://mehlko.github.io/model/models/exampleFacts.ttl'
   }
 ];
 
@@ -152,7 +156,7 @@ class ProductionLine extends React.Component {
   analyze() {
     var prettyJSON = JSON.stringify(this.state.productionLine, null, 2);
     log(prettyJSON);
-    console.log(store.size);
+    console.log(this.store.size);
   }
 
   addInput(processId, value) {
@@ -272,13 +276,24 @@ class ProductionLine extends React.Component {
             ),
             null
           );
-          log(inputs);
-          //update
+          const outputs = this.store.getQuads(
+            process.get('?process'),
+            N3.DataFactory.namedNode(
+              'http://uni-ko-ld.de/ist/model#hasOutputProduct'
+            ),
+            null
+          );
+
           newProductionLine.processes = [
             ...newProductionLine.processes,
             {
               name: process.get('?process').value,
-              inputs: []
+              inputs: inputs.map(input => {
+                return { name: input.object.value };
+              }),
+              outputs: outputs.map(outut => {
+                return { name: outut.object.value };
+              })
             }
           ];
           //set state
