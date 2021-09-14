@@ -13,6 +13,7 @@ proc:SensorFlashing001 model:hasOutputProduct prod:flashedRadarSensor.
 proc:SensorFlashing001 model:hasNextProcess proc:CaseAssembly001.
 #
 proc:CaseAssembly001 model:hasInputProduct prod:flashedRadarSensor.
+proc:CaseAssembly001 model:hasInputProduct prod:plasticCaseBottom.
 proc:CaseAssembly001 model:hasResource res:placer.
 proc:CaseAssembly001 model:hasResource res:screwer.
 proc:CaseAssembly001 model:hasMeasurement prop:position.
@@ -20,8 +21,8 @@ proc:CaseAssembly001 model:hasMeasurement prop:force.
 proc:CaseAssembly001 model:hasConstraint prop:position.
 proc:CaseAssembly001 model:hasConstraint prop:force.
 proc:CaseAssembly001 model:hasOutputProduct prod:assembledSensor.
-#
 proc:CaseAssembly001 model:hasNextProcess proc:UltrasonicCaseSealing001.
 #
+proc:UltrasonicCaseSealing001 model:hasInputProduct prod:plasticCaseBottom.
 proc:UltrasonicCaseSealing001 model:hasNextProcess proc:QualityControl001.
 #

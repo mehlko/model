@@ -1,30 +1,4 @@
-//models are here: https://github.com/mehlko/models
-
-const store = new N3.Store();
-async function test() {
-  console.log(store.size);
-  const result = await (await Comunica.newEngine().query(
-    'COPY DEFAULT TO <http://example.org/named>',
-    {
-      sources: ['https://mehlko.github.io/models/model.ttl'],
-      destination: store
-    }
-  )).updateResult;
-  console.log(store.size);
-}
-test();
-
-const parser = new N3.Parser();
-parser.parse(
-  `PREFIX c: <http://example.org/cartoons#>
-  c:Tom a c:Cat.
-  c:Jerry a c:Mouse;
-  c:smarterThan c:Tom.`,
-  (error, quad, prefixes) => {
-    if (quad) console.log(quad);
-    else console.log("# That's all, folks!", prefixes);
-  }
-);
+//models are here: https://github.com/mehlko/model/
 
 const logLevel = 1;
 const {
@@ -161,6 +135,18 @@ class ProductionLine extends React.Component {
     };
     this.addInput = this.addInput.bind(this);
     this.analyze = this.analyze.bind(this);
+    this.parser = new N3.Parser();
+    this.store = {};
+  }
+
+  async loadUrlToStore(myStore, url) {
+    var resultString = await (await fetch(url)).text();
+
+    this.parser.parse(resultString, (error, quad, prefixes) => {
+      if (quad) {
+        myStore.addQuad(quad);
+      }
+    });
   }
 
   analyze() {
@@ -245,11 +231,17 @@ class ProductionLine extends React.Component {
     log(this.state.inputModelUrl);
   };
 
-  loadInputModel = event => {
-    var queryAllString = `
-    SELECT * WHERE {
-      ?subject ?predicate ?object .
-    }`;
+  loadInputModel = async event => {
+    this.store = new N3.Store();
+    await this.loadUrlToStore(
+      this.store,
+      'https://mehlko.github.io/model/models/inputModel.ttl'
+    );
+    await this.loadUrlToStore(
+      this.store,
+      'https://mehlko.github.io/model/models/exampleFacts.ttl'
+    );
+
     var queryString = `
     PREFIX model: <http://uni-ko-ld.de/ist/model#>
     PREFIX proc: <http://uni-ko-ld.de/ist/process#>
@@ -261,26 +253,32 @@ class ProductionLine extends React.Component {
       MINUS {[] model:hasNextProcess ?firstProcess} .
       ?firstProcess model:hasNextProcess* ?process .
     }`;
-    log(
-      'load input mdoel ' + this.state.inputModelUrl + ' ' + this.state.factUrl
-    );
+
     Comunica.newEngine()
       .query(queryString, {
-        sources: [this.state.inputModelUrl, this.state.factUrl]
+        sources: [this.store]
       })
       .then(async result => {
         var productionLine = await result.bindings();
-        log(productionLine);
+        log(productionLine[0].get('?process').value);
         var newProductionLine = { processes: [] };
 
         productionLine.map(process => {
-          log(process.get('?process').value);
-
+          log(process.get('?process'));
+          const inputs = this.store.getQuads(
+            process.get('?process'),
+            N3.DataFactory.namedNode(
+              'http://uni-ko-ld.de/ist/model#hasInputProduct'
+            ),
+            null
+          );
+          log(inputs);
           //update
           newProductionLine.processes = [
             ...newProductionLine.processes,
             {
-              name: process.get('?process').value
+              name: process.get('?process').value,
+              inputs: []
             }
           ];
           //set state
@@ -288,35 +286,7 @@ class ProductionLine extends React.Component {
             productionLine: newProductionLine
           });
         });
-
-        Comunica.newEngine()
-          .query(queryAllString, {
-            sources: [this.state.inputModelUrl]
-          })
-          .then(async result => {
-            var allFacts = await result.bindings();
-
-            allFacts.map(fact => {
-              log(
-                fact.get('?subject').value +
-                  '  ' +
-                  fact.get('?predicate').value +
-                  '  ' +
-                  fact.get('?object').value
-              );
-              switch (fact.get('?predicate').value) {
-                case 'http://uni-ko-ld.de/ist/model#hasInputProduct':
-                  log('#####################################');
-
-                  break;
-
-                default:
-                  break;
-              }
-            });
-          });
       });
-    log('done loading input model');
   };
 
   render() {
