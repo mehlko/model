@@ -9,7 +9,11 @@ const {
   createFilterOptions,
   FormControl,
   InputLabel,
-  Select
+  Select,
+  MenuItem,
+  Container,
+  Typography,
+  Box
 } = MaterialUI;
 
 const filterOptions = createFilterOptions({
@@ -111,6 +115,17 @@ class MyAutocomplete extends React.Component {
   }
 }
 
+let presets = [
+  {
+    inputModelUrl: 'https://mehlko.github.io/models/inputModel.ttl',
+    factUrl: 'https://mehlko.github.io/models/exampleFacts.ttl'
+  },
+  {
+    inputModelUrl: 'https://mehlko.github.io/models/inputModel.ttl',
+    factUrl: 'https://mehlko.github.io/models/exampleFacts.ttl'
+  }
+];
+
 class ProductionLine extends React.Component {
   constructor(props) {
     super(props);
@@ -118,14 +133,17 @@ class ProductionLine extends React.Component {
       productionLine: {
         processes: []
       },
-      preset: ''
+      preset: 0,
+      inputModelUrl: presets[0].inputModelUrl,
+      factUrl: presets[0].factUrl
     };
     this.addInput = this.addInput.bind(this);
     this.analyze = this.analyze.bind(this);
   }
 
   analyze() {
-    log(this.state.productionLine);
+    var prettyJSON = JSON.stringify(this.state.productionLine, null, 2);
+    log(prettyJSON);
   }
 
   addInput(processId, value) {
@@ -183,31 +201,56 @@ class ProductionLine extends React.Component {
   }
 
   onPresetChange = event => {
-    setAge(event.target.value);
     this.setState({
-      preset: event.target.value
+      preset: event.target.value,
+      inputModelUrl: presets[event.target.value].inputModelUrl,
+      factUrl: presets[event.target.value].factUrl
     });
+  };
+
+  onFactUrlChange = event => {
+    this.setState({
+      factUrl: event.target.value
+    });
+    log(this.state.factUrl);
+  };
+
+  onInputModelChange = event => {
+    this.setState({
+      inputModelUrl: event.target.value
+    });
+    log(this.state.inputModelUrl);
   };
 
   render() {
     return (
-      <div className="productionLine">
-        <h1>Production Line Analyzer</h1>
-        <div className="setup">
+      <Container maxWidth="sm">
+        <Typography variant="h4">Production Line Analyzer</Typography>
+        <Box className="setup">
+          <Typography variant="h6">Setup</Typography>
           <FormControl>
-            <InputLabel id="presetLabel">Age</InputLabel>
+            <InputLabel id="presetLabel">Preset</InputLabel>
             <Select
               labelId="presetLabel"
               id="preset"
               value={this.state.preset}
-              onChange={handleChange}
+              onChange={this.onPresetChange}
             >
-              <MenuItem value={10}>Ten</MenuItem>
-              <MenuItem value={20}>Twenty</MenuItem>
-              <MenuItem value={30}>Thirty</MenuItem>
+              <MenuItem value={0}>Scenario 1</MenuItem>
+              <MenuItem value={1}>Scenario 2</MenuItem>
             </Select>
+            <TextField
+              label="Input Model URL"
+              value={this.state.inputModelUrl}
+              onChange={this.onInputModelChange}
+            />
+            <TextField
+              label="Fact URL"
+              value={this.state.factUrl}
+              onChange={this.onFactUrlChange}
+            />
           </FormControl>
-        </div>
+        </Box>
 
         <Button variant="contained" onClick={() => this.addProcess()}>
           Add Process
@@ -215,40 +258,42 @@ class ProductionLine extends React.Component {
         <Button variant="contained" onClick={() => this.analyze()}>
           Analyze
         </Button>
-        {this.state.productionLine.processes &&
-          this.state.productionLine.processes.map((proc, procId) => (
-            <div className="process" key={'process' + procId}>
-              <div className="name">{proc.name + procId}</div>
-              <MyAutocomplete
-                processId={procId}
-                onAddInput={this.addInput.bind(this, procId)}
-                onAddOutput={this.addOutput.bind(this, procId)}
-              />
-              <div className="inputs">
-                {proc.inputs &&
-                  proc.inputs.map((input, inputId) => (
-                    <div
-                      className="product"
-                      key={'process' + procId + 'Input' + inputId}
-                    >
-                      {input.name + inputId}
-                    </div>
-                  ))}
+        <div className="productionLine">
+          {this.state.productionLine.processes &&
+            this.state.productionLine.processes.map((proc, procId) => (
+              <div className="process" key={'process' + procId}>
+                <div className="name">{proc.name + procId}</div>
+                <MyAutocomplete
+                  processId={procId}
+                  onAddInput={this.addInput.bind(this, procId)}
+                  onAddOutput={this.addOutput.bind(this, procId)}
+                />
+                <div className="inputs">
+                  {proc.inputs &&
+                    proc.inputs.map((input, inputId) => (
+                      <div
+                        className="product"
+                        key={'process' + procId + 'Input' + inputId}
+                      >
+                        {input.name + inputId}
+                      </div>
+                    ))}
+                </div>
+                <div className="outputs">
+                  {proc.outputs &&
+                    proc.outputs.map((output, outputId) => (
+                      <div
+                        className="product"
+                        key={'process' + procId + 'Input' + outputId}
+                      >
+                        {output.name + outputId}
+                      </div>
+                    ))}
+                </div>
               </div>
-              <div className="outputs">
-                {proc.outputs &&
-                  proc.outputs.map((output, outputId) => (
-                    <div
-                      className="product"
-                      key={'process' + procId + 'Input' + outputId}
-                    >
-                      {output.name + outputId}
-                    </div>
-                  ))}
-              </div>
-            </div>
-          ))}
-      </div>
+            ))}
+        </div>
+      </Container>
     );
   }
 }
