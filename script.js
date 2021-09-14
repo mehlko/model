@@ -1,5 +1,25 @@
 //models are here: https://github.com/mehlko/models
-parser = new N3.Parser();
+
+const store = new N3.Store();
+console.log(store.size);
+Comunica.newEngine().query('COPY DEFAULT TO <http://example.org/named>', {
+  sources: ['https://mehlko.github.io/models/model.ttl'],
+  destination: store
+}).updateResult;
+
+const parser = new N3.Parser();
+parser.parse(
+  `PREFIX c: <http://example.org/cartoons#>
+  c:Tom a c:Cat.
+  c:Jerry a c:Mouse;
+  c:smarterThan c:Tom.`,
+  (error, quad, prefixes) => {
+    if (quad) console.log(quad);
+    else console.log("# That's all, folks!", prefixes);
+  }
+);
+
+
 const logLevel = 1;
 const {
   Button,
@@ -140,6 +160,7 @@ class ProductionLine extends React.Component {
   analyze() {
     var prettyJSON = JSON.stringify(this.state.productionLine, null, 2);
     log(prettyJSON);
+    console.log(store.size);
   }
 
   addInput(processId, value) {
