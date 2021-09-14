@@ -6,7 +6,10 @@ const {
   Alert,
   Autocomplete,
   TextField,
-  createFilterOptions
+  createFilterOptions,
+  FormControl,
+  InputLabel,
+  Select
 } = MaterialUI;
 
 const filterOptions = createFilterOptions({
@@ -114,7 +117,8 @@ class ProductionLine extends React.Component {
     this.state = {
       productionLine: {
         processes: []
-      }
+      },
+      preset: ''
     };
     this.addInput = this.addInput.bind(this);
     this.analyze = this.analyze.bind(this);
@@ -178,10 +182,33 @@ class ProductionLine extends React.Component {
     });
   }
 
+  onPresetChange = event => {
+    setAge(event.target.value);
+    this.setState({
+      preset: event.target.value
+    });
+  };
+
   render() {
     return (
       <div className="productionLine">
         <h1>Production Line Analyzer</h1>
+        <div className="setup">
+          <FormControl>
+            <InputLabel id="presetLabel">Age</InputLabel>
+            <Select
+              labelId="presetLabel"
+              id="preset"
+              value={this.state.preset}
+              onChange={handleChange}
+            >
+              <MenuItem value={10}>Ten</MenuItem>
+              <MenuItem value={20}>Twenty</MenuItem>
+              <MenuItem value={30}>Thirty</MenuItem>
+            </Select>
+          </FormControl>
+        </div>
+
         <Button variant="contained" onClick={() => this.addProcess()}>
           Add Process
         </Button>
