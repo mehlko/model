@@ -25,9 +25,12 @@ proc:CaseAssembly001 model:hasNextProcess proc:UltrasonicCaseSealing001.
 #
 proc:UltrasonicCaseSealing001 model:hasInputProduct prod:PlasticCaseTop001.
 proc:UltrasonicCaseSealing001 model:hasInputProduct prod:AssembledSensor001.
+proc:UltrasonicCaseSealing001 model:hasResource res:UltrasonicWelder001.
 proc:UltrasonicCaseSealing001 model:hasOutputProduct prod:SealedSensor001.
 proc:UltrasonicCaseSealing001 model:hasNextProcess proc:QualityControl001.
 #
 proc:QualityControl001 model:hasInputProduct prod:SealedSensor001.
 proc:QualityControl001 model:hasInputProduct prod:AssembledSensor001.
+proc:QualityControl001 model:hasResource res:PressureTester001.
+proc:QualityControl001 model:hasResource res:Scale001.
 proc:QualityControl001 model:hasOutputProduct prod:TestedProduct001.
