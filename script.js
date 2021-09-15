@@ -31,10 +31,6 @@ class MyAutocomplete extends React.Component {
   query(value) {
     var queryString = `
     PREFIX model: <http://uni-ko-ld.de/ist/model#>
-    PREFIX prod: <http://uni-ko-ld.de/ist/product#>
-    PREFIX proc: <http://uni-ko-ld.de/ist/process#>
-    PREFIX res: <http://uni-ko-ld.de/ist/resource#>
-    PREFIX prop: <http://uni-ko-ld.de/ist/property#>
     PREFIX rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
     PREFIX rdfs:   <http://www.w3.org/2000/01/rdf-schema#>
     SELECT ?id ?label ?type WHERE {
@@ -248,7 +244,6 @@ class ProductionLine extends React.Component {
 
     var queryString = `
     PREFIX model: <http://uni-ko-ld.de/ist/model#>
-    PREFIX proc: <http://uni-ko-ld.de/ist/process#>
     PREFIX rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
     PREFIX rdfs:   <http://www.w3.org/2000/01/rdf-schema#>
     SELECT ?process WHERE {
@@ -270,16 +265,12 @@ class ProductionLine extends React.Component {
         productionLine.map(process => {
           const inputs = this.store.getQuads(
             process.get('?process'),
-            N3.DataFactory.namedNode(
-              'http://uni-ko-ld.de/ist/model#hasInputProduct'
-            ),
+            namedNode('http://uni-ko-ld.de/ist/model#hasInputProduct'),
             null
           );
           const outputs = this.store.getQuads(
             process.get('?process'),
-            N3.DataFactory.namedNode(
-              'http://uni-ko-ld.de/ist/model#hasOutputProduct'
-            ),
+            namedNode('http://uni-ko-ld.de/ist/model#hasOutputProduct'),
             null
           );
 
