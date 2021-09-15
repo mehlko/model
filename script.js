@@ -16,30 +16,17 @@ const {
   Box
 } = MaterialUI;
 
-const filterOptions = createFilterOptions({
-  matchFrom: 'start',
-  stringify: option => option.label
-});
-
 class MyAutocomplete extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      options: []
+      options: [],
+      inputValue: ''
     };
     this.queryThrottled = _.throttle(this.query, 200);
   }
 
   query(value) {
-    log('juhu');
-    var that = this;
-    var queryString2 = `
-    PREFIX etim: <https://www.etim-international.com/#>
-    SELECT ?id ?name WHERE {
-     ?id etim:hasSynonym ?name .
-     FILTER (STRSTARTS(?name, "${value}"))
-    } LIMIT 10`;
-
     var queryString = `
     PREFIX model: <http://uni-ko-ld.de/ist/model#>
     PREFIX prod: <http://uni-ko-ld.de/ist/product#>
@@ -49,39 +36,27 @@ class MyAutocomplete extends React.Component {
     PREFIX rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
     PREFIX rdfs:   <http://www.w3.org/2000/01/rdf-schema#>
     SELECT ?id ?label ?type WHERE {
-     ?type rdfs:subClassOf model:InputModelElement: .
+     ?type rdfs:subClassOf model:InputModelElement .
      ?id rdf:type ?type .
      ?id rdfs:label ?label .
      FILTER (STRSTARTS(?label, "${value}"))
-    } LIMIT 10`;
+    } LIMIT 1`;
 
     Comunica.newEngine()
       .query(queryString, {
         sources: ['https://mehlko.github.io/model/models/exampleFacts.ttl']
       })
-      .then(function(result) {
-        log(result);
-        that.setState({
-          options: []
-        });
-        //read results
-        result.bindingsStream.on('data', data => {
-          log(data);
-          var newOption = {
-            label: data.get('?name').value,
-            id: data.get('?id').value,
-            type: data.get('?type').value
-          };
-          log(newOption);
-          that.setState({
-            options: that.state.options.concat(newOption)
-          });
-        });
-        result.bindingsStream.on('error', error => {
-          console.error(error);
-        });
-        result.bindingsStream.on('end', () => {
-          log('query finished');
+      .then(async result => {
+        var tempOptions = await result.bindings();
+
+        this.setState({
+          options: tempOptions.map(option => {
+            return {
+              label: option.get('?label').value,
+              id: option.get('?id').value,
+              type: option.get('?type').value
+            };
+          })
         });
       });
   }
@@ -94,10 +69,18 @@ class MyAutocomplete extends React.Component {
         disableCloseOnSelect
         clearOnBlur
         clearOnEscape
+        onOpen={event => {
+          if (Array.isArray(this.state.options) && !this.state.options.length) {
+            this.queryThrottled(this.state.inputValue);
+          }
+        }}
         options={this.state.options}
         disableCloseOnSelect
         getOptionLabel={option => option.label}
         onInputChange={(event, newInputValue) => {
+          this.setState({
+            inputValue: newInputValue
+          });
           this.queryThrottled(newInputValue);
         }}
         renderInput={params => (
@@ -105,7 +88,6 @@ class MyAutocomplete extends React.Component {
         )}
         noOptionsText=""
         renderOption={(props, option, { selected }) => {
-          log(props);
           return (
             <li {...props} onClick={event => {}}>
               {option.label}{' '}
@@ -177,38 +159,38 @@ class ProductionLine extends React.Component {
 
   addInput(processId, value) {
     //make copy
-    var temp = { ...this.state.productionLine };
-    if (!temp.processes[processId].inputs) {
-      temp.processes[processId].inputs = [];
+    var tempProductionLine = { ...this.state.productionLine };
+    if (!tempProductionLine.processes[processId].inputs) {
+      tempProductionLine.processes[processId].inputs = [];
     }
     //update
-    temp.processes[processId].inputs = [
-      ...temp.processes[processId].inputs,
+    tempProductionLine.processes[processId].inputs = [
+      ...tempProductionLine.processes[processId].inputs,
       {
         name: value
       }
     ];
     //set state
     this.setState({
-      productionLine: temp
+      productionLine: tempProductionLine
     });
   }
   addOutput(processId, value) {
     //make copy
-    var temp = { ...this.state.productionLine };
-    if (!temp.processes[processId].outputs) {
-      temp.processes[processId].outputs = [];
+    var tempProductionLine = { ...this.state.productionLine };
+    if (!tempProductionLine.processes[processId].outputs) {
+      tempProductionLine.processes[processId].outputs = [];
     }
     //update
-    temp.processes[processId].outputs = [
-      ...temp.processes[processId].outputs,
+    tempProductionLine.processes[processId].outputs = [
+      ...tempProductionLine.processes[processId].outputs,
       {
         name: value
       }
     ];
     //set state
     this.setState({
-      productionLine: temp
+      productionLine: tempProductionLine
     });
   }
 
@@ -284,7 +266,6 @@ class ProductionLine extends React.Component {
         var newProductionLine = { processes: [] };
 
         productionLine.map(process => {
-          log(process.get('?process'));
           const inputs = this.store.getQuads(
             process.get('?process'),
             N3.DataFactory.namedNode(
