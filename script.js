@@ -228,11 +228,13 @@ class ProductionLine extends React.Component {
   };
 
   getLabels(id) {
-    var labels = this.store.getQuads(
-      id,
-      namedNode('http://www.w3.org/1999/02/22-rdf-syntax-ns#label'),
-      null
-    );
+    var labels = this.store
+      .getQuads(
+        id,
+        namedNode('http://www.w3.org/2000/01/rdf-schema#label'),
+        null
+      )
+      .map(label => label.object.value);
     log(labels);
     return labels;
   }
@@ -288,7 +290,10 @@ class ProductionLine extends React.Component {
                 id: input.object.value,
                 labels: this.getLabels(input.object.value)
               })),
-              outputs: outputs.map(outut => ({ îd: outut.object.value }))
+              outputs: outputs.map(outut => ({
+                îd: outut.object.value,
+                labels: this.getLabels(outut.object.value)
+              }))
             }
           ];
           //set state
@@ -360,7 +365,7 @@ class ProductionLine extends React.Component {
                         className="product"
                         key={'process' + procId + 'Input' + inputId}
                       >
-                        {input.labels[0]}
+                        {input.labels}
                       </div>
                     ))}
                 </div>
@@ -371,7 +376,7 @@ class ProductionLine extends React.Component {
                         className="product"
                         key={'process' + procId + 'Input' + outputId}
                       >
-                        {output.label}
+                        {output.labels}
                       </div>
                     ))}
                 </div>
