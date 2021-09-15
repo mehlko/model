@@ -233,8 +233,7 @@ class ProductionLine extends React.Component {
       namedNode('http://www.w3.org/1999/02/22-rdf-syntax-ns#label'),
       null
     );
-
-    log(id);
+    log(labels);
     return labels;
   }
 
