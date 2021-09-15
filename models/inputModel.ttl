@@ -6,7 +6,7 @@ PREFIX prop: <http://uni-ko-ld.de/ist/property#>
 
 
 proc:SensorFlashing001 model:hasInputProduct prod:RadarSensor001.
-proc:SensorFlashing001 model:hasResource res:firmwareFlasher. 
+proc:SensorFlashing001 model:hasResource res:FirmwareFlasher001. 
 proc:SensorFlashing001 model:hasMeasurement prop:firmwareVersion.
 proc:SensorFlashing001 model:hasConstraint prop:firmwareVersion.
 proc:SensorFlashing001 model:hasOutputProduct prod:FlashedRadarSensor001.
@@ -14,8 +14,8 @@ proc:SensorFlashing001 model:hasNextProcess proc:CaseAssembly001.
 #
 proc:CaseAssembly001 model:hasInputProduct prod:FlashedRadarSensor001.
 proc:CaseAssembly001 model:hasInputProduct prod:PlasticCaseBottom001.
-proc:CaseAssembly001 model:hasResource res:placer.
-proc:CaseAssembly001 model:hasResource res:screwer.
+proc:CaseAssembly001 model:hasResource res:Placer001.
+proc:CaseAssembly001 model:hasResource res:Screwer001.
 proc:CaseAssembly001 model:hasMeasurement prop:position.
 proc:CaseAssembly001 model:hasMeasurement prop:force.
 proc:CaseAssembly001 model:hasConstraint prop:position.
@@ -25,5 +25,9 @@ proc:CaseAssembly001 model:hasNextProcess proc:UltrasonicCaseSealing001.
 #
 proc:UltrasonicCaseSealing001 model:hasInputProduct prod:PlasticCaseTop001.
 proc:UltrasonicCaseSealing001 model:hasInputProduct prod:AssembledSensor001.
+proc:UltrasonicCaseSealing001 model:hasOutputProduct prod:SealedSensor001.
 proc:UltrasonicCaseSealing001 model:hasNextProcess proc:QualityControl001.
 #
+proc:QualityControl001 model:hasInputProduct prod:SealedSensor001.
+proc:QualityControl001 model:hasInputProduct prod:AssembledSensor001.
+proc:QualityControl001 model:hasOutputProduct prod:TestedProduct001.
