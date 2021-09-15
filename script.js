@@ -16,6 +16,8 @@ const {
   Box
 } = MaterialUI;
 
+const { namedNode } = N3.DataFactory;
+
 class MyAutocomplete extends React.Component {
   constructor(props) {
     super(props);
@@ -285,12 +287,8 @@ class ProductionLine extends React.Component {
             ...newProductionLine.processes,
             {
               name: process.get('?process').value,
-              inputs: inputs.map(input => {
-                return { name: input.object.value };
-              }),
-              outputs: outputs.map(outut => {
-                return { name: outut.object.value };
-              })
+              inputs: inputs.map(input => ({ name: input.object.value })),
+              outputs: outputs.map(outut => ({ name: outut.object.value }))
             }
           ];
           //set state
