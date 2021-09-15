@@ -337,16 +337,21 @@ class ProductionLine extends React.Component {
           </FormControl>
         </Box>
 
-        <Button variant="contained" onClick={() => this.addProcess()}>
+        <Button variant="contained" onClick={() => this.addProcess()} fullWidth>
           Add Process
         </Button>
-        <Button variant="contained" onClick={() => this.analyze()}>
+        <Button
+          variant="contained"
+          onClick={() => this.analyze()}
+          fullWidth
+          color="success"
+        >
           Analyze
         </Button>
-        <div className="productionLine">
+        <Box className="productionLine" fullWidth>
           {this.state.productionLine.processes &&
             this.state.productionLine.processes.map((proc, procId) => (
-              <div className="process" key={'process' + procId}>
+              <Box className="process" key={'process' + procId} fullWidth>
                 <div className="name">{proc.name + procId}</div>
                 <MyAutocomplete
                   processId={procId}
@@ -375,9 +380,9 @@ class ProductionLine extends React.Component {
                       </div>
                     ))}
                 </div>
-              </div>
+              </Box>
             ))}
-        </div>
+        </Box>
       </Container>
     );
   }
