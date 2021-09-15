@@ -3,7 +3,6 @@ PREFIX prod: <http://uni-ko-ld.de/ist/product#>
 PREFIX proc: <http://uni-ko-ld.de/ist/process#>
 PREFIX res: <http://uni-ko-ld.de/ist/resource#>
 PREFIX prop: <http://uni-ko-ld.de/ist/property#>
-PREFIX rdfs: <http://www.w3.org/TR/rdf-schema/>
 PREFIX rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 PREFIX rdfs:   <http://www.w3.org/2000/01/rdf-schema#>
 
@@ -15,11 +14,10 @@ model:Property rdf:type rdfs:Class.
 
 model:InputModelElement rdf:type rdfs:Class.
 
-model:Product rdfs:subClassOf rdfs:InputModelElement.
-model:Process rdfs:subClassOf rdfs:InputModelElement.
-model:Resource rdfs:subClassOf rdfs:InputModelElement.
-model:Property rdfs:subClassOf rdfs:InputModelElement.
-
+model:Product rdfs:subClassOf model:InputModelElement.
+model:Process rdfs:subClassOf model:InputModelElement.
+model:Resource rdfs:subClassOf model:InputModelElement.
+model:Property rdfs:subClassOf model:InputModelElement.
 
 
 

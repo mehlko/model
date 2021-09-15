@@ -41,9 +41,17 @@ class MyAutocomplete extends React.Component {
     } LIMIT 10`;
 
     var queryString = `
-    PREFIX etim: <https://www.etim-international.com/#>
+    PREFIX model: <http://uni-ko-ld.de/ist/model#>
+    PREFIX prod: <http://uni-ko-ld.de/ist/product#>
+    PREFIX proc: <http://uni-ko-ld.de/ist/process#>
+    PREFIX res: <http://uni-ko-ld.de/ist/resource#>
+    PREFIX prop: <http://uni-ko-ld.de/ist/property#>
+    PREFIX rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+    PREFIX rdfs:   <http://www.w3.org/2000/01/rdf-schema#>
     SELECT ?id ?label ?type WHERE {
-     ?id etim:hasSynonym ?name .
+     ?type rdfs:subClassOf model:InputModelElement: .
+     ?id rdfs:subClassOf ?type .
+     ?id rdfs:label ?label .
      FILTER (STRSTARTS(?name, "${value}"))
     } LIMIT 10`;
 
