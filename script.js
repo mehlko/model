@@ -92,14 +92,14 @@ class MyAutocomplete extends React.Component {
               <Button
                 variant="contained"
                 size="small"
-                onClick={() => this.props.onAddInput(option.label)}
+                onClick={() => this.props.onAddInput(option)}
               >
                 + Input
               </Button>
               <Button
                 variant="contained"
                 size="small"
-                onClick={() => this.props.onAddOutput(option.label)}
+                onClick={() => this.props.onAddOutput(option)}
               >
                 + Output
               </Button>
@@ -164,9 +164,7 @@ class ProductionLine extends React.Component {
     //update
     tempProductionLine.processes[processId].inputs = [
       ...tempProductionLine.processes[processId].inputs,
-      {
-        name: value
-      }
+      value
     ];
     //set state
     this.setState({
@@ -182,9 +180,7 @@ class ProductionLine extends React.Component {
     //update
     tempProductionLine.processes[processId].outputs = [
       ...tempProductionLine.processes[processId].outputs,
-      {
-        name: value
-      }
+      value
     ];
     //set state
     this.setState({
@@ -230,6 +226,17 @@ class ProductionLine extends React.Component {
     });
     log(this.state.inputModelUrl);
   };
+
+  getLabels(id) {
+    var labels = this.store.getQuads(
+      id,
+      namedNode('http://www.w3.org/1999/02/22-rdf-syntax-ns#label'),
+      null
+    );
+
+    log(id);
+    return labels;
+  }
 
   loadInputModel = async event => {
     this.store = new N3.Store();
@@ -278,8 +285,11 @@ class ProductionLine extends React.Component {
             ...newProductionLine.processes,
             {
               name: process.get('?process').value,
-              inputs: inputs.map(input => ({ name: input.object.value })),
-              outputs: outputs.map(outut => ({ name: outut.object.value }))
+              inputs: inputs.map(input => ({
+                id: input.object.value,
+                labels: this.getLabels(input.object.value)
+              })),
+              outputs: outputs.map(outut => ({ îd: outut.object.value }))
             }
           ];
           //set state
@@ -351,7 +361,7 @@ class ProductionLine extends React.Component {
                         className="product"
                         key={'process' + procId + 'Input' + inputId}
                       >
-                        {input.name + inputId}
+                        {input.labels[0]}
                       </div>
                     ))}
                 </div>
@@ -362,7 +372,7 @@ class ProductionLine extends React.Component {
                         className="product"
                         key={'process' + procId + 'Input' + outputId}
                       >
-                        {output.name + outputId}
+                        {output.label}
                       </div>
                     ))}
                 </div>

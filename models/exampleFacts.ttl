@@ -29,13 +29,13 @@ prod:RadarSensor001 rdfs:label "Radar Sensor".
 prod:FlashedRadarSensor001 rdf:type model:Product.
 prod:FlashedRadarSensor001 rdfs:label "Flashed Radar Sensor".
 #
-prod:PlasticCaseTop001 rdf:type model:Product.
-prod:PlasticCaseTop001 rdfs:label "Plastic Case Top".
-prod:PlasticCaseTop001 rdfs:label "Plastic Cover Top".
-#
 prod:PlasticCaseBottom001 rdf:type model:Product.
 prod:PlasticCaseBottom001 rdfs:label "Plastic Case Bottom".
 prod:PlasticCaseBottom001 rdfs:label "Plastic Cover Bottom".
+#
+prod:PlasticCaseTop001 rdf:type model:Product.
+prod:PlasticCaseTop001 rdfs:label "Plastic Case Top".
+prod:PlasticCaseTop001 rdfs:label "Plastic Cover Top".
 #
 prod:AssembledSensor001 rdf:type model:Product.
 prod:AssembledSensor001 rdfs:label "Assembled Radae Sensor".
