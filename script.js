@@ -252,19 +252,19 @@ class ProductionLine extends React.Component {
     PREFIX rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
     PREFIX rdfs:   <http://www.w3.org/2000/01/rdf-schema#>
     SELECT ?process WHERE {
-      ?firstProcess rdf:type proc:Process .
+      ?firstProcess rdf:type model:Process .
       ?firstProcess model:hasNextProcess ?nextProcess .
       MINUS {[] model:hasNextProcess ?firstProcess} .
       ?firstProcess model:hasNextProcess* ?process .
     }`;
-
     Comunica.newEngine()
       .query(queryString, {
         sources: [this.store]
       })
       .then(async result => {
         var productionLine = await result.bindings();
-        log(productionLine[0].get('?process').value);
+        log('test');
+        log(productionLine);
         var newProductionLine = { processes: [] };
 
         productionLine.map(process => {
