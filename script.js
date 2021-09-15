@@ -50,9 +50,9 @@ class MyAutocomplete extends React.Component {
     PREFIX rdfs:   <http://www.w3.org/2000/01/rdf-schema#>
     SELECT ?id ?label ?type WHERE {
      ?type rdfs:subClassOf model:InputModelElement: .
-     ?id rdfs:subClassOf ?type .
+     ?id rdf:type ?type .
      ?id rdfs:label ?label .
-     FILTER (STRSTARTS(?name, "${value}"))
+     FILTER (STRSTARTS(?label, "${value}"))
     } LIMIT 10`;
 
     Comunica.newEngine()
@@ -69,7 +69,8 @@ class MyAutocomplete extends React.Component {
           log(data);
           var newOption = {
             label: data.get('?name').value,
-            id: data.get('?id').value
+            id: data.get('?id').value,
+            type: data.get('?type').value
           };
           log(newOption);
           that.setState({
