@@ -33,4 +33,6 @@ proc:QualityControl001 model:hasInputProduct prod:SealedSensor001.
 proc:QualityControl001 model:hasInputProduct prod:AssembledSensor001.
 proc:QualityControl001 model:hasResource res:PressureTester001.
 proc:QualityControl001 model:hasResource res:Scale001.
+proc:QualityControl001 model:hasMeasurement prop:LeakageRate001.
+proc:QualityControl001 model:hasMeasurement prop:Weight001.
 proc:QualityControl001 model:hasOutputProduct prod:TestedProduct001.

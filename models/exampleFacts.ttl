@@ -109,6 +109,5 @@ prop:Temperature001 rdfs:label 'Heat'.
 prop:LeakageRate001 rdf:type model:Property.
 prop:LeakageRate001 rdfs:label 'Leakage Rate'.
 #
-prop:Temperature001 rdf:type model:Property.
-prop:Temperature001 rdfs:label 'Temperature'.
-prop:Temperature001 rdfs:label 'Heat'.
+prop:Weight001 rdf:type model:Property.
+prop:Weight001 rdfs:label 'Weight'.
