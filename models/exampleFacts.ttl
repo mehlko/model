@@ -38,7 +38,7 @@ prod:PlasticCaseTop001 rdfs:label "Plastic Case Top".
 prod:PlasticCaseTop001 rdfs:label "Plastic Cover Top".
 #
 prod:AssembledSensor001 rdf:type model:Product.
-prod:AssembledSensor001 rdfs:label "Assembled Radae Sensor".
+prod:AssembledSensor001 rdfs:label "Assembled Radar Sensor".
 #
 prod:SealedSensor001 rdf:type model:Product.
 prod:SealedSensor001 rdfs:label "Sealed Sensor".
