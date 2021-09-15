@@ -38,7 +38,7 @@ class MyAutocomplete extends React.Component {
      ?id rdf:type ?type .
      ?id rdfs:label ?label .
      FILTER (STRSTARTS(?label, "${value}"))
-    } LIMIT 1`;
+    } LIMIT 5`;
 
     Comunica.newEngine()
       .query(queryString, {
@@ -50,7 +50,7 @@ class MyAutocomplete extends React.Component {
         this.setState({
           options: tempOptions.map(option => {
             return {
-              label: option.get('?label').value,
+              labels: [option.get('?label').value],
               id: option.get('?id').value,
               type: option.get('?type').value
             };
@@ -74,7 +74,7 @@ class MyAutocomplete extends React.Component {
         }}
         options={this.state.options}
         disableCloseOnSelect
-        getOptionLabel={option => option.label}
+        getOptionLabel={option => option.labels}
         onInputChange={(event, newInputValue) => {
           this.setState({
             inputValue: newInputValue
@@ -88,7 +88,7 @@ class MyAutocomplete extends React.Component {
         renderOption={(props, option, { selected }) => {
           return (
             <li {...props} onClick={event => {}}>
-              {option.label}{' '}
+              {option.labels}{' '}
               <Button
                 variant="contained"
                 size="small"
