@@ -33,16 +33,23 @@ class MyAutocomplete extends React.Component {
   query(value) {
     log('juhu');
     var that = this;
-    var queryString = `
+    var queryString2 = `
     PREFIX etim: <https://www.etim-international.com/#>
     SELECT ?id ?name WHERE {
      ?id etim:hasSynonym ?name .
      FILTER (STRSTARTS(?name, "${value}"))
     } LIMIT 10`;
 
+    var queryString = `
+    PREFIX etim: <https://www.etim-international.com/#>
+    SELECT ?id ?label ?type WHERE {
+     ?id etim:hasSynonym ?name .
+     FILTER (STRSTARTS(?name, "${value}"))
+    } LIMIT 10`;
+
     Comunica.newEngine()
       .query(queryString, {
-        sources: ['https://mehlko.github.io/models/model.ttl']
+        sources: ['https://mehlko.github.io/model/models/exampleFacts.ttl']
       })
       .then(function(result) {
         log(result);

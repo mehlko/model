@@ -7,6 +7,22 @@ PREFIX rdfs: <http://www.w3.org/TR/rdf-schema/>
 PREFIX rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 PREFIX rdfs:   <http://www.w3.org/2000/01/rdf-schema#>
 
+### Meta Model
+model:Product rdf:type rdfs:Class.
+model:Process rdf:type rdfs:Class.
+model:Resource rdf:type rdfs:Class.
+model:Property rdf:type rdfs:Class.
+
+model:InputModelElement rdf:type rdfs:Class.
+
+model:Product rdfs:subClassOf rdfs:InputModelElement.
+model:Process rdfs:subClassOf rdfs:InputModelElement.
+model:Resource rdfs:subClassOf rdfs:InputModelElement.
+model:Property rdfs:subClassOf rdfs:InputModelElement.
+
+
+
+
 ### Product Repo
 prod:RadarSensor001 rdf:type model:Product.
 prod:RadarSensor001 rdfs:label "Sensor".
@@ -36,65 +52,65 @@ prod:TestedProduct001 rdfs:label "Tested Product".
 
 ### Process Repo
 
-proc:SensorFlashing001 rdf:type proc:Process.
+proc:SensorFlashing001 rdf:type model:Process.
 proc:SensorFlashing001 rdfs:label 'Flashing'.
 #
-proc:CaseAssembly001 rdf:type proc:Process.
+proc:CaseAssembly001 rdf:type model:Process.
 proc:CaseAssembly001 rdfs:label 'FlashCaseAssembly'.
 #
-proc:UltrasonicCaseSealing001 rdf:type proc:Process.
+proc:UltrasonicCaseSealing001 rdf:type model:Process.
 proc:UltrasonicCaseSealing001 rdfs:label 'Ultrasonic Case Sealing'.
 #
-proc:QualityControl001 rdf:type proc:Process.
+proc:QualityControl001 rdf:type model:Process.
 proc:QualityControl001 rdfs:label 'Quality Control'.
 
 
 
 ### Resource Repo
 
-res:FirmwareFlasher001 rdf:type res:Resource.
+res:FirmwareFlasher001 rdf:type model:Resource.
 res:FirmwareFlasher001 rdfs:label 'Firmware Flasher'.
 res:FirmwareFlasher001 rdfs:label 'Flasher'.
 #
-res:Placer001 rdf:type res:Resource.
+res:Placer001 rdf:type model:Resource.
 res:Placer001 rdfs:label 'Placer'.
 #
-res:Screwer001 rdf:type res:Resource.
+res:Screwer001 rdf:type model:Resource.
 res:Screwer001 rdfs:label 'Screwer'.
 res:Screwer001 rdfs:label 'Fastener'.
 #
-res:UltrasonicWelder001 rdf:type res:Resource.
+res:UltrasonicWelder001 rdf:type model:Resource.
 res:UltrasonicWelder001 rdfs:label 'Ultrasonic Welder'.
 #
-res:PressureTester001 rdf:type res:Resource.
+res:PressureTester001 rdf:type model:Resource.
 res:PressureTester001 rdfs:label 'Pressure Tester'.
 #
-res:Scale001 rdf:type res:Resource.
+res:Scale001 rdf:type model:Resource.
 res:Scale001 rdfs:label 'Scale'.
 
 
 
 ### Property Repo
 
-prop:Firware001 rdf:type prop:Property.
+prop:Firware001 rdf:type model:Property.
 prop:Firware001 rdfs:label 'Firmware'.
 prop:Firware001 rdfs:label 'Firware  Version'.
 #
-prop:Position001 rdf:type prop:Property.
+prop:Position001 rdf:type model:Property.
 prop:Position001 rdfs:label 'Position'.
 prop:Position001 rdfs:label 'Location'.
 #
-prop:Force001 rdf:type prop:Property.
+prop:Force001 rdf:type model:Property.
 prop:Force001 rdfs:label 'Force'.
 prop:Force001 rdfs:label 'Strength'.
 #
-prop:Temperature001 rdf:type prop:Property.
+prop:Temperature001 rdf:type model:Property.
 prop:Temperature001 rdfs:label 'Temperature'.
 prop:Temperature001 rdfs:label 'Heat'.
 #
-prop:LeakageRate001 rdf:type prop:Property.
+prop:LeakageRate001 rdf:type model:Property.
 prop:LeakageRate001 rdfs:label 'Leakage Rate'.
 #
-prop:Temperature001 rdf:type prop:Property.
+prop:Temperature001 rdf:type model:Property.
 prop:Temperature001 rdfs:label 'Temperature'.
 prop:Temperature001 rdfs:label 'Heat'.
