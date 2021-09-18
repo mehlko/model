@@ -152,10 +152,12 @@ class MyAutocomplete extends React.Component {
 
 let presets = [
   {
+    label: 'Encased Sensor',
     inputModelUrl: 'https://mehlko.github.io/model/models/inputModel.ttl',
     factUrl: 'https://mehlko.github.io/model/models/exampleFacts.ttl',
   },
   {
+    label: 'Encased Sensor 2',
     inputModelUrl: 'https://mehlko.github.io/model/models/inputModel.ttl',
     factUrl: 'https://mehlko.github.io/model/models/exampleFacts.ttl',
   },
@@ -172,7 +174,6 @@ class ProductionLine extends React.Component {
       inputModelUrl: presets[0].inputModelUrl,
       factUrl: presets[0].factUrl,
     };
-    this.addInput = this.addInput.bind(this);
     this.analyze = this.analyze.bind(this);
     this.parser = new N3.Parser();
     this.store = {};
@@ -231,12 +232,7 @@ class ProductionLine extends React.Component {
     var temp = { ...this.state.productionLine };
 
     //update
-    temp.processes = [
-      ...temp.processes,
-      {
-        name: '',
-      },
-    ];
+    temp.processes = [...temp.processes, {}];
     //set state
     this.setState({
       productionLine: temp,
@@ -266,15 +262,13 @@ class ProductionLine extends React.Component {
   };
 
   getLabels(id) {
-    var labels = this.store
+    return this.store
       .getQuads(
         id,
         namedNode('http://www.w3.org/2000/01/rdf-schema#label'),
         null
       )
       .map((label) => label.object.value);
-    log(labels);
-    return labels;
   }
 
   getFirstLabel(labels, id) {
@@ -287,14 +281,8 @@ class ProductionLine extends React.Component {
 
   loadInputModel = async (event) => {
     this.store = new N3.Store();
-    await this.loadUrlToStore(
-      this.store,
-      'https://mehlko.github.io/model/models/inputModel.ttl'
-    );
-    await this.loadUrlToStore(
-      this.store,
-      'https://mehlko.github.io/model/models/exampleFacts.ttl'
-    );
+    await this.loadUrlToStore(this.store, this.inputModelUrl);
+    await this.loadUrlToStore(this.store, this.factUrl);
 
     var queryString = `
     PREFIX model: <http://uni-ko-ld.de/ist/model#>
@@ -372,8 +360,11 @@ class ProductionLine extends React.Component {
               value={this.state.preset}
               onChange={this.onPresetChange}
             >
-              <MenuItem value={0}>Scenario 1</MenuItem>
-              <MenuItem value={1}>Scenario 2</MenuItem>
+              {presets.map((item) => {
+                <MenuItem value={item} key={item.label}>
+                  {item.label}
+                </MenuItem>;
+              })}
             </Select>
             <TextField
               label="Input Model URL"
@@ -452,12 +443,7 @@ class ProductionLine extends React.Component {
   }
 }
 
-ReactDOM.render(
-  <div>
-    <ProductionLine />
-  </div>,
-  document.getElementById('container')
-);
+ReactDOM.render(<ProductionLine />, document.getElementById('container'));
 
 function log(text) {
   if (logLevel) {
