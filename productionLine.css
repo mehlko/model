@@ -1,5 +1,4 @@
 .process {
-  font-size: large;
   font-family: sans-serif;
   margin-top: 100px;
   margin-right: 100px;
@@ -17,7 +16,6 @@
 }
 
 .search {
-  font-size: large;
   display: block;
   vertical-align: middle;
   margin: auto;
@@ -28,7 +26,6 @@
 }
 
 .name {
-  font-size: x-large;
   display: block;
   vertical-align: middle;
   margin: auto;

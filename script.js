@@ -82,7 +82,7 @@ class MyAutocomplete extends React.Component {
           this.queryThrottled(newInputValue);
         }}
         renderInput={(params) => (
-          <TextField {...params} placeholder="Type to search" />
+          <TextField {...params} placeholder="Type to edit" />
         )}
         noOptionsText=""
         renderOption={(props, option, { selected }) => {
@@ -196,7 +196,7 @@ class ProductionLine extends React.Component {
     temp.processes = [
       ...temp.processes,
       {
-        name: 'test',
+        name: '',
       },
     ];
     //set state
@@ -360,9 +360,11 @@ class ProductionLine extends React.Component {
           {this.state.productionLine.processes &&
             this.state.productionLine.processes.map((proc, procId) => (
               <Box className="process" key={'process' + procId} fullWidth>
-                <div className="name">
-                  {this.getFirstLabel(proc.labels, proc.id)}
-                </div>
+                {proc.id && (
+                  <div className="name">
+                    {this.getFirstLabel(proc.labels, proc.id)}
+                  </div>
+                )}
                 <MyAutocomplete
                   processId={procId}
                   onAddInput={this.addInput.bind(this, procId)}
