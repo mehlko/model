@@ -241,14 +241,6 @@ class ProductionLine extends React.Component {
     });
   }
 
-  onPresetChange = (event) => {
-    this.setState({
-      preset: event.target.value,
-      inputModelUrl: presets[event.target.value].inputModelUrl,
-      factUrl: presets[event.target.value].factUrl,
-    });
-  };
-
   onFactUrlChange = (event) => {
     this.setState({
       factUrl: event.target.value,
@@ -348,6 +340,14 @@ class ProductionLine extends React.Component {
     ));
   }
 
+  onPresetChange = (event) => {
+    this.setState({
+      preset: event.target.value,
+      inputModelUrl: presets[event.target.value].inputModelUrl,
+      factUrl: presets[event.target.value].factUrl,
+    });
+  };
+
   render() {
     return (
       <Container maxWidth="sm">
@@ -362,11 +362,11 @@ class ProductionLine extends React.Component {
               value={this.state.preset}
               onChange={this.onPresetChange}
             >
-              {presets.map((item) => {
+              {presets.map((item) => (
                 <MenuItem value={item.id} key={item.id}>
                   {item.label} {item.id}
-                </MenuItem>;
-              })}
+                </MenuItem>
+              ))}
             </Select>
             <TextField
               label="Input Model URL"
