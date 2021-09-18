@@ -13,7 +13,7 @@ const {
   MenuItem,
   Container,
   Typography,
-  Box
+  Box,
 } = MaterialUI;
 
 const { namedNode } = N3.DataFactory;
@@ -23,7 +23,7 @@ class MyAutocomplete extends React.Component {
     super(props);
     this.state = {
       options: [],
-      inputValue: ''
+      inputValue: '',
     };
     this.queryThrottled = _.throttle(this.query, 200);
   }
@@ -42,19 +42,19 @@ class MyAutocomplete extends React.Component {
 
     Comunica.newEngine()
       .query(queryString, {
-        sources: ['https://mehlko.github.io/model/models/exampleFacts.ttl']
+        sources: ['https://mehlko.github.io/model/models/exampleFacts.ttl'],
       })
-      .then(async result => {
+      .then(async (result) => {
         var tempOptions = await result.bindings();
 
         this.setState({
-          options: tempOptions.map(option => {
+          options: tempOptions.map((option) => {
             return {
               labels: [option.get('?label').value],
               id: option.get('?id').value,
-              type: option.get('?type').value
+              type: option.get('?type').value,
             };
-          })
+          }),
         });
       });
   }
@@ -67,27 +67,27 @@ class MyAutocomplete extends React.Component {
         disableCloseOnSelect
         clearOnBlur
         clearOnEscape
-        onOpen={event => {
+        onOpen={(event) => {
           if (Array.isArray(this.state.options) && !this.state.options.length) {
             this.queryThrottled(this.state.inputValue);
           }
         }}
         options={this.state.options}
         disableCloseOnSelect
-        getOptionLabel={option => option.labels}
+        getOptionLabel={(option) => option.labels}
         onInputChange={(event, newInputValue) => {
           this.setState({
-            inputValue: newInputValue
+            inputValue: newInputValue,
           });
           this.queryThrottled(newInputValue);
         }}
-        renderInput={params => (
+        renderInput={(params) => (
           <TextField {...params} placeholder="Type to search" />
         )}
         noOptionsText=""
         renderOption={(props, option, { selected }) => {
           return (
-            <li {...props} onClick={event => {}}>
+            <li {...props} onClick={(event) => {}}>
               {option.labels}{' '}
               <Button
                 variant="contained"
@@ -114,12 +114,12 @@ class MyAutocomplete extends React.Component {
 let presets = [
   {
     inputModelUrl: 'https://mehlko.github.io/model/models/inputModel.ttl',
-    factUrl: 'https://mehlko.github.io/model/models/exampleFacts.ttl'
+    factUrl: 'https://mehlko.github.io/model/models/exampleFacts.ttl',
   },
   {
     inputModelUrl: 'https://mehlko.github.io/model/models/inputModel.ttl',
-    factUrl: 'https://mehlko.github.io/model/models/exampleFacts.ttl'
-  }
+    factUrl: 'https://mehlko.github.io/model/models/exampleFacts.ttl',
+  },
 ];
 
 class ProductionLine extends React.Component {
@@ -127,11 +127,11 @@ class ProductionLine extends React.Component {
     super(props);
     this.state = {
       productionLine: {
-        processes: []
+        processes: [],
       },
       preset: 0,
       inputModelUrl: presets[0].inputModelUrl,
-      factUrl: presets[0].factUrl
+      factUrl: presets[0].factUrl,
     };
     this.addInput = this.addInput.bind(this);
     this.analyze = this.analyze.bind(this);
@@ -164,11 +164,11 @@ class ProductionLine extends React.Component {
     //update
     tempProductionLine.processes[processId].inputs = [
       ...tempProductionLine.processes[processId].inputs,
-      value
+      value,
     ];
     //set state
     this.setState({
-      productionLine: tempProductionLine
+      productionLine: tempProductionLine,
     });
   }
   addOutput(processId, value) {
@@ -180,11 +180,11 @@ class ProductionLine extends React.Component {
     //update
     tempProductionLine.processes[processId].outputs = [
       ...tempProductionLine.processes[processId].outputs,
-      value
+      value,
     ];
     //set state
     this.setState({
-      productionLine: tempProductionLine
+      productionLine: tempProductionLine,
     });
   }
 
@@ -196,33 +196,33 @@ class ProductionLine extends React.Component {
     temp.processes = [
       ...temp.processes,
       {
-        name: 'test'
-      }
+        name: 'test',
+      },
     ];
     //set state
     this.setState({
-      productionLine: temp
+      productionLine: temp,
     });
   }
 
-  onPresetChange = event => {
+  onPresetChange = (event) => {
     this.setState({
       preset: event.target.value,
       inputModelUrl: presets[event.target.value].inputModelUrl,
-      factUrl: presets[event.target.value].factUrl
+      factUrl: presets[event.target.value].factUrl,
     });
   };
 
-  onFactUrlChange = event => {
+  onFactUrlChange = (event) => {
     this.setState({
-      factUrl: event.target.value
+      factUrl: event.target.value,
     });
     log(this.state.factUrl);
   };
 
-  onInputModelChange = event => {
+  onInputModelChange = (event) => {
     this.setState({
-      inputModelUrl: event.target.value
+      inputModelUrl: event.target.value,
     });
     log(this.state.inputModelUrl);
   };
@@ -234,12 +234,20 @@ class ProductionLine extends React.Component {
         namedNode('http://www.w3.org/2000/01/rdf-schema#label'),
         null
       )
-      .map(label => label.object.value);
+      .map((label) => label.object.value);
     log(labels);
     return labels;
   }
 
-  loadInputModel = async event => {
+  getFirstLabel(labels, id) {
+    if (labels && Array.isArray(labels) && labels.length > 0) {
+      return labels[0];
+    } else {
+      return id;
+    }
+  }
+
+  loadInputModel = async (event) => {
     this.store = new N3.Store();
     await this.loadUrlToStore(
       this.store,
@@ -262,15 +270,14 @@ class ProductionLine extends React.Component {
     }`;
     Comunica.newEngine()
       .query(queryString, {
-        sources: [this.store]
+        sources: [this.store],
       })
-      .then(async result => {
+      .then(async (result) => {
         var productionLine = await result.bindings();
-        log('test');
         log(productionLine);
         var newProductionLine = { processes: [] };
 
-        productionLine.map(process => {
+        productionLine.map((process) => {
           const inputs = this.store.getQuads(
             process.get('?process'),
             namedNode('http://uni-ko-ld.de/ist/model#hasInputProduct'),
@@ -285,20 +292,21 @@ class ProductionLine extends React.Component {
           newProductionLine.processes = [
             ...newProductionLine.processes,
             {
-              name: process.get('?process').value,
-              inputs: inputs.map(input => ({
+              id: process.get('?process').value,
+              labels: this.getLabels(process.get('?process').value),
+              inputs: inputs.map((input) => ({
                 id: input.object.value,
-                labels: this.getLabels(input.object.value)
+                labels: this.getLabels(input.object.value),
               })),
-              outputs: outputs.map(outut => ({
+              outputs: outputs.map((outut) => ({
                 îd: outut.object.value,
-                labels: this.getLabels(outut.object.value)
-              }))
-            }
+                labels: this.getLabels(outut.object.value),
+              })),
+            },
           ];
           //set state
           this.setState({
-            productionLine: newProductionLine
+            productionLine: newProductionLine,
           });
         });
       });
@@ -352,7 +360,9 @@ class ProductionLine extends React.Component {
           {this.state.productionLine.processes &&
             this.state.productionLine.processes.map((proc, procId) => (
               <Box className="process" key={'process' + procId} fullWidth>
-                <div className="name">{proc.name + procId}</div>
+                <div className="name">
+                  {this.getFirstLabel(proc.labels, proc.id)}
+                </div>
                 <MyAutocomplete
                   processId={procId}
                   onAddInput={this.addInput.bind(this, procId)}
@@ -365,7 +375,7 @@ class ProductionLine extends React.Component {
                         className="product"
                         key={'process' + procId + 'Input' + inputId}
                       >
-                        {input.labels}
+                        {this.getFirstLabel(input.labels, input.id)}
                       </div>
                     ))}
                 </div>
@@ -376,7 +386,7 @@ class ProductionLine extends React.Component {
                         className="product"
                         key={'process' + procId + 'Input' + outputId}
                       >
-                        {output.labels}
+                        {this.getFirstLabel(output.labels, output.id)}
                       </div>
                     ))}
                 </div>
