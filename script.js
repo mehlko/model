@@ -152,11 +152,13 @@ class MyAutocomplete extends React.Component {
 
 let presets = [
   {
+    id: 0,
     label: 'Encased Sensor',
     inputModelUrl: 'https://mehlko.github.io/model/models/inputModel.ttl',
     factUrl: 'https://mehlko.github.io/model/models/exampleFacts.ttl',
   },
   {
+    id: 1,
     label: 'Encased Sensor 2',
     inputModelUrl: 'https://mehlko.github.io/model/models/inputModel.ttl',
     factUrl: 'https://mehlko.github.io/model/models/exampleFacts.ttl',
@@ -360,9 +362,9 @@ class ProductionLine extends React.Component {
               value={this.state.preset}
               onChange={this.onPresetChange}
             >
-              {presets.map((item, id) => {
-                <MenuItem value={id} key={id}>
-                  {item.label}
+              {presets.map((item) => {
+                <MenuItem value={item.id} key={item.id}>
+                  {item.label} {item.id}
                 </MenuItem>;
               })}
             </Select>
