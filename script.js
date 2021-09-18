@@ -194,31 +194,15 @@ class ProductionLine extends React.Component {
     console.log(this.store.size);
   }
 
-  addInput(processId, value) {
+  addPPR(type, processId, value) {
     //make copy
     var tempProductionLine = { ...this.state.productionLine };
-    if (!tempProductionLine.processes[processId].inputs) {
-      tempProductionLine.processes[processId].inputs = [];
+    if (!tempProductionLine.processes[processId][type]) {
+      tempProductionLine.processes[processId][type] = [];
     }
     //update
-    tempProductionLine.processes[processId].inputs = [
-      ...tempProductionLine.processes[processId].inputs,
-      value,
-    ];
-    //set state
-    this.setState({
-      productionLine: tempProductionLine,
-    });
-  }
-  addOutput(processId, value) {
-    //make copy
-    var tempProductionLine = { ...this.state.productionLine };
-    if (!tempProductionLine.processes[processId].outputs) {
-      tempProductionLine.processes[processId].outputs = [];
-    }
-    //update
-    tempProductionLine.processes[processId].outputs = [
-      ...tempProductionLine.processes[processId].outputs,
+    tempProductionLine.processes[processId][type] = [
+      ...tempProductionLine.processes[processId][type],
       value,
     ];
     //set state
@@ -227,61 +211,6 @@ class ProductionLine extends React.Component {
     });
   }
 
-  addResource(processId, value) {
-    //make copy
-    var tempProductionLine = { ...this.state.productionLine };
-    if (!tempProductionLine.processes[processId].resources) {
-      tempProductionLine.processes[processId].resources = [];
-    }
-    log(value);
-    //update
-    tempProductionLine.processes[processId].resources = [
-      ...tempProductionLine.processes[processId].resources,
-      value,
-    ];
-    log(tempProductionLine);
-    //set state
-    this.setState({
-      productionLine: tempProductionLine,
-    });
-  }
-
-  addMeasurement(processId, value) {
-    //make copy
-    var tempProductionLine = { ...this.state.productionLine };
-    if (!tempProductionLine.processes[processId].measurements) {
-      tempProductionLine.processes[processId].measurements = [];
-    }
-    log(value);
-    //update
-    tempProductionLine.processes[processId].measurements = [
-      ...tempProductionLine.processes[processId].measurements,
-      value,
-    ];
-    log(tempProductionLine);
-    //set state
-    this.setState({
-      productionLine: tempProductionLine,
-    });
-  }
-  addConstraint(processId, value) {
-    //make copy
-    var tempProductionLine = { ...this.state.productionLine };
-    if (!tempProductionLine.processes[processId].constraints) {
-      tempProductionLine.processes[processId].constraints = [];
-    }
-    log(value);
-    //update
-    tempProductionLine.processes[processId].constraints = [
-      ...tempProductionLine.processes[processId].constraints,
-      value,
-    ];
-    log(tempProductionLine);
-    //set state
-    this.setState({
-      productionLine: tempProductionLine,
-    });
-  }
   setProcess(processId, value) {
     //make copy
     var tempProductionLine = { ...this.state.productionLine };
@@ -484,12 +413,16 @@ class ProductionLine extends React.Component {
                 )}
                 <MyAutocomplete
                   processId={procId}
-                  addInput={this.addInput.bind(this, procId)}
-                  addOutput={this.addOutput.bind(this, procId)}
+                  addInput={this.addPPR.bind(this, 'inputs', procId)}
+                  addOutput={this.addPPR.bind(this, 'outputs', procId)}
                   setProcess={this.setProcess.bind(this, procId)}
-                  addResource={this.addResource.bind(this, procId)}
-                  addMeasurement={this.addMeasurement.bind(this, procId)}
-                  addConstraint={this.addConstraint.bind(this, procId)}
+                  addResource={this.addPPR.bind(this, 'resources', procId)}
+                  addMeasurement={this.addPPR.bind(
+                    this,
+                    'measurements',
+                    procId
+                  )}
+                  addConstraint={this.addPPR.bind(this, 'constraints', procId)}
                 />
 
                 <div className="inputs">
