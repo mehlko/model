@@ -88,21 +88,61 @@ class MyAutocomplete extends React.Component {
         renderOption={(props, option, { selected }) => {
           return (
             <li {...props} onClick={(event) => {}}>
-              {option.labels}{' '}
-              <Button
-                variant="contained"
-                size="small"
-                onClick={() => this.props.onAddInput(option)}
-              >
-                + Input
-              </Button>
-              <Button
-                variant="contained"
-                size="small"
-                onClick={() => this.props.onAddOutput(option)}
-              >
-                + Output
-              </Button>
+              {option.type} {option.labels}{' '}
+              {option.type == 'http://uni-ko-ld.de/ist/model#Product' && (
+                <>
+                  <Button
+                    variant="contained"
+                    size="small"
+                    onClick={() => this.props.onAddInput(option)}
+                  >
+                    + Input
+                  </Button>
+                  <Button
+                    variant="contained"
+                    size="small"
+                    onClick={() => this.props.onAddOutput(option)}
+                  >
+                    + Output
+                  </Button>
+                </>
+              )}
+              {option.type == 'http://uni-ko-ld.de/ist/model#Process' && (
+                <Button
+                  variant="contained"
+                  size="small"
+                  onClick={() => this.props.onAddInput(option)}
+                >
+                  = Process
+                </Button>
+              )}
+              {option.type == 'http://uni-ko-ld.de/ist/model#Resource' && (
+                <Button
+                  variant="contained"
+                  size="small"
+                  onClick={() => this.props.onAddInput(option)}
+                >
+                  = Process
+                </Button>
+              )}
+              {option.type == 'http://uni-ko-ld.de/ist/model#Property' && (
+                <>
+                  <Button
+                    variant="contained"
+                    size="small"
+                    onClick={() => this.props.onAddInput(option)}
+                  >
+                    + Measurement
+                  </Button>
+                  <Button
+                    variant="contained"
+                    size="small"
+                    onClick={() => this.props.onAddOutput(option)}
+                  >
+                    + Constraint
+                  </Button>
+                </>
+              )}
             </li>
           );
         }}
