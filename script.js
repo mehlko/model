@@ -360,8 +360,8 @@ class ProductionLine extends React.Component {
               value={this.state.preset}
               onChange={this.onPresetChange}
             >
-              {presets.map((item) => {
-                <MenuItem value={item} key={item.label}>
+              {presets.map((item, id) => {
+                <MenuItem value={id} key={id}>
                   {item.label}
                 </MenuItem>;
               })}
