@@ -92,16 +92,15 @@ class MyAutocomplete extends React.Component {
               {option.type == 'http://uni-ko-ld.de/ist/model#Product' && (
                 <>
                   <Button
-                    variant="contained"
                     size="small"
-                    onClick={() => this.props.onAddInput(option)}
+                    onClick={() => this.props.addInput(option)}
                   >
                     + Input
                   </Button>
                   <Button
                     variant="contained"
                     size="small"
-                    onClick={() => this.props.onAddOutput(option)}
+                    onClick={() => this.props.addOutput(option)}
                   >
                     + Output
                   </Button>
@@ -111,7 +110,7 @@ class MyAutocomplete extends React.Component {
                 <Button
                   variant="contained"
                   size="small"
-                  onClick={() => this.props.onAddInput(option)}
+                  onClick={() => this.props.setProcess(option)}
                 >
                   = Process
                 </Button>
@@ -120,9 +119,9 @@ class MyAutocomplete extends React.Component {
                 <Button
                   variant="contained"
                   size="small"
-                  onClick={() => this.props.onAddInput(option)}
+                  onClick={() => this.props.addResource(option)}
                 >
-                  = Process
+                  + Resource
                 </Button>
               )}
               {option.type == 'http://uni-ko-ld.de/ist/model#Property' && (
@@ -130,14 +129,14 @@ class MyAutocomplete extends React.Component {
                   <Button
                     variant="contained"
                     size="small"
-                    onClick={() => this.props.onAddInput(option)}
+                    onClick={() => this.props.addMeasurement(option)}
                   >
                     + Measurement
                   </Button>
                   <Button
                     variant="contained"
                     size="small"
-                    onClick={() => this.props.onAddOutput(option)}
+                    onClick={() => this.props.addConstraint(option)}
                   >
                     + Constraint
                   </Button>
@@ -222,6 +221,76 @@ class ProductionLine extends React.Component {
       ...tempProductionLine.processes[processId].outputs,
       value,
     ];
+    //set state
+    this.setState({
+      productionLine: tempProductionLine,
+    });
+  }
+
+  addResource(processId, value) {
+    //make copy
+    var tempProductionLine = { ...this.state.productionLine };
+    if (!tempProductionLine.processes[processId].resources) {
+      tempProductionLine.processes[processId].resources = [];
+    }
+    log(value);
+    //update
+    tempProductionLine.processes[processId].resources = [
+      ...tempProductionLine.processes[processId].resources,
+      value,
+    ];
+    log(tempProductionLine);
+    //set state
+    this.setState({
+      productionLine: tempProductionLine,
+    });
+  }
+
+  addMeasurement(processId, value) {
+    //make copy
+    var tempProductionLine = { ...this.state.productionLine };
+    if (!tempProductionLine.processes[processId].measurements) {
+      tempProductionLine.processes[processId].measurements = [];
+    }
+    log(value);
+    //update
+    tempProductionLine.processes[processId].measurements = [
+      ...tempProductionLine.processes[processId].measurements,
+      value,
+    ];
+    log(tempProductionLine);
+    //set state
+    this.setState({
+      productionLine: tempProductionLine,
+    });
+  }
+  addConstraint(processId, value) {
+    //make copy
+    var tempProductionLine = { ...this.state.productionLine };
+    if (!tempProductionLine.processes[processId].constraints) {
+      tempProductionLine.processes[processId].constraints = [];
+    }
+    log(value);
+    //update
+    tempProductionLine.processes[processId].constraints = [
+      ...tempProductionLine.processes[processId].constraints,
+      value,
+    ];
+    log(tempProductionLine);
+    //set state
+    this.setState({
+      productionLine: tempProductionLine,
+    });
+  }
+  setProcess(processId, value) {
+    //make copy
+    var tempProductionLine = { ...this.state.productionLine };
+
+    //update
+    tempProductionLine.processes[processId] = {
+      ...value,
+      ...tempProductionLine.processes[processId],
+    };
     //set state
     this.setState({
       productionLine: tempProductionLine,
@@ -352,6 +421,14 @@ class ProductionLine extends React.Component {
       });
   };
 
+  getItems(list, procId, className) {
+    return list.map((item, itemId) => (
+      <div className="product" key={'process' + procId + 'Input' + itemId}>
+        {this.getFirstLabel(item.labels, item.id)}
+      </div>
+    ));
+  }
+
   render() {
     return (
       <Container maxWidth="sm">
@@ -407,30 +484,32 @@ class ProductionLine extends React.Component {
                 )}
                 <MyAutocomplete
                   processId={procId}
-                  onAddInput={this.addInput.bind(this, procId)}
-                  onAddOutput={this.addOutput.bind(this, procId)}
+                  addInput={this.addInput.bind(this, procId)}
+                  addOutput={this.addOutput.bind(this, procId)}
+                  setProcess={this.setProcess.bind(this, procId)}
+                  addResource={this.addResource.bind(this, procId)}
+                  addMeasurement={this.addMeasurement.bind(this, procId)}
+                  addConstraint={this.addConstraint.bind(this, procId)}
                 />
+
                 <div className="inputs">
-                  {proc.inputs &&
-                    proc.inputs.map((input, inputId) => (
-                      <div
-                        className="product"
-                        key={'process' + procId + 'Input' + inputId}
-                      >
-                        {this.getFirstLabel(input.labels, input.id)}
-                      </div>
-                    ))}
+                  {proc.inputs && this.getItems(proc.inputs, procId, 'product')}
                 </div>
                 <div className="outputs">
                   {proc.outputs &&
-                    proc.outputs.map((output, outputId) => (
-                      <div
-                        className="product"
-                        key={'process' + procId + 'Input' + outputId}
-                      >
-                        {this.getFirstLabel(output.labels, output.id)}
-                      </div>
-                    ))}
+                    this.getItems(proc.outputs, procId, 'product')}
+                </div>
+                <div className="resources">
+                  {proc.resources &&
+                    this.getItems(proc.resources, procId, 'resource')}
+                </div>
+                <div className="measurements">
+                  {proc.measurements &&
+                    this.getItems(proc.measurements, procId, 'measurement')}
+                </div>
+                <div className="constrants">
+                  {proc.constrants &&
+                    this.getItems(proc.constrants, procId, 'constrant')}
                 </div>
               </Box>
             ))}
