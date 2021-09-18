@@ -421,9 +421,9 @@ class ProductionLine extends React.Component {
       });
   };
 
-  getItems(list, procId, className) {
+  getItems(list, procId, type) {
     return list.map((item, itemId) => (
-      <div className="product" key={'process' + procId + 'Input' + itemId}>
+      <div className={type} key={'process' + procId + 'type' + itemId}>
         {this.getFirstLabel(item.labels, item.id)}
       </div>
     ));
@@ -507,9 +507,9 @@ class ProductionLine extends React.Component {
                   {proc.measurements &&
                     this.getItems(proc.measurements, procId, 'measurement')}
                 </div>
-                <div className="constrants">
-                  {proc.constrants &&
-                    this.getItems(proc.constrants, procId, 'constrant')}
+                <div className="constraints">
+                  {proc.constraints &&
+                    this.getItems(proc.constraints, procId, 'constraint')}
                 </div>
               </Box>
             ))}
