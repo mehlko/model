@@ -201,7 +201,7 @@ class ProductionLine extends React.Component {
         processes: [],
       },
       detectedPatterns: [],
-      selectedPattern: 0,
+      selectedPatternIndex: 0,
       preset: 0,
       inputModelUrl: presets[0].inputModelUrl,
       factUrl: presets[0].factUrl,
@@ -460,6 +460,11 @@ class ProductionLine extends React.Component {
     store.addQuad(namedNode(subject), namedNode(predicate), namedNode(object));
   }
 
+  selectPattern(selectedPatternIndex) {
+    this.setState({
+      selectedPatternIndex: selectedPatternIndex,
+    });
+  }
   render() {
     return (
       <Container maxWidth="sm">
@@ -561,17 +566,24 @@ class ProductionLine extends React.Component {
           <Typography variant="h6">Detected Problems</Typography>
 
           <List>
-            {this.state.detectedPatterns.map((detectedPattern) => (
-              <ListItem>
-                <ListItemButton>
-                  <div>
-                    {patternList[detectedPattern.patternKey].reason(
-                      detectedPattern.queryResult
+            {this.state.detectedPatterns.map(
+              (detectedPattern, detectedPatternIndex) => (
+                <ListItem>
+                  <ListItemButton
+                    onClick={this.selectPattern.bind(
+                      this,
+                      detectedPatternIndex
                     )}
-                  </div>
-                </ListItemButton>
-              </ListItem>
-            ))}
+                  >
+                    <div>
+                      {patternList[detectedPattern.patternKey].reason(
+                        detectedPattern.queryResult
+                      )}
+                    </div>
+                  </ListItemButton>
+                </ListItem>
+              )
+            )}
           </List>
         </Box>
       </Container>
