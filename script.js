@@ -42,6 +42,21 @@ var mappings = [
   },
 ];
 
+let presets = [
+  {
+    id: 0,
+    label: 'Encased Sensor',
+    inputModelUrl: 'https://mehlko.github.io/model/models/inputModel.ttl',
+    factUrl: 'https://mehlko.github.io/model/models/exampleFacts.ttl',
+  },
+  {
+    id: 1,
+    label: 'Encased Sensor 2',
+    inputModelUrl: 'https://mehlko.github.io/model/models/inputModel.ttl',
+    factUrl: 'https://mehlko.github.io/model/models/exampleFacts.ttl',
+  },
+];
+
 class MyAutocomplete extends React.Component {
   constructor(props) {
     super(props);
@@ -174,21 +189,6 @@ class MyAutocomplete extends React.Component {
     );
   }
 }
-
-let presets = [
-  {
-    id: 0,
-    label: 'Encased Sensor',
-    inputModelUrl: 'https://mehlko.github.io/model/models/inputModel.ttl',
-    factUrl: 'https://mehlko.github.io/model/models/exampleFacts.ttl',
-  },
-  {
-    id: 1,
-    label: 'Encased Sensor 2',
-    inputModelUrl: 'https://mehlko.github.io/model/models/inputModel.ttl',
-    factUrl: 'https://mehlko.github.io/model/models/exampleFacts.ttl',
-  },
-];
 
 class ProductionLine extends React.Component {
   constructor(props) {
@@ -399,11 +399,7 @@ class ProductionLine extends React.Component {
     });
   };
 
-  analyze() {
-    var prettyJSON = JSON.stringify(this.state.productionLine, null, 2);
-    //info(prettyJSON);
-    info(this.store.size);
-
+  convertJSONToRDF() {
     var store = new N3.Store();
     var processes = this.state.productionLine.processes;
     processes.map((process, processIndex) => {
@@ -427,9 +423,17 @@ class ProductionLine extends React.Component {
         });
       });
     });
+    return store;
+  }
+
+  analyze() {
+    //info(JSON.stringify(this.state.productionLine, null, 2));
+    info(this.store.size);
+    var store = this.convertJSONToRDF();
     const quadDump = store.getQuads(null, null, null);
     info(quadDump);
-    info(store.size);
+
+    patternList.map((pattern) => {});
   }
 
   addQuad(store, subject, predicate, object) {
