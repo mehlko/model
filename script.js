@@ -17,7 +17,7 @@ const {
   Tooltip,
 } = MaterialUI;
 
-const { namedNode } = N3.DataFactory;
+const { namedNode, literal, defaultGraph, quad } = N3.DataFactory;
 
 class MyAutocomplete extends React.Component {
   constructor(props) {
@@ -93,6 +93,7 @@ class MyAutocomplete extends React.Component {
               {option.type == 'http://uni-ko-ld.de/ist/model#Product' && (
                 <>
                   <Button
+                    variant="contained"
                     size="small"
                     onClick={() => this.props.addInput(option)}
                   >
@@ -359,16 +360,27 @@ class ProductionLine extends React.Component {
 
   analyze() {
     var prettyJSON = JSON.stringify(this.state.productionLine, null, 2);
-    log(prettyJSON);
-    console.log(this.store.size);
+    //info(prettyJSON);
+    info(this.store.size);
 
     var store = new N3.Store();
 
-    this.state.productionLine.processes.map((productionLine) => {
-      productionLine.inputs.map((input) => {
+    this.state.productionLine.processes.map((process) => {
+      process.inputs.map((input) => {
+        this.addQuad(
+          store,
+          process.id,
+          'http://uni-ko-ld.de/ist/model#hasInputProduct',
+          input.id
+        );
         log(this.getFirstLabel(input.labels, input.id));
       });
     });
+    info(store.size);
+  }
+
+  addQuad(store, subject, predicate, object) {
+    store.addQuad(namedNode(subject), namedNode(predicate), namedNode(object));
   }
 
   render() {
