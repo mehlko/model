@@ -15,6 +15,9 @@ const {
   Typography,
   Box,
   Tooltip,
+  List,
+  ListItem,
+  ListItemButton,
 } = MaterialUI;
 
 const { namedNode, literal, defaultGraph, quad } = N3.DataFactory;
@@ -198,6 +201,7 @@ class ProductionLine extends React.Component {
         processes: [],
       },
       detectedPatterns: [],
+      selectedPattern: 0,
       preset: 0,
       inputModelUrl: presets[0].inputModelUrl,
       factUrl: presets[0].factUrl,
@@ -429,10 +433,8 @@ class ProductionLine extends React.Component {
 
   analyze() {
     //info(JSON.stringify(this.state.productionLine, null, 2));
-    info(this.store.size);
     var store = this.convertJSONToRDF();
     const quadDump = store.getQuads(null, null, null);
-    info(quadDump);
 
     for (var patternKey of Object.keys(patternList)) {
       var pattern = patternList[patternKey];
@@ -442,8 +444,6 @@ class ProductionLine extends React.Component {
         })
         .then(async (result) => {
           var queryResults = await result.bindings();
-          log(queryResults);
-          log('test');
           queryResults.map((queryResult) => {
             this.setState({
               detectedPatterns: [
@@ -451,7 +451,6 @@ class ProductionLine extends React.Component {
                 { patternKey: patternKey, queryResult: queryResult },
               ],
             });
-            log(this.state.detectedPatterns);
           });
         });
     }
@@ -462,7 +461,6 @@ class ProductionLine extends React.Component {
   }
 
   render() {
-    log(this.state.detectedPatterns);
     return (
       <Container maxWidth="sm">
         <Typography variant="h4">Production Line Analyzer</Typography>
@@ -561,13 +559,20 @@ class ProductionLine extends React.Component {
         </Box>
         <Box className="patternResult" fullWidth>
           <Typography variant="h6">Detected Problems</Typography>
-          {this.state.detectedPatterns.map((detectedPattern) => (
-            <div>
-              {patternList[detectedPattern.patternKey].reason(
-                detectedPattern.queryResult
-              )}
-            </div>
-          ))}
+
+          <List>
+            {this.state.detectedPatterns.map((detectedPattern) => (
+              <ListItem>
+                <ListItemButton>
+                  <div>
+                    {patternList[detectedPattern.patternKey].reason(
+                      detectedPattern.queryResult
+                    )}
+                  </div>
+                </ListItemButton>
+              </ListItem>
+            ))}
+          </List>
         </Box>
       </Container>
     );
