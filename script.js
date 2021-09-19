@@ -433,7 +433,20 @@ class ProductionLine extends React.Component {
     const quadDump = store.getQuads(null, null, null);
     info(quadDump);
 
-    patternList.map((pattern) => {});
+    patternList.map((pattern) => {
+      Comunica.newEngine()
+        .query(pattern.queryString, {
+          sources: [store],
+        })
+        .then(async (result) => {
+          var queryResults = await result.bindings();
+          log(queryResults);
+          log('test');
+          queryResults.map((queryResult) => {
+            log(pattern.reason(queryResult));
+          });
+        });
+    });
   }
 
   addQuad(store, subject, predicate, object) {
