@@ -92,7 +92,7 @@ res:Scale001 rdfs:label 'Scale'.
 
 prop:Firware001 rdf:type model:Property.
 prop:Firware001 rdfs:label 'Firmware'.
-prop:Firware001 rdfs:label 'Firware  Version'.
+prop:Firware001 rdfs:label 'Firware Version'.
 #
 prop:Position001 rdf:type model:Property.
 prop:Position001 rdfs:label 'Position'.

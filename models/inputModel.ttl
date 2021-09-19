@@ -7,8 +7,8 @@ PREFIX prop: <http://uni-ko-ld.de/ist/property#>
 
 proc:SensorFlashing001 model:hasInputProduct prod:RadarSensor001.
 proc:SensorFlashing001 model:hasResource res:FirmwareFlasher001. 
-proc:SensorFlashing001 model:hasMeasurement prop:firmwareVersion.
-proc:SensorFlashing001 model:hasConstraint prop:firmwareVersion.
+proc:SensorFlashing001 model:hasMeasurement prop:Firmware001.
+proc:SensorFlashing001 model:hasConstraint prop:Firmware001.
 proc:SensorFlashing001 model:hasOutputProduct prod:FlashedRadarSensor001.
 proc:SensorFlashing001 model:hasNextProcess proc:CaseAssembly001.
 #
