@@ -90,9 +90,9 @@ res:Scale001 rdfs:label 'Scale'.
 
 ### Property Repo
 
-prop:Firware001 rdf:type model:Property.
-prop:Firware001 rdfs:label 'Firmware'.
-prop:Firware001 rdfs:label 'Firware Version'.
+prop:Firmware001 rdf:type model:Property.
+prop:Firmware001 rdfs:label 'Firmware'.
+prop:Firmware001 rdfs:label 'Firmware Version'.
 #
 prop:Position001 rdf:type model:Property.
 prop:Position001 rdfs:label 'Position'.
