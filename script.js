@@ -14,6 +14,7 @@ const {
   Container,
   Typography,
   Box,
+  Tooltip,
 } = MaterialUI;
 
 const { namedNode } = N3.DataFactory;
@@ -179,14 +180,6 @@ class ProductionLine extends React.Component {
     this.analyze = this.analyze.bind(this);
     this.parser = new N3.Parser();
     this.store = {};
-    info(
-      'production  constructor: ' +
-        this.state.preset +
-        ' ' +
-        this.state.inputModelUrl +
-        ' ' +
-        this.state.factUrl
-    );
   }
 
   async loadUrlToStore(myStore, url) {
@@ -345,9 +338,20 @@ class ProductionLine extends React.Component {
 
   getItems(list, procId, type) {
     return list.map((item, itemId) => (
-      <div className={type} key={'process' + procId + 'type' + itemId}>
-        {this.getFirstLabel(item.labels, item.id)}
-      </div>
+      <Tooltip
+        title={
+          <>
+            <div>{item.id}</div>
+            {item.labels.map((label) => (
+              <div>{label}</div>
+            ))}
+          </>
+        }
+      >
+        <div className={type} key={'process' + procId + 'type' + itemId}>
+          {this.getFirstLabel(item.labels, item.id)}
+        </div>
+      </Tooltip>
     ));
   }
 
@@ -375,10 +379,11 @@ class ProductionLine extends React.Component {
             >
               {presets.map((item) => (
                 <MenuItem value={item.id} key={item.id}>
-                  {item.label} {item.id}
+                  {item.label}
                 </MenuItem>
               ))}
             </Select>
+
             <TextField
               label="Input Model URL"
               value={this.state.inputModelUrl}
@@ -389,6 +394,7 @@ class ProductionLine extends React.Component {
               value={this.state.factUrl}
               onChange={this.onFactUrlChange}
             />
+
             <Button
               variant="contained"
               onClick={this.loadInputModel.bind(this)}
