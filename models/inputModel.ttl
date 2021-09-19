@@ -16,10 +16,10 @@ proc:CaseAssembly001 model:hasInputProduct prod:FlashedRadarSensor001.
 proc:CaseAssembly001 model:hasInputProduct prod:PlasticCaseBottom001.
 proc:CaseAssembly001 model:hasResource res:Placer001.
 proc:CaseAssembly001 model:hasResource res:Screwer001.
-proc:CaseAssembly001 model:hasMeasurement prop:position.
-proc:CaseAssembly001 model:hasMeasurement prop:force.
-proc:CaseAssembly001 model:hasConstraint prop:position.
-proc:CaseAssembly001 model:hasConstraint prop:force.
+proc:CaseAssembly001 model:hasMeasurement prop:Position001.
+proc:CaseAssembly001 model:hasMeasurement prop:Force001.
+proc:CaseAssembly001 model:hasConstraint prop:Position001.
+proc:CaseAssembly001 model:hasConstraint prop:Force001.
 proc:CaseAssembly001 model:hasOutputProduct prod:AssembledSensor001.
 proc:CaseAssembly001 model:hasNextProcess proc:UltrasonicCaseSealing001.
 #
