@@ -197,7 +197,7 @@ class ProductionLine extends React.Component {
       productionLine: {
         processes: [],
       },
-      pattern: [],
+      detectedPatterns: [],
       preset: 0,
       inputModelUrl: presets[0].inputModelUrl,
       factUrl: presets[0].factUrl,
@@ -446,12 +446,12 @@ class ProductionLine extends React.Component {
           log('test');
           queryResults.map((queryResult) => {
             this.setState({
-              pattern: [
-                ...this.state.pattern,
+              detectedPatterns: [
+                ...this.state.detectedPatterns,
                 { patternKey: patternKey, queryResult: queryResult },
               ],
             });
-            log(pattern.reason(queryResult));
+            log(this.state.detectedPatterns);
           });
         });
     }
@@ -462,6 +462,7 @@ class ProductionLine extends React.Component {
   }
 
   render() {
+    log(this.state.detectedPatterns);
     return (
       <Container maxWidth="sm">
         <Typography variant="h4">Production Line Analyzer</Typography>
@@ -559,7 +560,14 @@ class ProductionLine extends React.Component {
             ))}
         </Box>
         <Box className="patternResult" fullWidth>
-          Hallo
+          <Typography variant="h6">Detected Problems</Typography>
+          {this.state.detectedPatterns.map((detectedPattern) => (
+            <div>
+              {patternList[detectedPattern.patternKey].reason(
+                detectedPattern.queryResult
+              )}
+            </div>
+          ))}
         </Box>
       </Container>
     );
