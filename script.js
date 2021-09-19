@@ -192,12 +192,6 @@ class ProductionLine extends React.Component {
     });
   }
 
-  analyze() {
-    var prettyJSON = JSON.stringify(this.state.productionLine, null, 2);
-    log(prettyJSON);
-    console.log(this.store.size);
-  }
-
   addPPR(type, processId, value) {
     //make copy
     var tempProductionLine = { ...this.state.productionLine };
@@ -362,6 +356,20 @@ class ProductionLine extends React.Component {
       factUrl: presets[event.target.value].factUrl,
     });
   };
+
+  analyze() {
+    var prettyJSON = JSON.stringify(this.state.productionLine, null, 2);
+    log(prettyJSON);
+    console.log(this.store.size);
+
+    var store = new N3.Store();
+
+    this.state.productionLine.processes.map((productionLine) => {
+      productionLine.inputs.map((input) => {
+        log(this.getFirstLabel(input.labels, input.id));
+      });
+    });
+  }
 
   render() {
     return (
