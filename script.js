@@ -424,7 +424,6 @@ class ProductionLine extends React.Component {
         //inputs
         process[mapping.label].map((item) => {
           this.addQuad(store, process.id, mapping.predicate, item.id);
-          log(this.getFirstLabel(item.labels, item.id));
         });
       });
     });
@@ -460,7 +459,7 @@ class ProductionLine extends React.Component {
     store.addQuad(namedNode(subject), namedNode(predicate), namedNode(object));
   }
 
-  selectPattern(selectedPatternIndex) {
+  async selectPattern(selectedPatternIndex) {
     this.setState({
       selectedPatternIndex: selectedPatternIndex,
     });
