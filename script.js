@@ -19,6 +19,29 @@ const {
 
 const { namedNode, literal, defaultGraph, quad } = N3.DataFactory;
 
+var mappings = [
+  {
+    label: 'inputs',
+    predicate: 'http://uni-ko-ld.de/ist/model#hasInputProduct',
+  },
+  {
+    label: 'outputs',
+    predicate: 'http://uni-ko-ld.de/ist/model#hasOutputProduct',
+  },
+  {
+    label: 'resources',
+    predicate: 'http://uni-ko-ld.de/ist/model#hasResource',
+  },
+  {
+    label: 'measurements',
+    predicate: 'http://uni-ko-ld.de/ist/model#hasMeasurement',
+  },
+  {
+    label: 'constraints',
+    predicate: 'http://uni-ko-ld.de/ist/model#hasConstraint',
+  },
+];
+
 class MyAutocomplete extends React.Component {
   constructor(props) {
     super(props);
@@ -269,6 +292,14 @@ class ProductionLine extends React.Component {
     }
   }
 
+  loadInputModelProerties(subject, predicate) {
+    const result = this.store.getQuads(subject, predicate, null);
+    return result.map((item) => ({
+      id: item.object.value,
+      labels: this.getLabels(item.object.value),
+    }));
+  }
+
   async loadInputModel(event) {
     info(
       'loadInputModel: ' + this.state.inputModelUrl + ' ' + this.state.factUrl
@@ -297,15 +328,13 @@ class ProductionLine extends React.Component {
         var newProductionLine = { processes: [] };
 
         productionLine.map((process) => {
-          const inputs = this.store.getQuads(
+          const inputs = this.loadInputModelProerties(
             process.get('?process'),
-            namedNode('http://uni-ko-ld.de/ist/model#hasInputProduct'),
-            null
+            namedNode('http://uni-ko-ld.de/ist/model#hasInputProduct')
           );
-          const outputs = this.store.getQuads(
+          const outputs = this.loadInputModelProerties(
             process.get('?process'),
-            namedNode('http://uni-ko-ld.de/ist/model#hasOutputProduct'),
-            null
+            namedNode('http://uni-ko-ld.de/ist/model#hasOutputProduct')
           );
 
           newProductionLine.processes = [
@@ -313,14 +342,26 @@ class ProductionLine extends React.Component {
             {
               id: process.get('?process').value,
               labels: this.getLabels(process.get('?process').value),
-              inputs: inputs.map((input) => ({
-                id: input.object.value,
-                labels: this.getLabels(input.object.value),
-              })),
-              outputs: outputs.map((outut) => ({
-                îd: outut.object.value,
-                labels: this.getLabels(outut.object.value),
-              })),
+              inputs: this.loadInputModelProerties(
+                process.get('?process'),
+                namedNode('http://uni-ko-ld.de/ist/model#hasInputProduct')
+              ),
+              outputs: this.loadInputModelProerties(
+                process.get('?process'),
+                namedNode('http://uni-ko-ld.de/ist/model#hasOutputProduct')
+              ),
+              resources: this.loadInputModelProerties(
+                process.get('?process'),
+                namedNode('http://uni-ko-ld.de/ist/model#hasResource')
+              ),
+              measurements: this.loadInputModelProerties(
+                process.get('?process'),
+                namedNode('http://uni-ko-ld.de/ist/model#hasMeasurement')
+              ),
+              constraints: this.loadInputModelProerties(
+                process.get('?process'),
+                namedNode('http://uni-ko-ld.de/ist/model#hasConstraint')
+              ),
             },
           ];
           //set state
@@ -364,18 +405,30 @@ class ProductionLine extends React.Component {
     info(this.store.size);
 
     var store = new N3.Store();
-
-    this.state.productionLine.processes.map((process) => {
-      process.inputs.map((input) => {
+    var processes = this.state.productionLine.processes;
+    processes.map((process, processIndex) => {
+      //link processes
+      var nextProcessIndex = processIndex + 1;
+      if (processes.length > nextProcessIndex) {
+        var nextProcess = processes[nextProcessIndex];
         this.addQuad(
           store,
           process.id,
-          'http://uni-ko-ld.de/ist/model#hasInputProduct',
-          input.id
+          'http://uni-ko-ld.de/ist/model#hasNextProcess',
+          nextProcess.id
         );
-        log(this.getFirstLabel(input.labels, input.id));
+      }
+
+      mappings.map((mapping) => {
+        //inputs
+        process[mapping.label].map((item) => {
+          this.addQuad(store, process.id, mapping.predicate, item.id);
+          log(this.getFirstLabel(item.labels, item.id));
+        });
       });
     });
+    const quadDump = store.getQuads(null, null, null);
+    info(quadDump);
     info(store.size);
   }
 
@@ -446,9 +499,9 @@ class ProductionLine extends React.Component {
                 )}
                 <MyAutocomplete
                   processId={procId}
+                  setProcess={this.setProcess.bind(this, procId)}
                   addInput={this.addPPR.bind(this, 'inputs', procId)}
                   addOutput={this.addPPR.bind(this, 'outputs', procId)}
-                  setProcess={this.setProcess.bind(this, procId)}
                   addResource={this.addPPR.bind(this, 'resources', procId)}
                   addMeasurement={this.addPPR.bind(
                     this,
