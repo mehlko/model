@@ -179,6 +179,14 @@ class ProductionLine extends React.Component {
     this.analyze = this.analyze.bind(this);
     this.parser = new N3.Parser();
     this.store = {};
+    info(
+      'production  constructor: ' +
+        this.state.preset +
+        ' ' +
+        this.state.inputModelUrl +
+        ' ' +
+        this.state.factUrl
+    );
   }
 
   async loadUrlToStore(myStore, url) {
@@ -273,10 +281,13 @@ class ProductionLine extends React.Component {
     }
   }
 
-  loadInputModel = async (event) => {
+  async loadInputModel(event) {
+    info(
+      'loadInputModel: ' + this.state.inputModelUrl + ' ' + this.state.factUrl
+    );
     this.store = new N3.Store();
-    await this.loadUrlToStore(this.store, this.inputModelUrl);
-    await this.loadUrlToStore(this.store, this.factUrl);
+    await this.loadUrlToStore(this.store, this.state.inputModelUrl);
+    await this.loadUrlToStore(this.store, this.state.factUrl);
 
     var queryString = `
     PREFIX model: <http://uni-ko-ld.de/ist/model#>
@@ -330,7 +341,7 @@ class ProductionLine extends React.Component {
           });
         });
       });
-  };
+  }
 
   getItems(list, procId, type) {
     return list.map((item, itemId) => (
@@ -378,7 +389,10 @@ class ProductionLine extends React.Component {
               value={this.state.factUrl}
               onChange={this.onFactUrlChange}
             />
-            <Button variant="contained" onClick={this.loadInputModel}>
+            <Button
+              variant="contained"
+              onClick={this.loadInputModel.bind(this)}
+            >
               Load Input Model
             </Button>
           </FormControl>
@@ -448,6 +462,9 @@ class ProductionLine extends React.Component {
 ReactDOM.render(<ProductionLine />, document.getElementById('container'));
 
 function log(text) {
+  console.log(text);
+}
+function info(text) {
   if (logLevel) {
     console.log(text);
   }
