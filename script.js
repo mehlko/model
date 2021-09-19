@@ -197,6 +197,7 @@ class ProductionLine extends React.Component {
       productionLine: {
         processes: [],
       },
+      pattern: [],
       preset: 0,
       inputModelUrl: presets[0].inputModelUrl,
       factUrl: presets[0].factUrl,
@@ -433,7 +434,8 @@ class ProductionLine extends React.Component {
     const quadDump = store.getQuads(null, null, null);
     info(quadDump);
 
-    patternList.map((pattern) => {
+    for (var patternKey of Object.keys(patternList)) {
+      var pattern = patternList[patternKey];
       Comunica.newEngine()
         .query(pattern.queryString, {
           sources: [store],
@@ -443,10 +445,16 @@ class ProductionLine extends React.Component {
           log(queryResults);
           log('test');
           queryResults.map((queryResult) => {
+            this.setState({
+              pattern: [
+                ...this.state.pattern,
+                { patternKey: patternKey, queryResult: queryResult },
+              ],
+            });
             log(pattern.reason(queryResult));
           });
         });
-    });
+    }
   }
 
   addQuad(store, subject, predicate, object) {
@@ -549,6 +557,9 @@ class ProductionLine extends React.Component {
                 </div>
               </Box>
             ))}
+        </Box>
+        <Box className="patternResult" fullWidth>
+          Hallo
         </Box>
       </Container>
     );

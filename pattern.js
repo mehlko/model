@@ -1,5 +1,5 @@
-var patternList = [
-  {
+var patternList = {
+  inputOutputMismatch: {
     name: 'Input Output Mismatch',
     description: '',
     queryString: `
@@ -10,7 +10,6 @@ var patternList = [
        #MINUS {?nextProcess model:hasInputProduct ?product .}
       } LIMIT 10`,
     reason: (queryResult) => {
-      log(queryResult);
       return (
         queryResult.get('?process').value +
         ' ' +
@@ -18,4 +17,4 @@ var patternList = [
       );
     },
   },
-];
+};
