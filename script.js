@@ -66,6 +66,14 @@ let presets = [
   },
 ];
 
+function getFirstLabel(labels, id) {
+  if (labels && Array.isArray(labels) && labels.length > 0) {
+    return labels[0];
+  } else {
+    return id;
+  }
+}
+
 class MyAutocomplete extends React.Component {
   constructor(props) {
     super(props);
@@ -87,14 +95,11 @@ class MyAutocomplete extends React.Component {
      ?id rdf:type ?type .
      ?id rdfs:label ?label .
      FILTER (STRSTARTS(?label, "${value}"))
-    } LIMIT 5`;
-
+    } LIMIT 50`;
+    log(this.props.store);
     Comunica.newEngine()
       .query(queryString, {
-        sources: [
-          'https://mehlko.github.io/model/models/exampleFacts.ttl',
-          'https://mehlko.github.io/model/models/etimLabels2.ttl',
-        ],
+        sources: [this.props.store],
       })
       .then(async (result) => {
         var tempOptions = await result.bindings();
@@ -119,6 +124,7 @@ class MyAutocomplete extends React.Component {
         disableCloseOnSelect
         clearOnBlur
         clearOnEscape
+        getOptionLabel={(option) => getFirstLabel(option.labels, option.id)}
         onOpen={(event) => {
           if (Array.isArray(this.state.options) && !this.state.options.length) {
             this.queryThrottled(this.state.inputValue);
@@ -126,7 +132,6 @@ class MyAutocomplete extends React.Component {
         }}
         options={this.state.options}
         disableCloseOnSelect
-        getOptionLabel={(option) => option.labels}
         onInputChange={(event, newInputValue) => {
           this.setState({
             inputValue: newInputValue,
@@ -140,7 +145,12 @@ class MyAutocomplete extends React.Component {
         renderOption={(props, option, { selected }) => {
           return (
             <li {...props} onClick={(event) => {}}>
-              {option.type} {option.labels}{' '}
+              <Box gutterBottom>
+                <Typography gutterBottom>{option.labels}</Typography>
+                <Typography sx={{ fontSize: 10 }} color="text.secondary">
+                  {option.type}
+                </Typography>
+              </Box>
               {option.type == 'http://uni-ko-ld.de/ist/model#Product' && (
                 <>
                   <Button
@@ -299,14 +309,6 @@ class ProductionLine extends React.Component {
       .map((label) => label.object.value);
   }
 
-  getFirstLabel(labels, id) {
-    if (labels && Array.isArray(labels) && labels.length > 0) {
-      return labels[0];
-    } else {
-      return id;
-    }
-  }
-
   loadInputModelProerties(subject, predicate) {
     const result = this.store.getQuads(subject, predicate, null);
     return result.map((item) => ({
@@ -322,6 +324,10 @@ class ProductionLine extends React.Component {
     this.store = new N3.Store();
     await this.loadUrlToStore(this.store, this.state.inputModelUrl);
     await this.loadUrlToStore(this.store, this.state.factUrl);
+    await this.loadUrlToStore(
+      this.store,
+      'https://mehlko.github.io/model/models/etimLabels.ttl'
+    );
 
     var queryString = `
     PREFIX model: <http://uni-ko-ld.de/ist/model#>
@@ -483,13 +489,13 @@ class ProductionLine extends React.Component {
         <Box className={type} key={'process' + procId + 'type' + itemId}>
           {this.isPatternAffected(item.id) && (
             <Chip
-              label={this.getFirstLabel(item.labels, item.id)}
+              label={getFirstLabel(item.labels, item.id)}
               color="error"
             ></Chip>
           )}{' '}
           {!this.isPatternAffected(item.id) && (
             <Chip
-              label={this.getFirstLabel(item.labels, item.id)}
+              label={getFirstLabel(item.labels, item.id)}
               variant="outlined"
             ></Chip>
           )}
@@ -568,20 +574,21 @@ class ProductionLine extends React.Component {
                   {proc.id && this.isPatternAffected(proc.id) && (
                     <Chip
                       className="name"
-                      label={this.getFirstLabel(proc.labels, proc.id)}
+                      label={getFirstLabel(proc.labels, proc.id)}
                       color="error"
                     ></Chip>
                   )}
                   {proc.id && !this.isPatternAffected(proc.id) && (
                     <Chip
                       className="name"
-                      label={this.getFirstLabel(proc.labels, proc.id)}
+                      label={getFirstLabel(proc.labels, proc.id)}
                       variant="outlined"
                     ></Chip>
                   )}
                 </div>
                 <MyAutocomplete
                   processId={procId}
+                  store={this.store}
                   setProcess={this.setProcess.bind(this, procId)}
                   addInput={this.addPPR.bind(this, 'inputs', procId)}
                   addOutput={this.addPPR.bind(this, 'outputs', procId)}
