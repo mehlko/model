@@ -477,20 +477,17 @@ class ProductionLine extends React.Component {
         }
       >
         <Box className={type} key={'process' + procId + 'type' + itemId}>
-          {this.getFirstLabel(item.labels, item.id)}
           {this.isPatternAffected(item.id) && (
-            <Box
+            <Chip
               label={this.getFirstLabel(item.labels, item.id)}
               color="error"
-            />
+            ></Chip>
           )}{' '}
           {!this.isPatternAffected(item.id) && (
-            <Box
+            <Chip
               label={this.getFirstLabel(item.labels, item.id)}
-              color="success"
-            >
-              {this.getFirstLabel(item.labels, item.id)}
-            </Box>
+              variant="outlined"
+            ></Chip>
           )}
         </Box>
       </Tooltip>
@@ -564,11 +561,22 @@ class ProductionLine extends React.Component {
           {this.state.productionLine.processes &&
             this.state.productionLine.processes.map((proc, procId) => (
               <Box className="process" key={'process' + procId} fullWidth>
-                {proc.id && (
-                  <div className="name">
-                    {this.getFirstLabel(proc.labels, proc.id)}
-                  </div>
-                )}
+                <div className="name">
+                  {proc.id && this.isPatternAffected(proc.id) && (
+                    <Chip
+                      className="name"
+                      label={this.getFirstLabel(proc.labels, proc.id)}
+                      color="error"
+                    ></Chip>
+                  )}
+                  {proc.id && !this.isPatternAffected(proc.id) && (
+                    <Chip
+                      className="name"
+                      label={this.getFirstLabel(proc.labels, proc.id)}
+                      variant="outlined"
+                    ></Chip>
+                  )}
+                </div>
                 <MyAutocomplete
                   processId={procId}
                   setProcess={this.setProcess.bind(this, procId)}
@@ -582,7 +590,6 @@ class ProductionLine extends React.Component {
                   )}
                   addConstraint={this.addPPR.bind(this, 'constraints', procId)}
                 />
-
                 <div className="inputs">
                   {proc.inputs && this.getItems(proc.inputs, procId, 'product')}
                 </div>

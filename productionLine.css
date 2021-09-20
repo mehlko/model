@@ -91,6 +91,7 @@
   display: block;
 }
 
+/*  
 .product:hover,
 .name:hover,
 .resource:hover,
@@ -98,6 +99,7 @@
 .meassurement:hover {
   background-color: silver;
 }
+*/
 
 .inputs > .product:before {
   display: block;
