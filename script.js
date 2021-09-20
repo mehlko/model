@@ -107,15 +107,7 @@ class MyAutocomplete extends React.Component {
         .slice(0, 5)[0]
     );
 
-    this.setState({
-      options: tempOptions.map((option) => {
-        return {
-          labels: [option.get('?label').value],
-          id: option.get('?id').value,
-          type: option.get('?type').value,
-        };
-      }),
-    });
+   
   }
 
   render() {
