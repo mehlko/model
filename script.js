@@ -507,7 +507,6 @@ class ProductionLine extends React.Component {
   render() {
     return (
       <Container maxWidth="sm">
-        <Alert severity="success">Test</Alert>
         <Typography variant="h4">Production Line Analyzer</Typography>
         <Box className="setup">
           <Typography variant="h6">Setup</Typography>
