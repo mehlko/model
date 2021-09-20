@@ -479,7 +479,18 @@ class ProductionLine extends React.Component {
         <Box className={type} key={'process' + procId + 'type' + itemId}>
           {this.getFirstLabel(item.labels, item.id)}
           {this.isPatternAffected(item.id) && (
-            <Chip label="primary" color="error" />
+            <Box
+              label={this.getFirstLabel(item.labels, item.id)}
+              color="error"
+            />
+          )}{' '}
+          {!this.isPatternAffected(item.id) && (
+            <Box
+              label={this.getFirstLabel(item.labels, item.id)}
+              color="success"
+            >
+              {this.getFirstLabel(item.labels, item.id)}
+            </Box>
           )}
         </Box>
       </Tooltip>
