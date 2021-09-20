@@ -119,7 +119,7 @@ class MyAutocomplete extends React.Component {
   render() {
     return (
       <Autocomplete
-        id={this.props.processId}
+        id={'id' + this.props.processId}
         className="search"
         disableCloseOnSelect
         clearOnBlur
