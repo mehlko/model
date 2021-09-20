@@ -90,7 +90,10 @@ class MyAutocomplete extends React.Component {
 
     Comunica.newEngine()
       .query(queryString, {
-        sources: ['https://mehlko.github.io/model/models/exampleFacts.ttl'],
+        sources: [
+          'https://mehlko.github.io/model/models/exampleFacts.ttl',
+          'https://mehlko.github.io/model/models/etimLabels.ttl',
+        ],
       })
       .then(async (result) => {
         var tempOptions = await result.bindings();
