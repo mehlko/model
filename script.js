@@ -326,7 +326,7 @@ class ProductionLine extends React.Component {
     await this.loadUrlToStore(this.store, this.state.factUrl);
     await this.loadUrlToStore(
       this.store,
-      'https://mehlko.github.io/model/models/etimLabels2.ttl'
+      'https://mehlko.github.io/model/models/etimLabels.ttl'
     );
 
     var queryString = `
