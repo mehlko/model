@@ -104,10 +104,9 @@ class MyAutocomplete extends React.Component {
           namedNode('http://www.w3.org/2000/01/rdf-schema#label'),
           null
         )
-        .slice(0, 5)[0]
+        .slice(0, 5)
+        .getSubjects()[0]
     );
-
-   
   }
 
   render() {
