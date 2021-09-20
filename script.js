@@ -81,6 +81,7 @@ class MyAutocomplete extends React.Component {
     PREFIX model: <http://uni-ko-ld.de/ist/model#>
     PREFIX rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
     PREFIX rdfs:   <http://www.w3.org/2000/01/rdf-schema#>
+    PREFIX etim:  <https://www.etim-international.com/#>
     SELECT ?id ?label ?type WHERE {
      ?type rdfs:subClassOf model:InputModelElement .
      ?id rdf:type ?type .
