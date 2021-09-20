@@ -9,6 +9,12 @@ var patternList = {
        #?process model:hasNextProcess ?nextProcess .
        #MINUS {?nextProcess model:hasInputProduct ?product .}
       } LIMIT 10`,
+    affectedElements: (queryResult) => {
+      return [
+        queryResult.get('?process').value,
+        queryResult.get('?product').value,
+      ];
+    },
     reason: (queryResult) => {
       return (
         queryResult.get('?process').value +

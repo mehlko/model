@@ -394,9 +394,15 @@ class ProductionLine extends React.Component {
           </>
         }
       >
-        <div className={type} key={'process' + procId + 'type' + itemId}>
+        <Box
+          className={type}
+          sx={{
+            bgcolor: 'red',
+          }}
+          key={'process' + procId + 'type' + itemId}
+        >
           {this.getFirstLabel(item.labels, item.id)}
-        </div>
+        </Box>
       </Tooltip>
     ));
   }
