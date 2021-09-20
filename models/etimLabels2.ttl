@@ -1,0 +1,7 @@
+PREFIX etim:  <https://www.etim-international.com/#>
+PREFIX model: <http://uni-ko-ld.de/ist/model#>
+PREFIX rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs:  <http://www.w3.org/2000/01/rdf-schema#>
+
+etim:EC002878  rdfs:label  "Pairs of diodes" , "Diodemodule" , "Diodeblock" , "Component module" , "Diode module" ;
+        model:type  model:Product .

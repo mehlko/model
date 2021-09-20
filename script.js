@@ -92,7 +92,7 @@ class MyAutocomplete extends React.Component {
       .query(queryString, {
         sources: [
           'https://mehlko.github.io/model/models/exampleFacts.ttl',
-          'https://mehlko.github.io/model/models/etimLabels.ttl',
+          'https://mehlko.github.io/model/models/etimLabels2.ttl',
         ],
       })
       .then(async (result) => {
