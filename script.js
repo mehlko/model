@@ -23,6 +23,7 @@ const {
   CardContent,
   CardHeader,
   Avatar,
+  Chip,
 } = MaterialUI;
 
 const { namedNode, literal, defaultGraph, quad } = N3.DataFactory;
@@ -382,31 +383,6 @@ class ProductionLine extends React.Component {
       });
   }
 
-  getItems(list, procId, type) {
-    return list.map((item, itemId) => (
-      <Tooltip
-        title={
-          <>
-            <div>{item.id}</div>
-            {item.labels.map((label) => (
-              <div>{label}</div>
-            ))}
-          </>
-        }
-      >
-        <Box
-          className={type}
-          sx={{
-            bgcolor: 'red',
-          }}
-          key={'process' + procId + 'type' + itemId}
-        >
-          {this.getFirstLabel(item.labels, item.id)}
-        </Box>
-      </Tooltip>
-    ));
-  }
-
   onPresetChange = (event) => {
     this.setState({
       preset: event.target.value,
@@ -458,7 +434,11 @@ class ProductionLine extends React.Component {
             this.setState({
               detectedPatterns: [
                 ...this.state.detectedPatterns,
-                { patternKey: patternKey, queryResult: queryResult },
+                {
+                  patternKey: patternKey,
+                  queryResult: queryResult,
+                  affectedElements: pattern.affectedElements(queryResult),
+                },
               ],
             });
           });
@@ -471,13 +451,55 @@ class ProductionLine extends React.Component {
   }
 
   async selectPattern(selectedPatternIndex) {
-    this.setState({
+    await this.setState({
       selectedPatternIndex: selectedPatternIndex,
     });
+    var selectedPattern =
+      this.state.detectedPatterns[this.state.selectedPatternIndex];
+    log(selectedPattern);
+    log(
+      selectedPattern.affectedElements.includes(
+        'http://uni-ko-ld.de/ist/process#QualityControl001'
+      )
+    );
   }
+
+  getItems(list, procId, type) {
+    return list.map((item, itemId) => (
+      <Tooltip
+        title={
+          <>
+            <div>{item.id}</div>
+            {item.labels.map((label) => (
+              <div>{label}</div>
+            ))}
+          </>
+        }
+      >
+        <Box className={type} key={'process' + procId + 'type' + itemId}>
+          {this.getFirstLabel(item.labels, item.id)}
+          {this.isPatternAffected(item.id) && (
+            <Chip label="primary" color="error" />
+          )}
+        </Box>
+      </Tooltip>
+    ));
+  }
+
+  isPatternAffected(id) {
+    return (
+      this.state.detectedPatterns &&
+      this.state.detectedPatterns[this.state.selectedPatternIndex] &&
+      this.state.detectedPatterns[
+        this.state.selectedPatternIndex
+      ].affectedElements.includes(id)
+    );
+  }
+
   render() {
     return (
       <Container maxWidth="sm">
+        <Alert severity="success">Test</Alert>
         <Typography variant="h4">Production Line Analyzer</Typography>
         <Box className="setup">
           <Typography variant="h6">Setup</Typography>
