@@ -593,6 +593,7 @@ class ProductionLine extends React.Component {
                         Input Output Mismatch
                       </Typography>
                     }
+                    subheader={'Problem #' + detectedPatternIndex}
                   />
                   <CardContent>
                     <Typography variant="body2" color="text.secondary">
