@@ -18,6 +18,11 @@ const {
   List,
   ListItem,
   ListItemButton,
+  Card,
+  CardActionArea,
+  CardContent,
+  CardHeader,
+  Avatar,
 } = MaterialUI;
 
 const { namedNode, literal, defaultGraph, quad } = N3.DataFactory;
@@ -564,26 +569,42 @@ class ProductionLine extends React.Component {
         <Box className="patternResult" fullWidth>
           <Typography variant="h6">Detected Problems</Typography>
 
-          <List>
-            {this.state.detectedPatterns.map(
-              (detectedPattern, detectedPatternIndex) => (
-                <ListItem>
-                  <ListItemButton
-                    onClick={this.selectPattern.bind(
-                      this,
-                      detectedPatternIndex
-                    )}
-                  >
-                    <div>
+          {this.state.detectedPatterns.map(
+            (detectedPattern, detectedPatternIndex) => (
+              <Card
+                fullWidth
+                sx={
+                  detectedPatternIndex === this.state.selectedPatternIndex
+                    ? { border: '2px solid grey' }
+                    : {}
+                }
+              >
+                <CardActionArea
+                  onClick={this.selectPattern.bind(this, detectedPatternIndex)}
+                >
+                  <CardHeader
+                    avatar={
+                      <Avatar sx={{ bgcolor: 'red' }} aria-label="recipe">
+                        I/O
+                      </Avatar>
+                    }
+                    title={
+                      <Typography gutterBottom variant="h5" component="div">
+                        Input Output Mismatch
+                      </Typography>
+                    }
+                  />
+                  <CardContent>
+                    <Typography variant="body2" color="text.secondary">
                       {patternList[detectedPattern.patternKey].reason(
                         detectedPattern.queryResult
                       )}
-                    </div>
-                  </ListItemButton>
-                </ListItem>
-              )
-            )}
-          </List>
+                    </Typography>
+                  </CardContent>
+                </CardActionArea>
+              </Card>
+            )
+          )}
         </Box>
       </Container>
     );
