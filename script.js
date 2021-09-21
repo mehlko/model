@@ -597,24 +597,24 @@ class ProductionLine extends React.Component {
           {this.state.productionLine.processes &&
             this.state.productionLine.processes.map((proc, procId) => (
               <Box className="process" key={'process' + procId} fullWidth>
-                  {proc.id && this.isPatternAffected(proc.id) && (
-                <div className="name">
+                {proc.id && this.isPatternAffected(proc.id) && (
+                  <div className="name">
                     <Chip
                       className="name"
                       label={getFirstLabel(proc.labels, proc.id)}
                       color="error"
                     ></Chip>
                   </div>
-                  )}
-                  {proc.id && !this.isPatternAffected(proc.id) && (
-                <div className="name">
-                
-                <Chip
+                )}
+                {proc.id && !this.isPatternAffected(proc.id) && (
+                  <div className="name">
+                    <Chip
                       className="name"
                       label={getFirstLabel(proc.labels, proc.id)}
                       variant="outlined"
-                    ></Chip>           </div>
-                  )}
+                    ></Chip>{' '}
+                  </div>
+                )}
                 <MyAutocomplete
                   processId={procId}
                   store={this.store}

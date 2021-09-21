@@ -10,6 +10,7 @@ proc:SensorFlashing001 model:hasResource res:FirmwareFlasher001.
 proc:SensorFlashing001 model:hasMeasurement prop:Firmware001.
 proc:SensorFlashing001 model:hasConstraint prop:Firmware001.
 proc:SensorFlashing001 model:hasOutputProduct prod:FlashedRadarSensor001.
+#
 proc:SensorFlashing001 model:hasNextProcess proc:CaseAssembly001.
 #
 proc:CaseAssembly001 model:hasInputProduct prod:FlashedRadarSensor001.
@@ -21,12 +22,14 @@ proc:CaseAssembly001 model:hasMeasurement prop:Force001.
 proc:CaseAssembly001 model:hasConstraint prop:Position001.
 proc:CaseAssembly001 model:hasConstraint prop:Force001.
 proc:CaseAssembly001 model:hasOutputProduct prod:AssembledSensor001.
+#
 proc:CaseAssembly001 model:hasNextProcess proc:UltrasonicCaseSealing001.
 #
 proc:UltrasonicCaseSealing001 model:hasInputProduct prod:PlasticCaseTop001.
 proc:UltrasonicCaseSealing001 model:hasInputProduct prod:AssembledSensor001.
 proc:UltrasonicCaseSealing001 model:hasResource res:UltrasonicWelder001.
 proc:UltrasonicCaseSealing001 model:hasOutputProduct prod:SealedSensor001.
+#
 proc:UltrasonicCaseSealing001 model:hasNextProcess proc:QualityControl001.
 #
 proc:QualityControl001 model:hasInputProduct prod:SealedSensor001.
