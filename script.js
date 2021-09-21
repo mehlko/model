@@ -442,6 +442,10 @@ class ProductionLine extends React.Component {
     var store = this.convertJSONToRDF();
     const quadDump = store.getQuads(null, null, null);
 
+    this.setState({
+      detectedPatterns: [],
+    });
+
     for (var patternKey of Object.keys(patternList)) {
       var pattern = patternList[patternKey];
       Comunica.newEngine()
