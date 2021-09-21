@@ -238,7 +238,13 @@ class ProductionLine extends React.Component {
     };
     this.analyze = this.analyze.bind(this);
     this.parser = new N3.Parser();
-    this.store = {};
+    this.store = new N3.Store();
+    this.loadUrlToStore(this.store, this.state.inputModelUrl);
+    this.loadUrlToStore(this.store, this.state.factUrl);
+    this.loadUrlToStore(
+      this.store,
+      'https://mehlko.github.io/model/models/etimLabels.ttl'
+    );
   }
 
   async loadUrlToStore(myStore, url) {
@@ -533,7 +539,7 @@ class ProductionLine extends React.Component {
       <Container maxWidth="sm">
         <Typography variant="h4">Production Line Analyzer</Typography>
         <Box className="setup">
-          <Typography variant="h6">Setup</Typography>
+          <Typography variant="h5">Setup</Typography>
           <FormControl fullWidth>
             <InputLabel id="presetLabel">Preset</InputLabel>
             <Select
@@ -581,6 +587,7 @@ class ProductionLine extends React.Component {
           Analyze
         </Button>
         <Box className="productionLine" fullWidth>
+          <Typography variant="h5">Input Model</Typography>
           {this.state.productionLine.processes &&
             this.state.productionLine.processes.map((proc, procId) => (
               <Box className="process" key={'process' + procId} fullWidth>
@@ -637,7 +644,7 @@ class ProductionLine extends React.Component {
             ))}
         </Box>
         <Box className="patternResult" fullWidth>
-          <Typography variant="h6">Detected Problems</Typography>
+          <Typography variant="h5">Detected Problems</Typography>
 
           {this.state.detectedPatterns.map(
             (detectedPattern, detectedPatternIndex) => (
