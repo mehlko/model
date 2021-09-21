@@ -540,6 +540,7 @@ class ProductionLine extends React.Component {
         <Typography variant="h4">Production Line Analyzer</Typography>
         <Box className="setup">
           <Typography variant="h5">Setup</Typography>
+          <br />
           <FormControl fullWidth>
             <InputLabel id="presetLabel">Preset</InputLabel>
             <Select
@@ -574,39 +575,46 @@ class ProductionLine extends React.Component {
             </Button>
           </FormControl>
         </Box>
-
-        <Button variant="contained" onClick={() => this.addProcess()} fullWidth>
-          Add Process
-        </Button>
-        <Button
-          variant="contained"
-          onClick={() => this.analyze()}
-          fullWidth
-          color="success"
-        >
-          Analyze
-        </Button>
+        <br />
         <Box className="productionLine" fullWidth>
           <Typography variant="h5">Input Model</Typography>
+          <br />
+          <Button
+            variant="contained"
+            onClick={() => this.addProcess()}
+            fullWidth
+          >
+            Add Process
+          </Button>
+          <Button
+            variant="contained"
+            onClick={() => this.analyze()}
+            fullWidth
+            color="success"
+          >
+            Analyze
+          </Button>
           {this.state.productionLine.processes &&
             this.state.productionLine.processes.map((proc, procId) => (
               <Box className="process" key={'process' + procId} fullWidth>
-                <div className="name">
                   {proc.id && this.isPatternAffected(proc.id) && (
+                <div className="name">
                     <Chip
                       className="name"
                       label={getFirstLabel(proc.labels, proc.id)}
                       color="error"
                     ></Chip>
+                  </div>
                   )}
                   {proc.id && !this.isPatternAffected(proc.id) && (
-                    <Chip
+                <div className="name">
+                
+                <Chip
                       className="name"
                       label={getFirstLabel(proc.labels, proc.id)}
                       variant="outlined"
-                    ></Chip>
+                    ></Chip>           </div>
                   )}
-                </div>
                 <MyAutocomplete
                   processId={procId}
                   store={this.store}
@@ -643,9 +651,10 @@ class ProductionLine extends React.Component {
               </Box>
             ))}
         </Box>
+        <br />
         <Box className="patternResult" fullWidth>
           <Typography variant="h5">Detected Problems</Typography>
-
+          <br />
           {this.state.detectedPatterns.map(
             (detectedPattern, detectedPatternIndex) => (
               <Card
