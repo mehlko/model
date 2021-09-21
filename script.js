@@ -104,9 +104,26 @@ class MyAutocomplete extends React.Component {
           namedNode('http://www.w3.org/2000/01/rdf-schema#label'),
           null
         )
-        .slice(0, 5)
-        .getSubjects()[0]
+        .slice(0, 5)[0]
     );
+
+    Comunica.newEngine()
+      .query(queryString, {
+        sources: [this.props.store],
+      })
+      .then(async (result) => {
+        var tempOptions = await result.bindings();
+
+        this.setState({
+          options: tempOptions.map((option) => {
+            return {
+              labels: [option.get('?label').value],
+              id: option.get('?id').value,
+              type: option.get('?type').value,
+            };
+          }),
+        });
+      });
   }
 
   render() {
