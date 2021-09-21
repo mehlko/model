@@ -1,7 +1,8 @@
 var patternList = {
   inputOutputMismatch: {
     name: 'Input Output Mismatch',
-    description: '',
+    description:
+      'Two processes are connected. The first process produces a product and the second process does not use this product as an input. This can be a misconfiguration.',
     queryString: `
       PREFIX model: <http://uni-ko-ld.de/ist/model#>
       SELECT * WHERE {

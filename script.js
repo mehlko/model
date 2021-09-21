@@ -24,6 +24,8 @@ const {
   CardHeader,
   Avatar,
   Chip,
+  Grid,
+  Item,
 } = MaterialUI;
 
 const { namedNode, literal, defaultGraph, quad } = N3.DataFactory;
@@ -555,18 +557,40 @@ class ProductionLine extends React.Component {
                 </MenuItem>
               ))}
             </Select>
-
+            <Grid container spacing={2}>
+              <Grid item xs={8}>
+                <Item>xs=8</Item>
+              </Grid>
+              <Grid item xs={4}>
+                <Item>xs=4</Item>
+              </Grid>
+            </Grid>
             <TextField
               label="Input Model URL"
               value={this.state.inputModelUrl}
               onChange={this.onInputModelChange}
-            />
+            />{' '}
+            <Button
+              variant="contained"
+              onClick={() => {
+                window.open(this.state.inputModelUrl, '_blank');
+              }}
+            >
+              Show Source
+            </Button>
             <TextField
               label="Fact URL"
               value={this.state.factUrl}
               onChange={this.onFactUrlChange}
             />
-
+            <Button
+              variant="contained"
+              onClick={() => {
+                window.open(this.state.inputModelUrl, '_blank');
+              }}
+            >
+              Show Source
+            </Button>
             <Button
               variant="contained"
               onClick={this.loadInputModel.bind(this)}
