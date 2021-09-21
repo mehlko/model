@@ -97,7 +97,7 @@ class MyAutocomplete extends React.Component {
      ?id rdf:type ?type .
      ?id rdfs:label ?label .
      FILTER (STRSTARTS(?label, "${value}"))
-    } LIMIT 50`;
+    } LIMIT 4`;
 
     log(
       this.props.store
@@ -143,7 +143,6 @@ class MyAutocomplete extends React.Component {
           }
         }}
         options={this.state.options}
-        disableCloseOnSelect
         onInputChange={(event, newInputValue) => {
           this.setState({
             inputValue: newInputValue,
@@ -153,10 +152,10 @@ class MyAutocomplete extends React.Component {
         renderInput={(params) => (
           <TextField {...params} placeholder="Type to edit" />
         )}
-        noOptionsText=""
         renderOption={(props, option, { selected }) => {
           return (
-            <li {...props} onClick={(event) => {}}>
+
+         <li onClick={(event) => {}}>
               <Box gutterBottom>
                 <Typography gutterBottom>{option.labels}</Typography>
                 <Typography sx={{ fontSize: 10 }} color="text.secondary">
@@ -543,61 +542,73 @@ class ProductionLine extends React.Component {
         <Box className="setup">
           <Typography variant="h5">Setup</Typography>
           <br />
-          <FormControl fullWidth>
-            <InputLabel id="presetLabel">Preset</InputLabel>
-            <Select
-              labelId="presetLabel"
-              id="preset"
-              value={this.state.preset}
-              onChange={this.onPresetChange}
-            >
-              {presets.map((item) => (
-                <MenuItem value={item.id} key={item.id}>
-                  {item.label}
-                </MenuItem>
-              ))}
-            </Select>
-            <Grid container spacing={2}>
-              <Grid item xs={8}>
-                <Item>xs=8</Item>
-              </Grid>
-              <Grid item xs={4}>
-                <Item>xs=4</Item>
-              </Grid>
+          <Grid container spacing={2}>
+            <Grid item xs={12}>
+              <InputLabel fullWidth id="presetLabel">
+                Preset
+              </InputLabel>
+              <Select
+                fullWidth
+                labelId="presetLabel"
+                id="preset"
+                value={this.state.preset}
+                onChange={this.onPresetChange}
+              >
+                {presets.map((item) => (
+                  <MenuItem value={item.id} key={item.id}>
+                    {item.label}
+                  </MenuItem>
+                ))}
+              </Select>
             </Grid>
-            <TextField
-              label="Input Model URL"
-              value={this.state.inputModelUrl}
-              onChange={this.onInputModelChange}
-            />{' '}
-            <Button
-              variant="contained"
-              onClick={() => {
-                window.open(this.state.inputModelUrl, '_blank');
-              }}
-            >
-              Show Source
-            </Button>
-            <TextField
-              label="Fact URL"
-              value={this.state.factUrl}
-              onChange={this.onFactUrlChange}
-            />
-            <Button
-              variant="contained"
-              onClick={() => {
-                window.open(this.state.inputModelUrl, '_blank');
-              }}
-            >
-              Show Source
-            </Button>
-            <Button
-              variant="contained"
-              onClick={this.loadInputModel.bind(this)}
-            >
-              Load Input Model
-            </Button>
-          </FormControl>
+            <Grid item xs={10}>
+              <TextField
+                fullWidth
+                label="Input Model URL"
+                value={this.state.inputModelUrl}
+                onChange={this.onInputModelChange}
+              />{' '}
+            </Grid>
+            <Grid item xs={2}>
+              <Button
+                fullWidth
+                variant="contained"
+                onClick={() => {
+                  window.open(this.state.inputModelUrl, '_blank');
+                }}
+              >
+                Show Source
+              </Button>
+            </Grid>
+            <Grid item xs={10}>
+              <TextField
+                fullWidth
+                label="Fact URL"
+                value={this.state.factUrl}
+                onChange={this.onFactUrlChange}
+              />{' '}
+            </Grid>
+            <Grid item xs={2}>
+              <Button
+                fullWidth
+                variant="contained"
+                onClick={() => {
+                  window.open(this.state.onFactUrlChange, '_blank');
+                }}
+              >
+                Show Source
+              </Button>
+            </Grid>
+            <Grid item xs={12}>
+              <Button
+                fullWidth
+                variant="contained"
+                onClick={this.loadInputModel.bind(this)}
+              >
+                Load Input Model
+              </Button>
+            </Grid>
+          </Grid>
         </Box>
         <br />
         <Box className="productionLine" fullWidth>
