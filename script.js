@@ -516,6 +516,7 @@ class ProductionLine extends React.Component {
           {this.isPatternAffected(item.id) && (
             <Typography
               variant="h6"
+              component="span"
               color="error"
               sx={{ p: 0.5, border: 3, borderRadius: 16 }}
             >
@@ -523,10 +524,17 @@ class ProductionLine extends React.Component {
             </Typography>
           )}{' '}
           {!this.isPatternAffected(item.id) && (
-            <Typography variant="h6">
+            <Typography variant="h6" component="span">
               {getFirstLabel(item.labels, item.id)}
             </Typography>
           )}
+          <Typography
+            component="span"
+            sx={{ fontSize: 10 }}
+            color="text.secondary"
+          >
+            {item.id}
+          </Typography>
         </Box>
       </Tooltip>
     ));
@@ -616,6 +624,10 @@ class ProductionLine extends React.Component {
           </Grid>
         </Box>
         <br />
+
+        {/* ############################################################ */}
+        {/* ############################################################ */}
+
         <Box className="productionLine" fullWidth>
           <Typography variant="h5">Input Model</Typography>
           <br />
