@@ -752,6 +752,8 @@ class ProductionLine extends React.Component {
             <li>link to resources</li>
             <li>default influences (e.g. time)</li>
             <li>pizza data set</li>
+            <li>specific test (xaps use case) and integration test (etim, eclass, SI)</li>
+            <li>human operators, line feeder</li>
           </ul>
         </Box>
       </Container>
