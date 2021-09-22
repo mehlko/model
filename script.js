@@ -154,68 +154,74 @@ class MyAutocomplete extends React.Component {
         )}
         renderOption={(props, option, { selected }) => {
           return (
-            <li onClick={(event) => {}}>
-              <Box gutterBottom>
-                <Typography gutterBottom>{option.labels}</Typography>
-                <Typography sx={{ fontSize: 10 }} color="text.secondary">
+            <Grid container>
+              <Grid item xs={6}>
+                <Typography component="div">{option.labels}</Typography>
+                <Typography
+                  component="span"
+                  sx={{ fontSize: 10 }}
+                  color="text.secondary"
+                >
                   {option.type}
                 </Typography>
-              </Box>
-              {option.type == 'http://uni-ko-ld.de/ist/model#Product' && (
-                <>
+              </Grid>
+              <Grid item xs={6}>
+                {option.type == 'http://uni-ko-ld.de/ist/model#Product' && (
+                  <>
+                    <Button
+                      variant="contained"
+                      size="small"
+                      onClick={() => this.props.addInput(option)}
+                    >
+                      + Input
+                    </Button>
+                    <Button
+                      variant="contained"
+                      size="small"
+                      onClick={() => this.props.addOutput(option)}
+                    >
+                      + Output
+                    </Button>
+                  </>
+                )}
+                {option.type == 'http://uni-ko-ld.de/ist/model#Process' && (
                   <Button
                     variant="contained"
                     size="small"
-                    onClick={() => this.props.addInput(option)}
+                    onClick={() => this.props.setProcess(option)}
                   >
-                    + Input
+                    = Process
                   </Button>
+                )}
+                {option.type == 'http://uni-ko-ld.de/ist/model#Resource' && (
                   <Button
                     variant="contained"
                     size="small"
-                    onClick={() => this.props.addOutput(option)}
+                    onClick={() => this.props.addResource(option)}
                   >
-                    + Output
+                    + Resource
                   </Button>
-                </>
-              )}
-              {option.type == 'http://uni-ko-ld.de/ist/model#Process' && (
-                <Button
-                  variant="contained"
-                  size="small"
-                  onClick={() => this.props.setProcess(option)}
-                >
-                  = Process
-                </Button>
-              )}
-              {option.type == 'http://uni-ko-ld.de/ist/model#Resource' && (
-                <Button
-                  variant="contained"
-                  size="small"
-                  onClick={() => this.props.addResource(option)}
-                >
-                  + Resource
-                </Button>
-              )}
-              {option.type == 'http://uni-ko-ld.de/ist/model#Property' && (
-                <>
-                  <Button
-                    variant="contained"
-                    size="small"
-                    onClick={() => this.props.addMeasurement(option)}
-                  >
-                    + Measurement
-                  </Button>
-                  <Button
-                    variant="contained"
-                    size="small"
-                    onClick={() => this.props.addConstraint(option)}
-                  >
-                    + Constraint
-                  </Button>
-                </>
-              )}
-            </li>
+                )}
+                {option.type == 'http://uni-ko-ld.de/ist/model#Property' && (
+                  <>
+                    <Button
+                      variant="contained"
+                      size="small"
+                      onClick={() => this.props.addMeasurement(option)}
+                    >
+                      + Measurement
+                    </Button>
+                    <Button
+                      variant="contained"
+                      size="small"
+                      onClick={() => this.props.addConstraint(option)}
+                    >
+                      + Constraint
+                    </Button>
+                  </>
+                )}
+              </Grid>
+            </Grid>
           );
         }}
       />
@@ -280,8 +286,8 @@ class ProductionLine extends React.Component {
 
     //update
     tempProductionLine.processes[processId] = {
-      ...value,
       ...tempProductionLine.processes[processId],
+      ...value,
     };
     //set state
     this.setState({
@@ -631,22 +637,25 @@ class ProductionLine extends React.Component {
           {this.state.productionLine.processes &&
             this.state.productionLine.processes.map((proc, procId) => (
               <Box className="process" key={'process' + procId} fullWidth>
-                <Box className="name">
-                  {proc.id && this.isPatternAffected(proc.id) && (
+                {proc.id && this.isPatternAffected(proc.id) && (
+                  <Box className="name">
                     <Typography
+                      className="name"
                       variant="h6"
                       color="error"
                       sx={{ p: 0.5, border: 3, borderRadius: 16 }}
                     >
                       {getFirstLabel(proc.labels, proc.id)}
                     </Typography>
-                  )}
-                  {proc.id && !this.isPatternAffected(proc.id) && (
+                  </Box>
+                )}
+                {proc.id && !this.isPatternAffected(proc.id) && (
+                  <Box className="name">
                     <Typography variant="h6">
                       {getFirstLabel(proc.labels, proc.id)}
-                    </Typography>
-                  )}
-                </Box>
+                    </Typography>{' '}
+                  </Box>
+                )}
                 <MyAutocomplete
                   processId={procId}
                   store={this.store}
