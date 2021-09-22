@@ -154,8 +154,7 @@ class MyAutocomplete extends React.Component {
         )}
         renderOption={(props, option, { selected }) => {
           return (
-
-         <li onClick={(event) => {}}>
+            <li onClick={(event) => {}}>
               <Box gutterBottom>
                 <Typography gutterBottom>{option.labels}</Typography>
                 <Typography sx={{ fontSize: 10 }} color="text.secondary">
@@ -509,10 +508,12 @@ class ProductionLine extends React.Component {
       >
         <Box className={type} key={'process' + procId + 'type' + itemId}>
           {this.isPatternAffected(item.id) && (
-            <Chip
-              label={getFirstLabel(item.labels, item.id)}
-              color="error"
-            ></Chip>
+            <Typography variant="h1">
+              <Chip
+                label={getFirstLabel(item.labels, item.id)}
+                color="error"
+              ></Chip>
+            </Typography>
           )}{' '}
           {!this.isPatternAffected(item.id) && (
             <Chip
@@ -538,15 +539,13 @@ class ProductionLine extends React.Component {
   render() {
     return (
       <Container maxWidth="sm">
-        <Typography variant="h4">Production Line Analyzer</Typography>
+        <Typography variant="h3">Production Line Analyzer</Typography>
         <Box className="setup">
           <Typography variant="h5">Setup</Typography>
           <br />
           <Grid container spacing={2}>
             <Grid item xs={12}>
-              <InputLabel fullWidth id="presetLabel">
-                Preset
-              </InputLabel>
+              <InputLabel id="presetLabel">Preset</InputLabel>
               <Select
                 fullWidth
                 labelId="presetLabel"
@@ -593,7 +592,7 @@ class ProductionLine extends React.Component {
                 fullWidth
                 variant="contained"
                 onClick={() => {
-                  window.open(this.state.onFactUrlChange, '_blank');
+                  window.open(this.state.factUrl, '_blank');
                 }}
               >
                 Show Source
@@ -727,6 +726,15 @@ class ProductionLine extends React.Component {
               </Card>
             )
           )}
+        </Box>
+
+        <Box>
+          <Typography variant="h5">Todo</Typography>
+          <ul>
+            <li>process numbering</li>
+            <li>learn about PPR (triangle?)</li>
+            <li>link to resources</li>
+          </ul>
         </Box>
       </Container>
     );
