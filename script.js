@@ -750,6 +750,8 @@ class ProductionLine extends React.Component {
             <li>process numbering</li>
             <li>learn about PPR (triangle?, gif?)</li>
             <li>link to resources</li>
+            <li>default influences (e.g. time)</li>
+            <li>pizza data set</li>
           </ul>
         </Box>
       </Container>

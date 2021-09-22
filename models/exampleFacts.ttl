@@ -111,3 +111,4 @@ prop:LeakageRate001 rdfs:label 'Leakage Rate'.
 #
 prop:Weight001 rdf:type model:Property.
 prop:Weight001 rdfs:label 'Weight'.
+
