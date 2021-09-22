@@ -508,18 +508,18 @@ class ProductionLine extends React.Component {
       >
         <Box className={type} key={'process' + procId + 'type' + itemId}>
           {this.isPatternAffected(item.id) && (
-            <Typography variant="h1">
-              <Chip
-                label={getFirstLabel(item.labels, item.id)}
-                color="error"
-              ></Chip>
+            <Typography
+              variant="h6"
+              color="error"
+              sx={{ p: 0.5, border: 3, borderRadius: 16 }}
+            >
+              {getFirstLabel(item.labels, item.id)}
             </Typography>
           )}{' '}
           {!this.isPatternAffected(item.id) && (
-            <Chip
-              label={getFirstLabel(item.labels, item.id)}
-              variant="outlined"
-            ></Chip>
+            <Typography variant="h6">
+              {getFirstLabel(item.labels, item.id)}
+            </Typography>
           )}
         </Box>
       </Tooltip>
@@ -631,24 +631,22 @@ class ProductionLine extends React.Component {
           {this.state.productionLine.processes &&
             this.state.productionLine.processes.map((proc, procId) => (
               <Box className="process" key={'process' + procId} fullWidth>
-                {proc.id && this.isPatternAffected(proc.id) && (
-                  <div className="name">
-                    <Chip
-                      className="name"
-                      label={getFirstLabel(proc.labels, proc.id)}
+                <Box className="name">
+                  {proc.id && this.isPatternAffected(proc.id) && (
+                    <Typography
+                      variant="h6"
                       color="error"
-                    ></Chip>
-                  </div>
-                )}
-                {proc.id && !this.isPatternAffected(proc.id) && (
-                  <div className="name">
-                    <Chip
-                      className="name"
-                      label={getFirstLabel(proc.labels, proc.id)}
-                      variant="outlined"
-                    ></Chip>{' '}
-                  </div>
-                )}
+                      sx={{ p: 0.5, border: 3, borderRadius: 16 }}
+                    >
+                      {getFirstLabel(proc.labels, proc.id)}
+                    </Typography>
+                  )}
+                  {proc.id && !this.isPatternAffected(proc.id) && (
+                    <Typography variant="h6">
+                      {getFirstLabel(proc.labels, proc.id)}
+                    </Typography>
+                  )}
+                </Box>
                 <MyAutocomplete
                   processId={procId}
                   store={this.store}
