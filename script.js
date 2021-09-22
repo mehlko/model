@@ -528,13 +528,6 @@ class ProductionLine extends React.Component {
               {getFirstLabel(item.labels, item.id)}
             </Typography>
           )}
-          <Typography
-            component="span"
-            sx={{ fontSize: 10 }}
-            color="text.secondary"
-          >
-            {item.id}
-          </Typography>
         </Box>
       </Tooltip>
     ));
@@ -750,8 +743,12 @@ class ProductionLine extends React.Component {
         <Box>
           <Typography variant="h5">Todo</Typography>
           <ul>
+            <li>make ready for presentation</li>
+            <li>add pattern</li>
+            <li>add example data</li>
+            <li>qol for proces editing</li>
             <li>process numbering</li>
-            <li>learn about PPR (triangle?)</li>
+            <li>learn about PPR (triangle?, gif?)</li>
             <li>link to resources</li>
           </ul>
         </Box>
