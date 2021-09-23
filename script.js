@@ -27,6 +27,8 @@ const {
   Grid,
   Item,
   Link,
+  Dialog,
+  DialogTitle,
 } = MaterialUI;
 
 const { namedNode, literal, defaultGraph, quad } = N3.DataFactory;
@@ -160,9 +162,9 @@ class MyAutocomplete extends React.Component {
           <TextField {...params} placeholder="Type to edit" />
         )}
         renderOption={(props, option, { selected }) => {
-          log(option)
+          log(option);
           return (
-            <Grid container key={option.id+option.labels.join()}>
+            <Grid container key={option.id + option.labels.join()}>
               <Grid item xs={6}>
                 <Typography component="div">{option.labels}</Typography>
                 <Typography
@@ -507,34 +509,23 @@ class ProductionLine extends React.Component {
 
   getItems(list, procId, type) {
     return list.map((item, itemId) => (
-      <Tooltip
-        title={
-          <>
-            <div>{item.id}</div>
-            {item.labels.map((label) => (
-              <div>{label}</div>
-            ))}
-          </>
-        }
-      >
-        <Box className={type} key={'process' + procId + 'type' + itemId}>
-          {this.isPatternAffected(item.id) && (
-            <Typography
-              variant="h6"
-              component="span"
-              color="error"
-              sx={{ p: 0.5, border: 3, borderRadius: 16 }}
-            >
-              {getFirstLabel(item.labels, item.id)}
-            </Typography>
-          )}{' '}
-          {!this.isPatternAffected(item.id) && (
-            <Typography variant="h6" component="span">
-              {getFirstLabel(item.labels, item.id)}
-            </Typography>
-          )}
-        </Box>
-      </Tooltip>
+      <Box className={type} key={'process' + procId + 'type' + itemId}>
+        {this.isPatternAffected(item.id) && (
+          <Typography
+            variant="h6"
+            component="span"
+            color="error"
+            sx={{ p: 0.5, border: 3, borderRadius: 16 }}
+          >
+            {getFirstLabel(item.labels, item.id)}
+          </Typography>
+        )}{' '}
+        {!this.isPatternAffected(item.id) && (
+          <Typography variant="h6" component="span">
+            {getFirstLabel(item.labels, item.id)}
+          </Typography>
+        )}
+      </Box>
     ));
   }
 
