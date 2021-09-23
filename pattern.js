@@ -40,7 +40,7 @@ var patternList = {
     name: 'Product Exposed To Risk Source',
     abbreviation: 'PR',
     description: '',
-    queryString: `SELECT * WHERE { ?s a a.}`,
+    queryString: `SELECT * WHERE { ?s a 'a'.}`,
 
     affectedElements: (queryResult) => {
       return [];
