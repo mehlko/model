@@ -2,13 +2,13 @@ var patternList = {
   productExposedToRiskSource: {
     name: 'Product Exposed To Risk Source',
     abbreviation: 'PR',
-    description: '',
+    description: 'A product is exposed to a risk source and may be harmed',
     queryString: `  PREFIX model: <http://uni-ko-ld.de/ist/model#>
     SELECT * WHERE {
      ?process model:hasInputProduct ?product .
      ?process model:hasResource ?resource .
-     ?resource model:hasRiskSource ?riskSource.
-     ?product model:hasVulnerability ?riskSource.
+     ?resource model:hasRiskSource ?riskSource .
+     #?product model:hasVulnerability ?riskSource.
     }`,
 
     affectedElements: (queryResult) => {
