@@ -553,7 +553,7 @@ class ProductionLine extends React.Component {
   render() {
     return (
       <>
-        <Container fullWidth>
+        <Container maxWidth="sm">
           <Typography variant="overline" gutterBottom>
             <Grid container spacing={2}>
               <Grid item xs={5}>
