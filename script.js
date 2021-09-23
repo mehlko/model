@@ -351,10 +351,6 @@ class ProductionLine extends React.Component {
     this.store = new N3.Store();
     await this.loadUrlToStore(this.store, this.state.inputModelUrl);
     await this.loadUrlToStore(this.store, this.state.factUrl);
-    await this.loadUrlToStore(
-      this.store,
-      'https://mehlko.github.io/model/models/etimLabels.ttl'
-    );
 
     var queryString = `
     PREFIX model: <http://uni-ko-ld.de/ist/model#>
@@ -454,10 +450,10 @@ class ProductionLine extends React.Component {
     return store;
   }
 
-  analyze() {
+  async analyze() {
     //info(JSON.stringify(this.state.productionLine, null, 2));
     var store = this.convertJSONToRDF();
-    const quadDump = store.getQuads(null, null, null);
+    await this.loadUrlToStore(store, this.state.factUrl);
 
     log(patternList);
     this.setState({
