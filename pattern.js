@@ -1,6 +1,7 @@
 var patternList = {
   inputOutputMismatch: {
     name: 'Input Output Mismatch',
+    abbreviation: 'IO',
     description:
       'Two processes are connected. The first process produces a product and the second process does not use this product as an input. This can be a misconfiguration.',
     queryString: `
@@ -36,9 +37,10 @@ var patternList = {
     },
   },
   productExposedToRiskSource: {
-    name: 'productExposedToRiskSource',
+    name: 'Product Exposed To Risk Source',
+    abbreviation: 'PR',
     description: '',
-    queryString: `SELECT * WHERE { ?a b c.}`,
+    queryString: `SELECT * WHERE { ?s a a.}`,
 
     affectedElements: (queryResult) => {
       return [];

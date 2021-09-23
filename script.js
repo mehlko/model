@@ -467,6 +467,8 @@ class ProductionLine extends React.Component {
 
     for (var patternKey of Object.keys(patternList)) {
       var pattern = patternList[patternKey];
+      log(patternKey);
+      log(pattern);
       Comunica.newEngine()
         .query(pattern.queryString, {
           sources: [store],
@@ -746,12 +748,12 @@ class ProductionLine extends React.Component {
                     <CardHeader
                       avatar={
                         <Avatar sx={{ bgcolor: 'red' }} aria-label="recipe">
-                          I/O
+                          {patternList[detectedPattern.patternKey].abbreviation}
                         </Avatar>
                       }
                       title={
                         <Typography gutterBottom variant="h5" component="div">
-                          Input Output Mismatch
+                          {patternList[detectedPattern.patternKey].name}
                         </Typography>
                       }
                       subheader={'Problem #' + detectedPatternIndex}
