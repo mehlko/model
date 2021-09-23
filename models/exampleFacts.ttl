@@ -54,7 +54,7 @@ proc:SensorFlashing001 rdf:type model:Process.
 proc:SensorFlashing001 rdfs:label 'Flashing'.
 #
 proc:CaseAssembly001 rdf:type model:Process.
-proc:CaseAssembly001 rdfs:label 'FlashCaseAssembly'.
+proc:CaseAssembly001 rdfs:label 'Case Assembly'.
 #
 proc:UltrasonicCaseSealing001 rdf:type model:Process.
 proc:UltrasonicCaseSealing001 rdfs:label 'Ultrasonic Case Sealing'.
