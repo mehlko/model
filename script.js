@@ -467,6 +467,7 @@ class ProductionLine extends React.Component {
         })
         .then(async (result) => {
           var queryResults = await result.bindings();
+          log(queryResults);
           queryResults.map(async (queryResult) => {
             log('detected');
             this.setState({

@@ -17,7 +17,7 @@ var patternList = {
         queryResult.get('?process').value,
         queryResult.get('?product').value,
         queryResult.get('?resource').value,
-        //queryResult.get('?riskSource').value,
+        queryResult.get('?riskSource').value,
       ];
     },
 
@@ -29,7 +29,7 @@ var patternList = {
         'uses the resource ' +
         queryResult.get('?resource').value +
         'that has the risk source ' +
-        queryResult.get('?risk source').value +
+        queryResult.get('?riskSource').value +
         '.' +
         'The product ' +
         queryResult.get('?product').value +
