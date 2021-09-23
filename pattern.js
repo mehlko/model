@@ -35,19 +35,5 @@ var patternList = {
         queryResult.get('?nextProcess').value
       );
     },
-  },
-  productExposedToRiskSource: {
-    name: 'Product Exposed To Risk Source',
-    abbreviation: 'PR',
-    description: '',
-    queryString: `SELECT * WHERE { ?s a 'a'.}`,
-
-    affectedElements: (queryResult) => {
-      return [];
-    },
-
-    reason: (queryResult) => {
-      return '';
-    },
-  },
+  }
 };

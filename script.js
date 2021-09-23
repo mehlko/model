@@ -114,16 +114,6 @@ class MyAutocomplete extends React.Component {
      FILTER (STRSTARTS(?label, "${value}"))
     } LIMIT 4`;
 
-    log(
-      this.props.store
-        .getQuads(
-          null,
-          namedNode('http://www.w3.org/2000/01/rdf-schema#label'),
-          null
-        )
-        .slice(0, 5)[0]
-    );
-
     Comunica.newEngine()
       .query(queryString, {
         sources: [this.props.store],
@@ -168,7 +158,6 @@ class MyAutocomplete extends React.Component {
           <TextField {...params} placeholder="Type to edit" />
         )}
         renderOption={(props, option, { selected }) => {
-          log(option);
           return (
             <Grid container key={option.id + option.labels.join()}>
               <Grid item xs={6}>
@@ -383,7 +372,6 @@ class ProductionLine extends React.Component {
       })
       .then(async (result) => {
         var productionLine = await result.bindings();
-        log(productionLine);
         var newProductionLine = { processes: [] };
 
         productionLine.map((process) => {
@@ -428,6 +416,7 @@ class ProductionLine extends React.Component {
             productionLine: newProductionLine,
           });
         });
+        info('loading done');
       });
   }
 
@@ -476,7 +465,9 @@ class ProductionLine extends React.Component {
 
     for (var patternKey of Object.keys(patternList)) {
       var pattern = patternList[patternKey];
+      log(1);
       log(patternKey);
+      log(2);
       log(pattern);
       Comunica.newEngine()
         .query(pattern.queryString, {
@@ -484,8 +475,12 @@ class ProductionLine extends React.Component {
         })
         .then(async (result) => {
           var queryResults = await result.bindings();
-          queryResults.map((queryResult) => {
-            this.setState({
+          queryResults.map(async (queryResult) => {
+            log(4);
+            log('detected ' + pattern);
+            log(5);
+            log(pattern);
+            await this.setState({
               detectedPatterns: [
                 ...this.state.detectedPatterns,
                 {
@@ -727,6 +722,7 @@ class ProductionLine extends React.Component {
           <Box className="patternResult" fullWidth>
             <Typography variant="h5">Detected Problems</Typography>
             <br />
+            {log(this.state.detectedPatterns)}
             {this.state.detectedPatterns.map(
               (detectedPattern, detectedPatternIndex) => (
                 <Card
