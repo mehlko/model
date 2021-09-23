@@ -69,20 +69,20 @@ proc:QualityControl001 rdfs:label 'Quality Control'.
 res:FirmwareFlasher001 rdf:type model:Resource.
 res:FirmwareFlasher001 rdfs:label 'Firmware Flasher'.
 res:FirmwareFlasher001 rdfs:label 'Flasher'.
-res:FirmwareFlasher001 model:changesProperty prop:Firmware001
+res:FirmwareFlasher001 model:changesProperty prop:Firmware001.
 #
 res:Placer001 rdf:type model:Resource.
 res:Placer001 rdfs:label 'Placer'.
-res:Placer001 model:changesProperty prop:Position001
+res:Placer001 model:changesProperty prop:Position001.
 #
 res:Screwer001 rdf:type model:Resource.
 res:Screwer001 rdfs:label 'Screwer'.
 res:Screwer001 rdfs:label 'Fastener'.
-res:Screwer001 model:hasRiskSource prop:Force001
+res:Screwer001 model:hasRiskSource prop:Force001.
 #
 res:UltrasonicWelder001 rdf:type model:Resource.
 res:UltrasonicWelder001 rdfs:label 'Ultrasonic Welder'.
-res:UltrasonicWelder001 model:changesProperty prop:Temperature001
+res:UltrasonicWelder001 model:changesProperty prop:Temperature001.
 #
 res:PressureTester001 rdf:type model:Resource.
 res:PressureTester001 rdfs:label 'Pressure Tester'.
