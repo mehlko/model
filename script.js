@@ -75,6 +75,12 @@ let presets = [
     inputModelUrl: 'https://mehlko.github.io/model/models/inputModel.ttl',
     factUrl: 'https://mehlko.github.io/model/models/exampleFacts.ttl',
   },
+  {
+    id: 2,
+    label: 'Knowledge Provider Integration',
+    inputModelUrl: 'https://mehlko.github.io/model/models/inputModel.ttl',
+    factUrl: 'https://mehlko.github.io/model/models/exampleFacts.ttl',
+  },
 ];
 
 function getFirstLabel(labels, id) {
@@ -772,12 +778,12 @@ class ProductionLine extends React.Component {
               <li>process numbering</li>
               <li>learn about PPR (triangle?, gif?)</li>
               <li>link to resources</li>
-              <li>default influences (e.g. time)</li>
               <li>pizza data set</li>
               <li>
                 specific test (xaps use case) and integration test (etim,
                 eclass, SI)
               </li>
+              <li>default influences (e.g. time)</li>
               <li>human operators, line feeder</li>
             </ul>
           </Box>
