@@ -25,6 +25,7 @@ var patternList = {
       return 'Product Exposed To Risk Source is detected process.';
     },
   },
+
   inputOutputMismatch: {
     name: 'Input Output Mismatch',
     abbreviation: 'IO',

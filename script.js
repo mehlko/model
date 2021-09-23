@@ -464,6 +464,10 @@ class ProductionLine extends React.Component {
       detectedPatterns: [],
     });
 
+    patternList.entries(obj).forEach(
+      ([patternKey, pattern]) => console.log(key, value)
+  );
+
     for (var patternKey of Object.keys(patternList)) {
       var currentPattern = patternList[patternKey];
       log(patternKey);
