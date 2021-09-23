@@ -15,26 +15,13 @@ var patternList = {
       return [
         queryResult.get('?process').value,
         queryResult.get('?product').value,
-        queryResult.get('?resource').value,
-        queryResult.get('?riskSource').value,
+        //queryResult.get('?resource').value,
+        //queryResult.get('?riskSource').value,
       ];
     },
 
     reason: (queryResult) => {
-      return (
-        'Product Exposed To Risk Source is detected process.' +
-        'The process ' +
-        queryResult.get('?process').value +
-        'uses the resource ' +
-        queryResult.get('?resource').value +
-        'that has the risk source ' +
-        queryResult.get('?risk source').value +
-        '.' +
-        'The product ' +
-        queryResult.get('?product').value +
-        ' is vunlerable to  ' +
-        queryResult.get('?riskSource').value
-      );
+      return 'Product Exposed To Risk Source is detected process.';
     },
   },
   inputOutputMismatch: {
