@@ -26,14 +26,14 @@ var patternList = {
         'Product Exposed To Risk Source is detected process.' +
         'The process ' +
         queryResult.get('?process').value +
-        'uses the resource ' +
+        ' uses the resource ' +
         queryResult.get('?resource').value +
-        'that has the risk source ' +
+        ' that has the risk source ' +
         queryResult.get('?riskSource').value +
         '.' +
-        'The product ' +
+        ' The product ' +
         queryResult.get('?product').value +
-        ' is vunlerable to  ' +
+        ' is vunlerable to ' +
         queryResult.get('?riskSource').value
       );
     },
