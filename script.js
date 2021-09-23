@@ -459,31 +459,32 @@ class ProductionLine extends React.Component {
     var store = this.convertJSONToRDF();
     const quadDump = store.getQuads(null, null, null);
 
-    log(patternList)
+    log(patternList);
     this.setState({
       detectedPatterns: [],
     });
 
     for (var patternKey of Object.keys(patternList)) {
+      var currentPattern = patternList[patternKey];
+      log(patternKey);
+      log(currentPattern);
       Comunica.newEngine()
-      .query(patternList[patternKey].queryString, {
-        sources: [store],
-      })
-      .then(async (result) => {
-        var queryResults = await result.bindings();
-        log(patternKey);
-          log(patternList[patternKey]);
-          log(queryResults)
+        .query(currentPattern.queryString, {
+          sources: [store],
+        })
+        .then(async (result) => {
+          var queryResults = await result.bindings();
+          log(queryResults);
           queryResults.map(async (queryResult) => {
             log('detected');
-            await this.setState({
+            this.setState({
               detectedPatterns: [
                 ...this.state.detectedPatterns,
                 {
                   patternKey: patternKey,
                   queryResult: queryResult,
                   affectedElements:
-                    patternList[patternKey].affectedElements(queryResult),
+                    currentPattern.affectedElements(queryResult),
                 },
               ],
             });
