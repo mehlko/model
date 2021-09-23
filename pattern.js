@@ -1,4 +1,42 @@
 var patternList = {
+  productExposedToRiskSource: {
+    name: 'Product Exposed To Risk Source',
+    abbreviation: 'PR',
+    description: '',
+    queryString: `  PREFIX model: <http://uni-ko-ld.de/ist/model#>
+    SELECT * WHERE {
+     ?process model:hasInputProduct ?product .
+     ?process model:hasResource ?resource .
+     ?resource model:hasRiskSource ?riskSource.
+     ?product model:hasVulnerability ?riskSource.
+    }`,
+
+    affectedElements: (queryResult) => {
+      return [
+        queryResult.get('?process').value,
+        queryResult.get('?product').value,
+        queryResult.get('?resource').value,
+        queryResult.get('?riskSource').value,
+      ];
+    },
+
+    reason: (queryResult) => {
+      return (
+        'Product Exposed To Risk Source is detected process.' +
+        'The process ' +
+        queryResult.get('?process').value +
+        'uses the resource ' +
+        queryResult.get('?resource').value +
+        'that has the risk source ' +
+        queryResult.get('?risk source').value +
+        '.' +
+        'The product ' +
+        queryResult.get('?product').value +
+        ' is vunlerable to  ' +
+        queryResult.get('?riskSource').value
+      );
+    },
+  },
   inputOutputMismatch: {
     name: 'Input Output Mismatch',
     abbreviation: 'IO',
@@ -35,5 +73,5 @@ var patternList = {
         queryResult.get('?nextProcess').value
       );
     },
-  }
+  },
 };
