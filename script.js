@@ -500,11 +500,6 @@ class ProductionLine extends React.Component {
     var selectedPattern =
       this.state.detectedPatterns[this.state.selectedPatternIndex];
     log(selectedPattern);
-    log(
-      selectedPattern.affectedElements.includes(
-        'http://uni-ko-ld.de/ist/process#QualityControl001'
-      )
-    );
   }
 
   getItems(list, procId, type) {
