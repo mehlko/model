@@ -759,8 +759,6 @@ class ProductionLine extends React.Component {
           <Box>
             <Typography variant="h5">Todo</Typography>
             <ul>
-              <li>add pattern</li>
-              <li>add example data</li>
               <li>qol for proces editing</li>
               <li>process numbering</li>
               <li>learn about PPR (triangle?, gif?)</li>
