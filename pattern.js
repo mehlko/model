@@ -38,7 +38,7 @@ var patternList = {
   productExposedToRiskSource: {
     name: 'productExposedToRiskSource',
     description: '',
-    queryString: `SELECT * WHERE {a b c.}`,
+    queryString: `SELECT * WHERE { ?a b c.}`,
 
     affectedElements: (queryResult) => {
       return [];
