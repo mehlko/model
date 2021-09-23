@@ -35,4 +35,17 @@ var patternList = {
       );
     },
   },
+  productExposedToRiskSource: {
+    name: 'productExposedToRiskSource',
+    description: '',
+    queryString: ``,
+
+    affectedElements: (queryResult) => {
+      return [];
+    },
+
+    reason: (queryResult) => {
+      return '';
+    },
+  },
 };
