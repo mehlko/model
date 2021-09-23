@@ -160,8 +160,9 @@ class MyAutocomplete extends React.Component {
           <TextField {...params} placeholder="Type to edit" />
         )}
         renderOption={(props, option, { selected }) => {
+          log(option)
           return (
-            <Grid container>
+            <Grid container key={option.id+option.labels.join()}>
               <Grid item xs={6}>
                 <Typography component="div">{option.labels}</Typography>
                 <Typography
@@ -732,7 +733,7 @@ class ProductionLine extends React.Component {
             {this.state.detectedPatterns.map(
               (detectedPattern, detectedPatternIndex) => (
                 <Card
-                  fullWidth
+                  key={'detectedPatternIndex' + detectedPatternIndex}
                   sx={
                     detectedPatternIndex === this.state.selectedPatternIndex
                       ? { border: '2px solid grey' }
