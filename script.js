@@ -234,6 +234,41 @@ class MyAutocomplete extends React.Component {
   }
 }
 
+class MyItem extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      open: false,
+      hover: false,
+    };
+  }
+
+  render() {
+    return (
+      <div> onClick={()=>{this.setState({open:true)}}}
+        <Dialog onClose={handleClose} open={this.state.open}>
+          <DialogTitle>Set backup account</DialogTitle>
+        </Dialog>
+        {this.props.highlight && (
+          <Typography
+            variant="h6"
+            component="span"
+            color="error"
+            sx={{ p: 0.5, border: 3, borderRadius: 16 }}
+          >
+            {getFirstLabel(this.props.item.labels, this.props.item.id)}
+          </Typography>
+        )}{' '}
+        {!this.props.highlight && (
+          <Typography variant="h6" component="span">
+            {getFirstLabel(this.props.item.labels, this.props.item.id)}
+          </Typography>
+        )}
+      </div>
+    );
+  }
+}
+
 class ProductionLine extends React.Component {
   constructor(props) {
     super(props);
@@ -256,6 +291,14 @@ class ProductionLine extends React.Component {
       this.store,
       'https://mehlko.github.io/model/models/etimLabels.ttl'
     );
+  }
+
+  getItems(list, procId, type) {
+    return list.map((item, itemId) => (
+      <Box className={type} key={'process' + procId + 'type' + itemId}>
+        <MyItem item={item} highlight={this.isPatternAffected(item.id)} />
+      </Box>
+    ));
   }
 
   async loadUrlToStore(myStore, url) {
@@ -497,28 +540,6 @@ class ProductionLine extends React.Component {
     var selectedPattern =
       this.state.detectedPatterns[this.state.selectedPatternIndex];
     log(selectedPattern);
-  }
-
-  getItems(list, procId, type) {
-    return list.map((item, itemId) => (
-      <Box className={type} key={'process' + procId + 'type' + itemId}>
-        {this.isPatternAffected(item.id) && (
-          <Typography
-            variant="h6"
-            component="span"
-            color="error"
-            sx={{ p: 0.5, border: 3, borderRadius: 16 }}
-          >
-            {getFirstLabel(item.labels, item.id)}
-          </Typography>
-        )}{' '}
-        {!this.isPatternAffected(item.id) && (
-          <Typography variant="h6" component="span">
-            {getFirstLabel(item.labels, item.id)}
-          </Typography>
-        )}
-      </Box>
-    ));
   }
 
   isPatternAffected(id) {
@@ -777,7 +798,18 @@ class ProductionLine extends React.Component {
     );
   }
 }
+function Example() {
+  // Declare a new state variable, which we'll call "count"
+  const [count, setCount] = React.useState(false);
+  const [open, setOpen] = React.useState(false);
 
+  return (
+    <div>
+      <p>You clicked {count} times</p>
+      <button onClick={() => setCount(count + 1)}>Click me</button>
+    </div>
+  );
+}
 ReactDOM.render(<ProductionLine />, document.getElementById('container'));
 
 function log(text) {
