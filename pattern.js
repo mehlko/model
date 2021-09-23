@@ -7,7 +7,7 @@ var patternList = {
     SELECT * WHERE {
      ?process model:hasInputProduct ?product .
      ?process model:hasResource ?resource .
-     ?resource model:hasRiskSource ?riskSource .
+     #?resource model:hasRiskSource ?riskSource .
      #?product model:hasVulnerability ?riskSource.
     }`,
 
