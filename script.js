@@ -29,6 +29,7 @@ const {
   Link,
   Dialog,
   DialogTitle,
+  DialogContent,
 } = MaterialUI;
 
 const { namedNode, literal, defaultGraph, quad } = N3.DataFactory;
@@ -238,19 +239,26 @@ class MyItem extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      open: false,
+      a: false,
       hover: false,
     };
   }
 
+  op(value) {
+    log('1 ' + value);
+    this.setState({ a: value }, () => log('2 ' + this.state.a));
+  }
+
   render() {
     return (
-      <div> onClick={()=>{this.setState({open:true)}}}
-        <Dialog onClose={handleClose} open={this.state.open}>
-          <DialogTitle>Set backup account</DialogTitle>
+      <div>
+        <Dialog onClose={this.op.bind(this, false)} open={this.state.a}>
+          <DialogTitle>{this.props.item.labels.join(', ')}</DialogTitle>
+          <DialogContent>{this.props.item.id}</DialogContent>
         </Dialog>
         {this.props.highlight && (
           <Typography
+            onClick={this.op.bind(this, true)}
             variant="h6"
             component="span"
             color="error"
@@ -260,7 +268,11 @@ class MyItem extends React.Component {
           </Typography>
         )}{' '}
         {!this.props.highlight && (
-          <Typography variant="h6" component="span">
+          <Typography
+            onClick={this.op.bind(this, true)}
+            variant="h6"
+            component="span"
+          >
             {getFirstLabel(this.props.item.labels, this.props.item.id)}
           </Typography>
         )}
