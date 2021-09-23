@@ -464,14 +464,9 @@ class ProductionLine extends React.Component {
       detectedPatterns: [],
     });
 
-    patternList.entries(obj).forEach(
-      ([patternKey, pattern]) => console.log(key, value)
-  );
+    Object.entries(patternList).forEach(([patternKey, currentPattern]) => {
+      console.log(patternKey, currentPattern);
 
-    for (var patternKey of Object.keys(patternList)) {
-      var currentPattern = patternList[patternKey];
-      log(patternKey);
-      log(currentPattern);
       Comunica.newEngine()
         .query(currentPattern.queryString, {
           sources: [store],
@@ -494,7 +489,7 @@ class ProductionLine extends React.Component {
             });
           });
         });
-    }
+    });
   }
 
   addQuad(store, subject, predicate, object) {

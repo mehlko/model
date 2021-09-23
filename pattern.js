@@ -9,14 +9,14 @@ var patternList = {
      ?process model:hasInputProduct ?product .
      ?process model:hasResource ?resource .
      #?resource model:hasRiskSource ?riskSource .
-     #?product model:hasVulnerability ?riskSource .
+     ?product model:hasVulnerability ?riskSource .
     }`,
 
     affectedElements: (queryResult) => {
       return [
-        //queryResult.get('?process').value,
-        //queryResult.get('?product').value,
-        //queryResult.get('?resource').value,
+        queryResult.get('?process').value,
+        queryResult.get('?product').value,
+        queryResult.get('?resource').value,
         //queryResult.get('?riskSource').value,
       ];
     },
