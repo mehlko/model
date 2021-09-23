@@ -91,7 +91,7 @@ res:Scale001 rdf:type model:Resource.
 res:Scale001 rdfs:label 'Scale'.
 #
 res:HumanOperator001 rdf:type model:Resource.
-res:HumanOperator001 rdfs:label 'Trained Technician'.
+res:HumanOperator001 rdfs:label 'Maintenance Worker'.
 res:HumanOperator001 model:hasVulnerability prop:Force001.
 res:HumanOperator001 model:hasVulnerability prop:Temperature001.
 #
