@@ -461,15 +461,12 @@ class ProductionLine extends React.Component {
     });
 
     Object.entries(patternList).forEach(([patternKey, currentPattern]) => {
-      console.log(patternKey, currentPattern);
-
       Comunica.newEngine()
         .query(currentPattern.queryString, {
           sources: [store],
         })
         .then(async (result) => {
           var queryResults = await result.bindings();
-          log(queryResults);
           queryResults.map(async (queryResult) => {
             log('detected');
             this.setState({
