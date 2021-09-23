@@ -129,3 +129,6 @@ prop:Weight001 rdfs:label 'Weight'.
 prop:Functionality001 rdf:type model:Property.
 prop:Functionality001 rdfs:label 'Funcctionality'.
 #
+prop:Time001 rdf:type model:Property.
+prop:Time001 rdfs:label 'Time'.
+#
