@@ -820,8 +820,8 @@ class ProductionLine extends React.Component {
 
           <Box>
             <Typography variant="h5">Todo</Typography>
-            <Typography>
-              <ul>
+            <ul>
+              <Typography>
                 <li>
                   example: case, (pizza default influences time), wine (human
                   operators), integration (etim, eclass, SI)
@@ -833,8 +833,8 @@ class ProductionLine extends React.Component {
                 <li>---------------------</li>
                 <li>link to resources</li>
                 <li>process numbering</li>
-              </ul>
-            </Typography>
+              </Typography>
+            </ul>
           </Box>
         </Container>
       </>
