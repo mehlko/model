@@ -250,6 +250,13 @@ class MyItem extends React.Component {
   }
 
   render() {
+    var highlightProps = {};
+    if (this.props.highlight) {
+      highlightProps = {
+        color: 'error',
+        sx: { p: 0.5, border: 3, borderRadius: 3 },
+      };
+    }
     return (
       <>
         <Dialog onClose={this.op.bind(this, false)} open={this.state.a}>
@@ -270,8 +277,7 @@ class MyItem extends React.Component {
           onClick={this.op.bind(this, true)}
           variant="h6"
           component="span"
-          color={this.props.highlight && 'error'}
-          sx={this.props.highlight && { p: 0.5, border: 3, borderRadius: 16 }}
+          {...highlightProps}
         >
           {getFirstLabel(this.props.item.labels, this.props.item.id)}
         </Typography>
@@ -707,7 +713,7 @@ class ProductionLine extends React.Component {
                         className="name"
                         variant="h6"
                         color="error"
-                        sx={{ p: 0.5, border: 3, borderRadius: 16 }}
+                        sx={{ p: 0.5, border: 3, borderRadius: 3 }}
                       >
                         {getFirstLabel(proc.labels, proc.id)}
                       </Typography>
