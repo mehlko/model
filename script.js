@@ -251,32 +251,31 @@ class MyItem extends React.Component {
 
   render() {
     return (
-      <div>
+      <>
         <Dialog onClose={this.op.bind(this, false)} open={this.state.a}>
           <DialogTitle>{this.props.item.labels.join(', ')}</DialogTitle>
-          <DialogContent>{this.props.item.id}</DialogContent>
+          <DialogContent>
+            <Typography>{this.props.item.id}</Typography>
+            <Button
+              fullWidth
+              variant="contained"
+              onClick={() => this.props.delete()}
+            >
+              Delete
+            </Button>
+          </DialogContent>
         </Dialog>
-        {this.props.highlight && (
-          <Typography
-            onClick={this.op.bind(this, true)}
-            variant="h6"
-            component="span"
-            color="error"
-            sx={{ p: 0.5, border: 3, borderRadius: 16 }}
-          >
-            {getFirstLabel(this.props.item.labels, this.props.item.id)}
-          </Typography>
-        )}{' '}
-        {!this.props.highlight && (
-          <Typography
-            onClick={this.op.bind(this, true)}
-            variant="h6"
-            component="span"
-          >
-            {getFirstLabel(this.props.item.labels, this.props.item.id)}
-          </Typography>
-        )}
-      </div>
+
+        <Typography
+          onClick={this.op.bind(this, true)}
+          variant="h6"
+          component="span"
+          color={this.props.highlight && 'error'}
+          sx={this.props.highlight && { p: 0.5, border: 3, borderRadius: 16 }}
+        >
+          {getFirstLabel(this.props.item.labels, this.props.item.id)}
+        </Typography>
+      </>
     );
   }
 }
@@ -305,12 +304,20 @@ class ProductionLine extends React.Component {
     );
   }
 
-  getItems(list, procId, type) {
-    return list.map((item, itemId) => (
-      <Box className={type} key={'process' + procId + 'type' + itemId}>
-        <MyItem item={item} highlight={this.isPatternAffected(item.id)} />
-      </Box>
-    ));
+  getItems(list, procId, element, type) {
+    return (
+      <div className={element}>
+        {list.map((item, itemId) => (
+          <Box className={type} key={'process' + procId + 'type' + itemId}>
+            <MyItem
+              item={item}
+              highlight={this.isPatternAffected(item.id)}
+              delete={this.deletePPR.bind(this, type, procId, element, itemId)}
+            />
+          </Box>
+        ))}
+      </div>
+    );
   }
 
   async loadUrlToStore(myStore, url) {
@@ -334,6 +341,18 @@ class ProductionLine extends React.Component {
       ...tempProductionLine.processes[processId][type],
       value,
     ];
+    //set state
+    this.setState({
+      productionLine: tempProductionLine,
+    });
+  }
+
+  deletePPR(type, processId, element, pprId) {
+    //make copy
+    var tempProductionLine = { ...this.state.productionLine };
+    log(tempProductionLine.processes[processId][element]);
+    //update
+    tempProductionLine.processes[processId][element].splice(pprId, 1);
     //set state
     this.setState({
       productionLine: tempProductionLine,
@@ -719,26 +738,36 @@ class ProductionLine extends React.Component {
                       procId
                     )}
                   />
-                  <div className="inputs">
-                    {proc.inputs &&
-                      this.getItems(proc.inputs, procId, 'product')}
-                  </div>
-                  <div className="outputs">
-                    {proc.outputs &&
-                      this.getItems(proc.outputs, procId, 'product')}
-                  </div>
-                  <div className="resources">
-                    {proc.resources &&
-                      this.getItems(proc.resources, procId, 'resource')}
-                  </div>
-                  <div className="measurements">
-                    {proc.measurements &&
-                      this.getItems(proc.measurements, procId, 'measurement')}
-                  </div>
-                  <div className="constraints">
-                    {proc.constraints &&
-                      this.getItems(proc.constraints, procId, 'constraint')}
-                  </div>
+
+                  {proc.inputs &&
+                    this.getItems(proc.inputs, procId, 'inputs', 'product')}
+
+                  {proc.outputs &&
+                    this.getItems(proc.outputs, procId, 'outputs', 'product')}
+
+                  {proc.resources &&
+                    this.getItems(
+                      proc.resources,
+                      procId,
+                      'resources',
+                      'resource'
+                    )}
+
+                  {proc.measurements &&
+                    this.getItems(
+                      proc.measurements,
+                      procId,
+                      'measurements',
+                      'measurement'
+                    )}
+
+                  {proc.constraints &&
+                    this.getItems(
+                      proc.constraints,
+                      procId,
+                      'constraints',
+                      'constraint'
+                    )}
                 </Box>
               ))}
           </Box>
