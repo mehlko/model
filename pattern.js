@@ -48,7 +48,7 @@ var patternList = {
      ?process model:hasInputProduct ?product .
      ?process model:hasResource ?resource .
      ?product model:hasRiskSource ?riskSource .
-    ?resource model:hasVulnerability ?riskSource .
+     ?resource model:hasVulnerability ?riskSource .
     }`,
 
     affectedElements: (queryResult) => {
@@ -78,7 +78,7 @@ var patternList = {
   },
 
   unconstraintChangedProperty: {
-    name: 'unconstraint Changed Property',
+    name: 'Unconstraint Changed Property',
     abbreviation: 'UCP',
     description: 'A property is changed and has no constraint',
     queryString: `
@@ -86,7 +86,7 @@ var patternList = {
     SELECT * WHERE {
      ?process model:hasResource ?resource .
      ?resource model:changesProperty ?property .
-     MINUS {?processes model:hasConstraint ?property .}
+     MINUS {?process model:hasConstraint ?property .}
     }`,
 
     affectedElements: (queryResult) => {
@@ -120,7 +120,7 @@ var patternList = {
     SELECT * WHERE {
      ?process model:hasResource ?resource .
      ?resource model:changesProperty ?property .
-     MINUS {?processes model:hasMeasurement ?property .}
+     MINUS {?process model:hasMeasurement ?property .}
     }`,
 
     affectedElements: (queryResult) => {
@@ -154,7 +154,7 @@ var patternList = {
     SELECT * WHERE {
      ?process model:hasResource ?resource .
      ?resource model:hasMeasurement ?measurement .
-     MINUS {?processes model:hasConstraint ?measurement .}
+     MINUS {?process model:hasConstraint ?measurement .}
     }`,
 
     affectedElements: (queryResult) => {
