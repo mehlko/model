@@ -827,6 +827,8 @@ class ProductionLine extends React.Component {
               </li>
               <li>learn about PPR (triangle?, gif?)</li>
               <li>prettier pattern</li>
+              <li>legend</li>
+              <li>feature list/planned feature list</li>
               <li>---------------------</li>
               <li>link to resources</li>
               <li>process numbering</li>
