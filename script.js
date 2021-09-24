@@ -821,17 +821,15 @@ class ProductionLine extends React.Component {
           <Box>
             <Typography variant="h5">Todo</Typography>
             <ul>
-              <li>qol for proces editing</li>
-              <li>process numbering</li>
-              <li>learn about PPR (triangle?, gif?)</li>
-              <li>link to resources</li>
-              <li>pizza data set</li>
               <li>
-                specific test (xaps use case) and integration test (etim,
-                eclass, SI)
+                example: case, (pizza default influences time), wine (human
+                operators), integration (etim, eclass, SI)
               </li>
-              <li>default influences (e.g. time)</li>
-              <li>human operators, line feeder</li>
+              <li>learn about PPR (triangle?, gif?)</li>
+              <li>prettier pattern</li>
+              <li>---------------------</li>
+              <li>link to resources</li>
+              <li>process numbering</li>
             </ul>
           </Box>
         </Container>
