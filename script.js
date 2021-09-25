@@ -832,11 +832,11 @@ class ProductionLine extends React.Component {
                   example: case, (pizza default influences time), wine (human
                   operators), integration (etim, eclass, SI)
                 </li>
-                <li>learn about PPR (triangle?, gif?)</li>
+                <li>learn about PPR (triangle?, gif?), legend</li>
                 <li>prettier pattern</li>
-                <li>legend</li>
-                <li>feature list/planned feature list</li>
+                <li>pattern list</li>
                 <li>---------------------</li>
+                <li>feature list/planned feature list</li>
                 <li>link to resources</li>
                 <li>process numbering</li>
               </Typography>
