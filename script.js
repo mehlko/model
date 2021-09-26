@@ -697,7 +697,7 @@ class ProductionLine extends React.Component {
             {/* ############################################################ */}
             {/* ############################################################ */}
 
-            <Box className="productionLine" fullWidth>
+            <Box className="productionLine" fullWidth sx={{ marginBottom: 14 }}>
               <Typography variant="h5">Input Model</Typography>
               <br />
               <Button

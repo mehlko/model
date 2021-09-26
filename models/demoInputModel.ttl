@@ -1,0 +1,13 @@
+PREFIX model: <http://uni-ko-ld.de/ist/model#>
+PREFIX prod: <http://uni-ko-ld.de/ist/product#>
+PREFIX proc: <http://uni-ko-ld.de/ist/process#>
+PREFIX res: <http://uni-ko-ld.de/ist/resource#>
+PREFIX prop: <http://uni-ko-ld.de/ist/property#>
+
+
+proc:Process001 model:hasInputProduct prod:Input001.
+proc:Process001 model:hasResource res:Resource001.
+proc:Process001 model:hasMeasurement prop:Force001.
+proc:Process001 model:hasConstraint prop:Position001.
+proc:Process001 model:hasOutputProduct prod:Output001.
+
