@@ -300,6 +300,7 @@ class ProductionLine extends React.Component {
       preset: 0,
       inputModelUrl: presets[0].inputModelUrl,
       factUrl: presets[0].factUrl,
+      tab: 0,
     };
     this.analyze = this.analyze.bind(this);
     this.parser = new N3.Parser();
@@ -591,6 +592,12 @@ class ProductionLine extends React.Component {
     );
   }
 
+  changeTab(event, newValue) {
+    this.setState({
+      tab: newValue,
+    });
+  }
+
   render() {
     return (
       <>
@@ -614,6 +621,17 @@ class ProductionLine extends React.Component {
         </Container>
         <Container maxWidth="sm">
           <Typography variant="h3">Production Line Analyzer</Typography>
+          <Tabs
+            value={0}
+            onChange={this.changeTab.bind(this)}
+            textColor="secondary"
+            indicatorColor="secondary"
+            aria-label="secondary tabs example"
+          >
+            <Tab value="0" label="Analyze" />
+            <Tab value="1" label="Pattern List" />
+            <Tab value="2" label="Roadmap" />
+          </Tabs>
           <Box className="setup">
             <Typography variant="h5">Setup</Typography>
             <br />
