@@ -5,6 +5,7 @@ PREFIX res: <http://uni-ko-ld.de/ist/resource#>
 PREFIX prop: <http://uni-ko-ld.de/ist/property#>
 PREFIX rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 PREFIX rdfs:   <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX etim:  <https://www.etim-international.com/#>
 
 ### Meta Model
 model:Product rdf:type rdfs:Class.
@@ -51,6 +52,52 @@ prop:Property001 rdf:type model:Property.
 prop:Property001 rdfs:label 'Property'.
 
 
+
+
+
+### etim
+
+
+
+etim:EC002878  rdf:type  model:Product ;
+        rdfs:label  "Pairs of diodes" , "Diodemodule" , "Diodeblock" , "Component module" , "Diode module" .
+
+etim:EC000880  rdf:type  model:Product ;
+        rdfs:label  "Plumb seal" , "Seal" .
+
+etim:EC012123  rdf:type  model:Product ;
+        rdfs:label  "Pen-board" , "Markerboard" , "Magnetic whiteboard" , "Greaseboard" , "Dry-wipe board" , "Dry-erase board" , "Cork/pin board" , "Whiteboard" .
+
+etim:EC000690  rdf:type  model:Product ;
+        rdfs:label  "Projector" , "Video projector" .
+
+etim:EC002688  rdf:type  model:Product ;
+        rdfs:label  "Reflector" , "Slotted nozzle" , "Accessories for air heater (electric)" , "Reducing nose" , "Angle nozzle" , "Glass fibre reflector" , "Soldering reflector" , "Accessories for electric air heater" , "Deflection nozzle" , "Accessories/spare parts for hot air gun" , "Spare parts for hot air gun" , "Wide angle beam reflector" , "Welding shoe" , "Accessories for hot air gun" , "Welding nozzle" , "Cutting nozzle" , "Hot air gun (electrical)" .
+
+etim:EC003832  rdf:type  model:Product ;
+        rdfs:label  "Door opening restrictor" .
+
+etim:EC001594  rdf:type  model:Product ;
+        rdfs:label  "Year clock" , "Week clock" , "Timer clock" , "Timer" , "Mechanical time switch for domestic switching devices" , "Electronic time switch for domestic switching devices" , "Time switch for domestic switching devices" .
+
+etim:EC002498  rdf:type  model:Product ;
+        rdfs:label  "Device labeling system" , "Test device" , "Mechanical locking mechanism" , "Plug-in end socket" , "Bottom duct" , "Ventilator module for industrial heating control systems" , "Coding plate" , "Switching cycle counter" , "Slide-in technique" , "Distance frame" , "Power current connection" , "4-pole" , "Blind cover frame" , "Switch off time delay" , "4th pole" , "Connection clamp" , "EMV-interference suppression module" , "Accessories/spare parts for low-voltage switch technology" , "Installation set" , "Coupling piece for switch axle" , "Voltage detector" , "Arc explosion chamber (arc chute)" , "Control cable connection" , "Wall mount station" , "Connecting bridge" , "Mounting assembly" , "Front plate" , "Cover plate" , "Remote potentiometer" , "Mounting wrench" , "Connection technique" , "Key actuation" , "Connection piece for switch operating shaft" , "Communication and measuring function" , "Auxiliary conductor plug and socket device" , "End piece" , "Connector" , "Mounting tool" , "Converter" , "Blade terminal" , "Grommet" , "Frame clamp" , "Mounting set" , "Current transformer" , "Filter" , "Accessories for low-voltage switch technology" , "Wall mount" , "Coil" , "Connection terminal" , "Wall mount panel" , "Locking clip" , "Contact set" , "Distance holder" , "Neutral terminal" , "Connection system" , "Spark cap" , "Diode bloc" , "Spare parts for low-voltage switch technology" , "Cover" , "Clamp cover" , "Verbindingsstuk schakelaaras" , "Mechanical locking" , "Switching piece" , "Adapter plate" , "Coding part" , "Shock protection cover" , "Plug insert technique" , "Interlocking" , "Coupling piece for switch operating shaft" , "Axle lead-through" .
+
+etim:EC003642  rdf:type  model:Product ;
+        rdfs:label  "Promotional t-shirt" , "Medical shirt" , "T-Shirt" , "Casual clothes" , "Work T-shirt" , "Casual T-shirt" , "Warning protection T-shirt" , "Doctor's T-shirt" , "Casual working clothes" , "Occupation clothing" , "Antistatic T-shirt" , "Casual shirt" .
+
+etim:EC004546  rdf:type  model:Product ;
+        rdfs:label  "Sewage pip fixture" , "Drianpipe fixture" , "Drain pipe support for concrete floor" .
+
+etim:EC003452  rdf:type  model:Product ;
+        rdfs:label  "Cutting disc set" .
+
+
+
+
+
+
+### Eclass
 
 
 <eclass.eu/#D51>  rdf:type  model:Property ;
