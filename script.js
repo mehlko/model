@@ -593,9 +593,13 @@ class ProductionLine extends React.Component {
   }
 
   resolve(parameter, queryResult, resolver) {
-    return getFirstLabel(
-      resolver.getLabels(queryResult.get(parameter).value),
-      queryResult.get(parameter).value
+    return (
+      '"' +
+      getFirstLabel(
+        resolver.getLabels(queryResult.get(parameter).value),
+        queryResult.get(parameter).value
+      ) +
+      '"'
     );
   }
 
