@@ -55,14 +55,14 @@ var patternList = {
 
     affectedElements: (queryResult) => {
       return [
-        resolver.resolve('?process').value,
-        resolver.resolve('?resource').value,
-        resolver.resolve('?resource2').value,
-        resolver.resolve('?riskSource').value,
+        queryResult.get('?process').value,
+        queryResult.get('?resource').value,
+        queryResult.get('?resource2').value,
+        queryResult.get('?riskSource').value,
       ];
     },
 
-    reason: (queryResult) => {
+    reason: (queryResult, resolver) => {
       return (
         'The process ' +
         resolver.resolve('?process', queryResult, resolver) +
@@ -99,7 +99,7 @@ var patternList = {
       ];
     },
 
-    reason: (queryResult) => {
+    reason: (queryResult, resolver) => {
       return (
         'The process ' +
         resolver.resolve('?process', queryResult, resolver) +
@@ -133,7 +133,7 @@ var patternList = {
       ];
     },
 
-    reason: (queryResult) => {
+    reason: (queryResult, resolver) => {
       return (
         'The process ' +
         resolver.resolve('?process', queryResult, resolver) +
@@ -167,7 +167,7 @@ var patternList = {
       ];
     },
 
-    reason: (queryResult) => {
+    reason: (queryResult, resolver) => {
       return (
         'The process ' +
         resolver.resolve('?process', queryResult, resolver) +
@@ -200,7 +200,7 @@ var patternList = {
       ];
     },
 
-    reason: (queryResult) => {
+    reason: (queryResult, resolver) => {
       return (
         'Input Output Mismatch is detected between process  ' +
         resolver.resolve('?process', queryResult, resolver) +
