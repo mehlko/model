@@ -78,8 +78,8 @@ let presets = [
   {
     id: 2,
     label: 'Knowledge Provider Integration',
-    inputModelUrl: 'https://mehlko.github.io/model/models/demoInputModel.ttl',
-    factUrl: 'https://mehlko.github.io/model/models/exampleFacts.ttl',
+    inputModelUrl: 'https://mehlko.github.io/model/models/inputModelDemo.ttl',
+    factUrl: 'https://mehlko.github.io/model/models/exampleFacts2.ttl',
   },
 ];
 

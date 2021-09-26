@@ -3,7 +3,8 @@ PREFIX prod: <http://uni-ko-ld.de/ist/product#>
 PREFIX proc: <http://uni-ko-ld.de/ist/process#>
 PREFIX res: <http://uni-ko-ld.de/ist/resource#>
 PREFIX prop: <http://uni-ko-ld.de/ist/property#>
-
+PREFIX rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs:   <http://www.w3.org/2000/01/rdf-schema#>
 
 ### Meta Model
 model:Product rdf:type rdfs:Class.
@@ -20,11 +21,16 @@ model:Property rdfs:subClassOf model:InputModelElement.
 
 
 
+### Product Repo
+
 prod:Output001 rdf:type model:Product.
 prod:Output001 rdfs:label "Output".
 
 prod:Input001 rdf:type model:Product.
 prod:Input001 rdfs:label "Input".
+
+
+### Process Repo
 
 proc:Process001 rdf:type model:Process.
 proc:Process001 rdfs:label 'Process'.
@@ -32,23 +38,17 @@ proc:Process001 rdfs:label 'Process'.
 proc:Process002 rdf:type model:Process.
 proc:Process002 rdfs:label 'Process'.
 
+
+### Resource Repo
+
 res:Resource001 rdf:type model:Resource.
 res:Resource001 rdfs:label 'Resource'.
+
+
+### Property Repo
 
 prop:Property001 rdf:type model:Property.
 prop:Property001 rdfs:label 'Property'.
 
 
-proc:Process001 model:hasInputProduct prod:Input001.
-proc:Process001 model:hasResource res:Resource001.
-proc:Process001 model:hasMeasurement prop:Property001.
-proc:Process001 model:hasConstraint prop:Property001.
-proc:Process001 model:hasOutputProduct prod:Output001.
-#
-proc:Process001 model:hasNextProcess proc:Process002.
-#
-proc:Process002 model:hasInputProduct prod:Input001.
-proc:Process002 model:hasResource res:Resource001.
-proc:Process002 model:hasMeasurement prop:Property001.
-proc:Process002 model:hasConstraint prop:Property001.
-proc:Process002 model:hasOutputProduct prod:Output001.
+
