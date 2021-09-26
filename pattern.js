@@ -1,4 +1,4 @@
-var testArray=["Hallo:)"];
+var testArray = ['Hallo:)'];
 
 var patternList = {
   productExposedToRiskSource: {
@@ -49,15 +49,15 @@ var patternList = {
     SELECT * WHERE {
      ?process model:hasResource ?resource .
      ?process model:hasResource ?resource2 .
-     ?product model:hasRiskSource ?riskSource .
-     ?resource model:hasVulnerability ?riskSource2 .
+     ?resource model:hasRiskSource ?riskSource .
+     ?resource2 model:hasVulnerability ?riskSource .
     }`,
 
     affectedElements: (queryResult) => {
       return [
         queryResult.get('?process').value,
-        queryResult.get('?product').value,
         queryResult.get('?resource').value,
+        queryResult.get('?resource2').value,
         queryResult.get('?riskSource').value,
       ];
     },
@@ -66,13 +66,13 @@ var patternList = {
       return (
         'The process ' +
         queryResult.get('?process').value +
-        ' uses the product ' +
-        queryResult.get('?product').value +
+        ' uses the resource ' +
+        queryResult.get('?resource2').value +
         ' that has the risk source ' +
         queryResult.get('?riskSource').value +
         '.' +
         ' The resource ' +
-        queryResult.get('?resource').value +
+        queryResult.get('?resource2').value +
         ' is vunlerable to ' +
         queryResult.get('?riskSource').value
       );
