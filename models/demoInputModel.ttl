@@ -21,20 +21,19 @@ model:Property rdfs:subClassOf model:InputModelElement.
 
 
 prod:Output001 rdf:type model:Product.
-prod:Output001 rdfs:label "Baked Pizza".
+prod:Output001 rdfs:label "Output".
 
 prod:Input001 rdf:type model:Product.
-prod:Input001 rdfs:label "Baked Pizza".
+prod:Input001 rdfs:label "Input".
 
 proc:Process001 rdf:type model:Process.
-proc:Process001 rdfs:label 'Flashing'.
+proc:Process001 rdfs:label 'Process'.
 
 res:Resource001 rdf:type model:Resource.
-res:Resource001 rdfs:label 'Oven'.
+res:Resource001 rdfs:label 'Resource'.
 
 prop:Property001 rdf:type model:Property.
-prop:Property001 rdfs:label 'Firmware'.
-prop:Property001 rdfs:label 'Firmware Version'.
+prop:Property001 rdfs:label 'Property'.
 
 
 proc:Process001 model:hasInputProduct prod:Input001.
