@@ -5,9 +5,41 @@ PREFIX res: <http://uni-ko-ld.de/ist/resource#>
 PREFIX prop: <http://uni-ko-ld.de/ist/property#>
 
 
+### Meta Model
+model:Product rdf:type rdfs:Class.
+model:Process rdf:type rdfs:Class.
+model:Resource rdf:type rdfs:Class.
+model:Property rdf:type rdfs:Class.
+
+model:InputModelElement rdf:type rdfs:Class.
+
+model:Product rdfs:subClassOf model:InputModelElement.
+model:Process rdfs:subClassOf model:InputModelElement.
+model:Resource rdfs:subClassOf model:InputModelElement.
+model:Property rdfs:subClassOf model:InputModelElement.
+
+
+
+prod:Output001 rdf:type model:Product.
+prod:Output001 rdfs:label "Baked Pizza".
+
+prod:Input001 rdf:type model:Product.
+prod:Input001 rdfs:label "Baked Pizza".
+
+proc:Process001 rdf:type model:Process.
+proc:Process001 rdfs:label 'Flashing'.
+
+res:Resource001 rdf:type model:Resource.
+res:Resource001 rdfs:label 'Oven'.
+
+prop:Property001 rdf:type model:Property.
+prop:Property001 rdfs:label 'Firmware'.
+prop:Property001 rdfs:label 'Firmware Version'.
+
+
 proc:Process001 model:hasInputProduct prod:Input001.
 proc:Process001 model:hasResource res:Resource001.
-proc:Process001 model:hasMeasurement prop:Force001.
-proc:Process001 model:hasConstraint prop:Position001.
+proc:Process001 model:hasMeasurement prop:Property001.
+proc:Process001 model:hasConstraint prop:Property001.
 proc:Process001 model:hasOutputProduct prod:Output001.
 
