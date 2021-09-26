@@ -606,7 +606,7 @@ class ProductionLine extends React.Component {
             <Grid container spacing={2}>
               <Grid item xs={5}>
                 Production Line Analyzer
-              </Grid>{' '}
+              </Grid>
               <Grid item xs={2}>
                 v0.1
               </Grid>
@@ -628,235 +628,251 @@ class ProductionLine extends React.Component {
             <Tab label="Features" value="features" />
           </Tabs>
 
-          <Box className="setup">
-            <Typography variant="h5">Setup</Typography>
-            <br />
-            <Grid container spacing={2}>
-              <Grid item xs={12}>
-                <InputLabel id="presetLabel">Preset</InputLabel>
-                <Select
-                  fullWidth
-                  labelId="presetLabel"
-                  id="preset"
-                  value={this.state.preset}
-                  onChange={this.onPresetChange}
-                >
-                  {presets.map((item) => (
-                    <MenuItem value={item.id} key={item.id}>
-                      {item.label}
-                    </MenuItem>
-                  ))}
-                </Select>
-              </Grid>
-              <Grid item xs={10}>
-                <TextField
-                  fullWidth
-                  label="Input Model URL"
-                  value={this.state.inputModelUrl}
-                  onChange={this.onInputModelChange}
-                />{' '}
-              </Grid>
-              <Grid item xs={2}>
-                <Button
-                  fullWidth
-                  variant="contained"
-                  onClick={() => {
-                    window.open(this.state.inputModelUrl, '_blank');
-                  }}
-                >
-                  Show Source
-                </Button>
-              </Grid>
-              <Grid item xs={10}>
-                <TextField
-                  fullWidth
-                  label="Fact URL"
-                  value={this.state.factUrl}
-                  onChange={this.onFactUrlChange}
-                />{' '}
-              </Grid>
-              <Grid item xs={2}>
-                <Button
-                  fullWidth
-                  variant="contained"
-                  onClick={() => {
-                    window.open(this.state.factUrl, '_blank');
-                  }}
-                >
-                  Show Source
-                </Button>
-              </Grid>
-              <Grid item xs={12}>
-                <Button
-                  fullWidth
-                  variant="contained"
-                  onClick={this.loadInputModel.bind(this)}
-                >
-                  Load Input Model
-                </Button>
-              </Grid>
-            </Grid>
-          </Box>
-          <br />
-
-          {/* ############################################################ */}
-          {/* ############################################################ */}
-
-          <Box className="productionLine" fullWidth>
-            <Typography variant="h5">Input Model</Typography>
-            <br />
-            <Button
-              variant="contained"
-              onClick={() => this.addProcess()}
-              fullWidth
-            >
-              Add Process
-            </Button>
-            <Button
-              variant="contained"
-              onClick={() => this.analyze()}
-              fullWidth
-              color="success"
-            >
-              Analyze
-            </Button>
-            {this.state.productionLine.processes &&
-              this.state.productionLine.processes.map((proc, procId) => (
-                <Box className="process" key={'process' + procId} fullWidth>
-                  {proc.id && this.isPatternAffected(proc.id) && (
-                    <Box className="name">
-                      <Typography
-                        className="name"
-                        variant="h6"
-                        color="error"
-                        sx={{ p: 0.5, border: 3, borderRadius: 3 }}
-                      >
-                        {getFirstLabel(proc.labels, proc.id)}
-                      </Typography>
-                    </Box>
-                  )}
-                  {proc.id && !this.isPatternAffected(proc.id) && (
-                    <Box className="name">
-                      <Typography variant="h6">
-                        {getFirstLabel(proc.labels, proc.id)}
-                      </Typography>{' '}
-                    </Box>
-                  )}
-                  <MyAutocomplete
-                    processId={procId}
-                    store={this.store}
-                    setProcess={this.setProcess.bind(this, procId)}
-                    addInput={this.addPPR.bind(this, 'inputs', procId)}
-                    addOutput={this.addPPR.bind(this, 'outputs', procId)}
-                    addResource={this.addPPR.bind(this, 'resources', procId)}
-                    addMeasurement={this.addPPR.bind(
-                      this,
-                      'measurements',
-                      procId
-                    )}
-                    addConstraint={this.addPPR.bind(
-                      this,
-                      'constraints',
-                      procId
-                    )}
-                  />
-
-                  {proc.inputs &&
-                    this.getItems(proc.inputs, procId, 'inputs', 'product')}
-
-                  {proc.outputs &&
-                    this.getItems(proc.outputs, procId, 'outputs', 'product')}
-
-                  {proc.resources &&
-                    this.getItems(
-                      proc.resources,
-                      procId,
-                      'resources',
-                      'resource'
-                    )}
-
-                  {proc.measurements &&
-                    this.getItems(
-                      proc.measurements,
-                      procId,
-                      'measurements',
-                      'measurement'
-                    )}
-
-                  {proc.constraints &&
-                    this.getItems(
-                      proc.constraints,
-                      procId,
-                      'constraints',
-                      'constraint'
-                    )}
-                </Box>
-              ))}
-          </Box>
-          <br />
-          <Box className="patternResult" fullWidth>
-            <Typography variant="h5">Detected Problems</Typography>
-            <br />
-            {log(this.state.detectedPatterns)}
-            {this.state.detectedPatterns.map(
-              (detectedPattern, detectedPatternIndex) => (
-                <Card
-                  key={'detectedPatternIndex' + detectedPatternIndex}
-                  sx={
-                    detectedPatternIndex === this.state.selectedPatternIndex
-                      ? { border: '2px solid grey' }
-                      : {}
-                  }
-                >
-                  <CardActionArea
-                    onClick={this.selectPattern.bind(
-                      this,
-                      detectedPatternIndex
-                    )}
+          <Box hidden={this.state.tab !== 'analyze'}>
+            <Box className="setup" hidden={this.state.tab !== 'analyze'}>
+              <Typography variant="h5">Setup</Typography>
+              <br />
+              <Grid container spacing={2}>
+                <Grid item xs={12}>
+                  <InputLabel id="presetLabel">Preset</InputLabel>
+                  <Select
+                    fullWidth
+                    labelId="presetLabel"
+                    id="preset"
+                    value={this.state.preset}
+                    onChange={this.onPresetChange}
                   >
-                    <CardHeader
-                      avatar={
-                        <Avatar sx={{ bgcolor: 'red' }} aria-label="recipe">
-                          {patternList[detectedPattern.patternKey].abbreviation}
-                        </Avatar>
-                      }
-                      title={
-                        <Typography gutterBottom variant="h5" component="div">
-                          {patternList[detectedPattern.patternKey].name}
+                    {presets.map((item) => (
+                      <MenuItem value={item.id} key={item.id}>
+                        {item.label}
+                      </MenuItem>
+                    ))}
+                  </Select>
+                </Grid>
+                <Grid item xs={10}>
+                  <TextField
+                    fullWidth
+                    label="Input Model URL"
+                    value={this.state.inputModelUrl}
+                    onChange={this.onInputModelChange}
+                  />{' '}
+                </Grid>
+                <Grid item xs={2}>
+                  <Button
+                    fullWidth
+                    variant="contained"
+                    onClick={() => {
+                      window.open(this.state.inputModelUrl, '_blank');
+                    }}
+                  >
+                    Show Source
+                  </Button>
+                </Grid>
+                <Grid item xs={10}>
+                  <TextField
+                    fullWidth
+                    label="Fact URL"
+                    value={this.state.factUrl}
+                    onChange={this.onFactUrlChange}
+                  />{' '}
+                </Grid>
+                <Grid item xs={2}>
+                  <Button
+                    fullWidth
+                    variant="contained"
+                    onClick={() => {
+                      window.open(this.state.factUrl, '_blank');
+                    }}
+                  >
+                    Show Source
+                  </Button>
+                </Grid>
+                <Grid item xs={12}>
+                  <Button
+                    fullWidth
+                    variant="contained"
+                    onClick={this.loadInputModel.bind(this)}
+                  >
+                    Load Input Model
+                  </Button>
+                </Grid>
+              </Grid>
+            </Box>
+            <br />
+
+            {/* ############################################################ */}
+            {/* ############################################################ */}
+
+            <Box className="productionLine" fullWidth>
+              <Typography variant="h5">Input Model</Typography>
+              <br />
+              <Button
+                variant="contained"
+                onClick={() => this.addProcess()}
+                fullWidth
+              >
+                Add Process
+              </Button>
+              <Button
+                variant="contained"
+                onClick={() => this.analyze()}
+                fullWidth
+                color="success"
+              >
+                Analyze
+              </Button>
+              {this.state.productionLine.processes &&
+                this.state.productionLine.processes.map((proc, procId) => (
+                  <Box className="process" key={'process' + procId} fullWidth>
+                    {proc.id && this.isPatternAffected(proc.id) && (
+                      <Box className="name">
+                        <Typography
+                          className="name"
+                          variant="h6"
+                          color="error"
+                          sx={{ p: 0.5, border: 3, borderRadius: 3 }}
+                        >
+                          {getFirstLabel(proc.labels, proc.id)}
                         </Typography>
-                      }
-                      subheader={'Problem #' + detectedPatternIndex}
+                      </Box>
+                    )}
+                    {proc.id && !this.isPatternAffected(proc.id) && (
+                      <Box className="name">
+                        <Typography variant="h6">
+                          {getFirstLabel(proc.labels, proc.id)}
+                        </Typography>{' '}
+                      </Box>
+                    )}
+                    <MyAutocomplete
+                      processId={procId}
+                      store={this.store}
+                      setProcess={this.setProcess.bind(this, procId)}
+                      addInput={this.addPPR.bind(this, 'inputs', procId)}
+                      addOutput={this.addPPR.bind(this, 'outputs', procId)}
+                      addResource={this.addPPR.bind(this, 'resources', procId)}
+                      addMeasurement={this.addPPR.bind(
+                        this,
+                        'measurements',
+                        procId
+                      )}
+                      addConstraint={this.addPPR.bind(
+                        this,
+                        'constraints',
+                        procId
+                      )}
                     />
-                    <CardContent>
-                      <Typography variant="body2" color="text.secondary">
-                        {patternList[detectedPattern.patternKey].reason(
-                          detectedPattern.queryResult
-                        )}
-                      </Typography>
-                    </CardContent>
-                  </CardActionArea>
-                </Card>
+
+                    {proc.inputs &&
+                      this.getItems(proc.inputs, procId, 'inputs', 'product')}
+
+                    {proc.outputs &&
+                      this.getItems(proc.outputs, procId, 'outputs', 'product')}
+
+                    {proc.resources &&
+                      this.getItems(
+                        proc.resources,
+                        procId,
+                        'resources',
+                        'resource'
+                      )}
+
+                    {proc.measurements &&
+                      this.getItems(
+                        proc.measurements,
+                        procId,
+                        'measurements',
+                        'measurement'
+                      )}
+
+                    {proc.constraints &&
+                      this.getItems(
+                        proc.constraints,
+                        procId,
+                        'constraints',
+                        'constraint'
+                      )}
+                  </Box>
+                ))}
+            </Box>
+            <br />
+            <Box className="patternResult" fullWidth>
+              <Typography variant="h5">Detected Problems</Typography>
+              <br />
+              {log(this.state.detectedPatterns)}
+              {this.state.detectedPatterns.map(
+                (detectedPattern, detectedPatternIndex) => (
+                  <Card
+                    key={'detectedPatternIndex' + detectedPatternIndex}
+                    sx={
+                      detectedPatternIndex === this.state.selectedPatternIndex
+                        ? { border: '2px solid grey' }
+                        : {}
+                    }
+                  >
+                    <CardActionArea
+                      onClick={this.selectPattern.bind(
+                        this,
+                        detectedPatternIndex
+                      )}
+                    >
+                      <CardHeader
+                        avatar={
+                          <Avatar sx={{ bgcolor: 'red' }} aria-label="recipe">
+                            {
+                              patternList[detectedPattern.patternKey]
+                                .abbreviation
+                            }
+                          </Avatar>
+                        }
+                        title={
+                          <Typography gutterBottom variant="h5" component="div">
+                            {patternList[detectedPattern.patternKey].name}
+                          </Typography>
+                        }
+                        subheader={'Problem #' + detectedPatternIndex}
+                      />
+                      <CardContent>
+                        <Typography variant="body2" color="text.secondary">
+                          {patternList[detectedPattern.patternKey].reason(
+                            detectedPattern.queryResult
+                          )}
+                        </Typography>
+                      </CardContent>
+                    </CardActionArea>
+                  </Card>
+                )
+              )}
+            </Box>
+          </Box>
+
+          <Box hidden={this.state.tab !== 'patternList'}>
+            Hallo
+            {Object.entries(patternList).forEach(
+              ([patternKey, currentPattern]) => (
+                <Typography variant="h5">Todo</Typography>
               )
             )}
           </Box>
 
-          <Box>
-            <Typography variant="h5">Todo</Typography>
-            <ul>
-              <Typography>
-                <li>
-                  example: case, (pizza default influences time), wine (human
-                  operators), integration (etim, eclass, SI)
-                </li>
-                <li>learn about PPR (triangle?, gif?), legend</li>
-                <li>prettier pattern</li>
-                <li>pattern list</li>
-                <li>---------------------</li>
-                <li>feature list/planned feature list</li>
-                <li>link to resources</li>
-                <li>process numbering</li>
-              </Typography>
-            </ul>
+          <Box hidden={this.state.tab !== 'features'}>
+            <Box>
+              <Typography variant="h5">Todo</Typography>
+              <ul>
+                <Typography>
+                  <li>pattern list*</li>
+                  <li>
+                    example: case, (pizza default influences time), wine (human
+                    operators), integration (etim, eclass, SI)
+                  </li>
+                  <li>learn about PPR (triangle?, gif?), legend</li>
+                  <li>prettier pattern</li>
+                  <li>---------------------</li>
+                  <li>feature list/planned feature list</li>
+                  <li>link to resources</li>
+                  <li>process numbering</li>
+                </Typography>
+              </ul>
+            </Box>{' '}
           </Box>
         </Container>
       </>
