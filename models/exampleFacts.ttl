@@ -68,6 +68,7 @@ prod:Basil001 rdfs:label "Basil".
 #
 prod:Pizza001 rdf:type model:Product.
 prod:Pizza001 rdfs:label "Pizza".
+prod:Pizza001 model:hasVulnerability prop:Temperature001.
 #
 prod:BakedPizza001 rdf:type model:Product.
 prod:BakedPizza001 rdfs:label "Baked Pizza".
@@ -134,14 +135,14 @@ res:HumanOperator002 model:hasVulnerability prop:Temperature001.
 #
 res:HumanOperator003 rdf:type model:Resource.
 res:HumanOperator003 rdfs:label 'Baker'.
-res:HumanOperator003 model:hasVulnerability prop:Heat001.
+res:HumanOperator003 model:hasVulnerability prop:Temperature001.
 #
 res:HandMixer001 rdf:type model:Resource.
 res:HandMixer001 rdfs:label 'Baker'.
 #
 res:Oven001 rdf:type model:Resource.
 res:Oven001 rdfs:label 'Oven'.
-res:Oven001 model:hasRiskSource prop:Heat001.
+res:Oven001 model:hasRiskSource prop:Temperature001.
 
 
 
