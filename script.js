@@ -30,6 +30,8 @@ const {
   Dialog,
   DialogTitle,
   DialogContent,
+  Tabs,
+  Tab,
 } = MaterialUI;
 
 const { namedNode, literal, defaultGraph, quad } = N3.DataFactory;
@@ -847,18 +849,7 @@ class ProductionLine extends React.Component {
     );
   }
 }
-function Example() {
-  // Declare a new state variable, which we'll call "count"
-  const [count, setCount] = React.useState(false);
-  const [open, setOpen] = React.useState(false);
 
-  return (
-    <div>
-      <p>You clicked {count} times</p>
-      <button onClick={() => setCount(count + 1)}>Click me</button>
-    </div>
-  );
-}
 ReactDOM.render(<ProductionLine />, document.getElementById('container'));
 
 function log(text) {
