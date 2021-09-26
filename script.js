@@ -845,14 +845,18 @@ class ProductionLine extends React.Component {
             </Box>
           </Box>
 
-          <Box hidden={this.state.tab !== 'patternList'}>
-            Hallo
+          <div>Hallo</div>
+
+          <div>
             {Object.entries(patternList).forEach(
               ([patternKey, currentPattern]) => (
-                <Typography variant="h5">Todo</Typography>
+                <Typography variant="h5" key={patternKey}>
+                  {patternKey}
+                </Typography>
               )
             )}
-          </Box>
+          </div>
+          <Box hidden={this.state.tab !== 'patternList'}></Box>
 
           <Box hidden={this.state.tab !== 'features'}>
             <Box>
