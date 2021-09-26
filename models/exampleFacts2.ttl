@@ -92,7 +92,1796 @@ etim:EC004546  rdf:type  model:Product ;
 etim:EC003452  rdf:type  model:Product ;
         rdfs:label  "Cutting disc set" .
 
+etim:EC011961  rdf:type  model:Product ;
+        rdfs:label  "Sales display" , "Hole saw stand" , "Glass rack" , "Floor stand with small plastic boxes" , "Floor stand" , "Display stand" .
 
+etim:EC004356  rdf:type  model:Product ;
+        rdfs:label  "Power drill" , "Indexable drill shank" .
+
+etim:EC003262  rdf:type  model:Product ;
+        rdfs:label  "Casing convector radiator" .
+
+etim:EC004166  rdf:type  model:Product ;
+        rdfs:label  "Water stop" , "Thread piece" , "Tap adaptor" , "Quick hose connection" , "Garden tube coupling" , "Garden hose quick coupling" , "2 way distributor" , "Garden hose quick connector" .
+
+etim:EC003072  rdf:type  model:Product ;
+        rdfs:label  "Window-sill brick" .
+
+etim:EC011391  rdf:type  model:Product ;
+        rdfs:label  "Vertical storage tank" , "Wall storage tank" , "Boiling water" , "Night power boiler" , "Boiler, electric" , "Electric boiler" , "Table storage tank" , "Kitchen boiler" , "Hot water unit" , "Boiler" , "Hot water device" , "Hot water tank" , "Hot water cylinder" , "Electro boiler" , "Direct fired boiler" , "Hot tap water boiler electric" , "Hotfill" , "Water heater" , "Cylinder" , "Boiler electric" , "Hot water-frees standing storage tank" , "Small storage water heater" , "Boiling water boiler" , "Standby boiler" , "Under sink device" , "Hot water boiler electric" , "Hanging boiler" , "Built-under device" , "Free standing model" , "Hot water tank (electric)" .
+
+etim:EC012295  rdf:type  model:Product ;
+        rdfs:label  "Z aluminium" , "Aluminium Z-profile" , "Profile aluminium" , "Z-profile" , "Aluminum profile" , "Z-profile, aluminium" , "Z-profile aluminium" , "Z-aluminium" , "Z" .
+
+etim:EC000101  rdf:type  model:Product ;
+        rdfs:label  "Mounting rail" , "Copper pipe" , "Busbar" , "Light-track" .
+
+etim:EC010608  rdf:type  model:Product ;
+        rdfs:label  "Sheathed O ring seal" .
+
+etim:EC001005  rdf:type  model:Product ;
+        rdfs:label  "Clamp spring" , "Mounting material" , "Retaining bracket" , "Clip" , "Clamp" , "Tray mounting" , "Mounting material for cable support system" , "Mounting corner" , "Clamp piece" , "Mounting bracket" .
+
+etim:EC010418  rdf:type  model:Product ;
+        rdfs:label  "PTFE lip for PTFE lip seal" .
+
+etim:EC010038  rdf:type  model:Product ;
+        rdfs:label  "Round shower wall" .
+
+etim:EC001937  rdf:type  model:Product ;
+        rdfs:label  "Edge protection tape" , "Cable protection for installation duct" .
+
+etim:EC000843  rdf:type  model:Product ;
+        rdfs:label  "Sound generator" , "Alarm signal" .
+
+etim:EC001747  rdf:type  model:Product ;
+        rdfs:label  "Solar inverter" , "Photovoltaics DC/AC grid inverter" , "DC/AC grid inverter for renewable energy" , "DC/AC grid inverter" .
+
+etim:EC000653  rdf:type  model:Product ;
+        rdfs:label  "Micro cassette" , "Compact cassette (analogue)" , "Dictaphone" .
+
+etim:EC002701  rdf:type  model:Product ;
+        rdfs:label  "Blu-ray-player/-recorder" .
+
+etim:EC003605  rdf:type  model:Product ;
+        rdfs:label  "Accessories for wall duct system, wall integrated" , "Wall flush duct system" , "Coupler" , "Inner corner" , "End piece" , "Flat bend" , "Plasterboard wall installation trunking system" , "Wall duct system, wall integrated" , "Cover for outer corner" , "Wall-mounted device installation trunking system" , "Outer corner" , "Mounting holder" .
+
+etim:EC001367  rdf:type  model:Product ;
+        rdfs:label  "Battery rotary hammer" , "Battery machine" , "Rotary hammer (battery)" .
+
+etim:EC002511  rdf:type  model:Product ;
+        rdfs:label  "Climatic side panel (switchgear cabinet)" , "Climate control side panel (enclosure/cabinet)" .
+
+etim:EC000273  rdf:type  model:Product ;
+        rdfs:label  "Wiring set" , "Cable harness" , "Cable tree" .
+
+etim:EC003415  rdf:type  model:Product ;
+        rdfs:label  "Tiler breaking pliers" .
+
+etim:EC001177  rdf:type  model:Product ;
+        rdfs:label  "Protective hose" , "Protective plastic hose" .
+
+etim:EC002321  rdf:type  model:Product ;
+        rdfs:label  "Wall mounting plate for tube clamps" .
+
+etim:EC004319  rdf:type  model:Product ;
+        rdfs:label  "Spacer" , "Floor lay clamp" , "Floor lay master" , "Diagonal floor lay adapter" , "Laying tool parquet/laminate floor" , "Parquet floor laying tool" , "Laminate floor laying tool" , "Laying tool for parquet/laminate floor" , "Ground laying tool" .
+
+etim:EC000083  rdf:type  model:Product ;
+        rdfs:label  "Transition piece for installation tube/installation duct" , "Surface mounting junction box for installation duct" , "Transition cover section for installation duct" .
+
+etim:EC003225  rdf:type  model:Product ;
+        rdfs:label  "Filling element system floor" .
+
+etim:EC004129  rdf:type  model:Product ;
+        rdfs:label  "Tipping container" , "Storage and factory equipment" , "Storage container" , "Folding bottom container" , "Flap bottom container" , "Box wagon" , "Flap container" , "Folding floor container" , "Hinged floor container" , "Compact tipping container" , "Ground flap container" , "Tilting skip" , "Sheet metal box wagon" .
+
+etim:EC011734  rdf:type  model:Product ;
+        rdfs:label  "Exhaust bowl for urinal" .
+
+etim:EC002131  rdf:type  model:Product ;
+        rdfs:label  "Brush" , "Handstick brush" , "Wire brush" , "Steel wire brush" , "File brush" , "Copper brush" , "Brass brush" , "Hand brush" , "Stainless steel brush" .
+
+etim:EC010640  rdf:type  model:Product ;
+        rdfs:label  "Filler profile" , "Rubber profile" , "Clamp profile" , "Sealing profile" , "Rubber filler profile" , "Finger guard profile" , "Rubber clamping profile" , "Clamping strip section" , "Edge protection profile" .
+
+etim:EC011544  rdf:type  model:Product ;
+        rdfs:label  "Flue gas wall duct" .
+
+etim:EC010450  rdf:type  model:Product ;
+        rdfs:label  "Thermal insulation cord" .
+
+etim:EC012258  rdf:type  model:Product ;
+        rdfs:label  "Drawer for cabinet" , "Complete drawer" , "Drawer" .
+
+etim:EC010260  rdf:type  model:Product ;
+        rdfs:label  "Air separator" , "Dirt trap" , "Air-/dirt separator for CH/cooling system" , "Air-dirt separator for CH/cooling system" , "Air separator for central heating" , "Air-/dirt separator for central heating/cooling system" , "De-aerator for solar system" , "Dirt seperator" , "Filter" , "Air/dirt separator" , "Floatvent" , "Air-/dirt separator for central haeting/cooling system" , "Separator" .
+
+etim:EC011164  rdf:type  model:Product ;
+        rdfs:label  "Tilt mirror clip" , "Mirror mounting" , "Mirror holder" , "Mirror clips" , "Tilt mirror clamp" , "Adjustable mirror holder" , "Mirror clamp" , "Tilt mirror holder" , "Mirror suspension" .
+
+etim:EC012068  rdf:type  model:Product ;
+        rdfs:label  "Water separator" , "Oil filter" , "Bilge water separator static" , "Static bilge water separator" , "Oil filter (water separator)" , "Dirty water filter" , "Oil-/water separator static" , "Water separator oil filter" , "Bilge water separator" , "OWS" , "Oily water separator static" , "Separator oil filter" , "Oily water separator" , "Oil filter static (water separator)" .
+
+etim:EC010070  rdf:type  model:Product ;
+        rdfs:label  "Pipe profile" , "Aluminium profiled tube" , "Tube" , "Square aluminum tube" , "Profiled pipe, aluminium" , "Aluminum pipe" , "Rectangular aluminum pipe" , "Profiled tube clip" , "Square aluminum pipe" , "Rectangular aluminum tube" , "Aluminium tube" , "Aluminium profiled pipe" .
+
+etim:EC003967  rdf:type  model:Product ;
+        rdfs:label  "Garden gate/door" , "Garden gate" , "Garden door" , "Garden door/gate" .
+
+etim:EC003777  rdf:type  model:Product ;
+        rdfs:label  "Security fitting escutcheon and backplate" , "Safety fitting escutcheon and backplate" , "Safety fitting escutcheon with backplate" .
+
+etim:EC002683  rdf:type  model:Product ;
+        rdfs:label  "Ice cream mixer" , "Vegetable slicer" , "Spin juicer" , "Meatgrinder" , "Accessories/spare parts for kitchen machine" , "Corn mill" , "Spare parts for kitchen machine" , "Juice centrifuge" , "Meat grinder" , "Fruitpress" , "Eggbeater" , "Chopper" , "Citrus press" , "Dough hook" , "Macerator" , "Accessories for shaver" , "Mixing bowl" , "With shortbread cookies attachment" , "Mixer" , "Blender" , "Accessories for kitchen machine" .
+
+etim:EC003587  rdf:type  model:Product ;
+        rdfs:label  "Janitorial paper product" , "Towel roll" , "Paper towel" , "Toilet seat cover" , "Roll" , "Cleaning paper roll" , "Paper roll" , "Wipers" , "Paper" , "Bathroom tissue" , "Facial tissue" , "Tissue paper" , "Hand towel" , "Toilet paper" , "Napkins" , "Paper tissue" , "Cleaning paper" , "Paper sheets" , "Cleaning paper on roll" , "Cleaning tissue" , "Towel" , "Janitorial paper" .
+
+etim:EC002493  rdf:type  model:Product ;
+        rdfs:label  "Signalling lamp" , "Indicator light complete" , "Ex-proof indicator light" , "Explosion proof indicator light" .
+
+etim:EC000806  rdf:type  model:Product ;
+        rdfs:label  "Rasp" , "Rasp (battery/electric)" .
+
+etim:EC004541  rdf:type  model:Product ;
+        rdfs:label  "Drying cabinet" .
+
+etim:EC000616  rdf:type  model:Product ;
+        rdfs:label  "Roof ladder" , "Extending ladder" , "Ladder" , "Folding ladder" , "Fall protection ladder" , "Rack ladder" , "Step ladder" , "Combination ladder" , "Combi ladder" , "Scaling ladder" , "Folding-ladder" , "Fire ladder" , "Double ladder" , "Runged ladder" , "Straight ladder" , "Rope ladder" , "Boarding ladder" , "Telescopic ladder" , "Push-up ladder" , "Fire brigade ladder" , "Paring-ladder" , "Lean-to ladder" , "Electrician ladder" , "Descent ladder" , "Roofer lay-on ladder" , "Cat ladder" , "Access ladder" , "Escape ladder" , "Exit ladder" , "Fire escape" , "Sliding ladder" , "Extensible ladder" , "Single stile ladder" , "Hinged ladder" , "Pilot ladder" , "Window cleaning ladder" , "Multi-purpose ladder" , "Industry ladder" .
+
+etim:EC000426  rdf:type  model:Product ;
+        rdfs:label  "Mirror" , "Antenna" , "Satellite antenna" .
+
+etim:EC004161  rdf:type  model:Product ;
+        rdfs:label  "Stretcher" , "Patient stretcher" , "Patient stretcher cabinet" , "Furniture/equipment first aid" , "Emergency box for chemicals" , "Plaster cabinet" , "Stretcher cabinet" , "Set" , "Work protection" , "Cupboard unit" , "First aid room couch" , "Rescue blanket" .
+
+etim:EC000236  rdf:type  model:Product ;
+        rdfs:label  "Logic module" , "Control" , "PLC CPU-module" .
+
+etim:EC000046  rdf:type  model:Product ;
+        rdfs:label  "Cable fixing band" , "Cable band" , "Burs tape" , "Fixing band" , "Colson band" , "Cable tie" , "Wire bundle band" , "Ty-rap" , "Band bundle" , "Stainless steel band" , "Installation strap" , "Cable bundle band" , "Endless tape" , "Knotted tie" .
+
+etim:EC012290  rdf:type  model:Product ;
+        rdfs:label  "Kitchen worktop" , "Kitchen bench" , "Countertop" , "Counter top" , "Counter" , "Benchtop" , "Worktop" .
+
+etim:EC001000  rdf:type  model:Product ;
+        rdfs:label  "Separating partition" , "Separation plate for cable support system" .
+
+etim:EC010413  rdf:type  model:Product ;
+        rdfs:label  "Storage tank, pressureless" .
+
+etim:EC011317  rdf:type  model:Product ;
+        rdfs:label  "Wash fountain" .
+
+etim:EC010223  rdf:type  model:Product ;
+        rdfs:label  "Immersion temperature sensor active" .
+
+etim:EC011127  rdf:type  model:Product ;
+        rdfs:label  "Flue gas probe" .
+
+etim:EC000788  rdf:type  model:Product ;
+        rdfs:label  "Telephone" , "Cordless telephone" , "Charging tray" , "Charger for cordless telephone" .
+
+etim:EC010033  rdf:type  model:Product ;
+        rdfs:label  "Plastic slide plate, feed-through tile" .
+
+etim:EC001932  rdf:type  model:Product ;
+        rdfs:label  "Cover joint seal for underfloor installation duct flush floor" .
+
+etim:EC002836  rdf:type  model:Product ;
+        rdfs:label  "Angle attachment for cable channel" .
+
+etim:EC000598  rdf:type  model:Product ;
+        rdfs:label  "Double coffee maker" , "Coffee-/tea maker" , "Coffee maker/water cooker" , "Coffee maker" .
+
+etim:EC002456  rdf:type  model:Product ;
+        rdfs:label  "Disc" , "Glass plate for non-automatic detector for danger detection system" .
+
+etim:EC010965  rdf:type  model:Product ;
+        rdfs:label  "Transport wheel fork" .
+
+etim:EC003600  rdf:type  model:Product ;
+        rdfs:label  "Application software for conference system" .
+
+etim:EC001362  rdf:type  model:Product ;
+        rdfs:label  "Disc cutter" , "Universal hole cutter and components" , "Piercing pinch" , "Cutting unit" , "Accessories for circle cutter" , "Circular cutter" , "Cutting insert" , "Circle cutter" , "Hole saw" , "Sealing cutter" .
+
+etim:EC011869  rdf:type  model:Product ;
+        rdfs:label  "Oxygen cylinder" , "Gas cylinder" , "Gas bottle" , "Air cylinder" , "Air bottle" , "Oxygen bottle" .
+
+etim:EC004504  rdf:type  model:Product ;
+        rdfs:label  "Double wall/built-in element washbasin with flush-mounted element" .
+
+etim:EC002266  rdf:type  model:Product ;
+        rdfs:label  "T-piece" , "Tee for cable protection tubes" , "Tee for cable protection tubes for underground application" .
+
+etim:EC010775  rdf:type  model:Product ;
+        rdfs:label  "Flanged bush for hose coupling" .
+
+etim:EC001172  rdf:type  model:Product ;
+        rdfs:label  "Y-piece" , "T-piece" , "Corner piece" , "Coupler for corrugated plastic hoses" .
+
+etim:EC011679  rdf:type  model:Product ;
+        rdfs:label  "Valve and seat" , "Key" , "Gasket set" , "Packing set" , "Spare parts for blow-off valve" , "Spare set" , "De-aeration" , "Accessories blow-off valve" , "Accessories/spare parts for blow-off valve" .
+
+etim:EC004314  rdf:type  model:Product ;
+        rdfs:label  "Spare parts for pipe working tool" , "Handhydraulic pump" , "Pressure regulator for pipe cleaning device/machine" , "Pipe cleaning drill" , "Limit switching" , "Extension for pipe cleaning spring" , "Accessories/spare parts for pipe cleaning tool" , "Accessories for pipe working tool" , "Electrohydraulic pump" , "Sealing set" , "Pressure piece for flanging tool" , "Electro-hydraulic pump" , "Mounting workstand" , "Spare parts for pipe cleaning tool" , "Chuck jaw for flaring tool" , "Accessories for pipe cleaning tool" , "Electrical conversion set" , "Accessories/spare parts for pipe working tool" .
+
+etim:EC002076  rdf:type  model:Product ;
+        rdfs:label  "Microphone rod" .
+
+etim:EC003220  rdf:type  model:Product ;
+        rdfs:label  "Mounting support" , "Shoring prop" .
+
+etim:EC010585  rdf:type  model:Product ;
+        rdfs:label  "Quadring seal" .
+
+etim:EC004124  rdf:type  model:Product ;
+        rdfs:label  "Accessories for water dispenser (electric)" , "Mounting set" , "Filter" , "Additional cooler" , "Installation kit for mounting accessories" , "Stand (base)" , "Cup dispenser" , "Spare parts for water dispenser (electric)" , "Accessories/spare parts for water dispenser (electric)" , "System accessories for water dispenser" .
+
+etim:EC003030  rdf:type  model:Product ;
+        rdfs:label  "Gully grating" .
+
+etim:EC010395  rdf:type  model:Product ;
+        rdfs:label  "O-ring set UV-funnel" .
+
+etim:EC011299  rdf:type  model:Product ;
+        rdfs:label  "Single-walled flue gas pipe" .
+
+etim:EC000009  rdf:type  model:Product ;
+        rdfs:label  "Nail anchor" , "Anchor sleeve" , "Anchor bolt male" , "Heavy-duty plug" , "Brass plug" , "Dowel" , "Expanding plug" , "Mounting element" , "Frontage plate anchor" , "Hammer set anchor" .
+
+etim:EC012253  rdf:type  model:Product ;
+        rdfs:label  "Linear hydraulic motor" , "Hydraulic cilinder" , "Flat cylinder" , "Cilinder" , "Hydraulic cylinder" .
+
+etim:EC012063  rdf:type  model:Product ;
+        rdfs:label  "Cover for handhole" , "Handhole cover" .
+
+etim:EC003962  rdf:type  model:Product ;
+        rdfs:label  "Lever shear" , "Guillotine shear" , "Bench shear" , "Guillotine table shear" .
+
+etim:EC003582  rdf:type  model:Product ;
+        rdfs:label  "Trouser suit" , "Food clothing" , "Food combination" , "Service clothing suit" , "Pant suit" , "Occupation clothing" , "Work combination" , "Set of winter clothing" , "Suit" , "Garment set" , "Combi" .
+
+etim:EC004486  rdf:type  model:Product ;
+        rdfs:label  "Shoe laces" , "Laces" .
+
+etim:EC000801  rdf:type  model:Product ;
+        rdfs:label  "Screwdriver torx" , "Screwdriver" , "Hexalobular socket screwdriver" , "Hexalobular internal driving screwdriver" , "Hexagonal screwdriver torx" , "Torx screwdriver" .
+
+etim:EC004296  rdf:type  model:Product ;
+        rdfs:label  "Spare parts for clamping tools" , "Multi-angle pad" , "Adapter clamping arm" , "Adapter body clamp" , "Accessories for clamping tools" , "Accessories/spare parts for clamping tools" .
+
+etim:EC000611  rdf:type  model:Product ;
+        rdfs:label  "Rapid set cement/plaster" , "Fast-hardening cement" , "Quick drying cement/plaster" .
+
+etim:EC002609  rdf:type  model:Product ;
+        rdfs:label  "Alcohol-dispenser" , "Accessories for optic fibre technique" , "Mounting plate" , "Polish set" , "Accessories/spare parts for optic fibre technology" , "Set of expendable items" , "Accessories/spare parts for optic fibre technique" , "Blind cap" , "Spare parts for optic fibre technique" , "Cleansing tissue" , "Blind cover" , "Adapter" , "Blade" , "Consumables" , "Substitute blade" , "Glass fibre connection sleeve" , "Tool" , "Plug holder" , "Cleaning set" , "Housing" , "Fibre optic connection sleeve" , "Cable reservoir" , "Base plate" , "Housing base" , "Expansion kit" , "Fibre left-over box" , "Matrix" , "Bottom plate" .
+
+etim:EC002419  rdf:type  model:Product ;
+        rdfs:label  "Spare parts for surface tank" , "Connection terminal" , "Connection clamp" , "Cable harness" , "Adapter plate" , "Accessories for surface tank" , "Accessories/spare parts for surface tank" .
+
+etim:EC000421  rdf:type  model:Product ;
+        rdfs:label  "Splitter" , "Distributor" , "Tap-off and distributor" .
+
+etim:EC010928  rdf:type  model:Product ;
+        rdfs:label  "Side-corner joint for mounting rail" .
+
+etim:EC001325  rdf:type  model:Product ;
+        rdfs:label  "Socket outlet with safety contact" , "Socket outlet" , "Equipment mounted socket outlet with protective contact" , "Equipment mounted socket outlet (SCHUKO)" , "Equipment mounted socket outlet" , "Panel mounted socket outlet with protective contact" .
+
+etim:EC002229  rdf:type  model:Product ;
+        rdfs:label  "Hole divider" , "Divider" , "Inside caliper" , "Pair of compasses" , "Gripping divider" , "Compass" , "Caliper" , "Compasses" , "Outer circle" , "Internal circle" .
+
+etim:EC000231  rdf:type  model:Product ;
+        rdfs:label  "Reverser" , "Push button" , "Off switch" , "Mushroom" , "Foot switch" , "Agreement switch" , "Foot-/palm switch complete" .
+
+etim:EC010738  rdf:type  model:Product ;
+        rdfs:label  "Flare/flare coupling" .
+
+etim:EC001135  rdf:type  model:Product ;
+        rdfs:label  "Communications technique adapter" , "Mini-UHF" , "Coax coupler" , "Coupler" , "Elbow plug" , "Angular bus" , "Adapter" , "Coupling piece" , "Connector" , "Twinax" .
+
+etim:EC000041  rdf:type  model:Product ;
+        rdfs:label  "Built-in device" , "Contact block" , "Signalling switch" , "Contact element" , "Auxiliary contact block" , "Switch block" , "Contact" , "Switch element" , "Body contact" , "Help contact" , "Contact body" , "Push button" , "Auxiliary switch" , "Auxiliary switch block" .
+
+etim:EC010358  rdf:type  model:Product ;
+        rdfs:label  "Filter element for y filter" .
+
+etim:EC011502  rdf:type  model:Product ;
+        rdfs:label  "Combined measuring and control valve" .
+
+etim:EC010168  rdf:type  model:Product ;
+        rdfs:label  "Hood for ventilation system" , "Plenum for air handling unit" .
+
+etim:EC011312  rdf:type  model:Product ;
+        rdfs:label  "Adjustable control valve" , "Fan coil controller" , "Flow regulator" , "Flow limiter" , "Constant flow regulator" , "Volume control" , "Combined measuring and control valve" , "Flow control device" , "Dynamic balancing valve" , "Pressure-compensated control valve" , "Cooling ceiling regulator" , "Combination controller" , "Flow regulator for water" , "Dynamic control valve" , "Pressure compensated valve with flow restrictor" , "Compensated pressure control valve" .
+
+etim:EC012216  rdf:type  model:Product ;
+        rdfs:label  "Table leaf" , "Table top" .
+
+etim:EC001877  rdf:type  model:Product ;
+        rdfs:label  "Sink cupboard" , "Laundry sink cabinet" , "Laundry cabinet" , "Kitchen cabinet" , "Sink cabinet" .
+
+etim:EC011122  rdf:type  model:Product ;
+        rdfs:label  "Pitot tube" .
+
+etim:EC000783  rdf:type  model:Product ;
+        rdfs:label  "Indication" , "Signalling and operating panel" , "Signalling panel" , "Nikobus" , "Signalling and operation panel for bus system" , "Touch screen" , "EIB" , "Control tableau" , "Touch panel" .
+
+etim:EC012026  rdf:type  model:Product ;
+        rdfs:label  "Hatch" , "Escape hatch" .
+
+etim:EC003925  rdf:type  model:Product ;
+        rdfs:label  "Hook lathe tool" , "Straight lathe tool" , "Offset side turning chisel" , "Lathe tool" , "Corner milling cutter" , "Wide turning tool" , "Turning tool" , "Bented lathe tool" , "Offset face lathe tool" , "Cutting chisel tool" , "Offset corner lathe chisel" .
+
+etim:EC001687  rdf:type  model:Product ;
+        rdfs:label  "Furnace for glass fibre" .
+
+etim:EC002831  rdf:type  model:Product ;
+        rdfs:label  "Occupation clothing" , "Heat protection gaiter" , "Heat protection clothes" , "Gaiter" , "Overshoe" .
+
+etim:EC000593  rdf:type  model:Product ;
+        rdfs:label  "Electric radiator" , "Radiator (electric)" .
+
+etim:EC003735  rdf:type  model:Product ;
+        rdfs:label  "Glass door seal" .
+
+etim:EC001497  rdf:type  model:Product ;
+        rdfs:label  "Low-loss ballast" , "Conversion kit" , "Conventional ballast" , "Ballast" .
+
+etim:EC002641  rdf:type  model:Product ;
+        rdfs:label  "Modular connector" , "Modular connector (industrial connector)" .
+
+etim:EC003545  rdf:type  model:Product ;
+        rdfs:label  "Europlug" , "European socket outlet/plug" , "European socket outlet" , "CEE 7/2 plug" , "CEE 7/16 socket outlet" , "CEE 7/16 plug" , "Socket outlet/plug without protective contact" .
+
+etim:EC002451  rdf:type  model:Product ;
+        rdfs:label  "Covering cap" , "Cover" , "Cover for extension module installation column" .
+
+etim:EC004449  rdf:type  model:Product ;
+        rdfs:label  "Support shoe" , "Post support" , "Pole support" , "Pole foot" , "Pillar base" , "Post foot" .
+
+etim:EC004259  rdf:type  model:Product ;
+        rdfs:label  "Spare parts for lifting devices" , "Rubber profile" , "Gasket set" , "Accessories for lifting devices" , "Accessories/spare parts for lifting devices" .
+
+etim:EC002261  rdf:type  model:Product ;
+        rdfs:label  "Mounting coupler for cable protection tubes" , "Coupler" , "Mounting coupler for cable protection tubes for underground application" .
+
+etim:EC003165  rdf:type  model:Product ;
+        rdfs:label  "Steel profile" , "Steel C-profile" , "Profile steel" , "C-steel" , "C-profile, steel" .
+
+etim:EC010770  rdf:type  model:Product ;
+        rdfs:label  "Clamping disc for hose" .
+
+etim:EC004069  rdf:type  model:Product ;
+        rdfs:label  "Storage box rack" , "Sight storage box rack" , "Storage bins rack" .
+
+etim:EC011674  rdf:type  model:Product ;
+        rdfs:label  "Disc" , "Accessories/spare parts for pneumatic servomotor for valves" , "Accessories servomotor" , "Adapter" , "Spring" , "Switch" , "Accessories actuator" , "Positioner" , "Spare set" , "Sealing" , "Accessories for pneumatic servomotor for valves" , "Surface mounting set" , "End switch" , "Dish" , "Accessories for pneumatic servomotor valves" , "Spindle" , "Accessories for pneumatic actuators for valves" , "Emergency manual operation" , "Reduction" , "Accessories pneumatic servomotor for valves" , "Column" , "Spare parts for pneumatic servomotor for valves" , "Driveshaft" , "Accessories for pneumatic actuator valves" , "Setting indicator" , "Spring return motor accessories" , "Membrane" .
+
+etim:EC010580  rdf:type  model:Product ;
+        rdfs:label  "Dust filter" , "Air filter for housing technology" , "Air filter for heating appliances" , "Air filter for building technology" , "Cone bag filter around air duct" .
+
+etim:EC011484  rdf:type  model:Product ;
+        rdfs:label  "Bottle for soap dispenser" .
+
+etim:EC010390  rdf:type  model:Product ;
+        rdfs:label  "Gas line" .
+
+etim:EC011294  rdf:type  model:Product ;
+        rdfs:label  "Set-up piece roof up-stand prefabchimney single family house" , "Set-up piece roof upstand prefab chimney single family house" .
+
+etim:EC000936  rdf:type  model:Product ;
+        rdfs:label  "Bend for installation tubes" .
+
+etim:EC000556  rdf:type  model:Product ;
+        rdfs:label  "Thermal under blanket" , "Thermal over blanket" , "Heated carpet" , "Foot warmer" , "Electric pad" , "Electric blanket/electric pillow" , "Back-/neck thermal pillow" , "Electric blanket/pillow/foot warmer" .
+
+etim:EC004291  rdf:type  model:Product ;
+        rdfs:label  "Lamppost box" , "Lightpole box" .
+
+etim:EC002604  rdf:type  model:Product ;
+        rdfs:label  "Zipper hose" , "Spiral hose" , "Flexible cable guiding system" , "Cable bundle hose" .
+
+etim:EC001510  rdf:type  model:Product ;
+        rdfs:label  "Power supply for discharge lamps" .
+
+etim:EC003508  rdf:type  model:Product ;
+        rdfs:label  "Ttelephone pole" , "Transmission pole" , "Telegraph post" , "Telegraph pole" , "Telecommunication pole" , "Power pole" , "Utility pole" .
+
+etim:EC002414  rdf:type  model:Product ;
+        rdfs:label  "Cable guide chain" .
+
+etim:EC003318  rdf:type  model:Product ;
+        rdfs:label  "Special flap tool (electric)" , "Fillet grinder (electric)" .
+
+etim:EC010923  rdf:type  model:Product ;
+        rdfs:label  "Heat exchanger connecting box, flat roof" .
+
+etim:EC001320  rdf:type  model:Product ;
+        rdfs:label  "CEE coupling" , "CEE coupler" , "Coupling plug" , "CEE coupling plug" , "Counter connector" , "Connector" , "Disconnect plug" , "Coupler" , "CEE angular coupling" .
+
+etim:EC011827  rdf:type  model:Product ;
+        rdfs:label  "Ratchet fitting" , "Fittings for momentum tools" , "Square head" , "Spanner for torque wrench" , "Inserting box-end ratchet wrench" , "Square fitting" , "Open end fitting" , "Inserting open-end wrench" , "Ratchet head" , "Inbus fitting" , "Bit holder fitting" , "Ring end fitting" , "Weld on fitting" , "Ractangular fitting" , "Inserting box-end wrench" , "Open ring end fitting" , "Fitting for momentum tools" .
+
+etim:EC002224  rdf:type  model:Product ;
+        rdfs:label  "Mobile workbench" , "Workbench" , "Work desc" , "Mobile work bench" , "Work table" , "Work bench" , "Combination workbench" , "Folding workbench" , "Working table" .
+
+etim:EC003128  rdf:type  model:Product ;
+        rdfs:label  "Jointsheet" , "Plaster hawk" .
+
+etim:EC010733  rdf:type  model:Product ;
+        rdfs:label  "Submersible pump" , "Pump" , "Drainage pump" , "Drain pump" , "Dirty water pump" , "Clock pump" , "Basement pump" , "Submersible wastewater pump" .
+
+etim:EC001130  rdf:type  model:Product ;
+        rdfs:label  "Wall-mounted distributor" , "Housing" , "Front plate" , "Distributor enclosure" , "Patch panel fibre optic" .
+
+etim:EC011637  rdf:type  model:Product ;
+        rdfs:label  "Cover for manhole" , "Manhole cover" .
+
+etim:EC002034  rdf:type  model:Product ;
+        rdfs:label  "Mushroom" , "Emergency stop complete" .
+
+etim:EC011447  rdf:type  model:Product ;
+        rdfs:label  "Roof gutter bracket" .
+
+etim:EC010353  rdf:type  model:Product ;
+        rdfs:label  "Valve register" .
+
+etim:EC011257  rdf:type  model:Product ;
+        rdfs:label  "Insulation, cover ring, round air duct" .
+
+etim:EC010163  rdf:type  model:Product ;
+        rdfs:label  "Valve" , "Thread valve" , "Slide valve" , "Flange valve" , "Gate valve" .
+
+etim:EC011067  rdf:type  model:Product ;
+        rdfs:label  "Cutting head" , "Die head" .
+
+etim:EC012211  rdf:type  model:Product ;
+        rdfs:label  "Pneumatic adjustable column" , "Manually adjustable column" , "Support for helmsman seat" , "Electrically adjustable column" , "Fixed column" , "Undercarriage for helmsman seat" , "Air suspended undercarriage" , "Chair undercarriage" , "Cross base" , "Hydraulically adjustable column" , "Undercarriage" .
+
+etim:EC002776  rdf:type  model:Product ;
+        rdfs:label  "Electrical hedge trimmer" , "Electric hedge trimmer" , "Hedge trimmer (electric)" .
+
+etim:EC012021  rdf:type  model:Product ;
+        rdfs:label  "Stainless steel angle profile" , "Unequal angle profile" , "Metal angle profile" , "Angle bar" , "Metal angle bar" , "Angle profile, stainless steel" , "Profile" , "Angle profile" , "Equal angle profile" .
+
+etim:EC003920  rdf:type  model:Product ;
+        rdfs:label  "Dry ice pelletiser" , "Dry ice pelletizer" .
+
+etim:EC001682  rdf:type  model:Product ;
+        rdfs:label  "Connecting cord" , "Antenna cable" , "Coax patch cord" .
+
+etim:EC002586  rdf:type  model:Product ;
+        rdfs:label  "Varistor (voltage-sensitive resistor)" , "Time module multifunction" , "LED" , "Mounting clip for DIN rail (top hat rail) mounting" , "Time module delayed release" , "Terminal panel" , "LED + diode + reverse polarity protection diode" , "Retaining bracket" , "Jumper comb" , "Distance holder" , "Indication plate" , "Diode" , "Varistor + LED" , "Accessories for switching relay" , "Time module on delay" , "Insulating plate" , "Accessories/spare parts for switching relay" , "RC-element" , "Connecting bridge" , "Leakage resistance" , "Covering cap" , "Single LED" , "Safe disconnection" , "Spare parts for switching relay" , "Varistor +LED" , "Free wheeling diode" , "Time module on/off wiper" , "Mounting flange" .
+
+etim:EC003730  rdf:type  model:Product ;
+        rdfs:label  "Compensator sleeve for square pin" , "Spindle converter for door handle" .
+
+etim:EC001492  rdf:type  model:Product ;
+        rdfs:label  "Coupler for cable protection tube" , "Coupler" , "Connector" , "Coupler for cable protection tube for underground application" .
+
+etim:EC011999  rdf:type  model:Product ;
+        rdfs:label  "Tolerance ring" , "Quarter turn fastener" , "Protective cup" , "Compensator ring" , "Tolerance compensator (quarter turn fastener)" .
+
+etim:EC002396  rdf:type  model:Product ;
+        rdfs:label  "Screw" , "Bolt" , "Adjusting screw" , "Adjusting cheese head screw" .
+
+etim:EC003540  rdf:type  model:Product ;
+        rdfs:label  "Shaft hatch with frame" , "Inspection hatch with frame" , "Frame/door for group distributor housing" , "Frame and door for hydrant cabinet" , "Frame and door for group distributor housing" .
+
+etim:EC000709  rdf:type  model:Product ;
+        rdfs:label  "Standpipe" , "Stand (base)" , "Mounting foot for mailbox" , "Socket for letterbox" .
+
+etim:EC004444  rdf:type  model:Product ;
+        rdfs:label  "Wood construction screw" , "Steel bracket" , "Perforated plate angle" , "Connection angle" , "Concrete bracket" , "Concrete angle" , "Angle connector" , "Angle bracket" .
+
+etim:EC000519  rdf:type  model:Product ;
+        rdfs:label  "Terminal sleeve for protective hose" .
+
+etim:EC003160  rdf:type  model:Product ;
+        rdfs:label  "Wall bracket" , "Pipe bracket" , "Brick in bracket square" .
+
+etim:EC000329  rdf:type  model:Product ;
+        rdfs:label  "Stripe" , "Strip" , "Neutral busbar" , "Earthing rail" , "Earthing arrangements" , "Connection rail" , "Earthing rail for distribution board" .
+
+etim:EC004064  rdf:type  model:Product ;
+        rdfs:label  "Slot-in rack" , "Storage station" , "Storage cabinet" , "Hazardous material storage" , "Storage rack" , "Socket rack" , "Library rack" , "Canister rack" , "Shelf rack" , "Clip rack" , "Bolted rack" , "Office rack" , "Small cask rack" , "Wide span rack" , "Book cabinet" , "Mobile bookshelf" , "Mobile rack" , "Slide rack" , "Bookshelf" , "Hazardous material rack" , "Bottling station" , "Shelving rack" , "Library rack cabinet" .
+
+etim:EC012193  rdf:type  model:Product ;
+        rdfs:label  "Ship bell hanger" , "Bell hanger" , "Hanger for ship bell" .
+
+etim:EC010506  rdf:type  model:Product ;
+        rdfs:label  "Mast for weather station" .
+
+etim:EC010126  rdf:type  model:Product ;
+        rdfs:label  "Bidet" .
+
+etim:EC002929  rdf:type  model:Product ;
+        rdfs:label  "Oscillation multi-tool (electric)" , "Multitool (electric)" , "Multi tool" , "Multi purpose tool" , "Electric file" , "Oscillator (electric)" .
+
+etim:EC002739  rdf:type  model:Product ;
+        rdfs:label  "Renovation floor system" , "Power distributor for cable floor system" , "Floor system" , "Fastconnector" , "Distributor" , "Data distributor for cable floor system" , "Cable floor system" , "Distribution box for cable floor system" .
+
+etim:EC001645  rdf:type  model:Product ;
+        rdfs:label  "Twilight switch" , "Twilight switch for distribution board" .
+
+etim:EC000551  rdf:type  model:Product ;
+        rdfs:label  "Wet-/dry shaver/epilator" , "Wet-/dry shaver" , "Wet-/dry lady-shave" , "Dry shaver" , "Dry lady-shave" , "Clothes shaver" , "Shaver" .
+
+etim:EC002549  rdf:type  model:Product ;
+        rdfs:label  "Light grid" , "Light curtain" .
+
+etim:EC002359  rdf:type  model:Product ;
+        rdfs:label  "Screw" , "Lifting eye bolt" , "Hook screw" , "Eyebolt" , "Bolt" , "Tommy screw" .
+
+etim:EC010868  rdf:type  model:Product ;
+        rdfs:label  "Gas water heater" , "Gas-fired water heater" .
+
+etim:EC001265  rdf:type  model:Product ;
+        rdfs:label  "Soldering iron (battery)" , "Soldering gun" , "Electric soldering iron" , "Soldering iron set (battery)" .
+
+etim:EC004407  rdf:type  model:Product ;
+        rdfs:label  "Weep ventilation" , "Wall weep vent" , "Brick weep hole vent" , "Bee-biter" , "Bee biter" , "Weep hole vent" .
+
+etim:EC002169  rdf:type  model:Product ;
+        rdfs:label  "Socket wrench for crosshead screws" , "Socket for crosshead screws" , "Screw-driver bit socket" , "Screw driver bit socket" , "Insert" , "Bit socket" , "Socket spanner for crosshead screws" .
+
+etim:EC010678  rdf:type  model:Product ;
+        rdfs:label  "ANSI flange gasket" , "Gasket" , "Flange gasket" , "Seal" , "PTFE flange seal (ANSI)" , "ANSI flange seal" , "Sealing" , "PTFE flange seal (ASME)" , "Plate gasket" , "PTFE flange gasket (ANSI)" , "Flange seal" .
+
+etim:EC004217  rdf:type  model:Product ;
+        rdfs:label  "Wind driven ventilator" , "VT-turbine" , "Savonius ventilator" , "Rotating wind cowl" , "Penn ventilator" , "GEK" , "Aspirotor ventilator" , "Wind driven ventilation" .
+
+etim:EC011822  rdf:type  model:Product ;
+        rdfs:label  "Spare punch" , "Range of spare parts for water pump pliers" , "Spare die" , "Barrel spring for cable cutters" , "Spare length stop for automatic insulation stripper" , "Cap" , "Adjustment" , "Clamping plate" , "Spiral spring for water pump pliers" , "Self-clamping slip-on caps" , "Accessories for pliers" , "Feed pawl" , "Extension spring for self-adjusting crimping pliers" , "Acccessories for screw clamps" , "Tip" , "Adjustment for water pump pliers" , "Accessories for pliers and clamps" , "Positioning aid" , "Spare tips for circlip pliers" , "Accessories/spare parts for pliers and clamps" , "Cutter head" , "Spare cutter head for bolt cutters" , "Length stop" , "Spare cutter head for cable shears" , "Pressure spring for diagonal cutter" , "Spare cutter head for concrete mesh cutter" , "Spare parts for pliers and clamps" , "Spare part" , "Slip-on caps" , "Test supports" , "Locators for crimping pliers and crimping dies" , "Set" , "Punch" , "Stamp" , "Tool holder" , "Test support" , "Spring" .
+
+etim:EC003123  rdf:type  model:Product ;
+        rdfs:label  "Fixing clip" , "Fastening clip" , "Mounting clip" .
+
+etim:EC010488  rdf:type  model:Product ;
+        rdfs:label  "Tank feed-through nipple with double dimensions" , "Tank feed-through" , "Tank connector" , "Tank connection" , "Tank adaptor" , "Tank feed-through nipple" .
+
+etim:EC004027  rdf:type  model:Product ;
+        rdfs:label  "Multi pad sawing machine" , "Edging circular saw" , "Multi-blade saw (electric)" .
+
+etim:EC011632  rdf:type  model:Product ;
+        rdfs:label  "Pneumatic cylinder" .
+
+etim:EC010298  rdf:type  model:Product ;
+        rdfs:label  "Manifolds" , "Gauge valve" , "Multi-stage tap block" , "Multi-way manifold" , "Manifold valve" , "Three-way valves block" , "Multi-stage cock block" , "Multi-stage valve block" , "Two-way manifold" , "Five-way manifolds" .
+
+etim:EC011442  rdf:type  model:Product ;
+        rdfs:label  "Z-joint for mounting rail" .
+
+etim:EC012346  rdf:type  model:Product ;
+        rdfs:label  "Heat interface unit" , "Block heating unit" , "District heating substation" , "Delivery station collective heating" , "Block heating station" , "Dwelling station" , "District heat transfer station" , "Tap water heater" , "District heating unit" , "Home heating station" .
+
+etim:EC011252  rdf:type  model:Product ;
+        rdfs:label  "Open air dome" , "Open -/exhaust air dome" , "Multi plate dome for ventilation system" , "Fresh air dome" , "Exhaust air dome" , "Cowl for roof mounted fan" .
+
+etim:EC012156  rdf:type  model:Product ;
+        rdfs:label  "Bell with rope" , "Bell" , "Ship bell" .
+
+etim:EC011062  rdf:type  model:Product ;
+        rdfs:label  "Tube fitting press pliers" , "Pipe crimping pliers" , "Pipe connecting pliers" , "Press pliers for push fittings" .
+
+etim:EC002961  rdf:type  model:Product ;
+        rdfs:label  "Vibration sensor" , "Vibration analysis sensor" , "Vibration alarm sensor" , "Condition control sensor" , "Sensor for vibration control unit" .
+
+etim:EC003865  rdf:type  model:Product ;
+        rdfs:label  "Recirculation pump" , "Mixer" , "Flowmaker" , "Flow maker" , "Agitator/flowmaker" , "Agitator" .
+
+etim:EC002771  rdf:type  model:Product ;
+        rdfs:label  "Garden shear" , "Garden scissors (battery)" .
+
+etim:EC003675  rdf:type  model:Product ;
+        rdfs:label  "Counter-plate for magnetic clamp" , "Counter-plate for holding magnet" , "Bottom plate" , "Anchor for electro magnet" , "Anchor plate for holding magnet" .
+
+etim:EC002581  rdf:type  model:Product ;
+        rdfs:label  "PLC complete system" , "PLC device set" .
+
+etim:EC003485  rdf:type  model:Product ;
+        rdfs:label  "Phosphorus trap / filter" , "Phosphorus trap/filter" .
+
+etim:EC011994  rdf:type  model:Product ;
+        rdfs:label  "Marine flexible coupling" , "Flexible coupling for propulsion" , "Flexible coupling" , "Elastic coupling" , "Flexible coupling for powertrain" .
+
+etim:EC002391  rdf:type  model:Product ;
+        rdfs:label  "Stud bolt" , "Screw" , "Stud" .
+
+etim:EC000704  rdf:type  model:Product ;
+        rdfs:label  "Core drill" , "Socket cutter" , "Diamond drill" , "Drill tool" , "Rotary drill bit" , "Tile hole core drill" , "Hammer drill bit" , "Drill" , "Hammer hollow drill bit" , "Core drill bit" .
+
+etim:EC004199  rdf:type  model:Product ;
+        rdfs:label  "Anti-lift device" , "Window fitting" , "Covering cap" , "Fold hinge" , "Wing lifter" , "Counterweight" , "Window handle fuse" , "Window grille" , "Turnstile" , "Swing/tilt limiter" , "Turn limiter" , "Wing support" , "Spare parts for windows" , "Accessories for door windows" , "Center-drill protection" , "Tie rod (pull handle)" , "Latch locking" , "Carriage" , "Accessories for windows/door windows" , "Cover rail" , "Ventilation pincer" , "Mounting material" , "Spring lock" , "Spare parts for door windows" , "Electric/optoelectric accessories for break-through" , "Closing protection" , "Accessories for windows" , "Locking brake" , "Fitting" , "Slot ventilator" , "Anti-slam device" , "Catch/clean shears" , "Lift-out protection" , "Spare parts for windows/door windows" , "Shift lock" , "Accessories/spare parts for windows/door windows" , "Filler faceplate" .
+
+etim:EC000514  rdf:type  model:Product ;
+        rdfs:label  "T-connector" , "Low current connector" , "Clip" , "Connection clamp" , "Connector for lightning protection" , "Bimetal connector" , "Clamp" , "End piece" , "Sleeve connection" , "Clamp connector" , "Multi purpose connecting clamp" , "Connector" , "Connection terminal" , "Cross connector" , "Parallel connector" .
+
+etim:EC001418  rdf:type  model:Product ;
+        rdfs:label  "Portable device" , "Notebook" , "Desk type device" , "PLC programming device" .
+
+etim:EC000134  rdf:type  model:Product ;
+        rdfs:label  "Low voltage switch for doorbell" .
+
+etim:EC001038  rdf:type  model:Product ;
+        rdfs:label  "Mushroom" , "Agreement switch" , "Front element for mushroom push-button" .
+
+etim:EC010501  rdf:type  model:Product ;
+        rdfs:label  "Urinal siphon" .
+
+etim:EC012309  rdf:type  model:Product ;
+        rdfs:label  "Seat" , "Passenger chair" , "Chair" , "Passenger seat" .
+
+etim:EC011215  rdf:type  model:Product ;
+        rdfs:label  "Braiding for hose" .
+
+etim:EC012119  rdf:type  model:Product ;
+        rdfs:label  "Seaworthy mortise lock" , "Mortise lock" , "Mortice lock" , "Heavy duty lock" , "Cylinder lock" , "Seaworthy mortice lock" .
+
+etim:EC000876  rdf:type  model:Product ;
+        rdfs:label  "Moulded hood" , "Corner piece" , "Flat bend for wall duct" .
+
+etim:EC010121  rdf:type  model:Product ;
+        rdfs:label  "Heat recovery bend" , "Heat exchanger bend" , "Bend, round heat recovery air duct" , "Bend, insulated round air duct" , "Bend, heat exchanger air duct" , "Bend, double-walled round air duct" , "Bend, double-w. round air duct" , "Bend round air duct" .
+
+etim:EC011025  rdf:type  model:Product ;
+        rdfs:label  "Armrest toilet support" .
+
+etim:EC002924  rdf:type  model:Product ;
+        rdfs:label  "LED controlling" , "LED controller" , "Controller for luminaires" .
+
+etim:EC003828  rdf:type  model:Product ;
+        rdfs:label  "Door control unit" , "Control terminal for escape doors" , "Control terminal for emergency exit doors" .
+
+etim:EC002734  rdf:type  model:Product ;
+        rdfs:label  "Renovation floor system" , "Accessory support tile" , "Cable floor system" , "Earthing tile" , "Built-in tile for cover set" , "Floor tile steel" , "Basic tile" , "Cable outlet tile" , "Floor tile for cable floor system" .
+
+etim:EC000496  rdf:type  model:Product ;
+        rdfs:label  "Cable sorter" , "Line sorter" , "Gas/water line tester" , "Pipe locator" , "Conductor identifier" , "Dedector" , "Wire sorter" , "Cable finder" , "Conductor sorter" , "Pipe and cable locator/sorter" , "Line finder, sorter" , "Detection device" .
+
+etim:EC003638  rdf:type  model:Product ;
+        rdfs:label  "Horizontal cable support system" , "Horizontal support cable system" .
+
+etim:EC002544  rdf:type  model:Product ;
+        rdfs:label  "Switch" , "Sensor" , "Magnetic proximity switch" .
+
+etim:EC002354  rdf:type  model:Product ;
+        rdfs:label  "Screw for T-grooves" , "Screw" , "Hammerhead bolt" , "Halfen bolt" , "Bolt" , "T-head bolt" .
+
+etim:EC001260  rdf:type  model:Product ;
+        rdfs:label  "Control panel" , "Two-hand control device" .
+
+etim:EC011767  rdf:type  model:Product ;
+        rdfs:label  "Insulation board with heat-conducting plate" , "Floor heating insulation board" , "Insulation board, floor heating" .
+
+etim:EC002164  rdf:type  model:Product ;
+        rdfs:label  "Shovel" , "Sheet metal" , "Dust pan" .
+
+etim:EC003068  rdf:type  model:Product ;
+        rdfs:label  "Lintel" .
+
+etim:EC010673  rdf:type  model:Product ;
+        rdfs:label  "PVDF-welding rod" , "PVDF-welding wire" , "PVC-welding wire" , "PE-welding wire" , "Plastic welding rod" , "PP-welding wire" , "Welding wire" , "Welding rod" , "PVC-welding rod" , "PE-welding rod" , "PP-welding rod" , "Plastic welding wire" .
+
+etim:EC001070  rdf:type  model:Product ;
+        rdfs:label  "Photo camera" , "Digital photo camera" .
+
+etim:EC004212  rdf:type  model:Product ;
+        rdfs:label  "Wall connection profile" , "Wall jointing profile" .
+
+etim:EC010483  rdf:type  model:Product ;
+        rdfs:label  "Siphon for bath/shower base" .
+
+etim:EC011387  rdf:type  model:Product ;
+        rdfs:label  "Water cock" , "Tweeweg hydrant" , "Three-way hydrant" , "Hydrant" , "Above-ground hydrant" , "Aboveground hydrant" .
+
+etim:EC010293  rdf:type  model:Product ;
+        rdfs:label  "Reel cabinet" .
+
+etim:EC011197  rdf:type  model:Product ;
+        rdfs:label  "Spring return actuator" , "Pneumatic servomotor for valves" , "Drive" , "Pneumatic actuator for valve" , "Actuator for valves" , "Damper actuator" , "Engine valve" , "Servomotor" , "Spring return servomotor" , "Servomotor for valves" , "Damper servomotor" , "Actuator" .
+
+etim:EC012341  rdf:type  model:Product ;
+        rdfs:label  "Membrane breakage sensor" , "SD Card Reader" , "Signal output module Analogue" , "Accessories/spare parts for automatic expansion unit" , "Membrane rupture sensor" , "Accessories for automatic expansion unit" , "Accessories/spare parts automatic expansion unit" , "External readout module" , "Signal Output Module" , "Spare parts automatic expansion unit" , "Accessories automatic expansion unit" .
+
+etim:EC003860  rdf:type  model:Product ;
+        rdfs:label  "Tele extender" , "Tele converter" , "Teleconverter" .
+
+etim:EC003670  rdf:type  model:Product ;
+        rdfs:label  "Door coordinator" .
+
+etim:EC000839  rdf:type  model:Product ;
+        rdfs:label  "Shunt" , "Elastic relation" , "Drain wire" , "Braid wire" .
+
+etim:EC004574  rdf:type  model:Product ;
+        rdfs:label  "Electrical insulated shoe" , "Electrical insulated footwear" , "Electrical insulating boot" , "Electrical insulating footwear" , "Safety shoes with insulating sole" , "Electrical insulating shoe" , "Electrical insulated boot" , "Insulating boot" , "Safety shoe with insulating sole" .
+
+etim:EC003480  rdf:type  model:Product ;
+        rdfs:label  "Hook set" , "Hook selection" , "Tool holder assortment" .
+
+etim:EC004384  rdf:type  model:Product ;
+        rdfs:label  "Wooden ranging pole" , "Ranging pole" , "Range rod" , "Glass fibre ranging-pole" , "Building line bar" , "Range pole" .
+
+etim:EC003290  rdf:type  model:Product ;
+        rdfs:label  "Bicycle pump" , "Battery pump" , "Battery machine" , "Battery chainsaw" , "Ball pump" , "Air pump (battery)" .
+
+etim:EC001603  rdf:type  model:Product ;
+        rdfs:label  "Basic device" , "Fieldbus, decentr. periphery - basic appliance" .
+
+etim:EC002507  rdf:type  model:Product ;
+        rdfs:label  "Laboratory rack (electro/IT)" .
+
+etim:EC000269  rdf:type  model:Product ;
+        rdfs:label  "Connection set" , "Cable connection box for entry cabinet" .
+
+etim:EC001413  rdf:type  model:Product ;
+        rdfs:label  "PC" , "Control" , "Industrial PC" .
+
+etim:EC002317  rdf:type  model:Product ;
+        rdfs:label  "Earthing lug for cable screw gland" .
+
+etim:EC000079  rdf:type  model:Product ;
+        rdfs:label  "Device carrier" , "Covering cap" , "Appliance box for skirting duct" .
+
+etim:EC010826  rdf:type  model:Product ;
+        rdfs:label  "Oil drain valve" , "Stoves tap" , "Industrial tap" , "Stoves faucet" , "Self-closing valve" , "Industrial drain tap" , "Industrial faucet" , "Stoves cock" , "Self-closing cock" , "Self-closing faucet" , "Stoves crane" , "Industrial cock" .
+
+etim:EC002127  rdf:type  model:Product ;
+        rdfs:label  "Bore hole blower" , "Bellows for drill hole" .
+
+etim:EC010636  rdf:type  model:Product ;
+        rdfs:label  "Gland packing cord" , "Gland gasket cord" .
+
+etim:EC010446  rdf:type  model:Product ;
+        rdfs:label  "Two part hose clamp" , "1- and 2- part hose clamp" , "1- part hose clip" , "Hose clip" , "1- and 2 part hose clamp" , "Two part hose clip" , "One part hose clip" , "One and two part hose clip" , "One and two part hose clamp" , "1- part hose clamp" , "1- and 2 part hose clip" , "One part hose clamp" , "2- part hose clamp" , "2- part hose clip" , "Hose clamp" .
+
+etim:EC010256  rdf:type  model:Product ;
+        rdfs:label  "Welding bush" , "Stub end" , "Stub" , "Flanged piece" , "Flanged end" , "Collar bush" , "Flanged bush" .
+
+etim:EC011400  rdf:type  model:Product ;
+        rdfs:label  "Pre-expansion tank" , "Intermediate vessel" , "Intermediate pre-expansion vessel" .
+
+etim:EC012304  rdf:type  model:Product ;
+        rdfs:label  "Window" , "Marine window" , "Ship window" .
+
+etim:EC010066  rdf:type  model:Product ;
+        rdfs:label  "Roof vent cover, flat roof" , "Roof vent cover" .
+
+etim:EC012114  rdf:type  model:Product ;
+        rdfs:label  "Safety buoy light" , "Rescue light" , "Lifebuoy signal" , "Lifebuoy lamp" , "Life buoy signal" , "Life buoy light" , "Buoy light" , "Lifebuoy light" .
+
+etim:EC001775  rdf:type  model:Product ;
+        rdfs:label  "Control point for rescue route technology" .
+
+etim:EC011020  rdf:type  model:Product ;
+        rdfs:label  "Chemical Hose" , "Vacuum cleaner hose" , "Defroster hose" , "Food hose" , "Plastic hose, uninsulated with spiral" , "Cloth hose" , "Water hose" , "Plastic hose" , "Oil hose" , "Protect hose" , "PVC hose with inlay" , "Suction and blower hose" , "CAT hose" , "Suction/discharge hose" , "Ventilation hose" , "Plastic insulated hose with spiral" , "Milk hose" , "Hose" , "Waterhose" , "Paint spray hose" , "Cable protection hose" , "PVC hose" , "Airpressurehose" , "Granulate hose" , "Corrugated plastic tubing" , "PU hose" , "Welding smoke exhaust hose" , "Verge mower hose" , "Plastic spiral hose" , "Air hose" , "Discharge hose" , "Suction pressure hose" , "Chemistry hose" , "Airpressure hose" , "Polyurethane hose" , "Durable hose" , "Alimentary hose" , "Suction hose" , "Bulk hose" , "Spiral plastic tubing" , "Wine hose" , "PVC hose with spiral" .
+
+etim:EC000681  rdf:type  model:Product ;
+        rdfs:label  "Stereo" , "Home cinema system" , "HiFi system" , "HiFi Minisystem" , "HiFi Midisystem" , "HiFi Microsystem" , "HiFi-set" .
+
+etim:EC002679  rdf:type  model:Product ;
+        rdfs:label  "Fondue/wok" , "Clinical thermometer" , "Accessories for small domestic appliances" , "Deep frier" , "Hair dryer/hair styler" , "Accessories/spare parts for small domestic appliances" , "Mixer/blender" , "Meatgrinder" , "Desinfection device" , "Shaver" , "Coffee maker" , "Filter" , "Drying machine (food)" , "Drinks maker" , "Ice cream maker" , "Bronzing device" , "Wall mount" , "Massager" , "Hair trimmer" , "Accessories for shaver" , "Electric blanket/electric pillow" , "Water filter" , "Steam cooker" , "Food-slicer" , "Foil welding machine" , "Epilator" , "Iron station" , "Insect repellent device" , "All-purpose slicer" , "Squeezer/juicer" , "Spare parts for small domestic appliances" , "Joghurt maker" , "Grill" , "Fever thermometer" , "Ironing machine" , "Electric knife" , "Fryer" , "Toaster" , "Ironing device" , "Hairdryer/Hairstyler" .
+
+etim:EC001585  rdf:type  model:Product ;
+        rdfs:label  "Infrared receiver" , "Sensor" , "Control element" , "Multi operating device for bus system" , "Room temperature controller" , "Temperature controller" , "Thermostat" , "LCD display" , "Touch screen" .
+
+etim:EC002489  rdf:type  model:Product ;
+        rdfs:label  "VoIP telephone" , "Telephone hood" , "Telephone" , "Weatherproof telephone" .
+
+etim:EC000491  rdf:type  model:Product ;
+        rdfs:label  "Low current connector" , "Earthing pliers" , "Earthing arrangements" , "Connection terminal" , "Connection clamp" , "Clip" , "Clamp" , "Earth terminal clamp" .
+
+etim:EC001395  rdf:type  model:Product ;
+        rdfs:label  "Quick assembly screwdriver (battery)" , "Magazine screwdriver (battery)" , "Drywall screwdriver (battery)" , "Battery machine" , "Auto feed screwdriver (battery)" , "Screw driver (battery)" .
+
+etim:EC004537  rdf:type  model:Product ;
+        rdfs:label  "Carbide burrs set" .
+
+etim:EC002299  rdf:type  model:Product ;
+        rdfs:label  "Frequency meter" , "Frequency meter for installation" .
+
+etim:EC011952  rdf:type  model:Product ;
+        rdfs:label  "Paddle mixer drill" , "Mixing machine" , "Agigator" , "Mixing tool" , "Mixer" , "Agitator (electric)" , "Concrete agigator" , "Agitator" , "Electric agitator" .
+
+etim:EC004347  rdf:type  model:Product ;
+        rdfs:label  "Spare parts for coating tools" , "Brush holder" , "Accessories/spare parts for coating tools" , "Accessories for painting tools" , "Accessories for painting" , "Accessories for coating tools" , "Accessories/spare parts for painting tools" .
+
+etim:EC003253  rdf:type  model:Product ;
+        rdfs:label  "Pellet stove" .
+
+etim:EC004157  rdf:type  model:Product ;
+        rdfs:label  "Transport frame for fall protection devices" , "Stake rack" , "Stack rack for drums" , "Storage and transport frame for traffic management/road signage" .
+
+etim:EC011762  rdf:type  model:Product ;
+        rdfs:label  "Leak sealant heating system" .
+
+etim:EC011572  rdf:type  model:Product ;
+        rdfs:label  "Window temperature sensor" .
+
+etim:EC011382  rdf:type  model:Product ;
+        rdfs:label  "Washbasin cabinet" , "Washbasin lower cupboard" .
+
+etim:EC012286  rdf:type  model:Product ;
+        rdfs:label  "Office cabinet" , "Counter cabinet" , "Locker cabinet" , "Wardrobe" , "Kitchen cabinet" , "Cabinet" , "File cabinet" , "Computer cabinet" , "Storage cabinet" , "Vertical cabinet" , "Cloakroom cabinet" , "Compartment cabinet" , "Pharmacy cabinet" , "Closet" , "Locker" .
+
+etim:EC011192  rdf:type  model:Product ;
+        rdfs:label  "Lavatory brush for set" .
+
+etim:EC012096  rdf:type  model:Product ;
+        rdfs:label  "Spring" , "Lockable spring" , "Gas traction spring" , "Gas damper" , "Gas compression spring" , "Gas spring" .
+
+etim:EC003995  rdf:type  model:Product ;
+        rdfs:label  "Room partition" , "Room divider bathroom" , "Romm separator" , "Partition wall" , "Room divider" .
+
+etim:EC010409  rdf:type  model:Product ;
+        rdfs:label  "Threaded coupling, composite hose" , "Threaded coupling composite hose" .
+
+etim:EC010029  rdf:type  model:Product ;
+        rdfs:label  "Washbasin extension" .
+
+etim:EC000834  rdf:type  model:Product ;
+        rdfs:label  "Round nose pliers" , "Round pliers" , "Sheet metal pliers" , "Langbeck pliers" , "Point pliers" , "Gripping pliers" , "Jewellers' pliers" , "Pliers" , "Plumber flat round pliers" , "Sheet metal working tool" .
+
+etim:EC000644  rdf:type  model:Product ;
+        rdfs:label  "SACD-player" , "CD recorder" , "CD player" , "CD changer" , "Portable CD player" .
+
+etim:EC001548  rdf:type  model:Product ;
+        rdfs:label  "Wall mount" , "Mounting arm for monitor" , "Monitor mounting" , "Monitor holder" , "Monitor arm" , "Audio-/video support bracket" .
+
+etim:EC000454  rdf:type  model:Product ;
+        rdfs:label  "Clamp clip" , "Conduit clamp" , "Cable clamp" , "Brace" , "Holder for protective hose" , "Bow clamp" , "Clamp" , "Clamp bracket" , "One-piece strut clamp" , "Conduit clip" .
+
+etim:EC001358  rdf:type  model:Product ;
+        rdfs:label  "Wall transmitter" , "Manual transmitter" , "Remote control (box)" , "Manual radio transmitter" , "Wall-mounted transmitter" , "Station" , "Radio coding device" , "Radio transmitter" , "Transmitter" , "Remote control" .
+
+etim:EC002502  rdf:type  model:Product ;
+        rdfs:label  "Enclosure/housing for PC, monitor or periphery" .
+
+etim:EC000264  rdf:type  model:Product ;
+        rdfs:label  "Distributor" , "Panel for distribution board" .
+
+etim:EC003406  rdf:type  model:Product ;
+        rdfs:label  "Bolt block" .
+
+etim:EC001168  rdf:type  model:Product ;
+        rdfs:label  "Cable fat" , "Foam" , "Cable resin" , "Sealing resin" , "Flexible resin" , "Plastic compound" , "Cast resin" , "Resin" , "Compound" , "Removable resin" , "Crumb resin" , "Black mass" , "Cable mass" , "Plastic mass" , "Filling mass" , "Oil" .
+
+etim:EC002312  rdf:type  model:Product ;
+        rdfs:label  "Rail fastening" , "Mounting plate" , "Contact insert mount for heavy duty connector" , "Contact insert mount" , "Contact insert holder for industrial connectors" , "Adapter" , "Module carrier frame for industrial connectors" .
+
+etim:EC000074  rdf:type  model:Product ;
+        rdfs:label  "Motor protection switch" , "Motor starter" , "MBS" , "Switch" , "Starter" , "Motor protection circuit-breaker" , "Contactor automatic" , "Motor protective circuit-breaker" , "Manual motor starter" , "Instigator" , "Power-cut-out switch" .
+
+etim:EC003216  rdf:type  model:Product ;
+        rdfs:label  "Jointfiller" , "Joint filler" .
+
+etim:EC010821  rdf:type  model:Product ;
+        rdfs:label  "Cam and groove pin" .
+
+etim:EC011725  rdf:type  model:Product ;
+        rdfs:label  "Thermometer" , "Spring thermometer" , "Spring pressure thermometer" , "Gas expansion thermometer" , "Pressure-spring thermometer" .
+
+etim:EC002122  rdf:type  model:Product ;
+        rdfs:label  "Small sheet metal shear" , "Figure shear HSS" , "Goldsmith scissors" , "Figure punching shear HSS" , "Hand-held sheet metal shear" , "Metal shears" , "Universal figure scissors" , "Hand shear" , "Pelican scissors" , "High-performance shear" , "Universal scissors" , "Ideal shear HSS-TIN" , "American scissors" , "Ideal scissors" , "Sheet metal shear" , "HSS-shear" , "Snip" , "Shape cutting punch snip" , "HSS-high-performance shear" , "Ideal shear" , "Scissors" , "Lyon scissors" , "Scroll scissors" , "Straight cutting snip" , "Band shear" , "Ideal shear HSS" , "Snips" , "Hole scissors" , "Figure shear" , "English shear" , "Shears" , "Band iron scissors" , "Plate steel universal scissors" , "Jeweller shear" , "Figure scissors" , "Berlin scissors" , "Facon scissors" .
+
+etim:EC003026  rdf:type  model:Product ;
+        rdfs:label  "Cross fitting" , "Kruisfitting" , "Sliding fitting with 4 connections" , "Transition cross" , "Click fitting" , "Clamping-strip fitting with 4 connections" , "Running Y-piece" , "Flanged fitting with 4 connections" , "Malleable fittings" , "T-piece with side gutter" , "T distributor" , "Sliding fitting" , "Welded-on cross fitting" , "Laminated fitting with 4 connections" , "Weld fitting" , "Compression ring fitting" , "Capillary fitting" , "Compression ring fitting with 4 connections" , "Double T-piece" , "Glue fitting" , "T-piece with side branch" , "Extending cross piece" , "Compression fitting" , "Angle fitting" , "Threaded fitting with 4 connections" , "Push fitting with 4 connections" , "Ongoing Y-piece" , "Y-piece continuous" , "Welded-on fitting with 4 connections" , "Welded-on plastic fitting with 4 connections" , "Fitting with 4 connections" , "Welded fitting" , "T-connector" , "Clamp fitting with 4 connections" , "Glue fitting with 4 connections" , "Transition fitting" , "Double Tee" , "Ball piece with 4 connections" , "Transition piece" , "Soldered fitting with 4 connections" , "System fitting with 4 connections" , "Clamp fitting" , "Tee with side branch" , "Cross piece" , "Threaded fitting" , "Soldering fitting" , "Transition fitting with 4 connections" , "Grooved fitting with 4 connections" , "Reduced cross fitting" .
+
+etim:EC010631  rdf:type  model:Product ;
+        rdfs:label  "Trough grille" .
+
+etim:EC011535  rdf:type  model:Product ;
+        rdfs:label  "Shower hose" .
+
+etim:EC010441  rdf:type  model:Product ;
+        rdfs:label  "Coolant hose for lathe/miller" .
+
+etim:EC011345  rdf:type  model:Product ;
+        rdfs:label  "Stopcock with knee control" , "Stop valve with knee control" .
+
+etim:EC012249  rdf:type  model:Product ;
+        rdfs:label  "Cooling water" , "Coolant" .
+
+etim:EC011155  rdf:type  model:Product ;
+        rdfs:label  "Reflex sight glass" , "Reflex gauge glass" , "Gauge glass device, top and bottom" , "Gauge glass device" , "Gauge glass" , "Gauge" , "Level gauge tubular, upper and bottom part" .
+
+etim:EC012059  rdf:type  model:Product ;
+        rdfs:label  "Mooring bollard" , "Bollard" , "Ship bollard" .
+
+etim:EC010061  rdf:type  model:Product ;
+        rdfs:label  "Gearbox" , "Suction grille" , "Battery" , "Front exhaust conversion set" , "Fan sealing plate" , "Mechanical accessories, ventilator convector" , "Exhaust plenum" , "Rear panel" , "Air switch box" , "Coupling piece" , "Outlet grille" , "Legs" , "Outlet corner piece" , "Condensate collector" , "Flexible air connection" .
+
+etim:EC003958  rdf:type  model:Product ;
+        rdfs:label  "Lawn mower (hand)" , "Hand mower" , "Mower (hand)" .
+
+etim:EC001960  rdf:type  model:Product ;
+        rdfs:label  "Lamp" , "Indicator light complete" , "Glow lamp" , "Neon lamp" .
+
+etim:EC003768  rdf:type  model:Product ;
+        rdfs:label  "Sliding door fitting" , "Sliding door system" .
+
+etim:EC001770  rdf:type  model:Product ;
+        rdfs:label  "Reader-unit" , "Door code unit" , "Door code device" , "Distributor" , "Controller" , "Base station" , "Admittance control system" , "Access control system" .
+
+etim:EC002674  rdf:type  model:Product ;
+        rdfs:label  "Tube earthing clamp for lightning protection" , "Equipotential bonding bar" , "Flat strip for lightning protection" , "Roof conductor holder for lightning protection" , "Earthing strap clamp" , "C-clamp for round wire" , "Earth rod" , "Connector for lightning protection" , "Disconnection clamp for lightning protection" , "Protective / Isolating spark gap for lightning protection" , "Conductor holder for lightning protection" , "Fixed earthing terminal" , "Lead-in earthing rod for lightning protection" , "Rod holder for lightning protection" , "Earth terminal clamp" , "Base for air termination systems lightning protection" , "Metal cable" , "Earthing plate" , "Air-termination equipment for lightning protection" , "Distance holder for lightning protection" , "Earthing pipe clamp" , "Connection clamp for earth rods" , "Driving-in tool for earth rods" , "Connection clamp for lightning protection" , "Set for earthing/lightning protection" .
+
+etim:EC001580  rdf:type  model:Product ;
+        rdfs:label  "Manual transmitter for movement sensor" , "Ceiling-/installation bracket" , "Mast fastening" , "Mounting plate" , "Wall transmitter" , "Surface mounted housing presence indicator" , "Corner adapter" , "Accessories/spare parts for movement sensor" , "Spare parts for movement sensor" , "Corner piece" , "System-insert" , "Impulse insert" , "Accessories for movement sensor" , "Radio module" , "Relay" , "Mounting cover" , "Protective grille" , "Wall-mounted transmitter" .
+
+etim:EC003578  rdf:type  model:Product ;
+        rdfs:label  "Back support belt" , "Back protection" .
+
+etim:EC002484  rdf:type  model:Product ;
+        rdfs:label  "Soundsystem for domestic switching devices" , "Sound system" , "Sound system for domestic switching devices" .
+
+etim:EC010993  rdf:type  model:Product ;
+        rdfs:label  "Chimney sound absorber" .
+
+etim:EC001390  rdf:type  model:Product ;
+        rdfs:label  "Damp vacuum cleaner" , "Gypsum vacuum" , "Industrial vacuum" , "Wet vacuum" , "Steam cleaner" , "Wet and dry vacuum cleaner (electric)" , "Baker sucker" , "Hard floor cleaner" , "Wet and dry vacuum cleaner (electrical)" , "Multi-purpose vacuum cleaner" , "Oven sucker" , "All-vacuum cleaner" , "Spray extraction cleaner" , "Dry vacuum" , "Hazardous material vacuum" , "Wood vacuum" , "Vacuum cleaner" , "Electric suction cup" , "Hazard vacuum" , "Boiler vacuum" , "Asbestos suction cup" , "Canister-cylinder cleaner" , "Lime vacuum" , "Industrial vacuum cleaner" , "All-purpose vacuum cleaner" .
+
+etim:EC003388  rdf:type  model:Product ;
+        rdfs:label  "Plasterboard carry handle" , "Carry handle" .
+
+etim:EC011897  rdf:type  model:Product ;
+        rdfs:label  "Pipe passage" , "Passage" , "Flanged pipe passage" , "Exhaust pipe passage" , "Deck pipe passage" .
+
+etim:EC004532  rdf:type  model:Product ;
+        rdfs:label  "Underground connection pit for pipes" , "Underground connection pit for optical fibre" , "Underground connection pit for collector pipes" , "Underground connection pit for cables" , "Collector pipe underground connection pit" , "Cable underground connection pit" , "Underground connection pit for cables/pipes" .
+
+etim:EC002294  rdf:type  model:Product ;
+        rdfs:label  "Rotational speed meter" , "Built-in rotational speed meter" .
+
+etim:EC003198  rdf:type  model:Product ;
+        rdfs:label  "Trencher" , "Ditcher" , "Groove raker" .
+
+etim:EC000607  rdf:type  model:Product ;
+        rdfs:label  "Epilator" .
+
+etim:EC004342  rdf:type  model:Product ;
+        rdfs:label  "Welding wire" , "Welding cable, assembled" .
+
+etim:EC000417  rdf:type  model:Product ;
+        rdfs:label  "Head end station" .
+
+etim:EC004152  rdf:type  model:Product ;
+        rdfs:label  "Ultrasound cleaning device" , "Ultrasonic cleaning device" .
+
+etim:EC000037  rdf:type  model:Product ;
+        rdfs:label  "Metal halide lamp" , "Lamp" , "Halogen metal halide lamp" , "Halogen lamp" , "Discharge lamp" , "Halogen metal halide lamp without reflector" .
+
+etim:EC012281  rdf:type  model:Product ;
+        rdfs:label  "Sheet" , "Bed sheet" , "Bed linen" , "Fitted sheet" .
+
+etim:EC012091  rdf:type  model:Product ;
+        rdfs:label  "Tray for cultery" , "Extensible cutlery tray" , "Extendable cutlery tray" , "Cutlery box" , "Container for cutlery" , "Cutlery tray" .
+
+etim:EC003990  rdf:type  model:Product ;
+        rdfs:label  "Wrench for clamping nuts" , "Roller bearing wrench" , "Clamping nut wrench" , "Roller wrench" .
+
+etim:EC010404  rdf:type  model:Product ;
+        rdfs:label  "Akzo coupling/hose connector" .
+
+etim:EC011308  rdf:type  model:Product ;
+        rdfs:label  "Spare parts for clock thermostat" , "Automatic time setting (ATS) clock thermostat" , "Supply switch unit" , "Accessories/spare parts for room thermostat/clock thermostat" , "Turn button (knob) room thermostat" , "Temperature sensor" , "Antenna" , "Wall bracket room thermostat" , "Accessories for room thermostat/clock thermostat" , "Ground plate room thermostat" , "Accessories for clock thermostat" , "Antenna room thermostat" , "Weather-dependent control set" , "Cover" , "Accessories for thermostat" , "Protective cover room thermostat" , "Spare parts for room thermostat/clock thermostat" , "Protective cover" , "Automatic time setting (ATS)" , "Supply switch unit room thermostat" , "Cover room thermostat" , "Spare parts for room thermostat" , "Standard" , "Turn button (knob)" , "Battery" , "Wall bracket" , "Temperature sensor room thermostat" , "Accessories for room thermostat" , "Turn button" , "Standard room thermostat" , "Ground plate clock thermostat" , "Battery room thermostat" , "Ground plate" .
+
+etim:EC010214  rdf:type  model:Product ;
+        rdfs:label  "Valve" , "Thread valve" , "Needle valve block" , "Needle valve" , "Three-way needle valve" .
+
+etim:EC011118  rdf:type  model:Product ;
+        rdfs:label  "Pipe freezing machine" , "Pipe freezing device (electric)" , "Pipe freezer (electric)" , "Pipe freezing device" .
+
+etim:EC000779  rdf:type  model:Product ;
+        rdfs:label  "Telephone" , "System telephone" , "Intercom" , "Indoor station (audio/video)" , "House telephone" , "House station" , "Indoor station door communication" .
+
+etim:EC010024  rdf:type  model:Product ;
+        rdfs:label  "Valve" , "Three-way plug cock" , "Thread valve" , "Plug valve" , "Plug cock" , "Flange valve" , "Three-way plug valve" .
+
+etim:EC001923  rdf:type  model:Product ;
+        rdfs:label  "Slot in cable extension for installation units" .
+
+etim:EC000589  rdf:type  model:Product ;
+        rdfs:label  "Fryer" , "Deep frier" , "Deep fryer" .
+
+etim:EC002637  rdf:type  model:Product ;
+        rdfs:label  "Plug" , "Printed circuit board connector" .
+
+etim:EC000399  rdf:type  model:Product ;
+        rdfs:label  "Traffic signalling lamp" , "Lamp" , "Incandescent lamp" , "Indication- and signalling lamp" .
+
+etim:EC002447  rdf:type  model:Product ;
+        rdfs:label  "Wall mounting" , "Mounting clip" , "Mounting accessories for cable rails" , "Clip" , "Wall fastening clip for installation duct" .
+
+etim:EC001353  rdf:type  model:Product ;
+        rdfs:label  "Signalling lamp" , "Continuous luminaire" , "Traffic light" .
+
+etim:EC002257  rdf:type  model:Product ;
+        rdfs:label  "Connection bend for installation tubes" .
+
+etim:EC003401  rdf:type  model:Product ;
+        rdfs:label  "Special installation wrench" , "Wash basin wrench" .
+
+etim:EC010766  rdf:type  model:Product ;
+        rdfs:label  "Sealing for dry-break coupling" .
+
+etim:EC011910  rdf:type  model:Product ;
+        rdfs:label  "Door spring plier" .
+
+etim:EC004305  rdf:type  model:Product ;
+        rdfs:label  "Hand reamer" , "Plug-on reamer" , "Hand taper reamer" , "Machine reamer" , "Cone reamer" , "Finishing reamer" , "Taper sheeler reamer" , "Reamer" , "Automat reamer" .
+
+etim:EC002067  rdf:type  model:Product ;
+        rdfs:label  "Fibre optic distribution box" .
+
+etim:EC003211  rdf:type  model:Product ;
+        rdfs:label  "Corner and valley rafter" .
+
+etim:EC010576  rdf:type  model:Product ;
+        rdfs:label  "Gauge cooling element" , "Cooling element" , "Pressure gauge cooling element" .
+
+etim:EC004115  rdf:type  model:Product ;
+        rdfs:label  "Hardening agent" , "Hardener" , "Crosslinker" , "Curing agent" .
+
+etim:EC011720  rdf:type  model:Product ;
+        rdfs:label  "Shower drain" .
+
+etim:EC003021  rdf:type  model:Product ;
+        rdfs:label  "Beacon" , "Day shape" .
+
+etim:EC010386  rdf:type  model:Product ;
+        rdfs:label  "Pressure test pump" , "Plunjer pump" , "Handpump" , "Boiler pressure pump" , "Hand plunger pump" .
+
+etim:EC010196  rdf:type  model:Product ;
+        rdfs:label  "Construction plate for mounting rail" .
+
+etim:EC011340  rdf:type  model:Product ;
+        rdfs:label  "Earthenware tile" , "Decoration tile" , "Stoneware tile" , "Bathroom tile" , "Ceramic tile" , "Tile" , "Unglazed tile" , "Glazed tile" , "Tile ceramic" , "Antiskid tile" .
+
+etim:EC002999  rdf:type  model:Product ;
+        rdfs:label  "QR code reader" , "Data matrix code reader" , "Matrix code reader" .
+
+etim:EC012244  rdf:type  model:Product ;
+        rdfs:label  "Transceiver" , "Shortwave transmitter" , "Radio telephone" , "MF/HF transmitter" , "MF/HF transceiver" , "Short wave transmitter" .
+
+etim:EC011150  rdf:type  model:Product ;
+        rdfs:label  "Flame extinguisher" .
+
+etim:EC012054  rdf:type  model:Product ;
+        rdfs:label  "Accessories/spare parts for marine urinal" , "Accessories for marine urinal" , "Spare parts for marine toilet" , "Fundament" , "Accessories for marine toilet/urinal" , "Accessories/spare parts for marine toilet" , "Accessories for marine closet" , "Foundation" , "Spare parts for marine urinal" , "Accessories for marine toilet" , "Accessories/spare parts for marine toilet/urinal" .
+
+etim:EC003953  rdf:type  model:Product ;
+        rdfs:label  "Edgebanding device (electric)" .
+
+etim:EC003763  rdf:type  model:Product ;
+        rdfs:label  "Gate roller" , "Roller for sliding gate" .
+
+etim:EC003573  rdf:type  model:Product ;
+        rdfs:label  "Catering clothes" , "Occupation clothing" , "Service clothing skirt" , "Catering skirt" , "Casual skirt" , "Skirt" , "Cooking skirt" , "Service skirt" , "Cooking clothing" .
+
+etim:EC004477  rdf:type  model:Product ;
+        rdfs:label  "Overvoltage protection central point" , "Overvoltage protection central point <1kV" .
+
+etim:EC011892  rdf:type  model:Product ;
+        rdfs:label  "T-profile stainless steel" , "Tee" , "T" , "T-profile" , "Stainless steel profile" , "Tee stainless steel" , "T-profile, stainless steel" , "Profile stainless steel" , "Stainless steel T-profile" , "T-stainless steel" .
+
+etim:EC003193  rdf:type  model:Product ;
+        rdfs:label  "Spacer for structural steel" .
+
+etim:EC000602  rdf:type  model:Product ;
+        rdfs:label  "KNX data rail" , "EIB data rail" , "Connecting bridge" , "Bus system" , "Data rail for bus system" .
+
+etim:EC004097  rdf:type  model:Product ;
+        rdfs:label  "Bark-peeling machine" , "Bark spud" , "Bark peeler" .
+
+etim:EC001506  rdf:type  model:Product ;
+        rdfs:label  "Mechanical kilowatt-hour meter" , "Two-leader-instrument transformer-pulse generator" , "Kilowatt-hour meter" , "Three-conductor value transformer pulse generator meter" , "Energy meter" , "Electricity meter for service distribution board" , "Effective power meter" , "Four-conductor value transformer pulse generator meter" , "Rate meter" , "Two-wire counter" , "Four-conductor pulse generator meter" , "Rotary current four-conductor meter" .
+
+etim:EC000412  rdf:type  model:Product ;
+        rdfs:label  "Lux meter" .
+
+etim:EC010919  rdf:type  model:Product ;
+        rdfs:label  "Bend, oval air duct" .
+
+etim:EC000222  rdf:type  model:Product ;
+        rdfs:label  "Selector front element" , "Agreement switch" , "Head push button" , "Turn button (knob)" , "Key switch" , "Button" , "Push button, complete" , "Switch" , "Illuminated selector button" , "Push button" , "Front element for selector switch" , "Pulse button" , "Control element" , "Rotary lever" , "Actuator" , "Front element selector" .
+
+etim:EC010729  rdf:type  model:Product ;
+        rdfs:label  "Circular belt slide profile" .
+
+etim:EC001126  rdf:type  model:Product ;
+        rdfs:label  "Scribe" , "Fibre optic cleaver" .
+
+etim:EC000032  rdf:type  model:Product ;
+        rdfs:label  "All-purpose plug" , "Sealing plug for pipeline" , "Dowel" , "Seal ring" , "Blind" , "Dummy plug" , "Sealing plug" , "Plug for cable screw gland" , "Blind plate" .
+
+etim:EC010539  rdf:type  model:Product ;
+        rdfs:label  "Headboard roof gutter" .
+
+etim:EC010349  rdf:type  model:Product ;
+        rdfs:label  "Prison grille" .
+
+etim:EC010159  rdf:type  model:Product ;
+        rdfs:label  "Inlay strap" .
+
+etim:EC011303  rdf:type  model:Product ;
+        rdfs:label  "Cast-iron pipe" .
+
+etim:EC012207  rdf:type  model:Product ;
+        rdfs:label  "Windlass" , "Warping head" , "Capstan" .
+
+etim:EC001868  rdf:type  model:Product ;
+        rdfs:label  "Socket vacuuming nozzle" , "Hoover outlet" .
+
+etim:EC000774  rdf:type  model:Product ;
+        rdfs:label  "Type of fuse" , "Miniature fuse" , "Glass fuse" , "Ceramic fuse" , "Miniature fuse assortment" .
+
+etim:EC012017  rdf:type  model:Product ;
+        rdfs:label  "Accessories for ear muff" , "Accessories for protective glasses" , "Etui" , "Air conditioner" , "Accessories/spare parts for personal protection" , "Suspension" , "Battery" , "Box" , "Hood" , "Accessories for eye, ear and facial protection" , "Dust filter" , "Sweatband" , "Accessories for protective goggles" , "Closing cap" , "Visor" , "Face protection shield" , "Accessories for personal protection" , "Cleansing tissue" , "Chinstrap" , "Nose bridge" , "Accessories for eye, ear, facial and head protection" , "Sealing" , "Chin strap" , "Hygiene kit" , "Cover" , "Hose" , "Gas filter" , "Detergent" , "Adapter" , "Case" , "Shield" , "Accessories for earplug" , "Suspension helmet" , "Cap" , "Lens" , "Hygiene set" , "Side- and upper flap" , "Accessories for facial shield" , "Accessories for ear protection" , "Air filter unit" , "Head rest" , "Accessories for protective spectacles" , "Neck guard" , "Glasses strap" , "Accessories for eye protection" , "Accessories for head protection" , "Strap" , "Bag" , "Disinfectant" , "Screen" , "Headband" , "Cord" , "Accessories for facial protection" , "Clip" , "Clamp" , "Air filter" , "Charger" , "Storage box" , "Helmet holding device" , "Insert" , "Cleaning set" , "Dispenser" , "End cap" , "Clip-on glasses" , "Accessories for protective helmet" , "Mounting bracket" , "Spare parts for personal protection" , "Hard hat liner" , "Buckle" .
+
+etim:EC003916  rdf:type  model:Product ;
+        rdfs:label  "Battery broom" , "Sweeping broom (battery)" , "Sweeper tool" , "Sweeping machine, hand operated (battery)" , "Sweeping shovel" , "Sweeper roll" , "Battery sweeper" , "Broom" , "Sweeping machine (battery)" , "Feather duster" , "Household broom" .
+
+etim:EC000584  rdf:type  model:Product ;
+        rdfs:label  "Warming plate" , "Tea light" , "Memory medium" , "Hot tray" , "Warming tray" .
+
+etim:EC003726  rdf:type  model:Product ;
+        rdfs:label  "Integrated door closer complete-set" .
+
+etim:EC001488  rdf:type  model:Product ;
+        rdfs:label  "Distributor box" , "Cable box" , "Distributor for intrusion detection system" .
+
+etim:EC002632  rdf:type  model:Product ;
+        rdfs:label  "Complete system (PC-based controls)" .
+
+etim:EC003536  rdf:type  model:Product ;
+        rdfs:label  "Window frame" , "Window (complete)" , "Window" , "Sliding window" , "Window (complete with frame)" .
+
+etim:EC002442  rdf:type  model:Product ;
+        rdfs:label  "Support" , "Retaining bracket" , "Interlocking" , "Mounting for separation plate installation duct" .
+
+etim:EC010951  rdf:type  model:Product ;
+        rdfs:label  "Profiled tube clip" .
+
+etim:EC011855  rdf:type  model:Product ;
+        rdfs:label  "Thin back clamp" , "Staple nail" , "Mouning staple" , "Staples" , "Staple" , "Flat wire bracket" , "Fine wire clamp" , "Fastener" , "Rivet" , "Ribbon wire clamp" , "Staple pin" .
+
+etim:EC002252  rdf:type  model:Product ;
+        rdfs:label  "Nikobus" , "Mounting plate" , "Circuit board for bus system" .
+
+etim:EC003156  rdf:type  model:Product ;
+        rdfs:label  "Dry ridge" .
+
+etim:EC010761  rdf:type  model:Product ;
+        rdfs:label  "Insert coupling, 3 connections" .
+
+etim:EC004300  rdf:type  model:Product ;
+        rdfs:label  "Magnetic clamp plate" , "Magnetic clamp block" , "Magnet clamp plate" , "Magnet clamp block/plate" , "Magnet clamp block" , "Magnetic chucking system" .
+
+etim:EC011665  rdf:type  model:Product ;
+        rdfs:label  "Flange" , "Spring" , "Mounting plate" , "Cable pulling system" , "Spare set" , "Cable screw gland" , "Filter" , "PCB" , "Accessories liquid level sensor" , "Accessories for liquid level sensor" , "Bracket" , "Membrane" , "Extension pipe" , "Spare parts for liquid level sensor" , "Accessories/spare parts for liquid level sensor" , "Brace" , "Bellows" , "Terminal box" .
+
+etim:EC010571  rdf:type  model:Product ;
+        rdfs:label  "Coupling vessel" .
+
+etim:EC004110  rdf:type  model:Product ;
+        rdfs:label  "Storage and factory equipment" , "Industrial staircase" , "Industrial stairway" .
+
+etim:EC011475  rdf:type  model:Product ;
+        rdfs:label  "Pull coupling for plastic tube" .
+
+etim:EC010381  rdf:type  model:Product ;
+        rdfs:label  "Braiding wire" , "Measuring point marking" , "Tube guide bow" , "Cement additive" , "Accessories for floor heating control unit" , "Pipe mounting rail" , "Accessories for floor heating" , "Pipe guide wall clamp" , "Accessories/spare parts for floor heating" , "Mat binder" , "Hot cutting device" , "Spare parts for floor heating" , "Grid foil" , "Pipe mounting rai" , "Floor support control unit" .
+
+etim:EC011285  rdf:type  model:Product ;
+        rdfs:label  "Heat recovery unit for single family house" , "Heat recovery unit for housing construction" , "Heat recovery unit for residential construction" .
+
+etim:EC012189  rdf:type  model:Product ;
+        rdfs:label  "Spare parts for chain guiding" , "Spare parts for rope guiding" , "Accessories for chain-,wire-, rope guiding" , "Guide roller" , "Accessories for chain guiding" , "Accessories for chain/wire/rope guiding" , "Accessories/spare parts for rope guiding" , "Shaft" , "Bearing house" , "Accessories for mooring" , "Wire guide" , "Accessories for wire guiding" , "Thimble" , "Accessories/spare parts for chain-, wire-, rope guiding" , "Mooring chock" , "Bearing" , "Fundament" , "Drum" , "Accessories/spare parts for wire guiding" , "Accessories for rope guiding" , "Spare parts for wire guiding" , "Accessories/spare parts for chain guiding" , "Spare parts for chain-,wire-, rope guiding" .
+
+etim:EC010191  rdf:type  model:Product ;
+        rdfs:label  "Chimney bracket construction" .
+
+etim:EC002994  rdf:type  model:Product ;
+        rdfs:label  "Temperature process measuring system" .
+
+etim:EC003898  rdf:type  model:Product ;
+        rdfs:label  "Plug assortment" , "Dowel set" , "Dowel case" , "Dowel box" , "Dowel/plug set" .
+
+etim:EC000927  rdf:type  model:Product ;
+        rdfs:label  "Nikobus" , "Brightness sensor for bus system" , "Sensor" , "Brightness sensor" , "Switch element" , "Light sensor" , "EIB" , "Twilight switch" , "Bus system" , "Twilight sensor" .
+
+etim:EC000737  rdf:type  model:Product ;
+        rdfs:label  "Heating (switchgear cabinet)" , "Heating" , "Heating (enclosure/cabinet)" .
+
+etim:EC004472  rdf:type  model:Product ;
+        rdfs:label  "Lifting device controller" , "Mounting frame" , "Ceiling fixing kit" , "Lifting system" , "Weather protection shield" , "Mounting plate" , "Mounting bracket" , "Accessories/spare parts for infrared heater" , "Accessories/spare parts for IR panel" , "Mounting box" , "Lifting system controller" , "Accessories/spare parts for infrared radiation panel" , "Accessories/spare parts for heated emitter" , "Remote controller" , "Floor stand" , "Tripod" , "Lifting system connecting device" .
+
+etim:EC004282  rdf:type  model:Product ;
+        rdfs:label  "Melting device (electric)" , "Hard wax smelter" , "Melting tool (electric)" .
+
+etim:EC000357  rdf:type  model:Product ;
+        rdfs:label  "Clock battery" , "Emergency Battery" , "Monocel" , "Rechargeable battery" , "Button cell" , "Accumulator" , "Battery rechargeable" , "Minicel" , "Penlite" , "Battery" , "Memory battery" , "Block battery" , "Accu" , "Nicad" , "Flat battery" , "Power pack" .
+
+etim:EC004092  rdf:type  model:Product ;
+        rdfs:label  "Air restriction ring" , "Air limiter" , "Air controller" , "Air control piece" , "Air restrictor ring" .
+
+etim:EC002405  rdf:type  model:Product ;
+        rdfs:label  "Cover plate" , "Cover" , "Reduction piece cover for cable support system" .
+
+etim:EC000167  rdf:type  model:Product ;
+        rdfs:label  "Retraction spiral" , "Extension circuit" , "Cable pulling strap" , "Cable bendable tape" , "Cable bendable spiral" , "Cable pulling system" .
+
+etim:EC010914  rdf:type  model:Product ;
+        rdfs:label  "Counterplate, adapted system" .
+
+etim:EC003309  rdf:type  model:Product ;
+        rdfs:label  "Precision grinder set" , "Precision grinder" , "Precision drill set" , "Precision drill" , "Multi tool" , "Precision drill/grinder set (electric)" .
+
+etim:EC011818  rdf:type  model:Product ;
+        rdfs:label  "Spanner" , "Swivel head wrench" , "Swivel head spanner" , "Doucle ended wrench" , "Double ended socket wrench" , "Double ended socket spanner" , "Double hinge socket wrench" , "Double ended spanner" , "Double joint wrench" , "Wrench" , "Joint wrench" .
+
+etim:EC002215  rdf:type  model:Product ;
+        rdfs:label  "Hopper" , "Funnel" .
+
+etim:EC003119  rdf:type  model:Product ;
+        rdfs:label  "Safety door strike plate" , "Safety door strike box/lock hook" .
+
+etim:EC010724  rdf:type  model:Product ;
+        rdfs:label  "Pneumatic tyre transport wheel" .
+
+etim:EC001121  rdf:type  model:Product ;
+        rdfs:label  "Installation bus" , "Blind plate" , "Plug" , "Module" , "Blind module" , "RJ" , "All-purpose plug" , "Blind cover" , "Jacket" , "RJ45-bus" , "Bus (jack)" , "Modular Jack" , "Modular connector" , "Insert" , "Bus" , "Connector" , "Dowel" , "Connecting element" .
+
+etim:EC011628  rdf:type  model:Product ;
+        rdfs:label  "Humidifier (steam)" .
+
+etim:EC002025  rdf:type  model:Product ;
+        rdfs:label  "Application software" , "Communication module" , "Cap for breaking resistance" , "Output extension" , "Splitter" , "Cable" , "Cap for EMV-filter" , "Spare parts for frequency controller" , "Breaking unit" , "Filter" , "Control panel" , "Flange" , "Input extension" , "Accessories/spare parts for frequency controller" , "Protection hood connection terminals" , "Encoder input module" , "Cover" , "Breaking resistance" , "I/O extension" , "Mounting set" , "Potentiometer" , "Software tool" , "Relay module" , "Reactance coil" , "Extension module" , "Accessories for frequency controller" , "Mounting frame" .
+
+etim:EC010534  rdf:type  model:Product ;
+        rdfs:label  "Heating" , "Heater" , "Mobile electric air heater" .
+
+etim:EC011438  rdf:type  model:Product ;
+        rdfs:label  "Base plate for freely progammable controller" , "Base plate for freely programmable controller" .
+
+etim:EC011248  rdf:type  model:Product ;
+        rdfs:label  "Flanged ring for metal hose" .
+
+etim:EC011058  rdf:type  model:Product ;
+        rdfs:label  "Soldering insert for handle" , "Soldering insert" , "Preheating torch" , "Hammer soldering iron" , "Burner head" .
+
+etim:EC012202  rdf:type  model:Product ;
+        rdfs:label  "Bow thruster tunnel" , "Propeller tunnel" , "Bow thruster tube" , "Propeller tube" , "Thruster tunnel" , "Bow/stern thruster tunnel" , "Propeller pipe" , "Stern thruster tunnel" , "Stern thruster pipe" , "Thruster tube" , "Stern thruster tube" , "Thruster pipe" , "Bow thruster pipe" .
+
+etim:EC002767  rdf:type  model:Product ;
+        rdfs:label  "Underfloor tank empty" , "Junction box" , "Connection/junction box" , "Connection box" , "Burial junction box" , "Burial connection/junction box" , "Burial connection box" , "Underfloor tank" .
+
+etim:EC012012  rdf:type  model:Product ;
+        rdfs:label  "Raised toggle plate" , "Flat toggle plate" , "Toggle plate" .
+
+etim:EC003911  rdf:type  model:Product ;
+        rdfs:label  "Deadlock insert for PZ-lock" , "Warded lock insert for profile cylinder lock" .
+
+etim:EC001673  rdf:type  model:Product ;
+        rdfs:label  "Spare parts for fix telephone" , "Answering machine module" , "Handset" , "Accessories for fix telephone" , "Wall mount" , "Key extension" , "Wall handle" , "Emergency call transmitter" , "Power adaptor" , "Hue control" , "Accessories/spare parts for fix telephone" , "Mains plug" , "Wall holder" .
+
+etim:EC002577  rdf:type  model:Product ;
+        rdfs:label  "Flat bend for on-floor installation duct" .
+
+etim:EC003721  rdf:type  model:Product ;
+        rdfs:label  "Clamp for door hinge" , "Clamping nut for door hinge" .
+
+etim:EC001483  rdf:type  model:Product ;
+        rdfs:label  "Rotary lever" , "Plunger" , "Actuating rod" , "Roller cam" , "Accessories for position switches" , "Square roller lever" , "Spring-rod" , "Drive head for position switches/hinge switches" , "End switch" , "Hinge switch" .
+
+etim:EC003531  rdf:type  model:Product ;
+        rdfs:label  "Convector pit complete without grid" .
+
+etim:EC010896  rdf:type  model:Product ;
+        rdfs:label  "Riser for hose on shower tap" .
+
+etim:EC004435  rdf:type  model:Product ;
+        rdfs:label  "Shelving rack accessory" , "Enhancement for end post" , "Rack shelf divider" , "Tie holder" , "Component for expansion (rack element)" , "Partitioning material for cabinet" , "Diagonal cross" , "Suspension filing system" , "Cable drum axle" , "Cable drum axle housing" , "Accessories for shelving rack" , "Component for installation (rack element)" .
+
+etim:EC002197  rdf:type  model:Product ;
+        rdfs:label  "Socket wrench for slot head screws" , "Socket for slot head screws" , "Screwdriver bit socket" , "Insert" , "Bit socket for slotted head screws" , "Socket spanner for slot head screws" .
+
+etim:EC011850  rdf:type  model:Product ;
+        rdfs:label  "Water jet pipe" , "Nozzle" , "Jet pipe" , "Foam jet pipe" , "Foam firehose nozzle" , "Firehose nozzle" , "Hose nozzle" .
+
+etim:EC004245  rdf:type  model:Product ;
+        rdfs:label  "Lifting equipment stand" , "Attachment gear stand" , "Lifting equipment rack" .
+
+etim:EC004055  rdf:type  model:Product ;
+        rdfs:label  "Compressed air tool" , "Compressed air pistol" , "Blower pistol" , "Air blowgun (compressed air)" .
+
+etim:EC011660  rdf:type  model:Product ;
+        rdfs:label  "Water separator" , "Spare parts for humidifier" , "Cover plate" , "Accessories for humidifier" , "Accessories/spare parts for humidifier" .
+
+etim:EC011470  rdf:type  model:Product ;
+        rdfs:label  "Glass brick" .
+
+etim:EC011280  rdf:type  model:Product ;
+        rdfs:label  "Three-way valve, round air duct" .
+
+etim:EC012184  rdf:type  model:Product ;
+        rdfs:label  "Protective cabinet for fire extinguisher" , "Fire extinguisher cabinet" , "Fire blanket case" , "Fire blanket box" , "Cabinet for fire extinguisher" .
+
+etim:EC011090  rdf:type  model:Product ;
+        rdfs:label  "Tap seat grinder" .
+
+etim:EC003893  rdf:type  model:Product ;
+        rdfs:label  "Battery (NMC)" , "Battery (Lithium-ion)" , "Battery (LFP)" , "Battery (Lithium)" .
+
+etim:EC010117  rdf:type  model:Product ;
+        rdfs:label  "Floatvent" , "De-aerator" , "Air vent" , "Float deaerator" .
+
+etim:EC000732  rdf:type  model:Product ;
+        rdfs:label  "Repeater" , "Network repeater" .
+
+etim:EC001636  rdf:type  model:Product ;
+        rdfs:label  "Empty housing" , "Distance ring" , "Signal controller" , "Loudspeaker cover grill" , "Spare parts for car audio" , "AC 3 processor" , "Fader" , "AC 400 V" , "Sound filter" , "Accessories for car audio" , "Accessories/spare parts for car audio" , "Frequency shunt" .
+
+etim:EC000542  rdf:type  model:Product ;
+        rdfs:label  "Beater vacuum cleaner" , "Accumulator vacuum cleaner" , "Electric tool" , "Hip vacuum cleaner" , "Vacuum cleaner" , "Stick vacuum cleaner" , "All-vacuum cleaner" , "Industrial vacuum cleaner" , "Wood vacuum" , "Hand vacuum" , "Canister-cylinder cleaner" , "Piggyback vacuum" , "Hump suction cup" , "Back vacuum cleaner" , "Cyclone cleaner" , "Robot vacuum cleaner" , "Table vacuum cleaner" , "Electric suction cup" , "Industrial vacuum" .
+
+etim:EC001446  rdf:type  model:Product ;
+        rdfs:label  "Temperature switch" , "Relay" , "Temperature monitoring relay" .
+
+etim:EC000352  rdf:type  model:Product ;
+        rdfs:label  "Telephone" , "Intercom" , "House telephone" , "Alternating intercom" , "Accessories for telephone system" , "System telephone" .
+
+etim:EC010859  rdf:type  model:Product ;
+        rdfs:label  "Pipe" , "Flexible tube for ventilation system" , "Flexible pipe" , "Flexible aluminium tube" .
+
+etim:EC002400  rdf:type  model:Product ;
+        rdfs:label  "Vertical riser for cable tray" , "Corner piece" , "Bend vertical rising" , "Bend vertical falling" , "Bend horizontal" , "Bend for cable tray" .
+
+etim:EC000162  rdf:type  model:Product ;
+        rdfs:label  "Wood step drill" , "Drill tool" , "Drill metal" , "Drill" , "Deburring reamer" , "Step drill" .
+
+etim:EC003304  rdf:type  model:Product ;
+        rdfs:label  "Diamond hand-held circular saw" , "Diamond saw (electric)" .
+
+etim:EC010669  rdf:type  model:Product ;
+        rdfs:label  "Sealing strip" , "Sealing band" , "PTFE tape" , "PTFE sealing tape" , "PTFE flange seal" , "PTFE cord" , "PTFE adhesive tape" , "Expanded PTFE sealing strip" .
+
+etim:EC011813  rdf:type  model:Product ;
+        rdfs:label  "Demagnetizer" , "Safety ring" , "Accessoiries for screwdrivers" , "Gauge torx" , "Spare parts for screwdrivers" , "Plug in blade torx" , "Handle torque screwdriver" , "Accessories/spare parts for screwdrivers" , "Plug in blade slot" , "Handle for torque screwdriver" , "Plug in blade cross" , "Accessories for screwdrivers" .
+
+etim:EC002210  rdf:type  model:Product ;
+        rdfs:label  "Hex head key set" , "Pin-face wrench set" , "Allen key set" , "Key set" , "Hexagonal key set" , "Cross handle key set" , "Allen key" , "Hexagonal key" , "Angle head key set" , "Allen wrench set" , "Curved head key set" .
+
+etim:EC003114  rdf:type  model:Product ;
+        rdfs:label  "Gutter piece for daylight system" .
+
+etim:EC004018  rdf:type  model:Product ;
+        rdfs:label  "Scroll sawing machine (electric)" , "Scroll sawing machine" , "Scroll saw" , "Fine cutting saw" , "Scroll saw (electric)" .
+
+etim:EC011623  rdf:type  model:Product ;
+        rdfs:label  "Hydraulic motor for valve" , "Hydraulic drive for valve" , "Engine valve" , "Drive" , "Actuator" , "Hydraulic actuator for valve" .
+
+etim:EC002020  rdf:type  model:Product ;
+        rdfs:label  "Fixing clip" , "Connection terminal" , "Connection clamp" , "Clamp bracket" , "Clamp" , "Shield connection clamp" .
+
+etim:EC011433  rdf:type  model:Product ;
+        rdfs:label  "Bracket piece, sleeveless cast iron" .
+
+etim:EC012337  rdf:type  model:Product ;
+        rdfs:label  "Lead frame air duct" .
+
+etim:EC010099  rdf:type  model:Product ;
+        rdfs:label  "Gauze grille" .
+
+etim:EC012147  rdf:type  model:Product ;
+        rdfs:label  "Storm hook" , "Cabin hook" , "Weather-/cabin hook" .
+
+etim:EC011053  rdf:type  model:Product ;
+        rdfs:label  "Device shaft" , "Brush handle" , "Broomstick" , "Axe stick" , "Stick" .
+
+etim:EC003856  rdf:type  model:Product ;
+        rdfs:label  "Refrigeration unit air cooled (Refrigeration technique)" , "Refrigeration condensing unit air cooled" , "Refrigeration condensing unit" , "Refrigeration unit air cooled (refrigeration technology)" .
+
+etim:EC002762  rdf:type  model:Product ;
+        rdfs:label  "10\"-rack" , "Rack PDU" , "Rackpower" , "Power distribution unit (PDU)" , "19 inch rack" , "19\"-rack" , "10 inch rack" , "ICT Rackpower" , "IT Rackpower" .
+
+etim:EC003666  rdf:type  model:Product ;
+        rdfs:label  "Door closer" , "Floor spring" .
+
+etim:EC002572  rdf:type  model:Product ;
+        rdfs:label  "Electronic motor control and protection device" , "Motor management device" .
+
+etim:EC003476  rdf:type  model:Product ;
+        rdfs:label  "Compressed air tool" , "Compressed air grinding machine" , "Angle grinder (compressed air)" .
+
+etim:EC011985  rdf:type  model:Product ;
+        rdfs:label  "Accessories for voice-/data recorder" , "Accessories for black box" , "Accessories for VDR" , "Spare parts for voice recorder" , "Accessories/spare parts for voice-/data recorder" , "Spare parts for data recorder" , "Spare parts for voice-/data recorder" , "Accessories for data recording" , "Accessories for data recorder" , "Battery/accumulator" .
+
+etim:EC010891  rdf:type  model:Product ;
+        rdfs:label  "Radiator mounting set" .
+
+etim:EC004430  rdf:type  model:Product ;
+        rdfs:label  "Glass cabinet" , "Flat showcase" , "Display case" , "Showcase" .
+
+etim:EC002192  rdf:type  model:Product ;
+        rdfs:label  "Shifter" , "Adjustable angle-head wrench" , "Adjustable wrench" , "Shifting spanner" , "Shifting adjustable" , "Monkey wrench" , "Fit-all" , "Shifting wrench" , "Bahco" , "Key" , "Adjustable spanner" .
+
+etim:EC003096  rdf:type  model:Product ;
+        rdfs:label  "Fireresistance fitting" , "Escutcheon" , "Door plate" , "Door cover shield" , "Door cover plate" , "Door handle plate" .
+
+etim:EC000505  rdf:type  model:Product ;
+        rdfs:label  "Protection" , "Over voltage protection" , "Mushroom-shaped interceptor" , "Lightning current arrester for power supply systems" , "Interception tip" , "Interception rod" , "Air-termination equipment for lightning protection" .
+
+etim:EC004240  rdf:type  model:Product ;
+        rdfs:label  "Outdoor temperature sensor active" , "Clip-on pipe sensor" , "Room temperature sensor" , "Surface temperature sensor active" , "Outdoor sensor relative humidity/ temperature, passive" , "Duct air quality sensor" , "Room sensor relative humidity/temperature active" , "Outdoor sensor relative humidity/ temperature" , "Room sensor relative humidity/temp. active" , "Surface temperature sensor, passive" , "Duct temperature sensor, passive" , "Duct temperature sensor" , "Immersion temperature sensor" , "Ceiling temperature sensor, passive" , "Contact temperature sensor, passive" , "Duct sensor relative humidity/temperature" , "Sensor" , "Duct temperature sensor active" , "Cable temperature sensor" , "Outdoor temperature sensor" , "Strap-on sensor" , "Surface temperature sensor" , "Duct sensor relative humidity/temperature active" , "Cable temperature sensor active" , "Duct sensor absolute humidity/temperature" , "Duct sensor relative humidity" , "Room air quality sensor" , "Room sensor relative humidity/temperature, passive" , "Outdoor sensor relative humidity" , "Room dew point sensor" , "Ceiling temperature sensor active" , "Duct sensor abs. humidity/temp." , "Duct dew point sensor" , "Room sensor relative humidity" , "Contact temperature sensor active" , "Outdoor sensor relative humidity/temp. active" , "Sensor (HVAC)" , "Strap sensor" , "Outdoor temperature sensor, passive" , "Contact temperature sensor" , "Ceiling temperature sensor" , "Room temperature sensor active" , "Room temperature sensor, passive" , "Surface temp. sensor active" , "Duct sensor absolute humidity" , "Cable temperature sensor, passive" , "Room sensor relative humidity/temperature" , "Duct sensor relative humidity/temperature, passive" .
+
+etim:EC001409  rdf:type  model:Product ;
+        rdfs:label  "Wall socket" , "Socket outlet" , "Appliance connection box" , "Data communication connection box fibre optic" .
+
+etim:EC004050  rdf:type  model:Product ;
+        rdfs:label  "Groove cutter (compressed air)" , "Compressed air tool" , "Rounding milling cutter" , "Deburring maschine (compressed air)" , "Edge deburring tool" , "Chamfer milling cutter (compressed air)" , "Rounding milling maschine" , "Edge rounder" , "Pipe Chamferer (compressed air)" , "Milling cutter (compressed air)" , "Edge form" , "Chamfer milling maschine (compressed air)" , "Deburring tool (compressed air)" , "Corner weld milling cutter" , "Chamfering device (compressed air)" , "Compressed air milling maschine" , "Milling maschine (compressed air)" , "Corner weld milling maschine" .
+
+etim:EC000125  rdf:type  model:Product ;
+        rdfs:label  "Double socket outlet" , "Socket outlet" , "Residual current circuit breaker (RCCB)" , "Socket outlet with protective contact" , "Wall socket" , "Over voltage protection" , "Socket outlet with safety contact" , "Earth leakage switch" , "Fault current protection" , "Rotating current" .
+
+etim:EC001029  rdf:type  model:Product ;
+        rdfs:label  "Rotary toggle" , "Level switch" , "Key switch" , "Front element for selector switch" , "Selector switch, complete" .
+
+etim:EC010302  rdf:type  model:Product ;
+        rdfs:label  "Sprinkler rosette" .
+
+etim:EC011206  rdf:type  model:Product ;
+        rdfs:label  "Ultrasonic switch" , "Liquid level switches" , "Level guard" , "Electronic level switch" .
+
+etim:EC000867  rdf:type  model:Product ;
+        rdfs:label  "Moulded hood" , "Inner corner" , "Corner piece" , "Inner corner for wall duct" .
+
+etim:EC011016  rdf:type  model:Product ;
+        rdfs:label  "Push-on profile, rectangular air duct" .
+
+etim:EC002915  rdf:type  model:Product ;
+        rdfs:label  "Band saw (battery)" .
+
+etim:EC000677  rdf:type  model:Product ;
+        rdfs:label  "LCD display" , "EIB" , "Display" , "Cover plate" , "Cover" , "Bus system" , "Display for bus system" .
+
+etim:EC001821  rdf:type  model:Product ;
+        rdfs:label  "Push button" , "Light sensor" , "Light scanner, energetic" , "Light curtain" , "Diffuse reflective photoelectric sensor" .
+
+etim:EC003629  rdf:type  model:Product ;
+        rdfs:label  "WLAN controller" .
+
+etim:EC002535  rdf:type  model:Product ;
+        rdfs:label  "Spare parts for column (switchgear cabinet)" , "Housing flange" , "Accessories/spare parts for column (switchgear cabinet)" , "Accessories for column (switchgear cabinet)" , "Accessories/spare parts for column (enclosure/cabinet)" .
+
+etim:EC000297  rdf:type  model:Product ;
+        rdfs:label  "Timer relay" , "Timer clock" , "Time switch clock" , "Time switch" , "Relay" , "Mini circuit breaker" , "Built-in device" , "Staircase lighting timer" .
+
+etim:EC001441  rdf:type  model:Product ;
+        rdfs:label  "Synchronization relay" , "Relay" , "Phase monitoring relay" .
+
+etim:EC011948  rdf:type  model:Product ;
+        rdfs:label  "Tile oil" , "Grout cleanser" , "Accessories/spare parts for tiles" , "Pliers (metal)" , "Grout cleaning tool" , "Spare parts for tiles" , "Accessories for tiles" , "Wedge" , "Pliers (plastic)" .
+
+etim:EC002345  rdf:type  model:Product ;
+        rdfs:label  "Spring washer" , "Security disc" , "Limes spring ring" , "Disc" , "Washer" , "Double spring washer" , "Serrated washer" , "Serrated lock washer" , "Dubo circlip" , "Tooth washer" , "Tension disc" , "Circlip" , "Contact circlip" , "Retaining ring" , "Lock washer" .
+
+etim:EC003249  rdf:type  model:Product ;
+        rdfs:label  "Data transfer cable" , "S/FTP" , "Railway signalling cable" , "Data and communication cable" , "Outdoor cable" , "Control cable" , "Signal-/telecommunications cable" , "Data and communication cable (copper)" , "Shipboard communication cable" , "F/FTP" , "Data cable" , "F/UTP" , "Cable" , "SF/UTP" .
+
+etim:EC001251  rdf:type  model:Product ;
+        rdfs:label  "Brine distributor" , "Groundwater distributor for heat pump" .
+
+etim:EC011758  rdf:type  model:Product ;
+        rdfs:label  "Chalk separator" .
+
+etim:EC002155  rdf:type  model:Product ;
+        rdfs:label  "Thread drill bit" , "Machine nut tap" , "Thread tool" , "Screw tap" , "Combi drill tap" , "HSS-combi" , "Tap metric thread" , "PG-thread machine tap" , "Cut-in thread milling cutter" , "PG-wire hand tap" , "Gas thread tap" , "Hand tap" , "Tapping drill" , "Gas tap" , "Threaded tap" , "Machine thread milling cutter" , "Hand metal thread drill" , "Millimeter tap" , "Machine tap" , "Incision tap bit" , "Machine thread former" , "Drain pipe threads" , "Tap" , "Manual tap" , "Threaded hand tap" .
+
+etim:EC003059  rdf:type  model:Product ;
+        rdfs:label  "Kerb, corner" , "Kerbstone, corner" .
+
+etim:EC004203  rdf:type  model:Product ;
+        rdfs:label  "Electronic drive" , "Operator for windows/door windows" .
+
+etim:EC011568  rdf:type  model:Product ;
+        rdfs:label  "Sun sensor, active" .
+
+etim:EC004013  rdf:type  model:Product ;
+        rdfs:label  "Saw" , "Mitre saw" , "Miter saw (hand)" , "Mitre saw (hand)" .
+
+etim:EC011378  rdf:type  model:Product ;
+        rdfs:label  "Facade combination" , "Outdoor faucet" , "Garden tap" , "Frost-free outside faucet" , "Facade tap" , "Outdoor tap" , "Outside faucet" , "Garden faucet" , "Frost-free outside tap" , "Outside tap" .
+
+etim:EC010284  rdf:type  model:Product ;
+        rdfs:label  "Shower drain with 1 connection" , "Shower drain" , "Scupper drain" , "Scupper" , "Floor drain" , "Drain" , "Basement drain" , "Floor drain with 1 connection" .
+
+etim:EC011188  rdf:type  model:Product ;
+        rdfs:label  "Ashtray" , "Ashtray holder" .
+
+etim:EC012332  rdf:type  model:Product ;
+        rdfs:label  "Methanol" , "Glycol" , "Glycerol" , "Antifreeze" .
+
+etim:EC010094  rdf:type  model:Product ;
+        rdfs:label  "Double pipe bracket" .
+
+etim:EC002897  rdf:type  model:Product ;
+        rdfs:label  "Charging cable E-Mobility" .
+
+etim:EC012142  rdf:type  model:Product ;
+        rdfs:label  "Wall buffer" , "Seaworthy door stop" , "Open door holder" , "Doorstop" , "Door fence damper" , "Door buffer" , "Door stop" .
+
+etim:EC003851  rdf:type  model:Product ;
+        rdfs:label  "Video management software" .
+
+etim:EC003661  rdf:type  model:Product ;
+        rdfs:label  "Decorative sleeve for drill-in hinges" .
+
+etim:EC004565  rdf:type  model:Product ;
+        rdfs:label  "Hand wheel" , "Gasket set" , "Filter round brush" , "Driving carrier" , "Ball valve" , "Back flush hand wheel" , "Accessories/spare parts for heating filter" , "Accessories/spare parts for air-/dirt separator" .
+
+etim:EC003471  rdf:type  model:Product ;
+        rdfs:label  "Compressed air tool" , "Belt grinder (compressed air)" .
+
+etim:EC011980  rdf:type  model:Product ;
+        rdfs:label  "Steel profile" , "Steel H-Profile" , "Steel H-beam" , "Steel H/I-profile" , "Steel H profile" , "Steel H beam" , "Steel beam" , "H/I-profile, steel" .
+
+etim:EC004375  rdf:type  model:Product ;
+        rdfs:label  "Magnetic base" .
+
+etim:EC003281  rdf:type  model:Product ;
+        rdfs:label  "Precision grinder" , "Precision drill" , "Multi tool" , "Electric writer" , "Drilling grinder (electric)" , "Precision drill/grinder (electric)" .
+
+etim:EC011790  rdf:type  model:Product ;
+        rdfs:label  "Standing boiler with integrated burner" , "Passive house unit" .
+
+etim:EC003091  rdf:type  model:Product ;
+        rdfs:label  "Combi window stay" .
+
+etim:EC000500  rdf:type  model:Product ;
+        rdfs:label  "Measuring wheel" , "Cable knife" , "Cable length meter" .
+
+etim:EC001404  rdf:type  model:Product ;
+        rdfs:label  "Stone cutter (electric)" , "Right angle grinder (electric)" , "Power cutter" , "Metal chop saw" , "Electric machine" , "Cut-off grinder stone (electric)" , "Angle grinder (electric)" .
+
+etim:EC002308  rdf:type  model:Product ;
+        rdfs:label  "Effective power measurement device" , "Effective power converter meter for installation" .
+
+etim:EC000310  rdf:type  model:Product ;
+        rdfs:label  "USB interface" , "Converter" , "Interface converter" .
+
+etim:EC010817  rdf:type  model:Product ;
+        rdfs:label  "Clamping slide, fixing strap" , "Clamping slide, ribbed fixing strap" .
+
+etim:EC002118  rdf:type  model:Product ;
+        rdfs:label  "Magnetic socket holder" , "Magnetic bit holder" , "Bit adapter" , "Magnetic holder" , "Bit holder" , "Universal bit holder" , "Holder for driller blades" , "Holder for bits" , "Socket holder" .
+
+etim:EC000120  rdf:type  model:Product ;
+        rdfs:label  "On floor duct base" , "On-floor duct base" .
+
+etim:EC001024  rdf:type  model:Product ;
+        rdfs:label  "Separate positioning" , "Device carrier" , "Carrying handle" , "Brace" , "Adapter plate" , "Adapter" , "DIN-rail adapter" .
+
+etim:EC010437  rdf:type  model:Product ;
+        rdfs:label  "Swivelling arm for hose reel" .
+
+etim:EC010057  rdf:type  model:Product ;
+        rdfs:label  "Radiographic zone controller" , "Zone controller" .
+
+etim:EC000862  rdf:type  model:Product ;
+        rdfs:label  "Moulded hood" , "Inner corner" , "Corner piece" , "Inner corner for installation duct" .
+
+etim:EC012105  rdf:type  model:Product ;
+        rdfs:label  "Ship inspection hatch" , "Inspection hatch" , "Hatch" , "Marine inspection hatch" .
+
+etim:EC001766  rdf:type  model:Product ;
+        rdfs:label  "Dialling device" , "Alarm transfer device" .
+
+etim:EC011011  rdf:type  model:Product ;
+        rdfs:label  "Fan unit - roof mounted" , "Exhaust fan" , "Attic fan" , "Roof extractor fan" , "Fan" , "Roof mounted fan, direct current (DC)" , "Attic exhaust fan" , "Power roof ventilator" , "Roof mounted fan with continuous current (DC)" , "Roof Mounted fan, Alternating Current (AC)" , "Fire fan" , "Rooftop attic fan" , "Roof mounted fan" .
+
+etim:EC002910  rdf:type  model:Product ;
+        rdfs:label  "Direct screw" , "Concrete screw" .
+
+etim:EC000672  rdf:type  model:Product ;
+        rdfs:label  "Infrared receiver" , "Button" , "Push button" , "Control element" , "Push button, complete" , "Group push button" , "Bus system" , "Top-piece" , "Rocker" , "Nikobus" , "Touch sensor for bus system" , "Sensor" , "EIB" .
+
+etim:EC001576  rdf:type  model:Product ;
+        rdfs:label  "Conduit" , "Flat cable" , "Cable" , "CEE adapter cable" , "Multiple outlet strip" , "Connecting cord" , "Spiral cord" , "CEE adapter" , "Three-phase current adapter" , "Power cord" .
+
+etim:EC002720  rdf:type  model:Product ;
+        rdfs:label  "Light curtain" , "Fork light barrier" .
+
+etim:EC000482  rdf:type  model:Product ;
+        rdfs:label  "Mounting element for support/profile rail" , "Mounting lug" , "Fastening element for support/mounting rail" , "Mounting angle bracket" , "Fastening element for mounting rail/-profile" , "Mounting corner" , "Floor console" , "Clamp piece" , "Fastening element for support/mounting profile" , "Wall connecting angle" , "Rigid support system" , "Mounting bracket" , "Ceiling bracket" , "Floor plate" , "Base plate" .
+
+etim:EC001386  rdf:type  model:Product ;
+        rdfs:label  "Mitre saw" , "Battery machine" , "Battery chop saw" , "Chop saw (battery)" .
+
+etim:EC003624  rdf:type  model:Product ;
+        rdfs:label  "Towelwarmer" , "Towel rail radiator" , "Towel radiator" , "Towel drying radiator" , "Electric towel radiator" , "Bath towel radiator" , "Towel drying radiator (electric)" .
+
+etim:EC010989  rdf:type  model:Product ;
+        rdfs:label  "Plastic twin hose" .
+
+etim:EC004528  rdf:type  model:Product ;
+        rdfs:label  "Gas meter connector" , "Gas meter connecting piece" .
+
+etim:EC002530  rdf:type  model:Product ;
+        rdfs:label  "Top mounting module (switchgear cabinet)" , "Top mounting module (enclosure/cabinet)" .
+
+etim:EC001196  rdf:type  model:Product ;
+        rdfs:label  "Test device" , "DIN VDE 0751 tester" .
+
+etim:EC011943  rdf:type  model:Product ;
+        rdfs:label  "Cutting stand for angle grinder" , "Accessories for sanding tools" , "Roll" , "Accessories for grinding/sanding tools" , "Spare parts for sanding tools" , "Accessories for grinding wheel dresser" , "Spare parts for grinding tools" , "Accessories for grinding wheel dresser axle" , "Accessories/spare parts for grinding/sanding tools" , "Grinding disc dresser" , "Accessories for grinding tools" , "Spare parts for grinding/sanding tools" , "Spare dresser" .
+
+etim:EC002340  rdf:type  model:Product ;
+        rdfs:label  "T-rivet nut" , "Pull seam nut" , "Nut" , "Blindage nut" , "Blind nut" , "Blind rivet nut" .
+
+etim:EC004338  rdf:type  model:Product ;
+        rdfs:label  "Tool presetter" , "Tool preset system" .
+
+etim:EC003244  rdf:type  model:Product ;
+        rdfs:label  "Faucet aerator" , "Tap aerator" .
+
+etim:EC004148  rdf:type  model:Product ;
+        rdfs:label  "Steam jet pistol" , "Facade cleaner" , "Blasting system" , "Sand blasting device" .
+
+etim:EC011753  rdf:type  model:Product ;
+        rdfs:label  "Roof up-stand for dome light" , "Roof curb skylight" , "Roof curb for skylight" , "Roof upstand for dome light" .
+
+etim:EC002150  rdf:type  model:Product ;
+        rdfs:label  "Hand broom" .
+
+etim:EC003054  rdf:type  model:Product ;
+        rdfs:label  "Stick" , "Round wood" , "Pole" , "Wood (round)" .
+
+etim:EC011373  rdf:type  model:Product ;
+        rdfs:label  "Refrigerator sprinkler" , "Dry pendent" , "Quick response sprinkler" , "Dry pendend concealed sprinkler" , "Wall sprinkler" , "Concealed sprinkler" , "Dry concealed sprinkler" , "Dry sprinkler with increased surface" , "Sprinkler with increased surface" , "Pendent sprinkler" , "Horizontal sprinkler" , "Dry wall sprinkler" , "Upright sprinkler" , "Dry upright sprinkler" , "Sprinkler" , "Dry quick response sprinkler" , "Dry sprinkler" , "Pendend concealed sprinkler" , "Dry pendent sprinkler" , "Dry horizontal sprinkler" .
+
+etim:EC011183  rdf:type  model:Product ;
+        rdfs:label  "Hose connector/flange coupling" .
+
+etim:EC012087  rdf:type  model:Product ;
+        rdfs:label  "Magnetic filter" , "Fuel sterilization unit" , "Fuel sterilization filter" , "Fuel filter" , "Filter" , "Magnetic fuel filter" .
+
+etim:EC003986  rdf:type  model:Product ;
+        rdfs:label  "Spare parts for valuable boxes/safes" , "Counting trays for cash box" , "Coin tray" , "Accessories for valuable boxes/safes" , "Accessories/spare parts for valuable boxes/safes" .
+
+etim:EC002892  rdf:type  model:Product ;
+        rdfs:label  "Watertight luminaire" , "Luminaire with cover" , "Wall luminaire" , "Wall-mounted luminaire" , "Lighting fixture" , "FL luminaire" , "Well glass luminaire" , "Showcase luminaire" , "Outdoor lantern" , "Spot" , "Ceiling-/wall luminaire" , "Gym luminaire" , "Strips ceiling luminaire" , "Incandescent wall luminaire" , "Gallery luminaire" , "Outdoor luminaire" , "Mirror light" , "Panel luminaire" , "Illumination" , "Porch luminaire" , "Glass luminaire" , "Fluorescent wall luminaire" , "Recessed luminaire" , "PL luminaire" , "Bulleye" , "Luminaire" , "Prisms luminaire" , "PL-wall luminaire" , "Facade luminaire" , "Bed lighting luminaire" , "Recessed mounted ceiling- and wall luminaire" , "Surface-mounted luminaire" , "Surface mounted ceiling- and wall luminaire" , "Fluorescent luminaire" , "Lighting luminaire" , "Ceiling and wall luminaire" , "Halogen luminaire" , "Grid luminaire" , "Security luminaire" , "Ceiling- and wall luminaire" , "Plastic luminaire" , "Luminaire for recessed- and surface mounting" , "Bed wall luminaire" , "Window fittings" , "Downlighter" .
+
+etim:EC003796  rdf:type  model:Product ;
+        rdfs:label  "Fitting" , "Fixing set for push handle" .
+
+etim:EC004560  rdf:type  model:Product ;
+        rdfs:label  "Tap water connection piece" , "Connection flange for water filter" , "Connection flange for leakage protection" , "Connection flange for dosing pump" , "Connection flange for anti chalk system" , "Connection flange for" , "Built-in piece with connection flange for tap water treatment devices" .
+
+etim:EC000635  rdf:type  model:Product ;
+        rdfs:label  "Connection-/branching terminal for bus system" , "Bus connection terminal" , "Bus system" , "EIB" , "Clip" , "Connection clamp" , "Connecting-/branching terminal" , "Clamp" , "Connection terminal" , "Low current connector" .
+
+etim:EC000445  rdf:type  model:Product ;
+        rdfs:label  "Foot switch" , "End switch" , "Dimmer" , "Cord switch" , "Cord switch/dimmer" .
+
+etim:EC004180  rdf:type  model:Product ;
+        rdfs:label  "Ram filter" , "Tube well" .
+
+etim:EC001349  rdf:type  model:Product ;
+        rdfs:label  "PC interface" , "Distributor" , "Device for door-/video intercom system" , "Accessories for door communication" , "Additional device for door communication" .
+
+etim:EC001159  rdf:type  model:Product ;
+        rdfs:label  "Flux remover" .
+
+etim:EC002303  rdf:type  model:Product ;
+        rdfs:label  "Resistor" , "Shunt" .
+
+etim:EC000065  rdf:type  model:Product ;
+        rdfs:label  "Cable" , "Loudspeaker cable" .
+
+etim:EC003207  rdf:type  model:Product ;
+        rdfs:label  "Building glue" , "Construction glue" .
+
+etim:EC010812  rdf:type  model:Product ;
+        rdfs:label  "Hydraulic cutting ring, banjo coupling" .
+
+etim:EC011716  rdf:type  model:Product ;
+        rdfs:label  "Flue top" .
+
+etim:EC002113  rdf:type  model:Product ;
+        rdfs:label  "Protective barrier" , "Protection film for label" , "Protection film" , "Label protective foil" , "Label bag" , "Drawing cover" .
+
+etim:EC003017  rdf:type  model:Product ;
+        rdfs:label  "Collection bag" , "Nozzle" , "Accessories for grass suction machine" , "Spare parts for blower vac" , "Accessories for leaf suction machine" , "Accessories for leaf vac" , "Accessories for blower vac" , "Accessories for garden vacuum" , "Accessories for leaf vacuum" , "Accessories/spare parts for blower vac" , "Accessories for leaf blower" .
+
+etim:EC010622  rdf:type  model:Product ;
+        rdfs:label  "Wire protection cap" .
+
+etim:EC011526  rdf:type  model:Product ;
+        rdfs:label  "Adjusted toilet seat (disabled sanitary)" .
+
+etim:EC010432  rdf:type  model:Product ;
+        rdfs:label  "Ancillary seal, mechanical seal" .
+
+etim:EC011336  rdf:type  model:Product ;
+        rdfs:label  "Toilet element" , "Front wall/built-in element wall closet with flusher" , "Double wall/built-in element wall-hung closet with flush valve" , "Mounting element for wall closet" , "Mounting frame for wall closet" , "Toilet wall frame" , "Mounting frame for wall toilet" , "Installation flushing system" , "Mounting module for wall closet" , "Front wall/built-in element wall toilet with flusher" , "WC-element" , "Frame" , "Closet wall frame" , "Mounting element for wall toilet" , "Mounting module for wall toilet" , "Mounting device for wall closet" , "Mounting device for wall toilet" .
+
+etim:EC011146  rdf:type  model:Product ;
+        rdfs:label  "Work protection" , "Positioning line" , "Positioning rope" , "Fall protection" , "Safety catch rope" , "Catch rope" , "Catch line" , "Safety line" , "Safety rope" , "Safety catch line" .
+
+etim:EC010052  rdf:type  model:Product ;
+        rdfs:label  "Operation key (inner square) for valve/faucet" , "Faucet key" , "Valve wrench" , "Wrench for plug cock" , "Wrench for plug valve" , "Cock wrench" , "Wrench for plug tap" , "Tap key" , "Tap wrench" .
+
+etim:EC003949  rdf:type  model:Product ;
+        rdfs:label  "Grease gun (battery)" .
+
+etim:EC001951  rdf:type  model:Product ;
+        rdfs:label  "Low voltage cable system" .
+
+etim:EC002855  rdf:type  model:Product ;
+        rdfs:label  "Register" , "Cash register" .
+
+etim:EC003759  rdf:type  model:Product ;
+        rdfs:label  "Running rail bend for sliding gate" .
+
+etim:EC001761  rdf:type  model:Product ;
+        rdfs:label  "Radio opening detector" , "Cover contact" , "Opening detector for intrusion detection system" .
+
+etim:EC003569  rdf:type  model:Product ;
+        rdfs:label  "Circular connector, mounting (without cable)" .
+
+etim:EC002475  rdf:type  model:Product ;
+        rdfs:label  "Interface converter" , "Converter" , "Current value transformer" .
+
+etim:EC001381  rdf:type  model:Product ;
+        rdfs:label  "Electrical hand circular saw" , "Electric hand circular saw" , "Circular saw" , "Hand circular saw (electric)" .
+
+etim:EC003379  rdf:type  model:Product ;
+        rdfs:label  "Nut Splitter" .
+
+etim:EC010984  rdf:type  model:Product ;
+        rdfs:label  "Washbasin bracket" .
+
+etim:EC011888  rdf:type  model:Product ;
+        rdfs:label  "Rudder stock tube" , "Rudder" , "Rudder trunk" .
+
+etim:EC003189  rdf:type  model:Product ;
+        rdfs:label  "Brick glue" , "Stone glue" .
+
+etim:EC010794  rdf:type  model:Product ;
+        rdfs:label  "TW quick coupling" , "Tank-car adapter" , "Tank-car coupler" , "Tank-car thread coupling" , "Hose coupling with female thread" , "Tanker thread coupling" , "TW thread coupling" , "Tank-car threaded fitting" , "DIN 28450 coupling" , "MK" , "TW coupling" , "TW coupler" , "Threaded coupling" , "TW coupling/thread" , "TW adapter" , "Tanker threaded fitting" , "VK" , "Tanker adapter" , "Tanker coupler" .
+
+etim:EC001191  rdf:type  model:Product ;
+        rdfs:label  "Hand RPM meter" .
+
+etim:EC011698  rdf:type  model:Product ;
+        rdfs:label  "Hot tap water heater, directly fired with control system" .
+
+etim:EC004333  rdf:type  model:Product ;
+        rdfs:label  "Knurling milling tool" , "Knurling tool" .
+
+etim:EC002095  rdf:type  model:Product ;
+        rdfs:label  "Sand blasting protection overall" , "Disposable over all" , "Welding protection combination" , "Chemical protection clothes" , "Boiler suit" , "Work clothing" , "Welding clothing" , "Over pressure suit" , "Disposable coverall" , "Underoverall" , "Disposable overall" , "Splash suit" , "Over all" , "Antistatic overall" , "Chemical protection" , "Heat protection overall" , "Heat protection clothes" , "Lye protection" , "Occupation clothing" , "Chemical full protection suit/overall" , "Rain protection overall" , "Welding overall" , "Cold store clothing" , "Gas tight suit" , "Chemical protective coverall" , "Combination" , "Cold protection" , "Overall/safety suit" , "Cleanroom overall" , "Flame retardant overall" , "Cold store overall" , "Welding over all" , "Welding protection" , "Varnisher protection suit" , "Overall" , "Cold protection clothes" , "Lye protection suit" , "Liquid tight suit" , "Workwear" , "Spray tight suit" , "Warning protection overall" , "Combi" , "Welding coverall" , "Work overall" , "Welding protection overall" , "Safety suit" , "Cold weather overall" , "Coverall" , "Cold protection overall" , "Flame protection clothes" , "Fibre fur overall" , "Work protection overall" .
+
+etim:EC000408  rdf:type  model:Product ;
+        rdfs:label  "Battery" , "Adapter" , "Accu" , "Battery for mobile and wireless telephone" .
+
+etim:EC004143  rdf:type  model:Product ;
+        rdfs:label  "Roller shutter" , "Half inlet winder" , "Half inlet belt winder" , "Belt winder for roller shutter" .
+
+etim:EC000218  rdf:type  model:Product ;
+        rdfs:label  "Sleeve" , "Heat-shrink tubing" , "Heat-shrink end cap" , "End cap" , "Shrink end cap" .
+
+etim:EC000028  rdf:type  model:Product ;
+        rdfs:label  "Thread end" , "Rod" , "Pendant" , "Length" , "A-Rod" , "Threaded rod" .
+
+etim:EC012272  rdf:type  model:Product ;
+        rdfs:label  "Plastic floor" , "Flooring" , "Floor" , "Plastic flooring" .
 
 
 
