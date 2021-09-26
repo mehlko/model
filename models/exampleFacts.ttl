@@ -138,7 +138,7 @@ res:HumanOperator003 rdfs:label 'Baker'.
 res:HumanOperator003 model:hasVulnerability prop:Temperature001.
 #
 res:HandMixer001 rdf:type model:Resource.
-res:HandMixer001 rdfs:label 'Baker'.
+res:HandMixer001 rdfs:label 'HandMixer'.
 #
 res:Oven001 rdf:type model:Resource.
 res:Oven001 rdfs:label 'Oven'.

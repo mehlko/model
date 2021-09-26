@@ -47,10 +47,10 @@ var patternList = {
     queryString: `
     PREFIX model: <http://uni-ko-ld.de/ist/model#>
     SELECT * WHERE {
-     ?process model:hasInputProduct ?product .
      ?process model:hasResource ?resource .
+     ?process model:hasResource ?resource2 .
      ?product model:hasRiskSource ?riskSource .
-     ?resource model:hasVulnerability ?riskSource .
+     ?resource model:hasVulnerability ?riskSource2 .
     }`,
 
     affectedElements: (queryResult) => {
