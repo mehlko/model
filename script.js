@@ -820,10 +820,12 @@ class ProductionLine extends React.Component {
                         <CardHeader
                           avatar={
                             <Avatar sx={{ bgcolor: 'red' }} aria-label="recipe">
-                              {
-                                patternList[detectedPattern.patternKey]
-                                  .abbreviation
-                              }
+                              <Typography variant="button">
+                                {
+                                  patternList[detectedPattern.patternKey]
+                                    .abbreviation
+                                }
+                              </Typography>
                             </Avatar>
                           }
                           title={
@@ -860,7 +862,9 @@ class ProductionLine extends React.Component {
                     <CardHeader
                       avatar={
                         <Avatar sx={{ bgcolor: 'red' }}>
-                          {currentPattern.abbreviation}
+                          <Typography variant="button">
+                            {currentPattern.abbreviation}
+                          </Typography>
                         </Avatar>
                       }
                       title={
@@ -881,12 +885,7 @@ class ProductionLine extends React.Component {
               <Typography variant="h5">Todo</Typography>
               <ul>
                 <Typography>
-                  <li>
-                    example: case, (pizza default influences time), wine (human
-                    operators), integration (etim, eclass, SI)
-                  </li>
                   <li>learn about PPR (triangle?, gif?), legend</li>
-                  <li>prettier pattern</li>
                   <li>---------------------</li>
                   <li>feature list/planned feature list</li>
                   <li>link to resources</li>
