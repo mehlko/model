@@ -42,3 +42,10 @@ proc:Process001 model:hasMeasurement prop:Property001.
 proc:Process001 model:hasConstraint prop:Property001.
 proc:Process001 model:hasOutputProduct prod:Output001.
 
+proc:Process001 model:hasNextProcess proc:Process002.
+
+proc:Process002 model:hasInputProduct prod:Input001.
+proc:Process002 model:hasResource res:Resource001.
+proc:Process002 model:hasMeasurement prop:Property001.
+proc:Process002 model:hasConstraint prop:Property001.
+proc:Process002 model:hasOutputProduct prod:Output001.
