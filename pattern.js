@@ -1,3 +1,5 @@
+var testArray=["Hallo:)"];
+
 var patternList = {
   productExposedToRiskSource: {
     name: 'Product Exposed To Risk Source',

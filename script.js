@@ -845,25 +845,35 @@ class ProductionLine extends React.Component {
             </Box>
           </Box>
 
-          <div>Hallo</div>
-
-          <div>
-            {Object.entries(patternList).forEach(
-              ([patternKey, currentPattern]) => (
-                <Typography variant="h5" key={patternKey}>
-                  {patternKey}
-                </Typography>
-              )
-            )}
-          </div>
-          <Box hidden={this.state.tab !== 'patternList'}></Box>
+          <Box hidden={this.state.tab !== 'patternList'}>
+            {Object.entries(patternList).map(([patternKey, currentPattern]) => {
+              return (
+                <Card key={'detectedPatternIndex' + patternKey}>
+                  <CardActionArea>
+                    <CardHeader
+                      avatar={
+                        <Avatar sx={{ bgcolor: 'red' }}>
+                          {currentPattern.abbreviation}
+                        </Avatar>
+                      }
+                      title={
+                        <Typography gutterBottom variant="h5" component="div">
+                          {currentPattern.name}
+                        </Typography>
+                      }
+                      subheader={currentPattern.description}
+                    />
+                  </CardActionArea>
+                </Card>
+              );
+            })}
+          </Box>
 
           <Box hidden={this.state.tab !== 'features'}>
             <Box>
               <Typography variant="h5">Todo</Typography>
               <ul>
                 <Typography>
-                  <li>pattern list*</li>
                   <li>
                     example: case, (pizza default influences time), wine (human
                     operators), integration (etim, eclass, SI)
