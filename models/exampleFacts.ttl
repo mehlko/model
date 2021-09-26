@@ -145,9 +145,6 @@ res:Oven001 rdfs:label 'Oven'.
 res:Oven001 model:hasRiskSource prop:Temperature001.
 
 
-
-
-
 ### Property Repo
 
 prop:Firmware001 rdf:type model:Property.

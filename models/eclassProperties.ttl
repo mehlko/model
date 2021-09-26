@@ -1,0 +1,2932 @@
+@prefix etim:  <https://www.etim-international.com/#> .
+@prefix model: <http://uni-ko-ld.de/ist/model#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+
+<eclass.eu/#D51>  rdf:type  model:Property ;
+        rdfs:label  "V/mm" , "volt per millimetre" .
+
+<eclass.eu/#H79>  rdf:type  model:Property ;
+        rdfs:label  "Fg" , "French gauge" .
+
+<eclass.eu/#K70>  rdf:type  model:Property ;
+        rdfs:label  "(lb/ft³)/psi" , "pound (avoirdupois) per cubic foot psi" .
+
+<eclass.eu/#F26>  rdf:type  model:Property ;
+        rdfs:label  "g/d" , "gram per day" .
+
+<eclass.eu/#F72>  rdf:type  model:Property ;
+        rdfs:label  "(mg/min)/bar" , "milligram per minute bar" .
+
+<eclass.eu/#DU>  rdf:type  model:Property ;
+        rdfs:label  "dyn" , "dyne" .
+
+<eclass.eu/#H47>  rdf:type  model:Property ;
+        rdfs:label  "W/m³" , "watt per cubic metre" .
+
+<eclass.eu/#H93>  rdf:type  model:Property ;
+        rdfs:label  "%/100" , "percent per hundred" .
+
+<eclass.eu/#A74>  rdf:type  model:Property ;
+        rdfs:label  "ft·lbf/s" , "foot pound-force per second" .
+
+<eclass.eu/#M13>  rdf:type  model:Property ;
+        rdfs:label  "yd³/h" , "cubic yard per hour" .
+
+<eclass.eu/#J2>  rdf:type  model:Property ;
+        rdfs:label  "J/kg" , "joule per kilogram" .
+
+<eclass.eu/#C49>  rdf:type  model:Property ;
+        rdfs:label  "nW" , "nanowatt" .
+
+<eclass.eu/#F40>  rdf:type  model:Property ;
+        rdfs:label  "(kg/h)/K" , "kilogram per hour kelvin" .
+
+<eclass.eu/#LTN>  rdf:type  model:Property ;
+        rdfs:label  "ton (UK)" , "ton (UK) or long ton (US)" .
+
+<eclass.eu/#C95>  rdf:type  model:Property ;
+        rdfs:label  "mol⁻¹" , "reciprocal mole" .
+
+<eclass.eu/#H61>  rdf:type  model:Property ;
+        rdfs:label  "mS/cm" , "millisiemens per centimetre" .
+
+<eclass.eu/#C17>  rdf:type  model:Property ;
+        rdfs:label  "mm²/s" , "millimetre squared per second" .
+
+<eclass.eu/#L89>  rdf:type  model:Property ;
+        rdfs:label  "(ton (US)/h)/°F" , "ton short per hour degree Fahrenheit" .
+
+<eclass.eu/#28>  rdf:type  model:Property ;
+        rdfs:label  "kg/m²" , "kilogram per square metre" .
+
+<eclass.eu/#J36>  rdf:type  model:Property ;
+        rdfs:label  "µl/l" , "microlitre per litre" .
+
+<eclass.eu/#74>  rdf:type  model:Property ;
+        rdfs:label  "mPa" , "millipascal" .
+
+<eclass.eu/#L57>  rdf:type  model:Property ;
+        rdfs:label  "pt (US liq.)/d" , "pint (US liquid) per day" .
+
+<eclass.eu/#E84>  rdf:type  model:Property ;
+        rdfs:label  "Tbit/s" , "terabit per second" .
+
+<eclass.eu/#C31>  rdf:type  model:Property ;
+        rdfs:label  "mW" , "milliwatt" .
+
+<eclass.eu/#G59>  rdf:type  model:Property ;
+        rdfs:label  "mA/(l·min)" , "milliampere per litre minute" .
+
+<eclass.eu/#J50>  rdf:type  model:Property ;
+        rdfs:label  "(Btuth/°F)/lb" , "British thermal unit (thermochemical) per pound degree Fahrenheit" .
+
+<eclass.eu/#L25>  rdf:type  model:Property ;
+        rdfs:label  "(mol/kg)/bar" , "mole per kilogram bar" .
+
+<eclass.eu/#L71>  rdf:type  model:Property ;
+        rdfs:label  "t/d" , "tonne per day" .
+
+<eclass.eu/#G27>  rdf:type  model:Property ;
+        rdfs:label  "cm³/K" , "cubic centimetre per kelvin" .
+
+<eclass.eu/#G73>  rdf:type  model:Property ;
+        rdfs:label  "(ml/d)/K" , "millilitre per day kelvin" .
+
+<eclass.eu/#B29>  rdf:type  model:Property ;
+        rdfs:label  "keV" , "kiloelectronvolt" .
+
+<eclass.eu/#E20>  rdf:type  model:Property ;
+        rdfs:label  "Mbit/s" , "megabit per second" .
+
+<eclass.eu/#B75>  rdf:type  model:Property ;
+        rdfs:label  "MΩ" , "megaohm" .
+
+<eclass.eu/#G41>  rdf:type  model:Property ;
+        rdfs:label  "m²/(s·bar)" , "square metre per second bar" .
+
+<eclass.eu/#K69>  rdf:type  model:Property ;
+        rdfs:label  "(lb/ft³)/°F" , "pound (avoirdupois) per cubic foot degree Fahrenheit" .
+
+<eclass.eu/#B43>  rdf:type  model:Property ;
+        rdfs:label  "kJ/(kg·K)" , "kilojoule per kilogram kelvin" .
+
+<eclass.eu/#K37>  rdf:type  model:Property ;
+        rdfs:label  "gi (US)/h" , "gill (US) per hour" .
+
+<eclass.eu/#4C>  rdf:type  model:Property ;
+        rdfs:label  "cST" , "centistokes" .
+
+<eclass.eu/#K83>  rdf:type  model:Property ;
+        rdfs:label  "(lb/s)/psi" , "pound (avoirdupois) per second psi" .
+
+<eclass.eu/#B11>  rdf:type  model:Property ;
+        rdfs:label  "(J/K)/kg" , "joule per kilogram kelvin" .
+
+<eclass.eu/#F39>  rdf:type  model:Property ;
+        rdfs:label  "(kg/d)/K" , "kilogram per day kelvin" .
+
+<eclass.eu/#F85>  rdf:type  model:Property ;
+        rdfs:label  "MPa/K" , "megapascal per kelvin" .
+
+<eclass.eu/#D32>  rdf:type  model:Property ;
+        rdfs:label  "TW·h" , "terawatt hour" .
+
+<eclass.eu/#S3>  rdf:type  model:Property ;
+        rdfs:label  "ft²/s" , "square foot per second" .
+
+<eclass.eu/#F07>  rdf:type  model:Property ;
+        rdfs:label  "Pa/bar" , "pascal per bar" .
+
+<eclass.eu/#A87>  rdf:type  model:Property ;
+        rdfs:label  "GΩ" , "gigaohm" .
+
+<eclass.eu/#F53>  rdf:type  model:Property ;
+        rdfs:label  "mm/K" , "millimetre per kelvin" .
+
+<eclass.eu/#C7>  rdf:type  model:Property ;
+        rdfs:label  "cP" , "centipoise" .
+
+<eclass.eu/#H28>  rdf:type  model:Property ;
+        rdfs:label  "µF/km" , "microfarad per kilometre" .
+
+<eclass.eu/#P1>  rdf:type  model:Property ;
+        rdfs:label  "%" , "percent" .
+
+<eclass.eu/#A55>  rdf:type  model:Property ;
+        rdfs:label  "eV·m²" , "electronvolt square metre" .
+
+<eclass.eu/#H74>  rdf:type  model:Property ;
+        rdfs:label  "W/m" , "watt per metre" .
+
+<eclass.eu/#F21>  rdf:type  model:Property ;
+        rdfs:label  "lbf·in" , "pound-force inch" .
+
+<eclass.eu/#2Z>  rdf:type  model:Property ;
+        rdfs:label  "mV" , "millivolt" .
+
+<eclass.eu/#J49>  rdf:type  model:Property ;
+        rdfs:label  "Btuth·in/(s·ft²·°F)" , "British thermal unit (thermochemical) inch per second square foot degree Fahrenheit" .
+
+<eclass.eu/#C76>  rdf:type  model:Property ;
+        rdfs:label  "pW/m²" , "picowatt per square metre" .
+
+<eclass.eu/#STN>  rdf:type  model:Property ;
+        rdfs:label  "ton (US)" , "ton (US) or short ton (UK/US)" .
+
+<eclass.eu/#87>  rdf:type  model:Property ;
+        rdfs:label  "lb/ft³" , "pound per cubic foot" .
+
+<eclass.eu/#J95>  rdf:type  model:Property ;
+        rdfs:label  "fl oz (UK)/d" , "ounce (UK fluid) per day" .
+
+<eclass.eu/#H42>  rdf:type  model:Property ;
+        rdfs:label  "Pa/m" , "pascal per metre" .
+
+<eclass.eu/#J17>  rdf:type  model:Property ;
+        rdfs:label  "°Balling" , "degree Balling" .
+
+<eclass.eu/#E97>  rdf:type  model:Property ;
+        rdfs:label  "mm/(°C·m)" , "millimetre per degree Celcius metre" .
+
+<eclass.eu/#C44>  rdf:type  model:Property ;
+        rdfs:label  "nH/m" , "nanohenry per metre" .
+
+<eclass.eu/#4T>  rdf:type  model:Property ;
+        rdfs:label  "pF" , "picofarad" .
+
+<eclass.eu/#H10>  rdf:type  model:Property ;
+        rdfs:label  "1/h" , "reciprocal hour" .
+
+<eclass.eu/#L38>  rdf:type  model:Property ;
+        rdfs:label  "oz/gal (US)" , "ounce (avoirdupois) per gallon (US)" .
+
+<eclass.eu/#E65>  rdf:type  model:Property ;
+        rdfs:label  "Eibit/m" , "exbibit per metre" .
+
+<eclass.eu/#C12>  rdf:type  model:Property ;
+        rdfs:label  "mg/m" , "milligram per metre" .
+
+<eclass.eu/#L84>  rdf:type  model:Property ;
+        rdfs:label  "British shipping ton" , "ton (UK shipping)" .
+
+<eclass.eu/#23>  rdf:type  model:Property ;
+        rdfs:label  "g/cm³" , "gram per cubic centimetre" .
+
+<eclass.eu/#J31>  rdf:type  model:Property ;
+        rdfs:label  "°Tw" , "degree Twaddell" .
+
+<eclass.eu/#G86>  rdf:type  model:Property ;
+        rdfs:label  "(m³/d)/bar" , "cubic metre per day bar" .
+
+<eclass.eu/#L52>  rdf:type  model:Property ;
+        rdfs:label  "psi/psi" , "psi per psi" .
+
+<eclass.eu/#G08>  rdf:type  model:Property ;
+        rdfs:label  "in²/s" , "square inch per second" .
+
+<eclass.eu/#B88>  rdf:type  model:Property ;
+        rdfs:label  "µC/m²" , "microcoulomb per square metre" .
+
+<eclass.eu/#G54>  rdf:type  model:Property ;
+        rdfs:label  "ml/d" , "millilitre per day" .
+
+<eclass.eu/#E01>  rdf:type  model:Property ;
+        rdfs:label  "N/cm²" , "newton per square centimetre" .
+
+<eclass.eu/#L20>  rdf:type  model:Property ;
+        rdfs:label  "1/mm³" , "reciprocal cubic millimetre" .
+
+<eclass.eu/#B56>  rdf:type  model:Property ;
+        rdfs:label  "kWb/m" , "kiloweber per metre" .
+
+<eclass.eu/#MMT>  rdf:type  model:Property ;
+        rdfs:label  "mm" , "millimetre" .
+
+<eclass.eu/#G22>  rdf:type  model:Property ;
+        rdfs:label  "gi (US liq.)" , "gill" .
+
+<eclass.eu/#D77>  rdf:type  model:Property ;
+        rdfs:label  "MC" , "megacoulomb" .
+
+<eclass.eu/#B24>  rdf:type  model:Property ;
+        rdfs:label  "kA/m" , "kiloampere per metre" .
+
+<eclass.eu/#K96>  rdf:type  model:Property ;
+        rdfs:label  "qt (UK liq.)/min" , "quart (UK liquid) per minute" .
+
+<eclass.eu/#YDQ>  rdf:type  model:Property ;
+        rdfs:label  "yd³" , "cubic yard" .
+
+<eclass.eu/#F98>  rdf:type  model:Property ;
+        rdfs:label  "MPa·m³/s" , "megapascal cubic metre per second" .
+
+<eclass.eu/#B70>  rdf:type  model:Property ;
+        rdfs:label  "MC/m²" , "megacoulomb per square metre" .
+
+<eclass.eu/#MON>  rdf:type  model:Property ;
+        rdfs:label  "mo" , "" .
+
+<eclass.eu/#K64>  rdf:type  model:Property ;
+        rdfs:label  "lb/°F" , "pound (avoirdupois) per degree Fahrenheit" .
+
+<eclass.eu/#D91>  rdf:type  model:Property ;
+        rdfs:label  "rem" .
+
+<eclass.eu/#F66>  rdf:type  model:Property ;
+        rdfs:label  "(kg/d)/bar" , "kilogram per day bar" .
+
+<eclass.eu/#D13>  rdf:type  model:Property ;
+        rdfs:label  "Sv" , "sievert" .
+
+<eclass.eu/#PS>  rdf:type  model:Property ;
+        rdfs:label  "psi" , "pound-force per square inch" .
+
+<eclass.eu/#K32>  rdf:type  model:Property ;
+        rdfs:label  "gi (UK)/d" , "gill (UK) per day" .
+
+<eclass.eu/#MQH>  rdf:type  model:Property ;
+        rdfs:label  "m³/h" , "cubic metre per hour" .
+
+<eclass.eu/#F34>  rdf:type  model:Property ;
+        rdfs:label  "mg/s" , "milligram per second" .
+
+<eclass.eu/#A8>  rdf:type  model:Property ;
+        rdfs:label  "A·s" , "ampere second" .
+
+<eclass.eu/#H09>  rdf:type  model:Property ;
+        rdfs:label  "1/y" , "reciprocal year" .
+
+<eclass.eu/#C89>  rdf:type  model:Property ;
+        rdfs:label  "H⁻¹" , "reciprocal henry" .
+
+<eclass.eu/#F80>  rdf:type  model:Property ;
+        rdfs:label  "water hp" , "water horse power" .
+
+<eclass.eu/#A36>  rdf:type  model:Property ;
+        rdfs:label  "cm³/mol" , "cubic centimetre per mole" .
+
+<eclass.eu/#H55>  rdf:type  model:Property ;
+        rdfs:label  "(kg/dm³)/bar" , "kilogram per cubic decimetre bar" .
+
+<eclass.eu/#F02>  rdf:type  model:Property ;
+        rdfs:label  "K/K" , "kelvin per kelvin" .
+
+<eclass.eu/#M21>  rdf:type  model:Property ;
+        rdfs:label  "1/kVAh" , "reciprocal kilovolt - ampere hour" .
+
+<eclass.eu/#C57>  rdf:type  model:Property ;
+        rdfs:label  "N·s" , "newton second" .
+
+<eclass.eu/#J76>  rdf:type  model:Property ;
+        rdfs:label  "(calIT/°C)/g" , "calorie (international table) per gram degree Celsius" .
+
+<eclass.eu/#H23>  rdf:type  model:Property ;
+        rdfs:label  "V/in" , "volt per inch" .
+
+<eclass.eu/#NEW>  rdf:type  model:Property ;
+        rdfs:label  "N" , "newton" .
+
+<eclass.eu/#GM>  rdf:type  model:Property ;
+        rdfs:label  "g/m²" , "gram per square metre" .
+
+<eclass.eu/#C25>  rdf:type  model:Property ;
+        rdfs:label  "mrad" , "milliradian" .
+
+<eclass.eu/#2U>  rdf:type  model:Property ;
+        rdfs:label  "Mg" , "megagram" .
+
+<eclass.eu/#L19>  rdf:type  model:Property ;
+        rdfs:label  "ml/l" , "millilitre per litre" .
+
+<eclass.eu/#C71>  rdf:type  model:Property ;
+        rdfs:label  "pC" , "picocoulomb" .
+
+<eclass.eu/#G99>  rdf:type  model:Property ;
+        rdfs:label  "µH/Ω" , "microhenry per ohm" .
+
+<eclass.eu/#L65>  rdf:type  model:Property ;
+        rdfs:label  "slug/ft³" , "slug per cubic foot" .
+
+<eclass.eu/#J12>  rdf:type  model:Property ;
+        rdfs:label  "‰/psi" , "per mille per psi" .
+
+<eclass.eu/#E92>  rdf:type  model:Property ;
+        rdfs:label  "dm³/h" , "cubic decimetre per hour" .
+
+<eclass.eu/#GWH>  rdf:type  model:Property ;
+        rdfs:label  "GW·h" , "gigawatt hour" .
+
+<eclass.eu/#G67>  rdf:type  model:Property ;
+        rdfs:label  "(l/min)/K" , "litre per minute kelvin" .
+
+<eclass.eu/#4O>  rdf:type  model:Property ;
+        rdfs:label  "µF" , "microfarad" .
+
+<eclass.eu/#L33>  rdf:type  model:Property ;
+        rdfs:label  "oz/d" , "ounce (avoirdupois) per day" .
+
+<eclass.eu/#B69>  rdf:type  model:Property ;
+        rdfs:label  "MC/m³" , "megacoulomb per cubic metre" .
+
+<eclass.eu/#E60>  rdf:type  model:Property ;
+        rdfs:label  "Pibyte" , "pebibyte" .
+
+<eclass.eu/#G35>  rdf:type  model:Property ;
+        rdfs:label  "(g/l)/K" , "gram per litre kelvin" .
+
+<eclass.eu/#B37>  rdf:type  model:Property ;
+        rdfs:label  "kgf" , "kilogram-force" .
+
+<eclass.eu/#G81>  rdf:type  model:Property ;
+        rdfs:label  "(cm³/s)/bar" , "cubic centimetre per second bar" .
+
+<eclass.eu/#B83>  rdf:type  model:Property ;
+        rdfs:label  "m⁴" , "metre to the fourth power" .
+
+<eclass.eu/#D58>  rdf:type  model:Property ;
+        rdfs:label  "W/(sr·m²)" , "watt per steradian square metre" .
+
+<eclass.eu/#K77>  rdf:type  model:Property ;
+        rdfs:label  "lb/psi" , "pound (avoirdupois) per psi" .
+
+<eclass.eu/#F79>  rdf:type  model:Property ;
+        rdfs:label  "inHg" , "inch of mercury" .
+
+<eclass.eu/#D26>  rdf:type  model:Property ;
+        rdfs:label  "m²/(V·s)" , "square metre per volt second" .
+
+<eclass.eu/#K45>  rdf:type  model:Property ;
+        rdfs:label  "in/°F" , "inch per degree Fahrenheit" .
+
+<eclass.eu/#KMH>  rdf:type  model:Property ;
+        rdfs:label  "km/h" , "kilometre per hour" .
+
+<eclass.eu/#K91>  rdf:type  model:Property ;
+        rdfs:label  "lbf·s/ft²" , "pound-force second per square foot" .
+
+<eclass.eu/#F47>  rdf:type  model:Property ;
+        rdfs:label  "N/mm" , "newton per millimetre" .
+
+<eclass.eu/#K13>  rdf:type  model:Property ;
+        rdfs:label  "ft/°F" , "foot per degree Fahrenheit" .
+
+<eclass.eu/#F93>  rdf:type  model:Property ;
+        rdfs:label  "hPa·l/s" , "hektopascal litre per second" .
+
+<eclass.eu/#H68>  rdf:type  model:Property ;
+        rdfs:label  "mmol/g" , "millimole per gram" .
+
+<eclass.eu/#F15>  rdf:type  model:Property ;
+        rdfs:label  "kg/K" , "kilogram per kelvin" .
+
+<eclass.eu/#A95>  rdf:type  model:Property ;
+        rdfs:label  "Gy" , "gray" .
+
+<eclass.eu/#F61>  rdf:type  model:Property ;
+        rdfs:label  "K/bar" , "kelvin per bar" .
+
+<eclass.eu/#J89>  rdf:type  model:Property ;
+        rdfs:label  "cmHg" , "centimetre of mercury" .
+
+<eclass.eu/#H36>  rdf:type  model:Property ;
+        rdfs:label  "MΩ/km" , "megaohm per kilometre" .
+
+<eclass.eu/#A63>  rdf:type  model:Property ;
+        rdfs:label  "erg/s" , "erg per second" .
+
+<eclass.eu/#HP>  rdf:type  model:Property ;
+        rdfs:label  "mmH₂O" , "conventional millimetre of water" .
+
+<eclass.eu/#H82>  rdf:type  model:Property ;
+        rdfs:label  "bp" , "big point" .
+
+<eclass.eu/#C38>  rdf:type  model:Property ;
+        rdfs:label  "mol/l" , "mole per litre" .
+
+<eclass.eu/#J57>  rdf:type  model:Property ;
+        rdfs:label  "bbl (UK liq.)" , "barrel (UK petroleum)" .
+
+<eclass.eu/#H04>  rdf:type  model:Property ;
+        rdfs:label  "H/Ω" , "henry per ohm" .
+
+<eclass.eu/#C84>  rdf:type  model:Property ;
+        rdfs:label  "rad/m" , "radian per metre" .
+
+<eclass.eu/#A31>  rdf:type  model:Property ;
+        rdfs:label  "C/(kg·s)" , "coulomb per kilogram second" .
+
+<eclass.eu/#E59>  rdf:type  model:Property ;
+        rdfs:label  "Eibyte" , "exbibyte" .
+
+<eclass.eu/#H50>  rdf:type  model:Property ;
+        rdfs:label  "1/cm³" , "reciprocal cubic centimetre" .
+
+<eclass.eu/#L78>  rdf:type  model:Property ;
+        rdfs:label  "t/min" , "tonne per minute" .
+
+<eclass.eu/#J25>  rdf:type  model:Property ;
+        rdfs:label  "°F/s" , "degree Fahrenheit per second" .
+
+<eclass.eu/#C52>  rdf:type  model:Property ;
+        rdfs:label  "pm" , "picometre" .
+
+<eclass.eu/#E73>  rdf:type  model:Property ;
+        rdfs:label  "Kibit/m²" , "kibibit per square metre" .
+
+<eclass.eu/#L92>  rdf:type  model:Property ;
+        rdfs:label  "ton.l/yd³ (UK)" , "ton (UK long) per cubic yard" .
+
+<eclass.eu/#C20>  rdf:type  model:Property ;
+        rdfs:label  "mN" , "millinewton" .
+
+<eclass.eu/#G48>  rdf:type  model:Property ;
+        rdfs:label  "cm³/h" , "cubic centimetre per hour" .
+
+<eclass.eu/#2P>  rdf:type  model:Property ;
+        rdfs:label  "kbyte" , "kilobyte" .
+
+<eclass.eu/#DMT>  rdf:type  model:Property ;
+        rdfs:label  "dm" , "decimetre" .
+
+<eclass.eu/#LD>  rdf:type  model:Property ;
+        rdfs:label  "l/d" , "litre per day" .
+
+<eclass.eu/#G94>  rdf:type  model:Property ;
+        rdfs:label  "cm³/bar" , "cubic centimetre per bar" .
+
+<eclass.eu/#E41>  rdf:type  model:Property ;
+        rdfs:label  "kgf/mm²" , "kilogram-force per square millimetre" .
+
+<eclass.eu/#L60>  rdf:type  model:Property ;
+        rdfs:label  "pt (US liq.)/s" , "pint (US liquid) per second" .
+
+<eclass.eu/#G16>  rdf:type  model:Property ;
+        rdfs:label  "(kg/cm³)/bar" , "kilogram per cubic centimetre bar" .
+
+<eclass.eu/#B96>  rdf:type  model:Property ;
+        rdfs:label  "µPa" , "micropascal" .
+
+<eclass.eu/#G62>  rdf:type  model:Property ;
+        rdfs:label  "(cm³/h)/K" , "cubic centimetre per hour kelvin" .
+
+<eclass.eu/#FTQ>  rdf:type  model:Property ;
+        rdfs:label  "ft³" , "cubic foot" .
+
+<eclass.eu/#AD>  rdf:type  model:Property ;
+        rdfs:label  "byte" .
+
+<eclass.eu/#B64>  rdf:type  model:Property ;
+        rdfs:label  "lx·s" , "lux second" .
+
+<eclass.eu/#G30>  rdf:type  model:Property ;
+        rdfs:label  "ml/K" , "millilitre per kelvin" .
+
+<eclass.eu/#D85>  rdf:type  model:Property ;
+        rdfs:label  "µW/m²" , "microwatt per square metre" .
+
+<eclass.eu/#B32>  rdf:type  model:Property ;
+        rdfs:label  "kg·m²" , "kilogram metre squared" .
+
+<eclass.eu/#LUX>  rdf:type  model:Property ;
+        rdfs:label  "lx" , "lux" .
+
+<eclass.eu/#K26>  rdf:type  model:Property ;
+        rdfs:label  "gal (UK)/d" , "gallon (UK) per day" .
+
+<eclass.eu/#D53>  rdf:type  model:Property ;
+        rdfs:label  "W/(m·K)" , "watt per metre kelvin" .
+
+<eclass.eu/#3B>  rdf:type  model:Property ;
+        rdfs:label  "MJ" , "megajoule" .
+
+<eclass.eu/#F28>  rdf:type  model:Property ;
+        rdfs:label  "g/min" , "gram per minute" .
+
+<eclass.eu/#F74>  rdf:type  model:Property ;
+        rdfs:label  "g/bar" , "gram per bar" .
+
+<eclass.eu/#D21>  rdf:type  model:Property ;
+        rdfs:label  "m²/kg" , "square metre per kilogram" .
+
+<eclass.eu/#H49>  rdf:type  model:Property ;
+        rdfs:label  "cm/h" , "centimetre per hour" .
+
+<eclass.eu/#M15>  rdf:type  model:Property ;
+        rdfs:label  "yd³/min" , "cubic yard per minute" .
+
+<eclass.eu/#H95>  rdf:type  model:Property ;
+        rdfs:label  "%/V" , "percent per volt" .
+
+<eclass.eu/#F42>  rdf:type  model:Property ;
+        rdfs:label  "(kg/s)/K" , "kilogram per second kelvin" .
+
+<eclass.eu/#C97>  rdf:type  model:Property ;
+        rdfs:label  "1/s" , "reciprocal second" .
+
+<eclass.eu/#G2>  rdf:type  model:Property ;
+        rdfs:label  "gal (US liq.)/min" , "US gallon per minute" .
+
+<eclass.eu/#C19>  rdf:type  model:Property ;
+        rdfs:label  "mol/kg" , "mole per kilogram" .
+
+<eclass.eu/#H63>  rdf:type  model:Property ;
+        rdfs:label  "mg/cm²" , "milligram per square centimetre" .
+
+<eclass.eu/#F10>  rdf:type  model:Property ;
+        rdfs:label  "K/h" , "kelvin per hour" .
+
+<eclass.eu/#J38>  rdf:type  model:Property ;
+        rdfs:label  "Bd" , "baud" .
+
+<eclass.eu/#A90>  rdf:type  model:Property ;
+        rdfs:label  "GW" , "gigawatt" .
+
+<eclass.eu/#C65>  rdf:type  model:Property ;
+        rdfs:label  "Pa·s" , "pascal second" .
+
+<eclass.eu/#L59>  rdf:type  model:Property ;
+        rdfs:label  "pt (US liq.)/min" , "pint (US liquid) per minute" .
+
+<eclass.eu/#E86>  rdf:type  model:Property ;
+        rdfs:label  "Tibit/m³" , "tebibit per cubic metre" .
+
+<eclass.eu/#C33>  rdf:type  model:Property ;
+        rdfs:label  "mWb" , "milliweber" .
+
+<eclass.eu/#L27>  rdf:type  model:Property ;
+        rdfs:label  "(mol/l)/bar" , "mole per litre bar" .
+
+<eclass.eu/#L73>  rdf:type  model:Property ;
+        rdfs:label  "(t/d)/bar" , "tonne per day bar" .
+
+<eclass.eu/#SMI>  rdf:type  model:Property ;
+        rdfs:label  "mi" , "mile (statute mile)" .
+
+<eclass.eu/#G29>  rdf:type  model:Property ;
+        rdfs:label  "m³/K" , "cubic metre per kelvin" .
+
+<eclass.eu/#J20>  rdf:type  model:Property ;
+        rdfs:label  "°F/K" , "degree Fahrenheit per kelvin" .
+
+<eclass.eu/#JE>  rdf:type  model:Property ;
+        rdfs:label  "J/K" , "joule per kelvin" .
+
+<eclass.eu/#G75>  rdf:type  model:Property ;
+        rdfs:label  "(ml/min)/K" , "millilitre per minute kelvin" .
+
+<eclass.eu/#L41>  rdf:type  model:Property ;
+        rdfs:label  "ozf·in" , "ounce (avoirdupois)-force inch" .
+
+<eclass.eu/#B77>  rdf:type  model:Property ;
+        rdfs:label  "MS/m" , "megasiemens per metre" .
+
+<eclass.eu/#G43>  rdf:type  model:Property ;
+        rdfs:label  "µS/m" , "microsiemens per metre" .
+
+<eclass.eu/#2K>  rdf:type  model:Property ;
+        rdfs:label  "ft³/h" , "cubic foot per hour" .
+
+<eclass.eu/#MTQ>  rdf:type  model:Property ;
+        rdfs:label  "m³" , "cubic metre" .
+
+<eclass.eu/#B45>  rdf:type  model:Property ;
+        rdfs:label  "kmol" , "kilomole" .
+
+<eclass.eu/#G11>  rdf:type  model:Property ;
+        rdfs:label  "(g/cm³)/bar" , "gram per cubic centimetre bar" .
+
+<eclass.eu/#K39>  rdf:type  model:Property ;
+        rdfs:label  "gi (US)/s" , "gill (US) per second" .
+
+<eclass.eu/#B91>  rdf:type  model:Property ;
+        rdfs:label  "µH/m" , "microhenry per metre" .
+
+<eclass.eu/#B13>  rdf:type  model:Property ;
+        rdfs:label  "J/m²" , "joule per metre squared" .
+
+<eclass.eu/#K85>  rdf:type  model:Property ;
+        rdfs:label  "lbf/ft²" , "pound-force per square foot" .
+
+<eclass.eu/#F87>  rdf:type  model:Property ;
+        rdfs:label  "V/(l·min)" , "volt per litre minute" .
+
+<eclass.eu/#A89>  rdf:type  model:Property ;
+        rdfs:label  "GPa" , "gigapascal" .
+
+<eclass.eu/#D80>  rdf:type  model:Property ;
+        rdfs:label  "µW" , "microwatt" .
+
+<eclass.eu/#X1>  rdf:type  model:Property ;
+        rdfs:label  "ch (UK)" , "chain" .
+
+<eclass.eu/#F55>  rdf:type  model:Property ;
+        rdfs:label  "Ω/mi" , "ohm per mile" .
+
+<eclass.eu/#YRD>  rdf:type  model:Property ;
+        rdfs:label  "yd" , "yard" .
+
+<eclass.eu/#K21>  rdf:type  model:Property ;
+        rdfs:label  "ft³/°F" , "cubic foot per degree Fahrenheit" .
+
+<eclass.eu/#H76>  rdf:type  model:Property ;
+        rdfs:label  "g/mm" , "gram per millimetre" .
+
+<eclass.eu/#F23>  rdf:type  model:Property ;
+        rdfs:label  "g/dm³" , "gram per cubic decimetre" .
+
+<eclass.eu/#M1>  rdf:type  model:Property ;
+        rdfs:label  "mg/l" , "milligram per litre" .
+
+<eclass.eu/#C78>  rdf:type  model:Property ;
+        rdfs:label  "lbf" , "pound-force" .
+
+<eclass.eu/#89>  rdf:type  model:Property ;
+        rdfs:label  "P" , "poise" .
+
+<eclass.eu/#J97>  rdf:type  model:Property ;
+        rdfs:label  "fl oz (UK)/min" , "ounce (UK fluid) per minute" .
+
+<eclass.eu/#H44>  rdf:type  model:Property ;
+        rdfs:label  "TΩ" , "teraohm" .
+
+<eclass.eu/#QTI>  rdf:type  model:Property ;
+        rdfs:label  "qt (UK liq.)" , "quart (UK)" .
+
+<eclass.eu/#M10>  rdf:type  model:Property ;
+        rdfs:label  "1/yd³" , "reciprocal cubic yard" .
+
+<eclass.eu/#E99>  rdf:type  model:Property ;
+        rdfs:label  "hPa/bar" , "hektopascal per bar" .
+
+<eclass.eu/#H90>  rdf:type  model:Property ;
+        rdfs:label  "%/°" , "percent per degree" .
+
+<eclass.eu/#C46>  rdf:type  model:Property ;
+        rdfs:label  "nΩ·m" , "nanoohm metre" .
+
+<eclass.eu/#J65>  rdf:type  model:Property ;
+        rdfs:label  "bu (UK)/h" , "bushel (UK) per hour" .
+
+<eclass.eu/#H12>  rdf:type  model:Property ;
+        rdfs:label  "°C/h" , "degree Celsius per hour" .
+
+<eclass.eu/#C92>  rdf:type  model:Property ;
+        rdfs:label  "m⁻¹" , "reciprocal metre" .
+
+<eclass.eu/#E67>  rdf:type  model:Property ;
+        rdfs:label  "Eibit/m³" , "exbibit per cubic metre" .
+
+<eclass.eu/#C14>  rdf:type  model:Property ;
+        rdfs:label  "mH" , "millihenry" .
+
+<eclass.eu/#L86>  rdf:type  model:Property ;
+        rdfs:label  "(US) shipping ton" , "ton (US shipping)" .
+
+<eclass.eu/#J33>  rdf:type  model:Property ;
+        rdfs:label  "µg/kg" , "microgram per kilogram" .
+
+<eclass.eu/#CWA>  rdf:type  model:Property ;
+        rdfs:label  "cwt.sh (US)" , "hundred pound (cwt) / hundred weight (US)" .
+
+<eclass.eu/#G88>  rdf:type  model:Property ;
+        rdfs:label  "(m³/min)/bar" , "cubic metre per minute bar" .
+
+<eclass.eu/#E35>  rdf:type  model:Property ;
+        rdfs:label  "Tbyte" , "terabyte" .
+
+<eclass.eu/#L54>  rdf:type  model:Property ;
+        rdfs:label  "pt (UK)/h" , "pint (UK) per hour" .
+
+<eclass.eu/#E81>  rdf:type  model:Property ;
+        rdfs:label  "Pibit/m²" , "pebibit per square metre" .
+
+<eclass.eu/#G56>  rdf:type  model:Property ;
+        rdfs:label  "in³/h" , "cubic inch per hour" .
+
+<eclass.eu/#MHZ>  rdf:type  model:Property ;
+        rdfs:label  "MHz" , "megahertz" .
+
+<eclass.eu/#B58>  rdf:type  model:Property ;
+        rdfs:label  "l/mol" , "litre per mole" .
+
+<eclass.eu/#G24>  rdf:type  model:Property ;
+        rdfs:label  "tablespoon (US)" , "tablespoon" .
+
+<eclass.eu/#G70>  rdf:type  model:Property ;
+        rdfs:label  "(m³/h)/K" , "cubic metre per hour kelvin" .
+
+<eclass.eu/#B26>  rdf:type  model:Property ;
+        rdfs:label  "kC" , "kilocoulomb" .
+
+<eclass.eu/#K98>  rdf:type  model:Property ;
+        rdfs:label  "qt (US liq.)/d" , "quart (US liquid) per day" .
+
+<eclass.eu/#B72>  rdf:type  model:Property ;
+        rdfs:label  "Mg/m³" , "megagram per cubic metre" .
+
+<eclass.eu/#K66>  rdf:type  model:Property ;
+        rdfs:label  "lb/d" , "pound (avoirdupois) per day" .
+
+<eclass.eu/#BUA>  rdf:type  model:Property ;
+        rdfs:label  "bu (US)" , "bushel (US)" .
+
+<eclass.eu/#B40>  rdf:type  model:Property ;
+        rdfs:label  "kgf/m²" , "kilogram-force per square metre" .
+
+<eclass.eu/#F68>  rdf:type  model:Property ;
+        rdfs:label  "(kg/min)/bar" , "kilogram per minute bar" .
+
+<eclass.eu/#D15>  rdf:type  model:Property ;
+        rdfs:label  "sone" .
+
+<eclass.eu/#K34>  rdf:type  model:Property ;
+        rdfs:label  "gi (UK)/min" , "gill (UK) per minute" .
+
+<eclass.eu/#D61>  rdf:type  model:Property ;
+        rdfs:label  "'" , "minute [unit of angle]" .
+
+<eclass.eu/#H89>  rdf:type  model:Property ;
+        rdfs:label  "%/Ω" , "percent per ohm" .
+
+<eclass.eu/#K80>  rdf:type  model:Property ;
+        rdfs:label  "(lb/min)/psi" , "pound (avoirdupois) per minute psi" .
+
+<eclass.eu/#F36>  rdf:type  model:Property ;
+        rdfs:label  "(g/h)/K" , "gram per hour kelvin" .
+
+<eclass.eu/#F82>  rdf:type  model:Property ;
+        rdfs:label  "hPa/K" , "hektopascal per kelvin" .
+
+<eclass.eu/#H57>  rdf:type  model:Property ;
+        rdfs:label  "in/revolution" , "inch per two pi radiant" .
+
+<eclass.eu/#F04>  rdf:type  model:Property ;
+        rdfs:label  "mbar/bar" , "millibar per bar" .
+
+<eclass.eu/#A84>  rdf:type  model:Property ;
+        rdfs:label  "GC/m³" , "gigacoulomb per cubic metre" .
+
+<eclass.eu/#C59>  rdf:type  model:Property ;
+        rdfs:label  "octave" .
+
+<eclass.eu/#F50>  rdf:type  model:Property ;
+        rdfs:label  "µm/K" , "micrometre per kelvin" .
+
+<eclass.eu/#J78>  rdf:type  model:Property ;
+        rdfs:label  "calth/(cm·s·°C)" , "calorie (thermochemical) per centimetre second degree Celsius" .
+
+<eclass.eu/#H25>  rdf:type  model:Property ;
+        rdfs:label  "%/K" , "percent per kelvin" .
+
+<eclass.eu/#H71>  rdf:type  model:Property ;
+        rdfs:label  "%/mo" , "percent per month" .
+
+<eclass.eu/#GO>  rdf:type  model:Property ;
+        rdfs:label  "mg/m²" , "milligram per square metre" .
+
+<eclass.eu/#C27>  rdf:type  model:Property ;
+        rdfs:label  "mS" , "millisiemens" .
+
+<eclass.eu/#L99>  rdf:type  model:Property ;
+        rdfs:label  "yd/psi" , "yard per psi" .
+
+<eclass.eu/#OZA>  rdf:type  model:Property ;
+        rdfs:label  "oz (US fluid)" , "fluid ounce (US)" .
+
+<eclass.eu/#C73>  rdf:type  model:Property ;
+        rdfs:label  "pH" , "picohenry" .
+
+<eclass.eu/#J92>  rdf:type  model:Property ;
+        rdfs:label  "dm³/min" , "cubic decimetre per minute" .
+
+<eclass.eu/#GRN>  rdf:type  model:Property ;
+        rdfs:label  "gr" , "grain" .
+
+<eclass.eu/#L67>  rdf:type  model:Property ;
+        rdfs:label  "slug/min" , "slug per minute" .
+
+<eclass.eu/#J14>  rdf:type  model:Property ;
+        rdfs:label  "°Bé" , "degree Baume (origin scale)" .
+
+<eclass.eu/#QTD>  rdf:type  model:Property ;
+        rdfs:label  "qt (US dry)" , "dry quart (US)" .
+
+<eclass.eu/#E94>  rdf:type  model:Property ;
+        rdfs:label  "kmol/s" , "kilomole per second" .
+
+<eclass.eu/#C41>  rdf:type  model:Property ;
+        rdfs:label  "nF" , "nanofarad" .
+
+<eclass.eu/#G69>  rdf:type  model:Property ;
+        rdfs:label  "(m³/d)/K" , "cubic metre per day kelvin" .
+
+<eclass.eu/#J60>  rdf:type  model:Property ;
+        rdfs:label  "bbl (UK liq.)/h" , "barrel (UK petroleum) per hour" .
+
+<eclass.eu/#L35>  rdf:type  model:Property ;
+        rdfs:label  "oz/min" , "ounce (avoirdupois) per minute" .
+
+<eclass.eu/#E62>  rdf:type  model:Property ;
+        rdfs:label  "Gibyte" , "gibibyte" .
+
+<eclass.eu/#L81>  rdf:type  model:Property ;
+        rdfs:label  "t/s" , "tonne per second" .
+
+<eclass.eu/#G37>  rdf:type  model:Property ;
+        rdfs:label  "(g/ml)/K" , "gram per millilitre kelvin" .
+
+<eclass.eu/#G83>  rdf:type  model:Property ;
+        rdfs:label  "(l/h)/bar" , "litre per hour bar" .
+
+<eclass.eu/#BLL>  rdf:type  model:Property ;
+        rdfs:label  "bbl (US)" , "barrel (US)" .
+
+<eclass.eu/#G05>  rdf:type  model:Property ;
+        rdfs:label  "m/bar" , "metre per bar" .
+
+<eclass.eu/#INK>  rdf:type  model:Property ;
+        rdfs:label  "in²" , "square inch" .
+
+<eclass.eu/#G51>  rdf:type  model:Property ;
+        rdfs:label  "l/s" , "litre per second" .
+
+<eclass.eu/#K79>  rdf:type  model:Property ;
+        rdfs:label  "(lb/min)/°F" , "pound (avoirdupois) per minute degree Fahrenheit" .
+
+<eclass.eu/#B53>  rdf:type  model:Property ;
+        rdfs:label  "kS" , "kilosiemens" .
+
+<eclass.eu/#MMQ>  rdf:type  model:Property ;
+        rdfs:label  "mm³" , "cubic millimetre" .
+
+<eclass.eu/#D74>  rdf:type  model:Property ;
+        rdfs:label  "kg/mol" , "kilogram per mole" .
+
+<eclass.eu/#K93>  rdf:type  model:Property ;
+        rdfs:label  "1/psi" , "reciprocal psi" .
+
+<eclass.eu/#B21>  rdf:type  model:Property ;
+        rdfs:label  "K/W" , "kelvin per watt" .
+
+<eclass.eu/#F49>  rdf:type  model:Property ;
+        rdfs:label  "rd (US)" , "rod" .
+
+<eclass.eu/#KEL>  rdf:type  model:Property ;
+        rdfs:label  "K" , "kelvin" .
+
+<eclass.eu/#K15>  rdf:type  model:Property ;
+        rdfs:label  "ft·lbf/h" , "foot pound-force per hour" .
+
+<eclass.eu/#F95>  rdf:type  model:Property ;
+        rdfs:label  "mbar·l/s" , "millibar litre per second" .
+
+<eclass.eu/#D42>  rdf:type  model:Property ;
+        rdfs:label  "y (tropical)" , "tropical year" .
+
+<eclass.eu/#2A>  rdf:type  model:Property ;
+        rdfs:label  "rad/s" , "radian per second" .
+
+<eclass.eu/#MGM>  rdf:type  model:Property ;
+        rdfs:label  "mg" , "milligram" .
+
+<eclass.eu/#A97>  rdf:type  model:Property ;
+        rdfs:label  "hPa" , "hectopascal" .
+
+<eclass.eu/#F63>  rdf:type  model:Property ;
+        rdfs:label  "(g/h)/bar" , "gram per hour bar" .
+
+<eclass.eu/#D10>  rdf:type  model:Property ;
+        rdfs:label  "S/m" , "siemens per metre" .
+
+<eclass.eu/#H38>  rdf:type  model:Property ;
+        rdfs:label  "MA" , "megaampere" .
+
+<eclass.eu/#J59>  rdf:type  model:Property ;
+        rdfs:label  "bbl (UK liq.)/d" , "barrel (UK petroleum) per day" .
+
+<eclass.eu/#F31>  rdf:type  model:Property ;
+        rdfs:label  "kg/min" , "kilogram per minute" .
+
+<eclass.eu/#MVA>  rdf:type  model:Property ;
+        rdfs:label  "MV·A" , "megavolt - ampere" .
+
+<eclass.eu/#A5>  rdf:type  model:Property ;
+        rdfs:label  "A·m²" , "ampere square metre" .
+
+<eclass.eu/#H06>  rdf:type  model:Property ;
+        rdfs:label  "mH/Ω" , "millihenry per ohm" .
+
+<eclass.eu/#C86>  rdf:type  model:Property ;
+        rdfs:label  "1/m³" , "reciprocal cubic metre" .
+
+<eclass.eu/#H52>  rdf:type  model:Property ;
+        rdfs:label  "dB/m" , "decibel per metre" .
+
+<eclass.eu/#C54>  rdf:type  model:Property ;
+        rdfs:label  "N·m²/kg²" , "newton metre squared per kilogram squared" .
+
+<eclass.eu/#WTT>  rdf:type  model:Property ;
+        rdfs:label  "W" , "watt" .
+
+<eclass.eu/#J73>  rdf:type  model:Property ;
+        rdfs:label  "cP/K" , "centipoise per kelvin" .
+
+<eclass.eu/#E75>  rdf:type  model:Property ;
+        rdfs:label  "Mibit/m" , "mebibit per metre" .
+
+<eclass.eu/#GJ>  rdf:type  model:Property ;
+        rdfs:label  "g/ml" , "gram per millilitre" .
+
+<eclass.eu/#C22>  rdf:type  model:Property ;
+        rdfs:label  "mN/m" , "millinewton per metre" .
+
+<eclass.eu/#L94>  rdf:type  model:Property ;
+        rdfs:label  "ton.sh-force" , "ton-force (US short)" .
+
+<eclass.eu/#J41>  rdf:type  model:Property ;
+        rdfs:label  "BtuIT·in/(h·ft²·°F)" , "British thermal unit (international table) inch per hour square foot degree Fahrenheit" .
+
+<eclass.eu/#L16>  rdf:type  model:Property ;
+        rdfs:label  "mPa·s/bar" , "millipascal second per bar" .
+
+<eclass.eu/#G96>  rdf:type  model:Property ;
+        rdfs:label  "m³/bar" , "cubic metre per bar" .
+
+<eclass.eu/#HTZ>  rdf:type  model:Property ;
+        rdfs:label  "Hz" , "hertz" .
+
+<eclass.eu/#G18>  rdf:type  model:Property ;
+        rdfs:label  "(kg/m³)/bar" , "kilogram per cubic metre bar" .
+
+<eclass.eu/#B98>  rdf:type  model:Property ;
+        rdfs:label  "µs" , "microsecond" .
+
+<eclass.eu/#G64>  rdf:type  model:Property ;
+        rdfs:label  "(cm³/s)/K" , "cubic centimetre per second kelvin" .
+
+<eclass.eu/#4L>  rdf:type  model:Property ;
+        rdfs:label  "Mbyte" , "megabyte" .
+
+<eclass.eu/#B66>  rdf:type  model:Property ;
+        rdfs:label  "MA/m²" , "megaampere per square metre" .
+
+<eclass.eu/#G32>  rdf:type  model:Property ;
+        rdfs:label  "oz/yd³" , "ounce (avoirdupois) per cubic yard" .
+
+<eclass.eu/#D87>  rdf:type  model:Property ;
+        rdfs:label  "mmol/kg" , "millimole per kilogram" .
+
+<eclass.eu/#B34>  rdf:type  model:Property ;
+        rdfs:label  "kg/dm³" , "kilogram per cubic decimetre" .
+
+<eclass.eu/#K28>  rdf:type  model:Property ;
+        rdfs:label  "gal (UK)/s" , "gallon (UK) per second" .
+
+<eclass.eu/#B80>  rdf:type  model:Property ;
+        rdfs:label  "Gbit/s" , "gigabit per second" .
+
+<eclass.eu/#D55>  rdf:type  model:Property ;
+        rdfs:label  "W/(m²·K)" , "watt per square metre kelvin" .
+
+<eclass.eu/#K74>  rdf:type  model:Property ;
+        rdfs:label  "(lb/h)/psi" , "pound (avoirdupois) per hour psi" .
+
+<eclass.eu/#F76>  rdf:type  model:Property ;
+        rdfs:label  "mA/mm" , "milliampere per millimetre" .
+
+<eclass.eu/#K42>  rdf:type  model:Property ;
+        rdfs:label  "boiler hp" , "horsepower (boiler)" .
+
+<eclass.eu/#IU>  rdf:type  model:Property ;
+        rdfs:label  "in/s" , "inch per second" .
+
+<eclass.eu/#F44>  rdf:type  model:Property ;
+        rdfs:label  "(mg/h)/K" , "milligram per hour kelvin" .
+
+<eclass.eu/#B8>  rdf:type  model:Property ;
+        rdfs:label  "J/m³" , "joule per cubic metre" .
+
+<eclass.eu/#LTR>  rdf:type  model:Property ;
+        rdfs:label  "l" , "litre" .
+
+<eclass.eu/#K10>  rdf:type  model:Property ;
+        rdfs:label  "fl oz (US)/h" , "ounce (US fluid) per hour" .
+
+<eclass.eu/#C99>  rdf:type  model:Property ;
+        rdfs:label  "s⁻¹/m²" , "reciprocal second per metre squared" .
+
+<eclass.eu/#F90>  rdf:type  model:Property ;
+        rdfs:label  "N·m/A" , "newton metre per ampere" .
+
+<eclass.eu/#FS>  rdf:type  model:Property ;
+        rdfs:label  "ft/s" , "foot per second" .
+
+<eclass.eu/#H65>  rdf:type  model:Property ;
+        rdfs:label  "ml/m³" , "millilitre per cubic metre" .
+
+<eclass.eu/#F12>  rdf:type  model:Property ;
+        rdfs:label  "K/s" , "kelvin per second" .
+
+<eclass.eu/#C67>  rdf:type  model:Property ;
+        rdfs:label  "Pa·s/m" , "pascal second per metre" .
+
+<eclass.eu/#D2>  rdf:type  model:Property ;
+        rdfs:label  "s⁻¹/(sr·m²)" , "reciprocal second per steradian metre squared" .
+
+<eclass.eu/#H33>  rdf:type  model:Property ;
+        rdfs:label  "F/km" , "farad per kilometre" .
+
+<eclass.eu/#E88>  rdf:type  model:Property ;
+        rdfs:label  "bit/m" , "bit per metre" .
+
+<eclass.eu/#C35>  rdf:type  model:Property ;
+        rdfs:label  "mol/dm³" , "mole per cubic decimetre" .
+
+<eclass.eu/#J54>  rdf:type  model:Property ;
+        rdfs:label  "MBd" , "megabaud" .
+
+<eclass.eu/#L29>  rdf:type  model:Property ;
+        rdfs:label  "(mol/m³)/bar" , "mole per cubic metre bar" .
+
+<eclass.eu/#C81>  rdf:type  model:Property ;
+        rdfs:label  "rad" , "radian" .
+
+<eclass.eu/#KHZ>  rdf:type  model:Property ;
+        rdfs:label  "kHz" , "kilohertz" .
+
+<eclass.eu/#L75>  rdf:type  model:Property ;
+        rdfs:label  "(t/h)/bar" , "tonne per hour bar" .
+
+<eclass.eu/#G77>  rdf:type  model:Property ;
+        rdfs:label  "mm⁴" , "millimetre to the fourth power" .
+
+<eclass.eu/#WA>  rdf:type  model:Property ;
+        rdfs:label  "W/kg" , "watt per kilogram" .
+
+<eclass.eu/#L43>  rdf:type  model:Property ;
+        rdfs:label  "pk (UK)" , "peck (UK)" .
+
+<eclass.eu/#B79>  rdf:type  model:Property ;
+        rdfs:label  "MV/m" , "megavolt per metre" .
+
+<eclass.eu/#E70>  rdf:type  model:Property ;
+        rdfs:label  "Gibit/m²" , "gibibit per square metre" .
+
+<eclass.eu/#G45>  rdf:type  model:Property ;
+        rdfs:label  "nS/m" , "nanosiemens per metre" .
+
+<eclass.eu/#2M>  rdf:type  model:Property ;
+        rdfs:label  "cm/s" , "centimetre per second" .
+
+<eclass.eu/#DMQ>  rdf:type  model:Property ;
+        rdfs:label  "dm³" , "cubic decimetre" .
+
+<eclass.eu/#MTS>  rdf:type  model:Property ;
+        rdfs:label  "m/s" , "metre per second" .
+
+<eclass.eu/#L11>  rdf:type  model:Property ;
+        rdfs:label  "qt (US liq.)/s" , "quart (US liquid) per second" .
+
+<eclass.eu/#LA>  rdf:type  model:Property ;
+        rdfs:label  "lb/in³" , "pound per cubic inch" .
+
+<eclass.eu/#B47>  rdf:type  model:Property ;
+        rdfs:label  "kN" , "kilonewton" .
+
+<eclass.eu/#G91>  rdf:type  model:Property ;
+        rdfs:label  "(ml/h)/bar" , "millilitre per hour bar" .
+
+<eclass.eu/#G13>  rdf:type  model:Property ;
+        rdfs:label  "(g/l)/bar" , "gram per litre bar" .
+
+<eclass.eu/#B93>  rdf:type  model:Property ;
+        rdfs:label  "µN·m" , "micronewton metre" .
+
+<eclass.eu/#K87>  rdf:type  model:Property ;
+        rdfs:label  "psi·in³/s" , "psi cubic inch per second" .
+
+<eclass.eu/#B15>  rdf:type  model:Property ;
+        rdfs:label  "J/mol" , "joule per mole" .
+
+<eclass.eu/#4G>  rdf:type  model:Property ;
+        rdfs:label  "µl" , "microlitre" .
+
+<eclass.eu/#PAL>  rdf:type  model:Property ;
+        rdfs:label  "Pa" , "pascal" .
+
+<eclass.eu/#B61>  rdf:type  model:Property ;
+        rdfs:label  "lm/W" , "lumen per watt" .
+
+<eclass.eu/#F89>  rdf:type  model:Property ;
+        rdfs:label  "Nm/°" , "newton metre per degree" .
+
+<eclass.eu/#MSK>  rdf:type  model:Property ;
+        rdfs:label  "m/s²" , "metre per second squared" .
+
+<eclass.eu/#D82>  rdf:type  model:Property ;
+        rdfs:label  "µV" , "microvolt" .
+
+<eclass.eu/#F57>  rdf:type  model:Property ;
+        rdfs:label  "mA/psi" , "milliampere per pound-force square inch" .
+
+<eclass.eu/#K23>  rdf:type  model:Property ;
+        rdfs:label  "ft³/psi" , "cubic foot per psi" .
+
+<eclass.eu/#WEE>  rdf:type  model:Property ;
+        rdfs:label  "wk" , "week" .
+
+<eclass.eu/#GV>  rdf:type  model:Property ;
+        rdfs:label  "GJ" , "gigajoule" .
+
+<eclass.eu/#D50>  rdf:type  model:Property ;
+        rdfs:label  "V/m" , "volt per metre" .
+
+<eclass.eu/#H78>  rdf:type  model:Property ;
+        rdfs:label  "cmH₂O" , "conventional centimetre of water" .
+
+<eclass.eu/#F25>  rdf:type  model:Property ;
+        rdfs:label  "g/Hz" , "gram per hertz" .
+
+<eclass.eu/#F71>  rdf:type  model:Property ;
+        rdfs:label  "(mg/h)/bar" , "milligram per hour bar" .
+
+<eclass.eu/#A27>  rdf:type  model:Property ;
+        rdfs:label  "C·m²/V" , "coulomb metre squared per volt" .
+
+<eclass.eu/#J99>  rdf:type  model:Property ;
+        rdfs:label  "fl oz (US)/d" , "ounce (US fluid) per day" .
+
+<eclass.eu/#H46>  rdf:type  model:Property ;
+        rdfs:label  "V/s" , "volt per second" .
+
+<eclass.eu/#A73>  rdf:type  model:Property ;
+        rdfs:label  "ft/s²" , "foot per second squared" .
+
+<eclass.eu/#M12>  rdf:type  model:Property ;
+        rdfs:label  "yd³/d" , "cubic yard per day" .
+
+<eclass.eu/#H92>  rdf:type  model:Property ;
+        rdfs:label  "%/100000" , "percent per one hundred thousand" .
+
+<eclass.eu/#C48>  rdf:type  model:Property ;
+        rdfs:label  "nT" , "nanotesla" .
+
+<eclass.eu/#J67>  rdf:type  model:Property ;
+        rdfs:label  "bu (UK)/s" , "bushel (UK) per second" .
+
+<eclass.eu/#CMK>  rdf:type  model:Property ;
+        rdfs:label  "cm²" , "square centimetre" .
+
+<eclass.eu/#H14>  rdf:type  model:Property ;
+        rdfs:label  "°C/s" , "degree Celsius per second" .
+
+<eclass.eu/#C94>  rdf:type  model:Property ;
+        rdfs:label  "1/min" , "reciprocal minute" .
+
+<eclass.eu/#A41>  rdf:type  model:Property ;
+        rdfs:label  "A/m²" , "ampere per square metre" .
+
+<eclass.eu/#E69>  rdf:type  model:Property ;
+        rdfs:label  "Gibit/m" , "gibibit per metre" .
+
+<eclass.eu/#C16>  rdf:type  model:Property ;
+        rdfs:label  "mm/s" , "millimetre per second" .
+
+<eclass.eu/#L88>  rdf:type  model:Property ;
+        rdfs:label  "ton (US)/d" , "ton short per day" .
+
+<eclass.eu/#J35>  rdf:type  model:Property ;
+        rdfs:label  "(µg/m³)/bar" , "microgram per cubic metre bar" .
+
+<eclass.eu/#C62>  rdf:type  model:Property ;
+        rdfs:label  "1" , "one, piece or unit" .
+
+<eclass.eu/#E37>  rdf:type  model:Property ;
+        rdfs:label  "pixel" .
+
+<eclass.eu/#L56>  rdf:type  model:Property ;
+        rdfs:label  "pt (UK)/s" , "pint (UK) per second" .
+
+<eclass.eu/#C30>  rdf:type  model:Property ;
+        rdfs:label  "mV/m" , "millivolt per metre" .
+
+<eclass.eu/#G58>  rdf:type  model:Property ;
+        rdfs:label  "in³/s" , "cubic inch per second" .
+
+<eclass.eu/#41>  rdf:type  model:Property ;
+        rdfs:label  "ml/min" , "millilitre per minute" .
+
+<eclass.eu/#L24>  rdf:type  model:Property ;
+        rdfs:label  "(mol/kg)/K" , "mole per kilogram kelvin" .
+
+<eclass.eu/#L70>  rdf:type  model:Property ;
+        rdfs:label  "t/bar" , "tonne per bar" .
+
+<eclass.eu/#G26>  rdf:type  model:Property ;
+        rdfs:label  "st" , "stere" .
+
+<eclass.eu/#KMQ>  rdf:type  model:Property ;
+        rdfs:label  "kg/m³" , "kilogram per metre cubed" .
+
+<eclass.eu/#G72>  rdf:type  model:Property ;
+        rdfs:label  "(m³/s)/K" , "cubic metre per second kelvin" .
+
+<eclass.eu/#B28>  rdf:type  model:Property ;
+        rdfs:label  "kC/m²" , "kilocoulomb per square metre" .
+
+<eclass.eu/#B74>  rdf:type  model:Property ;
+        rdfs:label  "MN·m" , "meganewton metre" .
+
+<eclass.eu/#KJO>  rdf:type  model:Property ;
+        rdfs:label  "kJ" , "kilojoule" .
+
+<eclass.eu/#G40>  rdf:type  model:Property ;
+        rdfs:label  "(kg/m³)/K" , "kilogram per cubic metre kelvin" .
+
+<eclass.eu/#K68>  rdf:type  model:Property ;
+        rdfs:label  "lb/(ft·s)" , "pound per foot second" .
+
+<eclass.eu/#D95>  rdf:type  model:Property ;
+        rdfs:label  "J/g" , "joule per gram" .
+
+<eclass.eu/#B42>  rdf:type  model:Property ;
+        rdfs:label  "kJ/kg" , "kilojoule per kilogram" .
+
+<eclass.eu/#KGM>  rdf:type  model:Property ;
+        rdfs:label  "kg" , "kilogram" .
+
+<eclass.eu/#K36>  rdf:type  model:Property ;
+        rdfs:label  "gi (US)/d" , "gill (US) per day" .
+
+<eclass.eu/#K82>  rdf:type  model:Property ;
+        rdfs:label  "(lb/s)/°F" , "pound (avoirdupois) per second degree Fahrenheit" .
+
+<eclass.eu/#F38>  rdf:type  model:Property ;
+        rdfs:label  "(g/s)/K" , "gram per second kelvin" .
+
+<eclass.eu/#B10>  rdf:type  model:Property ;
+        rdfs:label  "bit/s" , "bit per second" .
+
+<eclass.eu/#MIN>  rdf:type  model:Property ;
+        rdfs:label  "min" , "minute [unit of time]" .
+
+<eclass.eu/#CLT>  rdf:type  model:Property ;
+        rdfs:label  "cl" , "centilitre" .
+
+<eclass.eu/#F84>  rdf:type  model:Property ;
+        rdfs:label  "mbar/K" , "millibar per kelvin" .
+
+<eclass.eu/#K50>  rdf:type  model:Property ;
+        rdfs:label  "kBd" , "kilobaud" .
+
+<eclass.eu/#D31>  rdf:type  model:Property ;
+        rdfs:label  "TW" , "terawatt" .
+
+<eclass.eu/#HAR>  rdf:type  model:Property ;
+        rdfs:label  "ha" , "hectare" .
+
+<eclass.eu/#KVA>  rdf:type  model:Property ;
+        rdfs:label  "kV·A" , "kilovolt - ampere" .
+
+<eclass.eu/#F06>  rdf:type  model:Property ;
+        rdfs:label  "P/bar" , "poise per bar" .
+
+<eclass.eu/#A86>  rdf:type  model:Property ;
+        rdfs:label  "GHz" , "gigahertz" .
+
+<eclass.eu/#F52>  rdf:type  model:Property ;
+        rdfs:label  "m/K" , "metre per kelvin" .
+
+<eclass.eu/#H27>  rdf:type  model:Property ;
+        rdfs:label  "°/m" , "degree per metre" .
+
+<eclass.eu/#OHM>  rdf:type  model:Property ;
+        rdfs:label  "Ω" , "ohm" .
+
+<eclass.eu/#A54>  rdf:type  model:Property ;
+        rdfs:label  "eV/m" , "electronvolt per metre" .
+
+<eclass.eu/#GQ>  rdf:type  model:Property ;
+        rdfs:label  "µg/m³" , "microgram per cubic metre" .
+
+<eclass.eu/#H73>  rdf:type  model:Property ;
+        rdfs:label  "%/daK" , "percent per decakelvin" .
+
+<eclass.eu/#C29>  rdf:type  model:Property ;
+        rdfs:label  "mT" , "millitesla" .
+
+<eclass.eu/#F20>  rdf:type  model:Property ;
+        rdfs:label  "lb·in²" , "pound inch squared" .
+
+<eclass.eu/#J48>  rdf:type  model:Property ;
+        rdfs:label  "Btuth·in/(h·ft²·°F)" , "British thermal unit (thermochemical) inch per hour square foot degree Fahrenheit" .
+
+<eclass.eu/#C75>  rdf:type  model:Property ;
+        rdfs:label  "pW" , "picowatt" .
+
+<eclass.eu/#J94>  rdf:type  model:Property ;
+        rdfs:label  "dyn·cm" , "dyne centimetre" .
+
+<eclass.eu/#H41>  rdf:type  model:Property ;
+        rdfs:label  "N·m/√W" , "newton metre watt to the power minus 0,5" .
+
+<eclass.eu/#L69>  rdf:type  model:Property ;
+        rdfs:label  "t/K" , "tonne per kelvin" .
+
+<eclass.eu/#LBR>  rdf:type  model:Property ;
+        rdfs:label  "lb (avoirdupois)" , "pound" .
+
+<eclass.eu/#E96>  rdf:type  model:Property ;
+        rdfs:label  "°/s" , "degree per second" .
+
+<eclass.eu/#C43>  rdf:type  model:Property ;
+        rdfs:label  "nH" , "nanohenry" .
+
+<eclass.eu/#E18>  rdf:type  model:Property ;
+        rdfs:label  "t/h" , "tonne per hour" .
+
+<eclass.eu/#L37>  rdf:type  model:Property ;
+        rdfs:label  "oz/gal (UK)" , "ounce (avoirdupois) per gallon (UK)" .
+
+<eclass.eu/#E64>  rdf:type  model:Property ;
+        rdfs:label  "Kibyte" , "kibibyte" .
+
+<eclass.eu/#L83>  rdf:type  model:Property ;
+        rdfs:label  "(t/s)/bar" , "tonne per second bar" .
+
+<eclass.eu/#KVR>  rdf:type  model:Property ;
+        rdfs:label  "kvar" , "kilovar" .
+
+<eclass.eu/#G39>  rdf:type  model:Property ;
+        rdfs:label  "(kg/l)/K" , "kilogram per litre kelvin" .
+
+<eclass.eu/#GLL>  rdf:type  model:Property ;
+        rdfs:label  "gal (US liq.)" , "gallon (US)" .
+
+<eclass.eu/#G85>  rdf:type  model:Property ;
+        rdfs:label  "(l/s)/bar" , "litre per second bar" .
+
+<eclass.eu/#E32>  rdf:type  model:Property ;
+        rdfs:label  "l/h" , "litre per hour" .
+
+<eclass.eu/#B87>  rdf:type  model:Property ;
+        rdfs:label  "µC/m³" , "microcoulomb per cubic metre" .
+
+<eclass.eu/#G53>  rdf:type  model:Property ;
+        rdfs:label  "m³/min" , "cubic metre per minute" .
+
+<eclass.eu/#B55>  rdf:type  model:Property ;
+        rdfs:label  "kV/m" , "kilovolt per metre" .
+
+<eclass.eu/#G21>  rdf:type  model:Property ;
+        rdfs:label  "cup (US)" , "cup" .
+
+<eclass.eu/#K49>  rdf:type  model:Property ;
+        rdfs:label  "1/in³" , "reciprocal cubic inch" .
+
+<eclass.eu/#D76>  rdf:type  model:Property ;
+        rdfs:label  "(calIT/K)/g" , "calorie (international table) per gram kelvin" .
+
+<eclass.eu/#SEC>  rdf:type  model:Property ;
+        rdfs:label  "s" , "second" .
+
+<eclass.eu/#B23>  rdf:type  model:Property ;
+        rdfs:label  "kA/m²" , "kiloampere per square metre" .
+
+<eclass.eu/#K95>  rdf:type  model:Property ;
+        rdfs:label  "qt (UK liq.)/h" , "quart (UK liquid) per hour" .
+
+<eclass.eu/#NX>  rdf:type  model:Property ;
+        rdfs:label  "‰" , "part per thousand" .
+
+<eclass.eu/#K17>  rdf:type  model:Property ;
+        rdfs:label  "ft/psi" , "foot per psi" .
+
+<eclass.eu/#F97>  rdf:type  model:Property ;
+        rdfs:label  "MPa·l/s" , "megapascal litre per second" .
+
+<eclass.eu/#K63>  rdf:type  model:Property ;
+        rdfs:label  "1/l" , "reciprocal litre" .
+
+<eclass.eu/#D44>  rdf:type  model:Property ;
+        rdfs:label  "var" , "voltampere reactive" .
+
+<eclass.eu/#F19>  rdf:type  model:Property ;
+        rdfs:label  "kg·mm²" , "kilogram square millimetre" .
+
+<eclass.eu/#AMP>  rdf:type  model:Property ;
+        rdfs:label  "A" , "ampere" .
+
+<eclass.eu/#2C>  rdf:type  model:Property ;
+        rdfs:label  "R" , "röntgen" .
+
+<eclass.eu/#A99>  rdf:type  model:Property ;
+        rdfs:label  "bit" .
+
+<eclass.eu/#F65>  rdf:type  model:Property ;
+        rdfs:label  "(g/s)/bar" , "gram per second bar" .
+
+<eclass.eu/#D9>  rdf:type  model:Property ;
+        rdfs:label  "dyn/cm²" , "dyne per square centimetre" .
+
+<eclass.eu/#D12>  rdf:type  model:Property ;
+        rdfs:label  "S·m²/mol" , "siemens square metre per mole" .
+
+<eclass.eu/#K31>  rdf:type  model:Property ;
+        rdfs:label  "gf/cm²" , "gram-force per square centimetre" .
+
+<eclass.eu/#F33>  rdf:type  model:Property ;
+        rdfs:label  "mg/min" , "milligram per minute" .
+
+<eclass.eu/#H08>  rdf:type  model:Property ;
+        rdfs:label  "µBq" , "microbecquerel" .
+
+<eclass.eu/#H54>  rdf:type  model:Property ;
+        rdfs:label  "(kg/dm³)/K" , "kilogram per cubic decimetre kelvin" .
+
+<eclass.eu/#C56>  rdf:type  model:Property ;
+        rdfs:label  "N/mm²" , "newton per square millimetre" .
+
+<eclass.eu/#H22>  rdf:type  model:Property ;
+        rdfs:label  "V/psi" , "volt square inch per pound-force" .
+
+<eclass.eu/#E77>  rdf:type  model:Property ;
+        rdfs:label  "Mibit/m³" , "mebibit per cubic metre" .
+
+<eclass.eu/#GL>  rdf:type  model:Property ;
+        rdfs:label  "g/l" , "gram per litre" .
+
+<eclass.eu/#C24>  rdf:type  model:Property ;
+        rdfs:label  "mPa·s" , "millipascal second" .
+
+<eclass.eu/#L96>  rdf:type  model:Property ;
+        rdfs:label  "y (sidereal)" , "sidereal year" .
+
+<eclass.eu/#J43>  rdf:type  model:Property ;
+        rdfs:label  "(BtuIT/°F)/lb" , "British thermal unit (international table) per pound degree Fahrenheit" .
+
+<eclass.eu/#CKG>  rdf:type  model:Property ;
+        rdfs:label  "C/kg" , "coulomb per kilogram" .
+
+<eclass.eu/#L18>  rdf:type  model:Property ;
+        rdfs:label  "(mg/m³)/bar" , "milligram per cubic metre bar" .
+
+<eclass.eu/#C70>  rdf:type  model:Property ;
+        rdfs:label  "pA" , "picoampere" .
+
+<eclass.eu/#G98>  rdf:type  model:Property ;
+        rdfs:label  "µH/kΩ" , "microhenry per kiloohm" .
+
+<eclass.eu/#81>  rdf:type  model:Property ;
+        rdfs:label  "H" , "henry" .
+
+<eclass.eu/#E45>  rdf:type  model:Property ;
+        rdfs:label  "mΩ" , "milliohm" .
+
+<eclass.eu/#L64>  rdf:type  model:Property ;
+        rdfs:label  "slug/(ft·s)" , "slug per foot second" .
+
+<eclass.eu/#E91>  rdf:type  model:Property ;
+        rdfs:label  "1/d" , "reciprocal day" .
+
+<eclass.eu/#G66>  rdf:type  model:Property ;
+        rdfs:label  "(l/h)/K" , "litre per hour kelvin" .
+
+<eclass.eu/#4N>  rdf:type  model:Property ;
+        rdfs:label  "MBq" , "megabecquerel" .
+
+<eclass.eu/#L32>  rdf:type  model:Property ;
+        rdfs:label  "ng/kg" , "nanogram per kilogram" .
+
+<eclass.eu/#G34>  rdf:type  model:Property ;
+        rdfs:label  "(g/dm³)/K" , "gram per cubic decimetre kelvin" .
+
+<eclass.eu/#D89>  rdf:type  model:Property ;
+        rdfs:label  "mC/m²" , "millicoulomb per square metre" .
+
+<eclass.eu/#G80>  rdf:type  model:Property ;
+        rdfs:label  "(cm³/min)/bar" , "cubic centimetre per minute bar" .
+
+<eclass.eu/#INH>  rdf:type  model:Property ;
+        rdfs:label  "in" , "inch" .
+
+<eclass.eu/#D57>  rdf:type  model:Property ;
+        rdfs:label  "W/sr" , "watt per steradian" .
+
+<eclass.eu/#K76>  rdf:type  model:Property ;
+        rdfs:label  "(lb/in³)/psi" , "pound (avoirdupois) per cubic inch psi" .
+
+<eclass.eu/#B50>  rdf:type  model:Property ;
+        rdfs:label  "kΩ·m" , "kiloohm metre" .
+
+<eclass.eu/#F78>  rdf:type  model:Property ;
+        rdfs:label  "inH₂O" , "inch of water" .
+
+<eclass.eu/#D25>  rdf:type  model:Property ;
+        rdfs:label  "m²/(sr·J)" , "metre squared per steradian joule" .
+
+<eclass.eu/#M19>  rdf:type  model:Property ;
+        rdfs:label  "Bft" , "Beaufort" .
+
+<eclass.eu/#K90>  rdf:type  model:Property ;
+        rdfs:label  "psi·yd³/s" , "psi cubic yard per second" .
+
+<eclass.eu/#F46>  rdf:type  model:Property ;
+        rdfs:label  "(mg/s)/K" , "milligram per second kelvin" .
+
+<eclass.eu/#YDK>  rdf:type  model:Property ;
+        rdfs:label  "yd²" , "square yard" .
+
+<eclass.eu/#K12>  rdf:type  model:Property ;
+        rdfs:label  "fl oz (US)/s" , "ounce (US fluid) per second" .
+
+<eclass.eu/#A48>  rdf:type  model:Property ;
+        rdfs:label  "°R" , "degree Rankin" .
+
+<eclass.eu/#F92>  rdf:type  model:Property ;
+        rdfs:label  "bar·m³/s" , "bar cubic metre per second" .
+
+<eclass.eu/#H67>  rdf:type  model:Property ;
+        rdfs:label  "mm/h" , "millimetre per hour" .
+
+<eclass.eu/#F14>  rdf:type  model:Property ;
+        rdfs:label  "g/K" , "gram per kelvin" .
+
+<eclass.eu/#A94>  rdf:type  model:Property ;
+        rdfs:label  "g/mol" , "gram per mole" .
+
+<eclass.eu/#L2>  rdf:type  model:Property ;
+        rdfs:label  "l/min" , "litre per minute" .
+
+<eclass.eu/#C69>  rdf:type  model:Property ;
+        rdfs:label  "phon" .
+
+<eclass.eu/#F60>  rdf:type  model:Property ;
+        rdfs:label  "°C/bar" , "grad_Celsius per bar" .
+
+<eclass.eu/#H35>  rdf:type  model:Property ;
+        rdfs:label  "K·m/W" , "kelvin metre per watt" .
+
+<eclass.eu/#TNE>  rdf:type  model:Property ;
+        rdfs:label  "t" , "tonne (metric ton)" .
+
+<eclass.eu/#H81>  rdf:type  model:Property ;
+        rdfs:label  "mm/min" , "millimetre per minute" .
+
+<eclass.eu/#J56>  rdf:type  model:Property ;
+        rdfs:label  "bar/bar" , "bar per bar" .
+
+<eclass.eu/#H03>  rdf:type  model:Property ;
+        rdfs:label  "H/kΩ" , "henry per kiloohm" .
+
+<eclass.eu/#CDL>  rdf:type  model:Property ;
+        rdfs:label  "cd" , "candela" .
+
+<eclass.eu/#E58>  rdf:type  model:Property ;
+        rdfs:label  "Ebit/s" , "exabit per second" .
+
+<eclass.eu/#L77>  rdf:type  model:Property ;
+        rdfs:label  "(t/m³)/bar" , "tonne per cubic metre bar" .
+
+<eclass.eu/#J24>  rdf:type  model:Property ;
+        rdfs:label  "°F/min" , "degree Fahrenheit per minute" .
+
+<eclass.eu/#C51>  rdf:type  model:Property ;
+        rdfs:label  "Np/s" , "neper per second" .
+
+<eclass.eu/#G79>  rdf:type  model:Property ;
+        rdfs:label  "(cm³/h)/bar" , "cubic centimetre per hour bar" .
+
+<eclass.eu/#E72>  rdf:type  model:Property ;
+        rdfs:label  "Kibit/m" , "kibibit per metre" .
+
+<eclass.eu/#L91>  rdf:type  model:Property ;
+        rdfs:label  "ton (US)/psi" , "ton short per psi" .
+
+<eclass.eu/#G47>  rdf:type  model:Property ;
+        rdfs:label  "cm³/d" , "cubic centimetre per day" .
+
+<eclass.eu/#BHP>  rdf:type  model:Property ;
+        rdfs:label  "bhp" , "brake horse power" .
+
+<eclass.eu/#G93>  rdf:type  model:Property ;
+        rdfs:label  "(ml/s)/bar" , "millilitre per second bar" .
+
+<eclass.eu/#B49>  rdf:type  model:Property ;
+        rdfs:label  "kΩ" , "kiloohm" .
+
+<eclass.eu/#FOT>  rdf:type  model:Property ;
+        rdfs:label  "ft" , "foot" .
+
+<eclass.eu/#G15>  rdf:type  model:Property ;
+        rdfs:label  "(g/ml)/bar" , "gram per millilitre bar" .
+
+<eclass.eu/#B95>  rdf:type  model:Property ;
+        rdfs:label  "µΩ·m" , "microohm metre" .
+
+<eclass.eu/#MQS>  rdf:type  model:Property ;
+        rdfs:label  "m³/s" , "cubic metre per second" .
+
+<eclass.eu/#G61>  rdf:type  model:Property ;
+        rdfs:label  "(cm³/d)/K" , "cubic centimetre per day kelvin" .
+
+<eclass.eu/#K89>  rdf:type  model:Property ;
+        rdfs:label  "psi·m³/s" , "psi cubic metre per second" .
+
+<eclass.eu/#MAW>  rdf:type  model:Property ;
+        rdfs:label  "MW" , "megawatt" .
+
+<eclass.eu/#B63>  rdf:type  model:Property ;
+        rdfs:label  "lx·h" , "lux hour" .
+
+<eclass.eu/#B31>  rdf:type  model:Property ;
+        rdfs:label  "kg·m/s" , "kilogram metre per second" .
+
+<eclass.eu/#F59>  rdf:type  model:Property ;
+        rdfs:label  "mA/bar" , "milliampere per bar" .
+
+<eclass.eu/#FAR>  rdf:type  model:Property ;
+        rdfs:label  "F" , "farad" .
+
+<eclass.eu/#K25>  rdf:type  model:Property ;
+        rdfs:label  "ftHg" , "foot of mercury" .
+
+<eclass.eu/#D52>  rdf:type  model:Property ;
+        rdfs:label  "W/K" , "watt per kelvin" .
+
+<eclass.eu/#K71>  rdf:type  model:Property ;
+        rdfs:label  "lb/gal (UK)" , "pound (avoirdupois) per gallon (UK)" .
+
+<eclass.eu/#ANN>  rdf:type  model:Property ;
+        rdfs:label  "y" , "year (365 days)" , "year" .
+
+<eclass.eu/#F27>  rdf:type  model:Property ;
+        rdfs:label  "g/h" , "gram per hour" .
+
+<eclass.eu/#M5>  rdf:type  model:Property ;
+        rdfs:label  "µCi" , "microcurie" .
+
+<eclass.eu/#A29>  rdf:type  model:Property ;
+        rdfs:label  "C/m³" , "coulomb per cubic metre" .
+
+<eclass.eu/#F73>  rdf:type  model:Property ;
+        rdfs:label  "(mg/s)/bar" , "milligram per second bar" .
+
+<eclass.eu/#D20>  rdf:type  model:Property ;
+        rdfs:label  "m²/J" , "square metre per joule" .
+
+<eclass.eu/#H48>  rdf:type  model:Property ;
+        rdfs:label  "aF" , "attofarad" .
+
+<eclass.eu/#M14>  rdf:type  model:Property ;
+        rdfs:label  "yd³/psi" , "cubic yard per psi" .
+
+<eclass.eu/#H94>  rdf:type  model:Property ;
+        rdfs:label  "%/1000" , "percent per thousand" .
+
+<eclass.eu/#F41>  rdf:type  model:Property ;
+        rdfs:label  "(kg/min)/K" , "kilogram per minute kelvin" .
+
+<eclass.eu/#C96>  rdf:type  model:Property ;
+        rdfs:label  "Pa⁻¹" , "reciprocal pascal or pascal to the power minus one" .
+
+<eclass.eu/#FP>  rdf:type  model:Property ;
+        rdfs:label  "lb/ft²" , "pound per square foot" .
+
+<eclass.eu/#H62>  rdf:type  model:Property ;
+        rdfs:label  "mV/min" , "millivolt per minute" .
+
+<eclass.eu/#C18>  rdf:type  model:Property ;
+        rdfs:label  "mmol" , "millimole" .
+
+<eclass.eu/#KL>  rdf:type  model:Property ;
+        rdfs:label  "kg/m" , "kilogram per metre" .
+
+<eclass.eu/#C64>  rdf:type  model:Property ;
+        rdfs:label  "Pa/K" , "pascal per kelvin" .
+
+<eclass.eu/#A11>  rdf:type  model:Property ;
+        rdfs:label  "Å" , "angstrom" .
+
+<eclass.eu/#E39>  rdf:type  model:Property ;
+        rdfs:label  "dpi" , "dots per inch" .
+
+<eclass.eu/#H30>  rdf:type  model:Property ;
+        rdfs:label  "µm²" , "micrometre squared" .
+
+<eclass.eu/#L58>  rdf:type  model:Property ;
+        rdfs:label  "pt (US liq.)/h" , "pint (US liquid) per hour" .
+
+<eclass.eu/#E85>  rdf:type  model:Property ;
+        rdfs:label  "Tibit/m" , "tebibit per metre" .
+
+<eclass.eu/#HJ>  rdf:type  model:Property ;
+        rdfs:label  "metric hp" , "metric horse power" .
+
+<eclass.eu/#C32>  rdf:type  model:Property ;
+        rdfs:label  "mW/m²" , "milliwatt per square metre" .
+
+<eclass.eu/#L26>  rdf:type  model:Property ;
+        rdfs:label  "(mol/l)/K" , "mole per litre kelvin" .
+
+<eclass.eu/#L72>  rdf:type  model:Property ;
+        rdfs:label  "(t/d)/K" , "tonne per day kelvin" .
+
+<eclass.eu/#G28>  rdf:type  model:Property ;
+        rdfs:label  "l/K" , "litre per kelvin" .
+
+<eclass.eu/#G74>  rdf:type  model:Property ;
+        rdfs:label  "(ml/h)/K" , "millilitre per hour kelvin" .
+
+<eclass.eu/#L40>  rdf:type  model:Property ;
+        rdfs:label  "ozf" , "ounce (avoirdupois)-force" .
+
+<eclass.eu/#B76>  rdf:type  model:Property ;
+        rdfs:label  "MΩ·m" , "megaohm metre" .
+
+<eclass.eu/#GB>  rdf:type  model:Property ;
+        rdfs:label  "gal (US liq.)/d" , "gallon (US) per day" .
+
+<eclass.eu/#G42>  rdf:type  model:Property ;
+        rdfs:label  "µS/cm" , "microsiemens per centimetre" .
+
+<eclass.eu/#2J>  rdf:type  model:Property ;
+        rdfs:label  "cm³/s" , "cubic centimetre per second" .
+
+<eclass.eu/#B44>  rdf:type  model:Property ;
+        rdfs:label  "kJ/mol" , "kilojoule per mole" .
+
+<eclass.eu/#D19>  rdf:type  model:Property ;
+        rdfs:label  "m²·K/W" , "square metre kelvin per watt" .
+
+<eclass.eu/#G10>  rdf:type  model:Property ;
+        rdfs:label  "St/K" , "stokes per kelvin" .
+
+<eclass.eu/#K38>  rdf:type  model:Property ;
+        rdfs:label  "gi (US)/min" , "gill (US) per minute" .
+
+<eclass.eu/#B90>  rdf:type  model:Property ;
+        rdfs:label  "µH" , "microhenry" .
+
+<eclass.eu/#HLT>  rdf:type  model:Property ;
+        rdfs:label  "hl" , "hectolitre" .
+
+<eclass.eu/#FTK>  rdf:type  model:Property ;
+        rdfs:label  "ft²" , "square foot" .
+
+<eclass.eu/#B12>  rdf:type  model:Property ;
+        rdfs:label  "J/m" , "joule per metre" .
+
+<eclass.eu/#K84>  rdf:type  model:Property ;
+        rdfs:label  "lb/yd³" , "pound per cubic yard" .
+
+<eclass.eu/#ATM>  rdf:type  model:Property ;
+        rdfs:label  "atm" , "standard atmosphere" .
+
+<eclass.eu/#F86>  rdf:type  model:Property ;
+        rdfs:label  "P/K" , "poise per kelvin" .
+
+<eclass.eu/#D33>  rdf:type  model:Property ;
+        rdfs:label  "T" , "tesla" .
+
+<eclass.eu/#S4>  rdf:type  model:Property ;
+        rdfs:label  "m²/s" , "square metre per second" .
+
+<eclass.eu/#F08>  rdf:type  model:Property ;
+        rdfs:label  "mA/in" , "milliampere per inch" .
+
+<eclass.eu/#A88>  rdf:type  model:Property ;
+        rdfs:label  "GΩ·m" , "gigaohm metre" .
+
+<eclass.eu/#F54>  rdf:type  model:Property ;
+        rdfs:label  "mΩ/m" , "milliohm per metre" .
+
+<eclass.eu/#C8>  rdf:type  model:Property ;
+        rdfs:label  "mC/kg" , "millicoulomb per kilogram" .
+
+<eclass.eu/#H29>  rdf:type  model:Property ;
+        rdfs:label  "µg/l" , "microgram per litre" .
+
+<eclass.eu/#P2>  rdf:type  model:Property ;
+        rdfs:label  "lb/ft" , "pound per foot" .
+
+<eclass.eu/#K20>  rdf:type  model:Property ;
+        rdfs:label  "1/ft³" , "reciprocal cubic foot" .
+
+<eclass.eu/#A56>  rdf:type  model:Property ;
+        rdfs:label  "eV·m²/kg" , "electronvolt square metre per kilogram" .
+
+<eclass.eu/#H75>  rdf:type  model:Property ;
+        rdfs:label  "daPa" , "decapascal" .
+
+<eclass.eu/#WEB>  rdf:type  model:Property ;
+        rdfs:label  "Wb" , "weber" .
+
+<eclass.eu/#F22>  rdf:type  model:Property ;
+        rdfs:label  "lbf·ft/A" , "pound-force foot per ampere" .
+
+<eclass.eu/#A24>  rdf:type  model:Property ;
+        rdfs:label  "cd/m²" , "candela per square metre" .
+
+<eclass.eu/#J96>  rdf:type  model:Property ;
+        rdfs:label  "fl oz (UK)/h" , "ounce (UK fluid) per hour" .
+
+<eclass.eu/#H43>  rdf:type  model:Property ;
+        rdfs:label  "S/cm" , "siemens per centimetre" .
+
+<eclass.eu/#J18>  rdf:type  model:Property ;
+        rdfs:label  "°Bx" , "degree Brix" .
+
+<eclass.eu/#E98>  rdf:type  model:Property ;
+        rdfs:label  "°C/K" , "degree celsius per kelvin" .
+
+<eclass.eu/#C45>  rdf:type  model:Property ;
+        rdfs:label  "nm" , "nanometre" .
+
+<eclass.eu/#4U>  rdf:type  model:Property ;
+        rdfs:label  "lb/h" , "pound per hour" .
+
+<eclass.eu/#J64>  rdf:type  model:Property ;
+        rdfs:label  "bu (UK)/d" , "bushel (UK) per day" .
+
+<eclass.eu/#H11>  rdf:type  model:Property ;
+        rdfs:label  "1/mo" , "reciprocal month" .
+
+<eclass.eu/#L39>  rdf:type  model:Property ;
+        rdfs:label  "oz/in³" , "ounce (avoirdupois) per cubic inch" .
+
+<eclass.eu/#C91>  rdf:type  model:Property ;
+        rdfs:label  "1/K" , "reciprocal kelvin or kelvin to the power minus one" .
+
+<eclass.eu/#E66>  rdf:type  model:Property ;
+        rdfs:label  "Eibit/m²" , "exbibit per square metre" .
+
+<eclass.eu/#L85>  rdf:type  model:Property ;
+        rdfs:label  "ton (UK)/d" , "ton long per day" .
+
+<eclass.eu/#C13>  rdf:type  model:Property ;
+        rdfs:label  "mGy" , "milligray" .
+
+<eclass.eu/#KVT>  rdf:type  model:Property ;
+        rdfs:label  "kV" , "kilovolt" .
+
+<eclass.eu/#J32>  rdf:type  model:Property ;
+        rdfs:label  "µP" , "micropoise" .
+
+<eclass.eu/#G87>  rdf:type  model:Property ;
+        rdfs:label  "(m³/h)/bar" , "cubic metre per hour bar" .
+
+<eclass.eu/#E34>  rdf:type  model:Property ;
+        rdfs:label  "Gbyte" , "gigabyte" .
+
+<eclass.eu/#L53>  rdf:type  model:Property ;
+        rdfs:label  "pt (UK)/d" , "pint (UK) per day" .
+
+<eclass.eu/#G09>  rdf:type  model:Property ;
+        rdfs:label  "(m²/s)/K" , "square metre per second kelvin" .
+
+<eclass.eu/#B89>  rdf:type  model:Property ;
+        rdfs:label  "µF/m" , "microfarad per metre" .
+
+<eclass.eu/#E80>  rdf:type  model:Property ;
+        rdfs:label  "Pibit/m" , "pebibit per metre" .
+
+<eclass.eu/#BQL>  rdf:type  model:Property ;
+        rdfs:label  "Bq" , "becquerel" .
+
+<eclass.eu/#G55>  rdf:type  model:Property ;
+        rdfs:label  "ml/h" , "millilitre per hour" .
+
+<eclass.eu/#L21>  rdf:type  model:Property ;
+        rdfs:label  "mm³/m³" , "cubic millimetre per cubic metre" .
+
+<eclass.eu/#G23>  rdf:type  model:Property ;
+        rdfs:label  "pk (US)" , "peck" .
+
+<eclass.eu/#B25>  rdf:type  model:Property ;
+        rdfs:label  "kBq/kg" , "kilobecquerel per kilogram" .
+
+<eclass.eu/#K97>  rdf:type  model:Property ;
+        rdfs:label  "qt (UK liq.)/s" , "quart (UK liquid) per second" .
+
+<eclass.eu/#B71>  rdf:type  model:Property ;
+        rdfs:label  "MeV" , "megaelectronvolt" .
+
+<eclass.eu/#F99>  rdf:type  model:Property ;
+        rdfs:label  "Pa·l/s" , "pascal litre per second" .
+
+<eclass.eu/#D46>  rdf:type  model:Property ;
+        rdfs:label  "V·A" , "volt - ampere" .
+
+<eclass.eu/#K65>  rdf:type  model:Property ;
+        rdfs:label  "lb·ft²" , "pound (avoirdupois) square foot" .
+
+<eclass.eu/#MTK>  rdf:type  model:Property ;
+        rdfs:label  "m²" , "square metre" .
+
+<eclass.eu/#F67>  rdf:type  model:Property ;
+        rdfs:label  "(kg/h)/bar" , "kilogram per hour bar" .
+
+<eclass.eu/#PT>  rdf:type  model:Property ;
+        rdfs:label  "pt (US liq.)" , "pint (US)" .
+
+<eclass.eu/#K33>  rdf:type  model:Property ;
+        rdfs:label  "gi (UK)/h" , "gill (UK) per hour" .
+
+<eclass.eu/#A69>  rdf:type  model:Property ;
+        rdfs:label  "F/m" , "farad per metre" .
+
+<eclass.eu/#F35>  rdf:type  model:Property ;
+        rdfs:label  "(g/d)/K" , "gram per day kelvin" .
+
+<eclass.eu/#MAM>  rdf:type  model:Property ;
+        rdfs:label  "Mm" , "megametre" .
+
+<eclass.eu/#F81>  rdf:type  model:Property ;
+        rdfs:label  "bar/K" , "bar per kelvin" .
+
+<eclass.eu/#A37>  rdf:type  model:Property ;
+        rdfs:label  "dm³/mol" , "cubic decimetre per mole" .
+
+<eclass.eu/#H56>  rdf:type  model:Property ;
+        rdfs:label  "kg/(m²·s)" , "kilogram per square metre second" .
+
+<eclass.eu/#F03>  rdf:type  model:Property ;
+        rdfs:label  "kPa/bar" , "kilopascal per bar" .
+
+<eclass.eu/#M22>  rdf:type  model:Property ;
+        rdfs:label  "(ml/min)/cm²" , "millilitre per square centimetre minute" .
+
+<eclass.eu/#C58>  rdf:type  model:Property ;
+        rdfs:label  "N·s/m" , "newton second per metre" .
+
+<eclass.eu/#FAH>  rdf:type  model:Property ;
+        rdfs:label  "°F" , "degree Fahrenheit" .
+
+<eclass.eu/#C3>  rdf:type  model:Property ;
+        rdfs:label  "µV/m" , "microvolt per metre" .
+
+<eclass.eu/#LUM>  rdf:type  model:Property ;
+        rdfs:label  "lm" , "lumen" .
+
+<eclass.eu/#H24>  rdf:type  model:Property ;
+        rdfs:label  "V/µs" , "volt per microsecond" .
+
+<eclass.eu/#MPA>  rdf:type  model:Property ;
+        rdfs:label  "MPa" , "megapascal" .
+
+<eclass.eu/#E79>  rdf:type  model:Property ;
+        rdfs:label  "Pbit/s" , "petabit per second" .
+
+<eclass.eu/#H70>  rdf:type  model:Property ;
+        rdfs:label  "ps" , "picosecond" .
+
+<eclass.eu/#C26>  rdf:type  model:Property ;
+        rdfs:label  "ms" , "millisecond" .
+
+<eclass.eu/#L98>  rdf:type  model:Property ;
+        rdfs:label  "yd/°F" , "yard per degree Fahrenheit" .
+
+<eclass.eu/#C72>  rdf:type  model:Property ;
+        rdfs:label  "pF/m" , "picofarad per metre" .
+
+<eclass.eu/#J91>  rdf:type  model:Property ;
+        rdfs:label  "dm³/m³" , "m³/m³" , "cubic decimetre per cubic metre" .
+
+<eclass.eu/#GRM>  rdf:type  model:Property ;
+        rdfs:label  "g" , "gram" .
+
+<eclass.eu/#L66>  rdf:type  model:Property ;
+        rdfs:label  "slug/h" , "slug per hour" .
+
+<eclass.eu/#J13>  rdf:type  model:Property ;
+        rdfs:label  "°API" , "degree API" .
+
+<eclass.eu/#E93>  rdf:type  model:Property ;
+        rdfs:label  "kg/h" , "kilogram per hour" .
+
+<eclass.eu/#C40>  rdf:type  model:Property ;
+        rdfs:label  "nC" , "nanocoulomb" .
+
+<eclass.eu/#G68>  rdf:type  model:Property ;
+        rdfs:label  "(l/s)/K" , "litre per second kelvin" .
+
+<eclass.eu/#4P>  rdf:type  model:Property ;
+        rdfs:label  "N/m" , "newton per metre" .
+
+<eclass.eu/#GBQ>  rdf:type  model:Property ;
+        rdfs:label  "GBq" , "gigabecquerel" .
+
+<eclass.eu/#L34>  rdf:type  model:Property ;
+        rdfs:label  "oz/h" , "ounce (avoirdupois) per hour" .
+
+<eclass.eu/#E61>  rdf:type  model:Property ;
+        rdfs:label  "Tibyte" , "tebibyte" .
+
+<eclass.eu/#L80>  rdf:type  model:Property ;
+        rdfs:label  "(t/min)/bar" , "tonne per minute bar" .
+
+<eclass.eu/#G36>  rdf:type  model:Property ;
+        rdfs:label  "(g/m³)/K" , "gram per cubic metre kelvin" .
+
+<eclass.eu/#GLI>  rdf:type  model:Property ;
+        rdfs:label  "gal (UK)" , "gallon (UK)" .
+
+<eclass.eu/#B38>  rdf:type  model:Property ;
+        rdfs:label  "kgf·m" , "kilogram-force metre" .
+
+<eclass.eu/#G82>  rdf:type  model:Property ;
+        rdfs:label  "(l/d)/bar" , "litre per day bar" .
+
+<eclass.eu/#G04>  rdf:type  model:Property ;
+        rdfs:label  "cm/bar" , "centimetre per bar" .
+
+<eclass.eu/#B84>  rdf:type  model:Property ;
+        rdfs:label  "µA" , "microampere" .
+
+<eclass.eu/#N23>  rdf:type  model:Property ;
+        rdfs:label  "mH₂O" , "conventional metre of water" .
+
+<eclass.eu/#D59>  rdf:type  model:Property ;
+        rdfs:label  "Wb/m" , "weber per metre" .
+
+<eclass.eu/#K78>  rdf:type  model:Property ;
+        rdfs:label  "lb/min" , "pound (avoirdupois) per minute" .
+
+<eclass.eu/#G50>  rdf:type  model:Property ;
+        rdfs:label  "gal (US liq.)/h" , "gallon per hour" .
+
+<eclass.eu/#3H>  rdf:type  model:Property ;
+        rdfs:label  "kg/kg" , "kilogram per kilogram of product" .
+
+<eclass.eu/#B52>  rdf:type  model:Property ;
+        rdfs:label  "ks" , "kilosecond" .
+
+<eclass.eu/#D27>  rdf:type  model:Property ;
+        rdfs:label  "sr" , "steradian" .
+
+<eclass.eu/#K46>  rdf:type  model:Property ;
+        rdfs:label  "in/psi" , "inch per psi" .
+
+<eclass.eu/#VLT>  rdf:type  model:Property ;
+        rdfs:label  "V" , "volt" .
+
+<eclass.eu/#CUR>  rdf:type  model:Property ;
+        rdfs:label  "Ci" , "curie" .
+
+<eclass.eu/#D73>  rdf:type  model:Property ;
+        rdfs:label  "J·m²" , "joule square metre" .
+
+<eclass.eu/#K92>  rdf:type  model:Property ;
+        rdfs:label  "lbf·s/in²" , "pound-force second per square inch" .
+
+<eclass.eu/#B20>  rdf:type  model:Property ;
+        rdfs:label  "J·m²/kg" , "joule square metre per kilogram" .
+
+<eclass.eu/#F48>  rdf:type  model:Property ;
+        rdfs:label  "lbf/in" , "pound-force per inch" .
+
+<eclass.eu/#MWH>  rdf:type  model:Property ;
+        rdfs:label  "MW·h" , "megawatt hour" .
+
+<eclass.eu/#CMT>  rdf:type  model:Property ;
+        rdfs:label  "cm" , "centimetre" .
+
+<eclass.eu/#NU>  rdf:type  model:Property ;
+        rdfs:label  "N·m" , "newton metre" .
+
+<eclass.eu/#K14>  rdf:type  model:Property ;
+        rdfs:label  "ft/h" , "foot per hour" .
+
+<eclass.eu/#F94>  rdf:type  model:Property ;
+        rdfs:label  "hPa·m³/s" , "hektopascal cubic metre per second" .
+
+<eclass.eu/#D41>  rdf:type  model:Property ;
+        rdfs:label  "t/m³" , "tonne per cubic metre" .
+
+<eclass.eu/#H69>  rdf:type  model:Property ;
+        rdfs:label  "pPa/km" , "picopascal per kilometre" .
+
+<eclass.eu/#K60>  rdf:type  model:Property ;
+        rdfs:label  "(kmol/m³)/bar" , "kilomole per cubic metre bar" .
+
+<eclass.eu/#F16>  rdf:type  model:Property ;
+        rdfs:label  "mg/K" , "milligram per kelvin" .
+
+<eclass.eu/#A96>  rdf:type  model:Property ;
+        rdfs:label  "Gy/s" , "gray per second" .
+
+<eclass.eu/#F62>  rdf:type  model:Property ;
+        rdfs:label  "(g/d)/bar" , "gram per day bar" .
+
+<eclass.eu/#A18>  rdf:type  model:Property ;
+        rdfs:label  "Bq/kg" , "becquerel per kilogram" .
+
+<eclass.eu/#D6>  rdf:type  model:Property ;
+        rdfs:label  "R/s" , "röntgen per second" .
+
+<eclass.eu/#H37>  rdf:type  model:Property ;
+        rdfs:label  "MΩ/m" , "megaohm per metre" .
+
+<eclass.eu/#C39>  rdf:type  model:Property ;
+        rdfs:label  "nA" , "nanoampere" .
+
+<eclass.eu/#H83>  rdf:type  model:Property ;
+        rdfs:label  "l/kg" , "litre per kilogram" .
+
+<eclass.eu/#F30>  rdf:type  model:Property ;
+        rdfs:label  "kg/d" , "kilogram per day" .
+
+<eclass.eu/#J58>  rdf:type  model:Property ;
+        rdfs:label  "bbl (UK liq.)/min" , "barrel (UK petroleum) per minute" .
+
+<eclass.eu/#H05>  rdf:type  model:Property ;
+        rdfs:label  "mH/kΩ" , "millihenry per kiloohm" .
+
+<eclass.eu/#H51>  rdf:type  model:Property ;
+        rdfs:label  "dB/km" , "decibel per kilometre" .
+
+<eclass.eu/#L79>  rdf:type  model:Property ;
+        rdfs:label  "(t/min)/K" , "tonne per minute kelvin" .
+
+<eclass.eu/#C53>  rdf:type  model:Property ;
+        rdfs:label  "N·m·s" , "newton metre second" .
+
+<eclass.eu/#J72>  rdf:type  model:Property ;
+        rdfs:label  "cN·m" , "centinewton metre" .
+
+<eclass.eu/#E74>  rdf:type  model:Property ;
+        rdfs:label  "Kibit/m³" , "kibibit per cubic metre" .
+
+<eclass.eu/#L93>  rdf:type  model:Property ;
+        rdfs:label  "ton.s/yd³ (US)" , "ton (US short) per cubic yard" .
+
+<eclass.eu/#G49>  rdf:type  model:Property ;
+        rdfs:label  "cm³/min" , "cubic centimetre per minute" .
+
+<eclass.eu/#2Q>  rdf:type  model:Property ;
+        rdfs:label  "kBq" , "kilobecquerel" .
+
+<eclass.eu/#J40>  rdf:type  model:Property ;
+        rdfs:label  "BtuIT·ft/(h·ft²·°F)" , "British thermal unit (international table) foot per hour square foot degree Fahrenheit" .
+
+<eclass.eu/#L15>  rdf:type  model:Property ;
+        rdfs:label  "mPa·s/K" , "millipascal second per kelvin" .
+
+<eclass.eu/#G95>  rdf:type  model:Property ;
+        rdfs:label  "l/bar" , "litre per bar" .
+
+<eclass.eu/#E42>  rdf:type  model:Property ;
+        rdfs:label  "kgf/cm²" , "kilogram-force per square centimetre" .
+
+<eclass.eu/#G17>  rdf:type  model:Property ;
+        rdfs:label  "(kg/l)/bar" , "kilogram per litre bar" .
+
+<eclass.eu/#B97>  rdf:type  model:Property ;
+        rdfs:label  "µrad" , "microradian" .
+
+<eclass.eu/#ONZ>  rdf:type  model:Property ;
+        rdfs:label  "oz" , "ounce" .
+
+<eclass.eu/#G63>  rdf:type  model:Property ;
+        rdfs:label  "(cm³/min)/K" , "cubic centimetre per minute kelvin" .
+
+<eclass.eu/#4K>  rdf:type  model:Property ;
+        rdfs:label  "mA" , "milliampere" .
+
+<eclass.eu/#AE>  rdf:type  model:Property ;
+        rdfs:label  "A/m" , "ampere per metre" .
+
+<eclass.eu/#SIE>  rdf:type  model:Property ;
+        rdfs:label  "S" , "siemens" .
+
+<eclass.eu/#ATT>  rdf:type  model:Property ;
+        rdfs:label  "at" , "technical atmosphere" .
+
+<eclass.eu/#G31>  rdf:type  model:Property ;
+        rdfs:label  "kg/cm³" , "kilogram per cubic centimetre" .
+
+<eclass.eu/#K59>  rdf:type  model:Property ;
+        rdfs:label  "(kmol/m³)/K" , "kilomole per cubic metre kelvin" .
+
+<eclass.eu/#D86>  rdf:type  model:Property ;
+        rdfs:label  "mC" , "millicoulomb" .
+
+<eclass.eu/#B33>  rdf:type  model:Property ;
+        rdfs:label  "kg·m²/s" , "kilogram metre squared per second" .
+
+<eclass.eu/#K27>  rdf:type  model:Property ;
+        rdfs:label  "gal (UK)/h" , "gallon (UK) per hour" .
+
+<eclass.eu/#D54>  rdf:type  model:Property ;
+        rdfs:label  "W/m²" , "watt per square metre" .
+
+<eclass.eu/#K73>  rdf:type  model:Property ;
+        rdfs:label  "(lb/h)/°F" , "pound (avoirdupois) per hour degree Fahrenheit" .
+
+<eclass.eu/#F29>  rdf:type  model:Property ;
+        rdfs:label  "g/s" , "gram per second" .
+
+<eclass.eu/#M7>  rdf:type  model:Property ;
+        rdfs:label  "microinch" , "micro-inch" .
+
+<eclass.eu/#F75>  rdf:type  model:Property ;
+        rdfs:label  "mg/bar" , "milligram per bar" .
+
+<eclass.eu/#MMK>  rdf:type  model:Property ;
+        rdfs:label  "mm²" , "square millimetre" .
+
+<eclass.eu/#D22>  rdf:type  model:Property ;
+        rdfs:label  "m²/mol" , "square metre per mole" .
+
+<eclass.eu/#K41>  rdf:type  model:Property ;
+        rdfs:label  "gr/gal (US)" , "grain per gallon (US)" .
+
+<eclass.eu/#M16>  rdf:type  model:Property ;
+        rdfs:label  "yd³/s" , "cubic yard per second" .
+
+<eclass.eu/#H96>  rdf:type  model:Property ;
+        rdfs:label  "%/bar" , "percent per bar" .
+
+<eclass.eu/#F43>  rdf:type  model:Property ;
+        rdfs:label  "(mg/d)/K" , "milligram per day kelvin" .
+
+<eclass.eu/#C98>  rdf:type  model:Property ;
+        rdfs:label  "s⁻¹/m³" , "reciprocal second per cubic metre" .
+
+<eclass.eu/#FR>  rdf:type  model:Property ;
+        rdfs:label  "ft/min" , "foot per minute" .
+
+<eclass.eu/#G3>  rdf:type  model:Property ;
+        rdfs:label  "gal (UK)/min" , "Imperial gallon per minute" .
+
+<eclass.eu/#H64>  rdf:type  model:Property ;
+        rdfs:label  "mg/g" , "milligram per gram" .
+
+<eclass.eu/#AMH>  rdf:type  model:Property ;
+        rdfs:label  "A·h" , "ampere hour" .
+
+<eclass.eu/#F11>  rdf:type  model:Property ;
+        rdfs:label  "K/min" , "kelvin per minute" .
+
+<eclass.eu/#A91>  rdf:type  model:Property ;
+        rdfs:label  "gon" .
+
+<eclass.eu/#C66>  rdf:type  model:Property ;
+        rdfs:label  "Pa·s/m³" , "pascal second per cubic metre" .
+
+<eclass.eu/#77>  rdf:type  model:Property ;
+        rdfs:label  "mil" , "milli-inch" .
+
+<eclass.eu/#D1>  rdf:type  model:Property ;
+        rdfs:label  "s⁻¹/sr" , "reciprocal second per steradian" .
+
+<eclass.eu/#H32>  rdf:type  model:Property ;
+        rdfs:label  "A²·s" , "ampere squared second" .
+
+<eclass.eu/#E87>  rdf:type  model:Property ;
+        rdfs:label  "Tibit/m²" , "tebibit per square metre" .
+
+<eclass.eu/#C34>  rdf:type  model:Property ;
+        rdfs:label  "mol" , "mole" .
+
+<eclass.eu/#E09>  rdf:type  model:Property ;
+        rdfs:label  "mA·h" , "milliampere hour" .
+
+<eclass.eu/#L28>  rdf:type  model:Property ;
+        rdfs:label  "(mol/m³)/K" , "mole per cubic metre kelvin" .
+
+<eclass.eu/#91>  rdf:type  model:Property ;
+        rdfs:label  "St" , "stokes" .
+
+<eclass.eu/#L74>  rdf:type  model:Property ;
+        rdfs:label  "(t/h)/K" , "tonne per hour kelvin" .
+
+<eclass.eu/#J21>  rdf:type  model:Property ;
+        rdfs:label  "°F/bar" , "degree Fahrenheit per bar" .
+
+<eclass.eu/#G76>  rdf:type  model:Property ;
+        rdfs:label  "(ml/s)/K" , "millilitre per second kelvin" .
+
+<eclass.eu/#L42>  rdf:type  model:Property ;
+        rdfs:label  "pS/m" , "picosiemens per metre" .
+
+<eclass.eu/#B78>  rdf:type  model:Property ;
+        rdfs:label  "MV" , "megavolt" .
+
+<eclass.eu/#G44>  rdf:type  model:Property ;
+        rdfs:label  "nS/cm" , "nanosiemens per centimetre" .
+
+<eclass.eu/#2L>  rdf:type  model:Property ;
+        rdfs:label  "ft³/min" , "cubic foot per minute" .
+
+<eclass.eu/#MTR>  rdf:type  model:Property ;
+        rdfs:label  "m" , "metre" .
+
+<eclass.eu/#L10>  rdf:type  model:Property ;
+        rdfs:label  "qt (US liq.)/min" , "quart (US liquid) per minute" .
+
+<eclass.eu/#PTI>  rdf:type  model:Property ;
+        rdfs:label  "pt (UK)" , "pint (UK)" .
+
+<eclass.eu/#B46>  rdf:type  model:Property ;
+        rdfs:label  "kmol/m³" , "kilomole per cubic metre" .
+
+<eclass.eu/#G90>  rdf:type  model:Property ;
+        rdfs:label  "(ml/d)/bar" , "millilitre per day bar" .
+
+<eclass.eu/#MLT>  rdf:type  model:Property ;
+        rdfs:label  "ml" , "millilitre" .
+
+<eclass.eu/#G12>  rdf:type  model:Property ;
+        rdfs:label  "(g/dm³)/bar" , "gram per cubic decimetre bar" .
+
+<eclass.eu/#B92>  rdf:type  model:Property ;
+        rdfs:label  "µN" , "micronewton" .
+
+<eclass.eu/#B14>  rdf:type  model:Property ;
+        rdfs:label  "J/m⁴" , "joule per metre to the fourth power" .
+
+<eclass.eu/#K86>  rdf:type  model:Property ;
+        rdfs:label  "psi/°F" , "pound-force per square inch degree Fahrenheit" .
+
+<eclass.eu/#B60>  rdf:type  model:Property ;
+        rdfs:label  "lm/m²" , "lumen per square metre" .
+
+<eclass.eu/#F88>  rdf:type  model:Property ;
+        rdfs:label  "N·cm" , "newton centimetre" .
+
+<eclass.eu/#D81>  rdf:type  model:Property ;
+        rdfs:label  "µT" , "microtesla" .
+
+<eclass.eu/#F56>  rdf:type  model:Property ;
+        rdfs:label  "Ω/km" , "ohm per kilometre" .
+
+<eclass.eu/#K22>  rdf:type  model:Property ;
+        rdfs:label  "ft³/d" , "cubic foot per day" .
+
+<eclass.eu/#F24>  rdf:type  model:Property ;
+        rdfs:label  "kg/kmol" , "kilogram per kilomol" .
+
+<eclass.eu/#KPA>  rdf:type  model:Property ;
+        rdfs:label  "kPa" , "kilopascal" .
+
+<eclass.eu/#F70>  rdf:type  model:Property ;
+        rdfs:label  "(mg/d)/bar" , "milligram per day bar" .
+
+<eclass.eu/#A26>  rdf:type  model:Property ;
+        rdfs:label  "C·m" , "coulomb metre" .
+
+<eclass.eu/#J98>  rdf:type  model:Property ;
+        rdfs:label  "fl oz (UK)/s" , "ounce (UK fluid) per second" .
+
+<eclass.eu/#H45>  rdf:type  model:Property ;
+        rdfs:label  "V·s/m" , "volt second per metre" .
+
+<eclass.eu/#M11>  rdf:type  model:Property ;
+        rdfs:label  "yd³/°F" , "cubic yard per degree Fahrenheit" .
+
+<eclass.eu/#H91>  rdf:type  model:Property ;
+        rdfs:label  "%/10000" , "percent per ten thousand" .
+
+<eclass.eu/#C47>  rdf:type  model:Property ;
+        rdfs:label  "ns" , "nanosecond" .
+
+<eclass.eu/#4W>  rdf:type  model:Property ;
+        rdfs:label  "ton.s (US)/h" , "ton (US) per hour" .
+
+<eclass.eu/#J66>  rdf:type  model:Property ;
+        rdfs:label  "bu (UK)/min" , "bushel (UK) per minute" .
+
+<eclass.eu/#H13>  rdf:type  model:Property ;
+        rdfs:label  "°C/min" , "degree Celsius per minute" .
+
+<eclass.eu/#C93>  rdf:type  model:Property ;
+        rdfs:label  "m⁻²" , "reciprocal metre squared" .
+
+<eclass.eu/#CEL>  rdf:type  model:Property ;
+        rdfs:label  "°C" , "degree Celsius" .
+
+<eclass.eu/#A40>  rdf:type  model:Property ;
+        rdfs:label  "m³/mol" , "cubic metre per mole" .
+
+<eclass.eu/#E68>  rdf:type  model:Property ;
+        rdfs:label  "Gbyte/s" , "gigabyte per second" .
+
+<eclass.eu/#C15>  rdf:type  model:Property ;
+        rdfs:label  "mJ" , "millijoule" .
+
+<eclass.eu/#L87>  rdf:type  model:Property ;
+        rdfs:label  "ton (US)/°F" , "ton short per degree Fahrenheit" .
+
+<eclass.eu/#J34>  rdf:type  model:Property ;
+        rdfs:label  "(µg/m³)/K" , "microgram per cubic metre kelvin" .
+
+<eclass.eu/#C61>  rdf:type  model:Property ;
+        rdfs:label  "Ω·m" , "ohm metre" .
+
+<eclass.eu/#G89>  rdf:type  model:Property ;
+        rdfs:label  "(m³/s)/bar" , "cubic metre per second bar" .
+
+<eclass.eu/#L55>  rdf:type  model:Property ;
+        rdfs:label  "pt (UK)/min" , "pint (UK) per minute" .
+
+<eclass.eu/#INQ>  rdf:type  model:Property ;
+        rdfs:label  "in³" , "cubic inch" .
+
+<eclass.eu/#E82>  rdf:type  model:Property ;
+        rdfs:label  "Pibit/m³" , "pebibit per cubic metre" .
+
+<eclass.eu/#UA>  rdf:type  model:Property ;
+        rdfs:label  "Torr" , "torr" .
+
+<eclass.eu/#DAY>  rdf:type  model:Property ;
+        rdfs:label  "d" , "day" .
+
+<eclass.eu/#G57>  rdf:type  model:Property ;
+        rdfs:label  "in³/min" , "cubic inch per minute" .
+
+<eclass.eu/#40>  rdf:type  model:Property ;
+        rdfs:label  "ml/s" , "millilitre per second" .
+
+<eclass.eu/#MC>  rdf:type  model:Property ;
+        rdfs:label  "µg" , "microgram" .
+
+<eclass.eu/#B59>  rdf:type  model:Property ;
+        rdfs:label  "lm·h" , "lumen hour" .
+
+<eclass.eu/#BAR>  rdf:type  model:Property ;
+        rdfs:label  "bar" .
+
+<eclass.eu/#G25>  rdf:type  model:Property ;
+        rdfs:label  "teaspoon (US)" , "teaspoon" .
+
+<eclass.eu/#G71>  rdf:type  model:Property ;
+        rdfs:label  "(m³/min)/K" , "cubic metre per minute kelvin" .
+
+<eclass.eu/#B27>  rdf:type  model:Property ;
+        rdfs:label  "kC/m³" , "kilocoulomb per cubic metre" .
+
+<eclass.eu/#K99>  rdf:type  model:Property ;
+        rdfs:label  "qt (US liq.)/h" , "quart (US liquid) per hour" .
+
+<eclass.eu/#B73>  rdf:type  model:Property ;
+        rdfs:label  "MN" , "meganewton" .
+
+<eclass.eu/#KWH>  rdf:type  model:Property ;
+        rdfs:label  "kW·h" , "kilowatt hour" .
+
+<eclass.eu/#K67>  rdf:type  model:Property ;
+        rdfs:label  "lb/(ft·h)" , "pound per foot hour" .
+
+<eclass.eu/#DMK>  rdf:type  model:Property ;
+        rdfs:label  "dm²" , "square decimetre" .
+
+<eclass.eu/#PTD>  rdf:type  model:Property ;
+        rdfs:label  "pt (US dry)" , "dry pint (US)" .
+
+<eclass.eu/#B41>  rdf:type  model:Property ;
+        rdfs:label  "kJ/K" , "kilojoule per kelvin" .
+
+<eclass.eu/#F69>  rdf:type  model:Property ;
+        rdfs:label  "(kg/s)/bar" , "kilogram per second bar" .
+
+<eclass.eu/#COU>  rdf:type  model:Property ;
+        rdfs:label  "C" , "coulomb" .
+
+<eclass.eu/#K35>  rdf:type  model:Property ;
+        rdfs:label  "gi (UK)/s" , "gill (UK) per second" .
+
+<eclass.eu/#D62>  rdf:type  model:Property ;
+        rdfs:label  "″" , "second [unit of angle]" .
+
+<eclass.eu/#K81>  rdf:type  model:Property ;
+        rdfs:label  "lb/s" , "pound (avoirdupois) per second" .
+
+<eclass.eu/#F37>  rdf:type  model:Property ;
+        rdfs:label  "(g/min)/K" , "gram per minute kelvin" .
+
+<eclass.eu/#F83>  rdf:type  model:Property ;
+        rdfs:label  "kPa/K" , "kilopascal per kelvin" .
+
+<eclass.eu/#A39>  rdf:type  model:Property ;
+        rdfs:label  "m³/kg" , "cubic metre per kilogram" .
+
+<eclass.eu/#D30>  rdf:type  model:Property ;
+        rdfs:label  "TJ" , "terajoule" .
+
+<eclass.eu/#F05>  rdf:type  model:Property ;
+        rdfs:label  "MPa/bar" , "megapascal per bar" .
+
+<eclass.eu/#A85>  rdf:type  model:Property ;
+        rdfs:label  "GeV" , "gigaelectronvolt" .
+
+<eclass.eu/#F51>  rdf:type  model:Property ;
+        rdfs:label  "cm/K" , "centimetre per kelvin" .
+
+<eclass.eu/#J79>  rdf:type  model:Property ;
+        rdfs:label  "(calth/°C)/g" , "calorie (thermochemical) per gram degree Celsius" .
+
+<eclass.eu/#H26>  rdf:type  model:Property ;
+        rdfs:label  "Ω/m" , "ohm per metre" .
+
+<eclass.eu/#A53>  rdf:type  model:Property ;
+        rdfs:label  "eV" , "electronvolt" .
+
+<eclass.eu/#H72>  rdf:type  model:Property ;
+        rdfs:label  "%/hbar" , "percent per hectobar" .
+
+<eclass.eu/#GP>  rdf:type  model:Property ;
+        rdfs:label  "mg/m³" , "milligram per cubic metre" .
+
+<eclass.eu/#C28>  rdf:type  model:Property ;
+        rdfs:label  "mSv" , "millisievert" .
+
+<eclass.eu/#2X>  rdf:type  model:Property ;
+        rdfs:label  "m/min" , "metre per minute" .
+
+<eclass.eu/#C74>  rdf:type  model:Property ;
+        rdfs:label  "kbit/s" , "kilobit per second" .
+
+<eclass.eu/#85>  rdf:type  model:Property ;
+        rdfs:label  "lbf·ft" , "foot pound-force" .
+
+<eclass.eu/#J93>  rdf:type  model:Property ;
+        rdfs:label  "dm³/s" , "cubic decimetre per second" .
+
+<eclass.eu/#H40>  rdf:type  model:Property ;
+        rdfs:label  "N/A" , "newton per ampere" .
+
+<eclass.eu/#L68>  rdf:type  model:Property ;
+        rdfs:label  "slug/s" , "slug per second" .
+
+<eclass.eu/#J15>  rdf:type  model:Property ;
+        rdfs:label  "°Bé (US heavy)" , "degree Baume (US heavy)" .
+
+<eclass.eu/#E95>  rdf:type  model:Property ;
+        rdfs:label  "mol/s" , "mole per second" .
+
+<eclass.eu/#C42>  rdf:type  model:Property ;
+        rdfs:label  "nF/m" , "nanofarad per metre" .
+
+<eclass.eu/#E17>  rdf:type  model:Property ;
+        rdfs:label  "ft³/s" , "cubic foot per second" .
+
+<eclass.eu/#J61>  rdf:type  model:Property ;
+        rdfs:label  "bbl (UK liq.)/s" , "barrel (UK petroleum) per second" .
+
+<eclass.eu/#L36>  rdf:type  model:Property ;
+        rdfs:label  "oz/s" , "ounce (avoirdupois) per second" .
+
+<eclass.eu/#L82>  rdf:type  model:Property ;
+        rdfs:label  "(t/s)/K" , "tonne per second kelvin" .
+
+<eclass.eu/#E63>  rdf:type  model:Property ;
+        rdfs:label  "Mibyte" , "mebibyte" .
+
+<eclass.eu/#FH>  rdf:type  model:Property ;
+        rdfs:label  "µmol" , "micromole" .
+
+<eclass.eu/#C10>  rdf:type  model:Property ;
+        rdfs:label  "mF" , "millifarad" .
+
+<eclass.eu/#G38>  rdf:type  model:Property ;
+        rdfs:label  "(kg/cm³)/K" , "kilogram per cubic centimetre kelvin" .
+
+<eclass.eu/#WHR>  rdf:type  model:Property ;
+        rdfs:label  "W·h" , "watt hour" .
+
+<eclass.eu/#G84>  rdf:type  model:Property ;
+        rdfs:label  "(l/min)/bar" , "litre per minute bar" .
+
+<eclass.eu/#G06>  rdf:type  model:Property ;
+        rdfs:label  "mm/bar" , "millimetre per bar" .
+
+<eclass.eu/#B86>  rdf:type  model:Property ;
+        rdfs:label  "µC" , "microcoulomb" .
+
+<eclass.eu/#GII>  rdf:type  model:Property ;
+        rdfs:label  "gi (UK)" , "gill (UK)" .
+
+<eclass.eu/#>  rdf:type  model:Property ;
+        rdfs:label  "centimetre to the fourth power" , "kJ/kV" , "1/oz" , "mAs" , "C·m²/kg" , "mm/m" , "cm⁴" , "1/lb" , "micrometre per metre" , "A/kg" , "µm/m" , "megabyte per second" , "1/mg" , "metre per volt second" , "1/t" , "cubic centimetre per gram" , "1/kg" , "1/g" , "" , "Mbyte/s" , "coulomb metre squared per kilogram" , "m/(V·s)" , "cm³/g" , "m²/N" , "Kilojoule per Kilvolt" , "millimetre per metre" , "l/(mol·s)" , "m·Pa/s" , "A²·s" , "Vrms" , "kVp" .
+
+<eclass.eu/#G52>  rdf:type  model:Property ;
+        rdfs:label  "m³/d" , "cubic metre per day" .
+
+<eclass.eu/#B54>  rdf:type  model:Property ;
+        rdfs:label  "kS/m" , "kilosiemens per metre" .
+
+<eclass.eu/#HUR>  rdf:type  model:Property ;
+        rdfs:label  "h" , "hour" .
+
+<eclass.eu/#D29>  rdf:type  model:Property ;
+        rdfs:label  "THz" , "terahertz" .
+
+<eclass.eu/#G20>  rdf:type  model:Property ;
+        rdfs:label  "lbf·ft/lb" , "pound-force foot per pound" .
+
+<eclass.eu/#KMK>  rdf:type  model:Property ;
+        rdfs:label  "km²" , "square kilometre" .
+
+<eclass.eu/#B22>  rdf:type  model:Property ;
+        rdfs:label  "kA" , "kiloampere" .
+
+<eclass.eu/#K94>  rdf:type  model:Property ;
+        rdfs:label  "qt (UK liq.)/d" , "quart (UK liquid) per day" .
+
+<eclass.eu/#K16>  rdf:type  model:Property ;
+        rdfs:label  "ft·lbf/min" , "foot pound-force per minute" .
+
+<eclass.eu/#JOU>  rdf:type  model:Property ;
+        rdfs:label  "J" , "joule" .
+
+<eclass.eu/#MBR>  rdf:type  model:Property ;
+        rdfs:label  "mbar" , "millibar" .
+
+<eclass.eu/#F96>  rdf:type  model:Property ;
+        rdfs:label  "mbar·m³/s" , "millibar cubic metre per second" .
+
+<eclass.eu/#K62>  rdf:type  model:Property ;
+        rdfs:label  "l/l" , "litre per litre" .
+
+<eclass.eu/#F18>  rdf:type  model:Property ;
+        rdfs:label  "kg·cm²" , "kilogram square centimetre" .
+
+<eclass.eu/#2B>  rdf:type  model:Property ;
+        rdfs:label  "rad/s²" , "radian per second squared" .
+
+<eclass.eu/#A98>  rdf:type  model:Property ;
+        rdfs:label  "H/m" , "henry per metre" .
+
+<eclass.eu/#F64>  rdf:type  model:Property ;
+        rdfs:label  "(g/min)/bar" , "gram per minute bar" .
+
+<eclass.eu/#PLA>  rdf:type  model:Property ;
+        rdfs:label  "°P" , "degree Plato" .
+
+<eclass.eu/#H39>  rdf:type  model:Property ;
+        rdfs:label  "MHz·km" , "megahertz kilometre" .
+
+<eclass.eu/#K30>  rdf:type  model:Property ;
+        rdfs:label  "gal (US liq.)/s" , "gallon (US liquid) per second" .
+
+<eclass.eu/#H85>  rdf:type  model:Property ;
+        rdfs:label  "1/wk" , "reciprocal week" .
+
+<eclass.eu/#F32>  rdf:type  model:Property ;
+        rdfs:label  "mg/d" , "milligram per day" .
+
+<eclass.eu/#H07>  rdf:type  model:Property ;
+        rdfs:label  "Pa·s/bar" , "pascal second per bar" .
+
+<eclass.eu/#A34>  rdf:type  model:Property ;
+        rdfs:label  "C/m²" , "coulomb per square metre" .
+
+<eclass.eu/#H53>  rdf:type  model:Property ;
+        rdfs:label  "kg/bar" , "kilogram per bar" .
+
+<eclass.eu/#JM>  rdf:type  model:Property ;
+        rdfs:label  "MJ/m³" , "megajoule per cubic metre" .
+
+<eclass.eu/#C55>  rdf:type  model:Property ;
+        rdfs:label  "N/m²" , "newton per square metre" .
+
+<eclass.eu/#J74>  rdf:type  model:Property ;
+        rdfs:label  "cP/bar" , "centipoise per bar" .
+
+<eclass.eu/#E76>  rdf:type  model:Property ;
+        rdfs:label  "Mibit/m²" , "mebibit per square metre" .
+
+<eclass.eu/#GK>  rdf:type  model:Property ;
+        rdfs:label  "g/kg" , "gram per kilogram" .
+
+<eclass.eu/#C23>  rdf:type  model:Property ;
+        rdfs:label  "mΩ·m" , "milliohm metre" .
+
+<eclass.eu/#KWT>  rdf:type  model:Property ;
+        rdfs:label  "kW" , "kilowatt" .
+
+<eclass.eu/#J42>  rdf:type  model:Property ;
+        rdfs:label  "BtuIT·in/(s·ft²·°F)" , "British thermal unit (international table) inch per second square foot degree Fahrenheit" .
+
+<eclass.eu/#L17>  rdf:type  model:Property ;
+        rdfs:label  "(mg/m³)/K" , "milligram per cubic metre kelvin" .
+
+<eclass.eu/#G97>  rdf:type  model:Property ;
+        rdfs:label  "ml/bar" , "millilitre per bar" .
+
+<eclass.eu/#L63>  rdf:type  model:Property ;
+        rdfs:label  "slug/d" , "slug per day" .
+
+<eclass.eu/#G19>  rdf:type  model:Property ;
+        rdfs:label  "N·m/kg" , "newton metre per kilogram" .
+
+<eclass.eu/#B99>  rdf:type  model:Property ;
+        rdfs:label  "µS" , "microsiemens" .
+
+<eclass.eu/#E90>  rdf:type  model:Property ;
+        rdfs:label  "cm⁻¹" , "reciprocal centimetre" .
+
+<eclass.eu/#G65>  rdf:type  model:Property ;
+        rdfs:label  "(l/d)/K" , "litre per day kelvin" .
+
+<eclass.eu/#4M>  rdf:type  model:Property ;
+        rdfs:label  "mg/h" , "milligram per hour" .
+
+<eclass.eu/#NA>  rdf:type  model:Property ;
+        rdfs:label  "mg/kg" , "milligram per kilogram" .
+
+<eclass.eu/#G33>  rdf:type  model:Property ;
+        rdfs:label  "(g/cm³)/K" , "gram per cubic centimetre kelvin" .
+
+<eclass.eu/#D88>  rdf:type  model:Property ;
+        rdfs:label  "mC/m³" , "millicoulomb per cubic metre" .
+
+<eclass.eu/#B35>  rdf:type  model:Property ;
+        rdfs:label  "kg/l" , "kilogram per litre" .
+
+<eclass.eu/#G01>  rdf:type  model:Property ;
+        rdfs:label  "Pa·m³/s" , "pascal cubic metre per second" .
+
+<eclass.eu/#MCU>  rdf:type  model:Property ;
+        rdfs:label  "mCi" , "millicurie" .
+
+<eclass.eu/#K75>  rdf:type  model:Property ;
+        rdfs:label  "(lb/in³)/°F" , "pound (avoirdupois) per cubic inch degree Fahrenheit" .
+
+<eclass.eu/#F77>  rdf:type  model:Property ;
+        rdfs:label  "Pa·s/K" , "pascal second per kelvin" .
+
+<eclass.eu/#D24>  rdf:type  model:Property ;
+        rdfs:label  "m²/sr" , "square metre per steradian" .
+
+<eclass.eu/#QT>  rdf:type  model:Property ;
+        rdfs:label  "qt (US liq.)" , "quart (US)" .
+
+<eclass.eu/#K43>  rdf:type  model:Property ;
+        rdfs:label  "electric hp" , "horsepower (electric)" .
+
+<eclass.eu/#ACR>  rdf:type  model:Property ;
+        rdfs:label  "ac" , "acre" .
+
+<eclass.eu/#F45>  rdf:type  model:Property ;
+        rdfs:label  "(mg/min)/K" , "milligram per minute kelvin" .
+
+<eclass.eu/#CMQ>  rdf:type  model:Property ;
+        rdfs:label  "cm³" , "cubic centimetre" .
+
+<eclass.eu/#K11>  rdf:type  model:Property ;
+        rdfs:label  "fl oz (US)/min" , "ounce (US fluid) per minute" .
+
+<eclass.eu/#F91>  rdf:type  model:Property ;
+        rdfs:label  "bar·l/s" , "bar litre per second" .
+
+<eclass.eu/#F13>  rdf:type  model:Property ;
+        rdfs:label  "slug" .
+
+<eclass.eu/#A93>  rdf:type  model:Property ;
+        rdfs:label  "g/m³" , "gram per cubic metre" .
+
+<eclass.eu/#CWI>  rdf:type  model:Property ;
+        rdfs:label  "cwt.l (UK)" , "hundred weight (UK)" .
+
+<eclass.eu/#J87>  rdf:type  model:Property ;
+        rdfs:label  "cm³/m³" , "cubic centimetre per cubic metre" .
+
+<eclass.eu/#H34>  rdf:type  model:Property ;
+        rdfs:label  "Hz·m" , "hertz metre" .
+
+<eclass.eu/#E89>  rdf:type  model:Property ;
+        rdfs:label  "bit/m²" , "bit per square metre" , "bit/m³" , "bit per cubic metre" .
+
+<eclass.eu/#HN>  rdf:type  model:Property ;
+        rdfs:label  "mmHg" , "conventional millimetre of mercury" .
+
+<eclass.eu/#C36>  rdf:type  model:Property ;
+        rdfs:label  "mol/m³" , "mole per cubic metre" .
+
+<eclass.eu/#L76>  rdf:type  model:Property ;
+        rdfs:label  "(t/m³)/K" , "tonne per cubic metre kelvin" .
+
+<eclass.eu/#J23>  rdf:type  model:Property ;
+        rdfs:label  "°F/h" , "degree Fahrenheit per hour" .
+
+<eclass.eu/#C50>  rdf:type  model:Property ;
+        rdfs:label  "Np" , "neper" .
+
+<eclass.eu/#G78>  rdf:type  model:Property ;
+        rdfs:label  "(cm³/d)/bar" , "cubic centimetre per day bar" .
+
+<eclass.eu/#E71>  rdf:type  model:Property ;
+        rdfs:label  "Gibit/m³" , "gibibit per cubic metre" .
+
+<eclass.eu/#GF>  rdf:type  model:Property ;
+        rdfs:label  "g/m" , "gram per metre" .
+
+<eclass.eu/#L90>  rdf:type  model:Property ;
+        rdfs:label  "(ton (US)/h)/psi" , "ton short per hour psi" .
+
+<eclass.eu/#G46>  rdf:type  model:Property ;
+        rdfs:label  "St/bar" , "stokes per bar" .
+
+<eclass.eu/#2N>  rdf:type  model:Property ;
+        rdfs:label  "dB" , "decibel" .
+
+<eclass.eu/#BUI>  rdf:type  model:Property ;
+        rdfs:label  "bu (UK)" , "bushel (UK)" .
+
+<eclass.eu/#G92>  rdf:type  model:Property ;
+        rdfs:label  "(ml/min)/bar" , "millilitre per minute bar" .
+
+<eclass.eu/#B48>  rdf:type  model:Property ;
+        rdfs:label  "kN·m" , "kilonewton metre" .
+
+<eclass.eu/#KGS>  rdf:type  model:Property ;
+        rdfs:label  "kg/s" , "kilogram per second" .
+
+<eclass.eu/#DD>  rdf:type  model:Property ;
+        rdfs:label  "°" , "degree [unit of angle]" .
+
+<eclass.eu/#KTM>  rdf:type  model:Property ;
+        rdfs:label  "km" , "kilometre" .
+
+<eclass.eu/#G14>  rdf:type  model:Property ;
+        rdfs:label  "(g/m³)/bar" , "gram per cubic metre bar" .
+
+<eclass.eu/#B94>  rdf:type  model:Property ;
+        rdfs:label  "µΩ" , "microohm" .
+
+<eclass.eu/#K88>  rdf:type  model:Property ;
+        rdfs:label  "psi·l/s" , "psi litre per second" .
+
+<eclass.eu/#D69>  rdf:type  model:Property ;
+        rdfs:label  "in⁴" , "inch to the fourth power" .
+
+<eclass.eu/#G60>  rdf:type  model:Property ;
+        rdfs:label  "V/bar" , "volt per bar" .
+
+<eclass.eu/#B16>  rdf:type  model:Property ;
+        rdfs:label  "J/(mol·K)" , "joule per mole kelvin" .
+
+<eclass.eu/#4H>  rdf:type  model:Property ;
+        rdfs:label  "µm" , "micrometre" .
+
+<eclass.eu/#B62>  rdf:type  model:Property ;
+        rdfs:label  "lm·s" , "lumen second" .
+
+<eclass.eu/#D37>  rdf:type  model:Property ;
+        rdfs:label  "(calth/K)/g" , "calorie (thermochemical) per gram kelvin" .
+
+<eclass.eu/#D83>  rdf:type  model:Property ;
+        rdfs:label  "mN·m" , "millinewton metre" .
+
+<eclass.eu/#F58>  rdf:type  model:Property ;
+        rdfs:label  "1/bar" , "reciprocal bar" .
+
+<eclass.eu/#K24>  rdf:type  model:Property ;
+        rdfs:label  "ftH₂O" , "foot of water" .
+
+<eclass.eu/#OZI>  rdf:type  model:Property ;
+        rdfs:label  "fl oz (UK)" , "fluid ounce (UK)" .
