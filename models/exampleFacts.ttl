@@ -47,8 +47,30 @@ prod:SealedSensor001 rdfs:label "Sealed Sensor".
 #
 prod:TestedProduct001 rdf:type model:Product.
 prod:TestedProduct001 rdfs:label "Tested Product".
-
-
+#
+prod:Flour001 rdf:type model:Product.
+prod:Flour001 rdfs:label "Tested Product".
+#
+prod:Water001 rdf:type model:Product.
+prod:Water001 rdfs:label "Water".
+#
+prod:Sugar001 rdf:type model:Product.
+prod:Sugar001 rdfs:label "Sugar".
+#
+prod:Dough001 rdf:type model:Product.
+prod:Dough001 rdfs:label "Dough".
+#
+prod:TomatoSauce001 rdf:type model:Product.
+prod:TomatoSauce001 rdfs:label "TomatoSauce".
+#
+prod:Basil001 rdf:type model:Product.
+prod:Basil001 rdfs:label "Basil".
+#
+prod:Pizza001 rdf:type model:Product.
+prod:Pizza001 rdfs:label "Pizza".
+#
+prod:BakedPizza001 rdf:type model:Product.
+prod:BakedPizza001 rdfs:label "Baked Pizza".
 
 ### Process Repo
 
@@ -63,7 +85,15 @@ proc:UltrasonicCaseSealing001 rdfs:label 'Ultrasonic Case Sealing'.
 #
 proc:QualityControl001 rdf:type model:Process.
 proc:QualityControl001 rdfs:label 'Quality Control'.
-
+#
+proc:DoughMaking001 rdf:type model:Process.
+proc:DoughMaking001 rdfs:label 'DoughMaking'.
+#
+proc:Topping001 rdf:type model:Process.
+proc:Topping001 rdfs:label 'Topping'.
+#
+proc:Baking001 rdf:type model:Process.
+proc:Baking001 rdfs:label 'Baking'.
 
 
 ### Resource Repo
@@ -101,6 +131,19 @@ res:HumanOperator002 rdf:type model:Resource.
 res:HumanOperator002 rdfs:label 'Line Feeder'.
 res:HumanOperator002 model:hasVulnerability prop:Force001.
 res:HumanOperator002 model:hasVulnerability prop:Temperature001.
+#
+res:HumanOperator003 rdf:type model:Resource.
+res:HumanOperator003 rdfs:label 'Baker'.
+res:HumanOperator003 model:hasVulnerability prop:Heat001.
+#
+res:HandMixer001 rdf:type model:Resource.
+res:HandMixer001 rdfs:label 'Baker'.
+#
+res:Oven001 rdf:type model:Resource.
+res:Oven001 rdfs:label 'Oven'.
+res:Oven001 model:hasRiskSource prop:Heat001.
+
+
 
 
 

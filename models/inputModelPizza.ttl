@@ -1,0 +1,28 @@
+PREFIX model: <http://uni-ko-ld.de/ist/model#>
+PREFIX prod: <http://uni-ko-ld.de/ist/product#>
+PREFIX proc: <http://uni-ko-ld.de/ist/process#>
+PREFIX res: <http://uni-ko-ld.de/ist/resource#>
+PREFIX prop: <http://uni-ko-ld.de/ist/property#>
+
+
+proc:DoughMaking001 model:hasInputProduct prod:Flour001.
+proc:DoughMaking001 model:hasInputProduct prod:Water001.
+proc:DoughMaking001 model:hasInputProduct prod:Sugar001.
+proc:DoughMaking001 model:hasResource res:HandMixer001.
+proc:DoughMaking001 model:hasResource res:HumanOperator003.
+proc:DoughMaking001 model:hasOutputProduct prod:Dough001.
+#
+proc:DoughMaking001 model:hasNextProcess proc:Topping001.
+#
+proc:Topping001 model:hasInputProduct prod:Dough001.
+proc:Topping001 model:hasInputProduct prod:TomatoSauce001.
+proc:Topping001 model:hasInputProduct prod:Basil001.
+proc:Topping001 model:hasResource res:HumanOperator003.
+proc:Topping001 model:hasOutputProduct prod:Pizza001.
+#
+proc:Topping001 model:hasNextProcess proc:Baking001.
+#
+proc:Baking001 model:hasInputProduct prod:Pizza001.
+proc:Baking001 model:hasResource res:Oven001.
+proc:Baking001 model:hasResource res:HumanOperator003.
+proc:Baking001 model:hasOutputProduct prod:BakedPizza001.

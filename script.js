@@ -72,7 +72,7 @@ let presets = [
   {
     id: 1,
     label: 'Pizza Bakery',
-    inputModelUrl: 'https://mehlko.github.io/model/models/inputModel.ttl',
+    inputModelUrl: 'https://mehlko.github.io/model/models/inputModelPizza.ttl',
     factUrl: 'https://mehlko.github.io/model/models/exampleFacts.ttl',
   },
   {
