@@ -592,6 +592,13 @@ class ProductionLine extends React.Component {
     });
   }
 
+  resolve(parameter, queryResult, resolver) {
+    return getFirstLabel(
+      resolver.getLabels(queryResult.get(parameter).value),
+      queryResult.get(parameter).value
+    );
+  }
+
   render() {
     return (
       <>
@@ -833,7 +840,8 @@ class ProductionLine extends React.Component {
                         <CardContent>
                           <Typography variant="body2" color="text.secondary">
                             {patternList[detectedPattern.patternKey].reason(
-                              detectedPattern.queryResult
+                              detectedPattern.queryResult,
+                              this
                             )}
                           </Typography>
                         </CardContent>

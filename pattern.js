@@ -23,19 +23,19 @@ var patternList = {
       ];
     },
 
-    reason: (queryResult) => {
+    reason: (queryResult, resolver) => {
       return (
         'The process ' +
-        queryResult.get('?process').value +
+        resolver.resolve('?process', queryResult, resolver) +
         ' uses the resource ' +
-        queryResult.get('?resource').value +
+        resolver.resolve('?resource', queryResult, resolver) +
         ' that has the risk source ' +
-        queryResult.get('?riskSource').value +
+        resolver.resolve('?riskSource', queryResult, resolver) +
         '.' +
         ' The product ' +
-        queryResult.get('?product').value +
+        resolver.resolve('?product', queryResult, resolver) +
         ' is vunlerable to ' +
-        queryResult.get('?riskSource').value
+        resolver.resolve('?riskSource', queryResult, resolver)
       );
     },
   },
@@ -55,26 +55,26 @@ var patternList = {
 
     affectedElements: (queryResult) => {
       return [
-        queryResult.get('?process').value,
-        queryResult.get('?resource').value,
-        queryResult.get('?resource2').value,
-        queryResult.get('?riskSource').value,
+        resolver.resolve('?process').value,
+        resolver.resolve('?resource').value,
+        resolver.resolve('?resource2').value,
+        resolver.resolve('?riskSource').value,
       ];
     },
 
     reason: (queryResult) => {
       return (
         'The process ' +
-        queryResult.get('?process').value +
+        resolver.resolve('?process', queryResult, resolver) +
         ' uses the resource ' +
-        queryResult.get('?resource2').value +
+        resolver.resolve('?resource2', queryResult, resolver) +
         ' that has the risk source ' +
-        queryResult.get('?riskSource').value +
+        resolver.resolve('?riskSource', queryResult, resolver) +
         '.' +
         ' The resource ' +
-        queryResult.get('?resource2').value +
+        resolver.resolve('?resource2', queryResult, resolver) +
         ' is vunlerable to ' +
-        queryResult.get('?riskSource').value
+        resolver.resolve('?riskSource', queryResult, resolver)
       );
     },
   },
@@ -102,13 +102,13 @@ var patternList = {
     reason: (queryResult) => {
       return (
         'The process ' +
-        queryResult.get('?process').value +
+        resolver.resolve('?process', queryResult, resolver) +
         ' uses the resource ' +
-        queryResult.get('?resource').value +
+        resolver.resolve('?resource', queryResult, resolver) +
         ' that changes the property ' +
-        queryResult.get('?property').value +
+        resolver.resolve('?property', queryResult, resolver) +
         '.' +
-        ' This property is unconstraint.'
+        ' resolver property is unconstraint.'
       );
     },
   },
@@ -136,13 +136,13 @@ var patternList = {
     reason: (queryResult) => {
       return (
         'The process ' +
-        queryResult.get('?process').value +
+        resolver.resolve('?process', queryResult, resolver) +
         ' uses the resource ' +
-        queryResult.get('?resource').value +
+        resolver.resolve('?resource', queryResult, resolver) +
         ' that changes the property ' +
-        queryResult.get('?property').value +
+        resolver.resolve('?property', queryResult, resolver) +
         '.' +
-        ' This property is unmeasured.'
+        ' resolver property is unmeasured.'
       );
     },
   },
@@ -170,11 +170,11 @@ var patternList = {
     reason: (queryResult) => {
       return (
         'The process ' +
-        queryResult.get('?process').value +
+        resolver.resolve('?process', queryResult, resolver) +
         ' has the measurement ' +
-        queryResult.get('?measurement').value +
+        resolver.resolve('?measurement', queryResult, resolver) +
         '.' +
-        ' This measurement is unmeasured.'
+        ' resolver measurement is unmeasured.'
       );
     },
   },
@@ -183,7 +183,7 @@ var patternList = {
     name: 'Input Output Mismatch',
     abbreviation: 'IO',
     description:
-      'Two processes are connected. The first process produces a product and the second process does not use this product as an input. This can be a misconfiguration.',
+      'Two processes are connected. The first process produces a product and the second process does not use resolver product as an input. resolver can be a misconfiguration.',
     queryString: `
       PREFIX model: <http://uni-ko-ld.de/ist/model#>
       SELECT * WHERE {
@@ -203,16 +203,16 @@ var patternList = {
     reason: (queryResult) => {
       return (
         'Input Output Mismatch is detected between process  ' +
-        queryResult.get('?process').value +
+        resolver.resolve('?process', queryResult, resolver) +
         ' and ' +
-        queryResult.get('?nextProcess').value +
+        resolver.resolve('?nextProcess', queryResult, resolver) +
         '.' +
         'Product ' +
-        queryResult.get('?product').value +
+        resolver.resolve('?product', queryResult, resolver) +
         ' is produced by ' +
-        queryResult.get('?process').value +
+        resolver.resolve('?process', queryResult, resolver) +
         ' but not acccepted by ' +
-        queryResult.get('?nextProcess').value
+        resolver.resolve('?nextProcess', queryResult, resolver)
       );
     },
   },
