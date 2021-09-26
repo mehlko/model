@@ -49,7 +49,7 @@ prod:TestedProduct001 rdf:type model:Product.
 prod:TestedProduct001 rdfs:label "Tested Product".
 #
 prod:Flour001 rdf:type model:Product.
-prod:Flour001 rdfs:label "Tested Product".
+prod:Flour001 rdfs:label "Flour".
 #
 prod:Water001 rdf:type model:Product.
 prod:Water001 rdfs:label "Water".
@@ -61,7 +61,7 @@ prod:Dough001 rdf:type model:Product.
 prod:Dough001 rdfs:label "Dough".
 #
 prod:TomatoSauce001 rdf:type model:Product.
-prod:TomatoSauce001 rdfs:label "TomatoSauce".
+prod:TomatoSauce001 rdfs:label "Tomato Sauce".
 #
 prod:Basil001 rdf:type model:Product.
 prod:Basil001 rdfs:label "Basil".
