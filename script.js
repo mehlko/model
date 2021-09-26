@@ -789,56 +789,61 @@ class ProductionLine extends React.Component {
                 ))}
             </Box>
             <br />
-            <Box className="patternResult" fullWidth>
-              <Typography variant="h5">Detected Problems</Typography>
-              <br />
-              {log(this.state.detectedPatterns)}
-              {this.state.detectedPatterns.map(
-                (detectedPattern, detectedPatternIndex) => (
-                  <Card
-                    key={'detectedPatternIndex' + detectedPatternIndex}
-                    sx={
-                      detectedPatternIndex === this.state.selectedPatternIndex
-                        ? { border: '2px solid grey' }
-                        : {}
-                    }
-                  >
-                    <CardActionArea
-                      onClick={this.selectPattern.bind(
-                        this,
-                        detectedPatternIndex
-                      )}
-                    >
-                      <CardHeader
-                        avatar={
-                          <Avatar sx={{ bgcolor: 'red' }} aria-label="recipe">
-                            {
-                              patternList[detectedPattern.patternKey]
-                                .abbreviation
-                            }
-                          </Avatar>
-                        }
-                        title={
-                          <Typography gutterBottom variant="h5" component="div">
-                            {patternList[detectedPattern.patternKey].name}
-                          </Typography>
-                        }
-                        subheader={'Problem #' + detectedPatternIndex}
-                      />
-                      <CardContent>
-                        <Typography variant="body2" color="text.secondary">
-                          {patternList[detectedPattern.patternKey].reason(
-                            detectedPattern.queryResult
-                          )}
-                        </Typography>
-                      </CardContent>
-                    </CardActionArea>
-                  </Card>
-                )
-              )}
-            </Box>
-          </Box>
+            {this.state.detectedPatterns.length > 0 && (
+              <Box className="patternResult" fullWidth>
+                <Typography variant="h5">Detected Problems</Typography>
+                <br />
 
+                {this.state.detectedPatterns.map(
+                  (detectedPattern, detectedPatternIndex) => (
+                    <Card
+                      key={'detectedPatternIndex' + detectedPatternIndex}
+                      sx={
+                        detectedPatternIndex === this.state.selectedPatternIndex
+                          ? { border: '2px solid grey' }
+                          : {}
+                      }
+                    >
+                      <CardActionArea
+                        onClick={this.selectPattern.bind(
+                          this,
+                          detectedPatternIndex
+                        )}
+                      >
+                        <CardHeader
+                          avatar={
+                            <Avatar sx={{ bgcolor: 'red' }} aria-label="recipe">
+                              {
+                                patternList[detectedPattern.patternKey]
+                                  .abbreviation
+                              }
+                            </Avatar>
+                          }
+                          title={
+                            <Typography
+                              gutterBottom
+                              variant="h5"
+                              component="div"
+                            >
+                              {patternList[detectedPattern.patternKey].name}
+                            </Typography>
+                          }
+                          subheader={'Problem #' + detectedPatternIndex}
+                        />
+                        <CardContent>
+                          <Typography variant="body2" color="text.secondary">
+                            {patternList[detectedPattern.patternKey].reason(
+                              detectedPattern.queryResult
+                            )}
+                          </Typography>
+                        </CardContent>
+                      </CardActionArea>
+                    </Card>
+                  )
+                )}
+              </Box>
+            )}
+          </Box>
           <Box hidden={this.state.tab !== 'patternList'}>
             {Object.entries(patternList).map(([patternKey, currentPattern]) => {
               return (
