@@ -606,7 +606,7 @@ class ProductionLine extends React.Component {
   render() {
     return (
       <>
-        <Container maxWidth="sm">
+        <Container maxWidth="md">
           <Typography variant="overline" gutterBottom>
             <Grid container spacing={2}>
               <Grid item xs={5}>
@@ -624,7 +624,7 @@ class ProductionLine extends React.Component {
             </Grid>
           </Typography>
         </Container>
-        <Container maxWidth="sm">
+        <Container maxWidth="md">
           <Typography variant="h3">Production Line Analyzer</Typography>
 
           <Tabs value={this.state.tab} onChange={this.changeTab.bind(this)}>
