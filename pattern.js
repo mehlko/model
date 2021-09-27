@@ -85,7 +85,7 @@ var patternList = {
     PREFIX model: <http://uni-ko-ld.de/ist/model#>
     SELECT * WHERE {
      ?process model:hasResource ?resource .
-     ?resource model:hasRiskSource ?property .
+     ?resource model:changesProperty ?property .
      MINUS {?process model:hasConstraint ?property .}
     }`,
 
@@ -106,7 +106,7 @@ var patternList = {
         ' that changes the property ' +
         resolver.resolve('?property', queryResult, resolver) +
         '.' +
-        ' resolver property is unconstraint.'
+        ' This property is unconstraint.'
       );
     },
   },
@@ -119,7 +119,7 @@ var patternList = {
     PREFIX model: <http://uni-ko-ld.de/ist/model#>
     SELECT * WHERE {
      ?process model:hasResource ?resource .
-     ?resource model:hasRiskSource ?property .
+     ?resource model:changesProperty ?property .
      MINUS {?process model:hasMeasurement ?property .}
     }`,
 
