@@ -87,7 +87,7 @@ var patternList = {
     PREFIX model: <http://uni-ko-ld.de/ist/model#>
     SELECT * WHERE {
      ?process model:hasResource ?resource .
-     ?resource model:changesProperty ?property .
+     ?resource model:hasRiskSource ?property .
      MINUS {?process model:hasConstraint ?property .}
     }`,
 
@@ -121,7 +121,7 @@ var patternList = {
     PREFIX model: <http://uni-ko-ld.de/ist/model#>
     SELECT * WHERE {
      ?process model:hasResource ?resource .
-     ?resource model:changesProperty ?property .
+     ?resource model:hasRiskSource ?property .
      MINUS {?process model:hasMeasurement ?property .}
     }`,
 
@@ -150,7 +150,7 @@ var patternList = {
   unusedMeasurement: {
     name: 'Unused Measurement',
     abbreviation: 'UUM',
-    description: 'A resource is exposed to a risk source and may be harmed',
+    description: 'A measurement is not used. Set a constraint for the measured value.',
     queryString: `
     PREFIX model: <http://uni-ko-ld.de/ist/model#>
     SELECT * WHERE {
