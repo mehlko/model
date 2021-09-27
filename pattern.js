@@ -206,7 +206,7 @@ var patternList = {
         ' and ' +
         resolver.resolve('?nextProcess', queryResult, resolver) +
         '.' +
-        'Product ' +
+        ' Product ' +
         resolver.resolve('?product', queryResult, resolver) +
         ' is produced by ' +
         resolver.resolve('?process', queryResult, resolver) +
