@@ -102,11 +102,11 @@ proc:Baking001 rdfs:label 'Baking'.
 res:FirmwareFlasher001 rdf:type model:Resource.
 res:FirmwareFlasher001 rdfs:label 'Firmware Flasher'.
 res:FirmwareFlasher001 rdfs:label 'Flasher'.
-res:FirmwareFlasher001 model:hasRiskSource prop:Firmware001.
+res:FirmwareFlasher001 model:changesProperty prop:Firmware001.
 #
 res:Placer001 rdf:type model:Resource.
 res:Placer001 rdfs:label 'Placer'.
-res:Placer001 model:hasRiskSource prop:Position001.
+res:Placer001 model:changesProperty prop:Position001.
 #
 res:Screwer001 rdf:type model:Resource.
 res:Screwer001 rdfs:label 'Screwer'.
