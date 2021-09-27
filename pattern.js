@@ -1,5 +1,3 @@
-var testArray = ['Hallo:)'];
-
 var patternList = {
   productExposedToRiskSource: {
     name: 'Product Exposed To Risk Source',
@@ -142,7 +140,7 @@ var patternList = {
         ' that changes the property ' +
         resolver.resolve('?property', queryResult, resolver) +
         '.' +
-        ' resolver property is unmeasured.'
+        ' This property is unmeasured.'
       );
     },
   },
@@ -150,7 +148,8 @@ var patternList = {
   unusedMeasurement: {
     name: 'Unused Measurement',
     abbreviation: 'UUM',
-    description: 'A measurement is not used. Set a constraint for the measured value.',
+    description:
+      'A measurement is not used. Set a constraint for the measured value.',
     queryString: `
     PREFIX model: <http://uni-ko-ld.de/ist/model#>
     SELECT * WHERE {
@@ -174,7 +173,7 @@ var patternList = {
         ' has the measurement ' +
         resolver.resolve('?measurement', queryResult, resolver) +
         '.' +
-        ' resolver measurement is unmeasured.'
+        ' This measurement is unused.'
       );
     },
   },
@@ -183,7 +182,7 @@ var patternList = {
     name: 'Input Output Mismatch',
     abbreviation: 'IO',
     description:
-      'Two processes are connected. The first process produces a product and the second process does not use resolver product as an input. resolver can be a misconfiguration.',
+      'Two processes are connected. The first process produces a product and the second process does not use resolver product as an input. This can be due to misconfiguration.',
     queryString: `
       PREFIX model: <http://uni-ko-ld.de/ist/model#>
       SELECT * WHERE {
