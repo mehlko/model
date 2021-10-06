@@ -137,7 +137,6 @@ class MyAutocomplete extends React.Component {
     return (
       <Autocomplete
         id={'id' + this.props.processId}
-        className="search"
         disableCloseOnSelect
         clearOnBlur
         clearOnEscape
@@ -748,24 +747,30 @@ class ProductionLine extends React.Component {
                         </Typography>{' '}
                       </Box>
                     )}
-                    <MyAutocomplete
-                      processId={procId}
-                      store={this.store}
-                      setProcess={this.setProcess.bind(this, procId)}
-                      addInput={this.addPPR.bind(this, 'inputs', procId)}
-                      addOutput={this.addPPR.bind(this, 'outputs', procId)}
-                      addResource={this.addPPR.bind(this, 'resources', procId)}
-                      addMeasurement={this.addPPR.bind(
-                        this,
-                        'measurements',
-                        procId
-                      )}
-                      addConstraint={this.addPPR.bind(
-                        this,
-                        'constraints',
-                        procId
-                      )}
-                    />
+                    <Box className="search" displayPrint="none">
+                      <MyAutocomplete
+                        processId={procId}
+                        store={this.store}
+                        setProcess={this.setProcess.bind(this, procId)}
+                        addInput={this.addPPR.bind(this, 'inputs', procId)}
+                        addOutput={this.addPPR.bind(this, 'outputs', procId)}
+                        addResource={this.addPPR.bind(
+                          this,
+                          'resources',
+                          procId
+                        )}
+                        addMeasurement={this.addPPR.bind(
+                          this,
+                          'measurements',
+                          procId
+                        )}
+                        addConstraint={this.addPPR.bind(
+                          this,
+                          'constraints',
+                          procId
+                        )}
+                      />
+                    </Box>
 
                     {proc.inputs &&
                       this.getItems(proc.inputs, procId, 'inputs', 'product')}
