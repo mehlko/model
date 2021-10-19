@@ -182,7 +182,7 @@ var patternList = {
     name: 'Input Output Mismatch',
     abbreviation: 'IO',
     description:
-      'Two processes are connected. The first process produces a product and the second process does not use resolver product as an input. This can be due to misconfiguration.',
+      'Two processes are connected. The first process produces a product and the second process does not use the product as an input. This can be due to misconfiguration.',
     queryString: `
       PREFIX model: <http://uni-ko-ld.de/ist/model#>
       SELECT * WHERE {
