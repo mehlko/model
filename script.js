@@ -893,9 +893,7 @@ class ProductionLine extends React.Component {
             <Box>
               <Typography variant="h5">Todo</Typography>
               <ul>
-                <Typography>
-        
-                </Typography>
+                <Typography></Typography>
               </ul>
             </Box>{' '}
           </Box>
