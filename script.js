@@ -849,7 +849,7 @@ class ProductionLine extends React.Component {
                           subheader={'Problem #' + detectedPatternIndex}
                         />
                         <CardContent>
-                          <Typography variant="body2" color="text.secondary">
+                          <Typography variant="body1" color="text.secondary">
                             {patternList[detectedPattern.patternKey].reason(
                               detectedPattern.queryResult,
                               this
