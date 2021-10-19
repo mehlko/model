@@ -894,11 +894,7 @@ class ProductionLine extends React.Component {
               <Typography variant="h5">Todo</Typography>
               <ul>
                 <Typography>
-                  <li>learn about PPR (triangle?, gif?), legend</li>
-                  <li>---------------------</li>
-                  <li>feature list/planned feature list</li>
-                  <li>link to resources</li>
-                  <li>process numbering</li>
+        
                 </Typography>
               </ul>
             </Box>{' '}
