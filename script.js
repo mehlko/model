@@ -171,7 +171,7 @@ class MyAutocomplete extends React.Component {
               </Grid>
               <Grid item xs={6}>
                 {option.type == 'http://uni-ko-ld.de/ist/model#Product' && (
-                  <>
+                  <div>
                     <Button
                       variant="contained"
                       size="small"
@@ -186,7 +186,7 @@ class MyAutocomplete extends React.Component {
                     >
                       + Output
                     </Button>
-                  </>
+                  </div>
                 )}
                 {option.type == 'http://uni-ko-ld.de/ist/model#Process' && (
                   <Button
@@ -207,7 +207,7 @@ class MyAutocomplete extends React.Component {
                   </Button>
                 )}
                 {option.type == 'http://uni-ko-ld.de/ist/model#Property' && (
-                  <>
+                  <div>
                     <Button
                       variant="contained"
                       size="small"
@@ -222,7 +222,7 @@ class MyAutocomplete extends React.Component {
                     >
                       + Constraint
                     </Button>
-                  </>
+                  </div>
                 )}
               </Grid>
             </Grid>
@@ -256,7 +256,7 @@ class MyItem extends React.Component {
       };
     }
     return (
-      <>
+      <div>
         <Dialog onClose={this.op.bind(this, false)} open={this.state.a}>
           <DialogTitle>{this.props.item.labels.join(', ')}</DialogTitle>
           <DialogContent>
@@ -279,7 +279,7 @@ class MyItem extends React.Component {
         >
           {getFirstLabel(this.props.item.labels, this.props.item.id)}
         </Typography>
-      </>
+      </div>
     );
   }
 }
@@ -604,7 +604,7 @@ class ProductionLine extends React.Component {
 
   render() {
     return (
-      <>
+      <div>
         <Container maxWidth="md">
           <Typography variant="overline" gutterBottom>
             <Grid container spacing={2}>
@@ -898,7 +898,7 @@ class ProductionLine extends React.Component {
             </Box>{' '}
           </Box>
         </Container>
-      </>
+      </div>
     );
   }
 }
