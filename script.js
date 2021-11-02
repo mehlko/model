@@ -233,6 +233,7 @@ class MyAutocomplete extends React.Component {
   }
 }
 
+/** Load a text file from local device. This is used for private files */
 class MyFileLoader extends React.Component {
   constructor(props) {
     super(props);
@@ -293,6 +294,7 @@ class MyFileLoader extends React.Component {
   }
 }
 
+/** Display an Item (Product, Process or Resource in more detail) */
 class MyItem extends React.Component {
   constructor(props) {
     super(props);
@@ -343,6 +345,7 @@ class MyItem extends React.Component {
   }
 }
 
+/** Represent a production line. This is the root component. */
 class ProductionLine extends React.Component {
   constructor(props) {
     super(props);
