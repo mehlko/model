@@ -612,7 +612,7 @@ class ProductionLine extends React.Component {
                 Production Line Analyzer
               </Grid>
               <Grid item xs={2}>
-                v0.1
+                v0.1.0-alpha
               </Grid>
               <Grid item xs={1}>
                 <Link href="https://github.com/mehlko/model">Source</Link>
