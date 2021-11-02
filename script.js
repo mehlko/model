@@ -241,6 +241,7 @@ class MyFileLoader extends React.Component {
       open: false,
       hover: false,
     };
+    this.fileInput = React.createRef();
   }
 
   onOpen(value) {
@@ -251,8 +252,10 @@ class MyFileLoader extends React.Component {
     var file = event.target.files[0];
     var reader = new FileReader();
     reader.onload = (e) => {
-      this.setState({ content: e.target.result });
-      console.log(e.target.result);
+      var text = e.target.result;
+      this.setState({ content: text });
+      this.props.onFileLoaded(text);
+      console.log(text);
     };
     reader.readAsText(file);
   };
@@ -260,15 +263,24 @@ class MyFileLoader extends React.Component {
   render() {
     return (
       <div>
-        <input type="file" onChange={this.onChange} />
+        <input
+          ref={this.fileInput}
+          type="file"
+          style={{ display: 'none' }}
+          onChange={this.onChange}
+        />
+        <Button
+          variant="contained"
+          color="primary"
+          onClick={() => this.fileInput.current.click()}
+        >
+          upload file
+        </Button>
+
         {this.state.content && (
-          <Typography
-            onClick={this.onOpen.bind(this, true)}
-            variant="h6"
-            component="span"
-          >
-            Test
-          </Typography>
+          <Button variant="contained" onClick={this.onOpen.bind(this, true)}>
+            Show Source
+          </Button>
         )}
         <Dialog onClose={this.onOpen.bind(this, false)} open={this.state.open}>
           <DialogTitle>File Content</DialogTitle>
@@ -738,20 +750,10 @@ class ProductionLine extends React.Component {
                     Show Source
                   </Button>
                 </Grid>
-                <Grid item xs={10}>
+                <Grid item xs={12}>
                   <MyFileLoader />
                 </Grid>
-                <Grid item xs={2}>
-                  <Button
-                    fullWidth
-                    variant="contained"
-                    onClick={() => {
-                      window.open(this.state.factUrl, '_blank');
-                    }}
-                  >
-                    Show Source
-                  </Button>
-                </Grid>
+
                 <Grid item xs={12}>
                   <Button
                     fullWidth
