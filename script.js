@@ -463,6 +463,7 @@ class ProductionLine extends React.Component {
     log(this.state.inputModelUrl);
   };
 
+  /** Get all labels for a  given id */
   getLabels(id) {
     return this.store
       .getQuads(
