@@ -233,18 +233,65 @@ class MyAutocomplete extends React.Component {
   }
 }
 
-class MyItem extends React.Component {
+class MyFileLoader extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      a: false,
+      content: '',
+      open: false,
       hover: false,
     };
   }
 
-  op(value) {
-    log('1 ' + value);
-    this.setState({ a: value }, () => log('2 ' + this.state.a));
+  onOpen(value) {
+    this.setState({ open: value });
+  }
+
+  onChange = (event) => {
+    var file = event.target.files[0];
+    var reader = new FileReader();
+    reader.onload = (e) => {
+      this.setState({ content: e.target.result });
+      console.log(e.target.result);
+    };
+    reader.readAsText(file);
+  };
+
+  render() {
+    return (
+      <div>
+        <input type="file" onChange={this.onChange} />
+        {this.state.content && (
+          <Typography
+            onClick={this.onOpen.bind(this, true)}
+            variant="h6"
+            component="span"
+          >
+            Test
+          </Typography>
+        )}
+        <Dialog onClose={this.onOpen.bind(this, false)} open={this.state.open}>
+          <DialogTitle>File Content</DialogTitle>
+          <DialogContent>
+            <Typography>{this.state.content}</Typography>
+          </DialogContent>
+        </Dialog>
+      </div>
+    );
+  }
+}
+
+class MyItem extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      open: false,
+      hover: false,
+    };
+  }
+
+  onOpen(value) {
+    this.setState({ open: value });
   }
 
   render() {
@@ -257,7 +304,7 @@ class MyItem extends React.Component {
     }
     return (
       <div>
-        <Dialog onClose={this.op.bind(this, false)} open={this.state.a}>
+        <Dialog onClose={this.onOpen.bind(this, false)} open={this.state.open}>
           <DialogTitle>{this.props.item.labels.join(', ')}</DialogTitle>
           <DialogContent>
             <Typography>{this.props.item.id}</Typography>
@@ -272,7 +319,7 @@ class MyItem extends React.Component {
         </Dialog>
 
         <Typography
-          onClick={this.op.bind(this, true)}
+          onClick={this.onOpen.bind(this, true)}
           variant="h6"
           component="span"
           {...highlightProps}
@@ -612,7 +659,7 @@ class ProductionLine extends React.Component {
                 Production Line Analyzer
               </Grid>
               <Grid item xs={2}>
-                v0.1.0-alpha
+                v0.2.0-alpha
               </Grid>
               <Grid item xs={1}>
                 <Link href="https://github.com/mehlko/model">Source</Link>
@@ -679,6 +726,20 @@ class ProductionLine extends React.Component {
                     value={this.state.factUrl}
                     onChange={this.onFactUrlChange}
                   />{' '}
+                </Grid>
+                <Grid item xs={2}>
+                  <Button
+                    fullWidth
+                    variant="contained"
+                    onClick={() => {
+                      window.open(this.state.factUrl, '_blank');
+                    }}
+                  >
+                    Show Source
+                  </Button>
+                </Grid>
+                <Grid item xs={10}>
+                  <MyFileLoader />
                 </Grid>
                 <Grid item xs={2}>
                   <Button
@@ -893,7 +954,7 @@ class ProductionLine extends React.Component {
             <Box>
               <Typography variant="h5">Todo</Typography>
               <ul>
-                <Typography></Typography>
+                <Typography>Upload confidential files</Typography>
               </ul>
             </Box>{' '}
           </Box>
