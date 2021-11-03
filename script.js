@@ -85,7 +85,7 @@ let presets = [
     id: 3,
     label: 'Blank (Allows importing confidential data)',
     inputModelUrl: '',
-    factUrl: 'https://mehlko.github.io/model/models/exampleFacts.ttl',
+    factUrl: '',
   },
 ];
 
@@ -391,6 +391,14 @@ class ProductionLine extends React.Component {
     );
   }
 
+  async loadTextToStore(myStore, text) {
+    this.parser.parse(text, (error, quad, prefixes) => {
+      if (quad) {
+        myStore.addQuad(quad);
+      }
+    });
+  }
+
   async loadUrlToStore(myStore, url) {
     var resultString = await (await fetch(url)).text();
 
@@ -467,7 +475,7 @@ class ProductionLine extends React.Component {
     });
   };
 
-  onFactUrlFileContentChange = (value) => {
+  onFactFileContentChange = (value) => {
     this.setState({
       factFileContent: value,
     });
@@ -504,6 +512,9 @@ class ProductionLine extends React.Component {
     this.store = new N3.Store();
     await this.loadUrlToStore(this.store, this.state.inputModelUrl);
     await this.loadUrlToStore(this.store, this.state.factUrl);
+
+    await this.loadTextToStore(this.store, this.state.inputModelFileContent);
+    await this.loadTextToStore(this.store, this.state.factFileContent);
 
     var queryString = `
     PREFIX model: <http://uni-ko-ld.de/ist/model#>
@@ -782,12 +793,14 @@ class ProductionLine extends React.Component {
                 <Grid item xs={12}>
                   <Typography component="span">Local Input Model </Typography>
                   <MyFileLoader
-                    onFileLoaded={this.onFactUrlFileContentChange.bind(this)}
+                    onFileLoaded={this.onFactFileContentChange.bind(this)}
                   />
                 </Grid>
                 <Grid item xs={12}>
                   <Typography component="span">Local Facts </Typography>
-                  <MyFileLoader onFileLoaded={() => log('test1')} />
+                  <MyFileLoader
+                    onFileLoaded={this.onInputModelFileContentChange.bind(this)}
+                  />
                 </Grid>
               </Grid>
             </Box>
