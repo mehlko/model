@@ -755,7 +755,7 @@ class ProductionLine extends React.Component {
                   </Button>
                 </Grid>
                 <Grid item xs={12}>
-                  <MyFileLoader />
+                  <MyFileLoader onFileLoaded={() => log('test1')} />
                 </Grid>
 
                 <Grid item xs={12}>
