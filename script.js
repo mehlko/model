@@ -81,6 +81,12 @@ let presets = [
     inputModelUrl: 'https://mehlko.github.io/model/models/inputModelDemo.ttl',
     factUrl: 'https://mehlko.github.io/model/models/exampleFacts2.ttl',
   },
+  {
+    id: 3,
+    label: 'Blank (Allows importing confidential data)',
+    inputModelUrl: '',
+    factUrl: '',
+  },
 ];
 
 function getFirstLabel(labels, id) {
