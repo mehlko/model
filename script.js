@@ -85,7 +85,7 @@ let presets = [
     id: 3,
     label: 'Blank (Allows importing confidential data)',
     inputModelUrl: '',
-    factUrl: '',
+    factUrl: 'https://mehlko.github.io/model/models/exampleFacts.ttl',
   },
 ];
 
@@ -269,7 +269,7 @@ class MyFileLoader extends React.Component {
 
   render() {
     return (
-      <div>
+      <span>
         <input
           ref={this.fileInput}
           type="file"
@@ -295,7 +295,7 @@ class MyFileLoader extends React.Component {
             <Typography>{this.state.content}</Typography>
           </DialogContent>
         </Dialog>
-      </div>
+      </span>
     );
   }
 }
@@ -364,6 +364,8 @@ class ProductionLine extends React.Component {
       preset: 0,
       inputModelUrl: presets[0].inputModelUrl,
       factUrl: presets[0].factUrl,
+      inputModelFileContent: '',
+      factFileContent: '',
       tab: 'analyze',
     };
     this.analyze = this.analyze.bind(this);
@@ -431,7 +433,6 @@ class ProductionLine extends React.Component {
   setProcess(processId, value) {
     //make copy
     var tempProductionLine = { ...this.state.productionLine };
-
     //update
     tempProductionLine.processes[processId] = {
       ...tempProductionLine.processes[processId],
@@ -446,7 +447,6 @@ class ProductionLine extends React.Component {
   addProcess() {
     //make copy
     var temp = { ...this.state.productionLine };
-
     //update
     temp.processes = [...temp.processes, {}];
     //set state
@@ -459,14 +459,23 @@ class ProductionLine extends React.Component {
     this.setState({
       factUrl: event.target.value,
     });
-    log(this.state.factUrl);
   };
 
   onInputModelChange = (event) => {
     this.setState({
       inputModelUrl: event.target.value,
     });
-    log(this.state.inputModelUrl);
+  };
+
+  onFactUrlFileContentChange = (value) => {
+    this.setState({
+      factFileContent: value,
+    });
+  };
+  onInputModelFileContentChange = (value) => {
+    this.setState({
+      inputModelFileContent: value,
+    });
   };
 
   /** Get all labels for a  given id */
@@ -761,10 +770,6 @@ class ProductionLine extends React.Component {
                   </Button>
                 </Grid>
                 <Grid item xs={12}>
-                  <MyFileLoader onFileLoaded={() => log('test1')} />
-                </Grid>
-
-                <Grid item xs={12}>
                   <Button
                     fullWidth
                     variant="contained"
@@ -772,6 +777,17 @@ class ProductionLine extends React.Component {
                   >
                     Load Input Model
                   </Button>
+                </Grid>
+                {/* Allow loading private data */}
+                <Grid item xs={12}>
+                  <Typography component="span">Local Input Model </Typography>
+                  <MyFileLoader
+                    onFileLoaded={this.onFactUrlFileContentChange.bind(this)}
+                  />
+                </Grid>
+                <Grid item xs={12}>
+                  <Typography component="span">Local Facts </Typography>
+                  <MyFileLoader onFileLoaded={() => log('test1')} />
                 </Grid>
               </Grid>
             </Box>
