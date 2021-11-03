@@ -1,5 +1,7 @@
 # Production Line Analyzer
 
+Static production line analysis based on reusable pattern.
+
 # Meta model
 
 ```
