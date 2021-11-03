@@ -5,9 +5,6 @@ PREFIX res: <http://uni-ko-ld.de/ist/resource#>
 PREFIX prop: <http://uni-ko-ld.de/ist/property#>
 
 
-
-
-
 proc:Process001 model:hasInputProduct prod:Input001.
 proc:Process001 model:hasResource res:Resource001.
 proc:Process001 model:hasMeasurement prop:Property001.

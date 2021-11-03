@@ -780,15 +780,6 @@ class ProductionLine extends React.Component {
                     Show Source
                   </Button>
                 </Grid>
-                <Grid item xs={12}>
-                  <Button
-                    fullWidth
-                    variant="contained"
-                    onClick={this.loadInputModel.bind(this)}
-                  >
-                    Load Input Model
-                  </Button>
-                </Grid>
                 {/* Allow loading private data */}
                 <Grid item xs={12}>
                   <Typography component="span">Local Input Model </Typography>
@@ -801,6 +792,15 @@ class ProductionLine extends React.Component {
                   <MyFileLoader
                     onFileLoaded={this.onInputModelFileContentChange.bind(this)}
                   />
+                </Grid>
+                <Grid item xs={12}>
+                  <Button
+                    fullWidth
+                    variant="contained"
+                    onClick={this.loadInputModel.bind(this)}
+                  >
+                    Load Input Model
+                  </Button>
                 </Grid>
               </Grid>
             </Box>
