@@ -6,16 +6,21 @@ Static production line analysis based on reusable pattern.
 
 # Input Model
 
-## Main Classes
+## Product
+## Process
+## Resource
+## Measurement
+## Constraint
+## Property
 
-### Product
-### Process
-### Resource
-### Measurement
-### Constraint
-### Property
+# Type Model
 
-Types of data.
+## PropertyTypes
+
+### Qualitative (Keywords)
+
+### Quantitative (Numerical)
+
 
 ## Relations
 
