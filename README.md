@@ -2,7 +2,24 @@
 
 Static production line analysis based on reusable pattern.
 
-# Meta model
+
+
+# Input Model
+
+## Main Classes
+
+### Product
+### Process
+### Resource
+### Measurement
+### Constraint
+### Property
+
+## Relations
+
+
+
+## Meta model
 
 ```
 PREFIX model: <http://uni-ko-ld.de/ist/model#>
