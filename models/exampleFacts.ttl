@@ -28,6 +28,7 @@ prod:RadarSensor001 rdfs:label "Radar Sensor".
 #
 prod:FlashedRadarSensor001 rdf:type model:Product.
 prod:FlashedRadarSensor001 rdfs:label "Flashed Radar Sensor".
+prod:PlasticCaseBottom001 model:hasVulnerability prop:Force001.
 #
 prod:PlasticCaseBottom001 rdf:type model:Product.
 prod:PlasticCaseBottom001 rdfs:label "Plastic Case Bottom".
