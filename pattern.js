@@ -77,8 +77,8 @@ var patternList = {
     },
   },
 
-  unconstraintChangedProperty: {
-    name: 'Unconstraint Changed Property',
+  unconstrainedChangedProperty: {
+    name: 'Unconstrained Changed Property',
     abbreviation: 'UCP',
     description: 'A property is changed and has no constraint',
     queryString: `
