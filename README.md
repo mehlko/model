@@ -10,13 +10,16 @@ https://mehlko.github.io/model/
 
 Here is a qlakthrough on how to use this software.
 
-1. Here you see the starting interface. ![step1](doc/doc1.png)
-2. You can select presets to quickly load demo data. ![step1](doc/doc2.png)
+1. Here you see the starting interface.
+   ![step1](doc/doc1.png)
+2. You can select presets to quickly load demo data.
+   ![step1](doc/doc2.png)
 3. Pressing "LOAD INPUT MODEL" will load the ninput model.
    ![step1](doc/doc3.png)
 4. This will display the loaded model.
    ![step1](doc/doc4.png)
-5. Pressing "ANALYZE" will analyse the model with our pattern (read more about pattern in the section Pattern) and show where the pattern is applicable and highlight those parts. ![step1](doc/doc5.png)
+5. Pressing "ANALYZE" will analyse the model with our pattern (read more about pattern in the section Pattern) and show where the pattern is applicable and highlight those parts.
+   ![step1](doc/doc5.png)
 6. At the bottom the is a list of of the applicable pattern
    ![step1](doc/doc6.png)
 
@@ -109,7 +112,7 @@ model:Property rdfs:subClassOf model:InputModelElement.
 
 # Pattern
 
-You can show a pattern list inside the apllication.
+You can show a pattern list inside the application.
 ![step1](doc/doc10.png)
 
 Or you can look how the pattern are defined in the source code:
