@@ -16,8 +16,7 @@ Here is a qlakthrough on how to use this software.
    ![step1](doc/doc3.png)
 4. This will display the loaded model.
    ![step1](doc/doc4.png)
-5. Pressing "ANALYZE" will analyse the model with our pattern (read more about pattern in the section Pattern) and show where the pattern is applicable and highlight those parts.
-   ![step1](doc/doc5.png)
+5. Pressing "ANALYZE" will analyse the model with our pattern (read more about pattern in the section Pattern) and show where the pattern is applicable and highlight those parts. ![step1](doc/doc5.png)
 6. At the bottom the is a list of of the applicable pattern
    ![step1](doc/doc6.png)
 
