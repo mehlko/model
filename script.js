@@ -323,7 +323,7 @@ class MyItem extends React.Component {
       };
     }
     return (
-      <>
+      <span>
         <Dialog onClose={this.onOpen.bind(this, false)} open={this.state.open}>
           <DialogTitle>{this.props.item.labels.join(', ')}</DialogTitle>
           <DialogContent>
@@ -346,7 +346,7 @@ class MyItem extends React.Component {
         >
           {getFirstLabel(this.props.item.labels, this.props.item.id)}
         </Typography>
-      </>
+      </span>
     );
   }
 }
