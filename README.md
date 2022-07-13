@@ -2,9 +2,14 @@
 
 Static production line analysis based on reusable pattern.
 
+# Demo
+
 # How to use
 
 ![step1](https://github.com/mehlko/model/raw/master/doc/doc1.png 'Logo Title Text 1')
+
+
+# Link to rendering component
 
 # Input Model
 
