@@ -28,6 +28,8 @@ Here is a qlakthrough on how to use this software.
 At the top of the page select "Blank (Allows importing confidential data)"
 Then press "Local Input Model UPLOAD FILE"
 
+Notice: Loading large models can take some time.
+
 1. ![step1](doc/doc7.png)
    Select the desired file. The fill will be processedlocally in the browser.
 2. ![step1](doc/doc8.png)
