@@ -7,18 +7,18 @@ Static production line analysis based on reusable pattern.
 # How to use
 
 ![step1](doc/doc1.png)
-![step1](https://github.com/mehlko/model/raw/master/doc/doc2.png)
-![step1](https://github.com/mehlko/model/raw/master/doc/doc3.png)
-![step1](https://github.com/mehlko/model/raw/master/doc/doc4.png)
-![step1](https://github.com/mehlko/model/raw/master/doc/doc5.png)
-![step1](https://github.com/mehlko/model/raw/master/doc/doc6.png)
-![step1](https://github.com/mehlko/model/raw/master/doc/doc7.png)
-![step1](https://github.com/mehlko/model/raw/master/doc/doc8.png)
-![step1](https://github.com/mehlko/model/raw/master/doc/doc9.png)
-![step1](https://github.com/mehlko/model/raw/master/doc/doc10.png)
-![step1](https://github.com/mehlko/model/raw/master/doc/doc11.png)
-![step1](https://github.com/mehlko/model/raw/master/doc/doc12.png)
-![step1](https://github.com/mehlko/model/raw/master/doc/doc13.png)
+![step1](doc/doc2.png)
+![step1](doc/doc3.png)
+![step1](doc/doc4.png)
+![step1](doc/doc5.png)
+![step1](doc/doc6.png)
+![step1](doc/doc7.png)
+![step1](doc/doc8.png)
+![step1](doc/doc9.png)
+![step1](doc/doc10.png)
+![step1](doc/doc11.png)
+![step1](doc/doc12.png)
+![step1](doc/doc13.png)
 
 # Link to rendering component
 
