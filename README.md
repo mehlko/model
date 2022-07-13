@@ -3,45 +3,49 @@
 Static production line analysis based on reusable pattern.
 
 # Demo
+
 https://mehlko.github.io/model/
 
 # How to use for demos
 
-Here is a qlakthrough on how to use this software
-Here you see the starting interface.
-![step1](doc/doc1.png)
-You can select presets to quickly load demo data.
-![step1](doc/doc2.png)
-Pressing "LOAD INPUT MODEL" will load the ninput model.
-![step1](doc/doc3.png)
-This will display the loaded model.
-![step1](doc/doc4.png)
-Pressing "ANALYZE" will analyse the model with our pattern (read more about pattern in the section Pattern) and show where the pattern is applicable and highlight those parts.
-![step1](doc/doc5.png)
-At the bottom the is a list of of the applicable pattern
-![step1](doc/doc6.png)
+Here is a qlakthrough on how to use this software.
+
+1. Here you see the starting interface.
+   ![step1](doc/doc1.png)
+2. You can select presets to quickly load demo data.
+   ![step1](doc/doc2.png)
+3. Pressing "LOAD INPUT MODEL" will load the ninput model.
+   ![step1](doc/doc3.png)
+4. This will display the loaded model.
+   ![step1](doc/doc4.png)
+5. Pressing "ANALYZE" will analyse the model with our pattern (read more about pattern in the section Pattern) and show where the pattern is applicable and highlight those parts.
+   ![step1](doc/doc5.png)
+6. At the bottom the is a list of of the applicable pattern
+   ![step1](doc/doc6.png)
 
 # How to use for production data
 
 At the top of the page select "Blank (Allows importing confidential data)"
 Then press "Local Input Model UPLOAD FILE"
-![step1](doc/doc7.png)
-Select the desired file. The fill will be processedlocally in the browser.
-![step1](doc/doc8.png)
-Then you can press "Load Input Model "
-![step1](doc/doc9.png)
-![step1](doc/doc10.png)
 
+1. ![step1](doc/doc7.png)
+   Select the desired file. The fill will be processedlocally in the browser.
+2. ![step1](doc/doc8.png)
+   Then you can press "Load Input Model "
+3. ![step1](doc/doc9.png)
+4. ![step1](doc/doc10.png)
 
 # Link to rendering component
 
 https://github.com/mehlko/XapsModelRenderer
 
 # Input Model
+
 The input model and its meta-model are defined in RDF.
 [Pattern](./model/inputModel.ttl)
 
 Input Model
+
 ```
 PREFIX model: <http://uni-ko-ld.de/ist/model#>
 PREFIX prod: <http://uni-ko-ld.de/ist/product#>
@@ -85,6 +89,7 @@ proc:QualityControl001 model:hasOutputProduct prod:TestedProduct001.
 ```
 
 Meta-Model
+
 ```
 PREFIX model: <http://uni-ko-ld.de/ist/model#>
 PREFIX rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
@@ -105,15 +110,14 @@ model:Resource rdfs:subClassOf model:InputModelElement.
 model:Property rdfs:subClassOf model:InputModelElement.
 ```
 
-
-
 # Pattern
+
 You can show a pattern list inside the apllication.
 ![step1](doc/doc10.png)
 
-Or you can look how the pattern are defined in the  source code:
+Or you can look how the pattern are defined in the source code:
 [Pattern](./pattern.js)
 
-
 ## Relations
+
 ![step1](doc/doc11.png)
