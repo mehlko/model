@@ -6,7 +6,7 @@ Static production line analysis based on reusable pattern.
 
 # How to use
 
-![step1](https://github.com/mehlko/model/raw/master/doc/doc1.png)
+![step1](doc/doc1.png)
 ![step1](https://github.com/mehlko/model/raw/master/doc/doc2.png)
 ![step1](https://github.com/mehlko/model/raw/master/doc/doc3.png)
 ![step1](https://github.com/mehlko/model/raw/master/doc/doc4.png)
@@ -29,10 +29,9 @@ https://github.com/mehlko/XapsModelRenderer
 Link
 
 ## Relations
+Screenshot
 
 ## Meta model
-
-Link
 
 ```
 PREFIX model: <http://uni-ko-ld.de/ist/model#>
