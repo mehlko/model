@@ -2,15 +2,22 @@
 
 Static production line analysis based on reusable pattern.
 
+# How to use
 
+![step1](https://github.com/mehlko/model/raw/master/doc/doc1.png 'Logo Title Text 1')
 
 # Input Model
 
 ## Product
+
 ## Process
+
 ## Resource
+
 ## Measurement
+
 ## Constraint
+
 ## Property
 
 # Type Model
@@ -21,10 +28,7 @@ Static production line analysis based on reusable pattern.
 
 ### Quantitative (Numerical)
 
-
 ## Relations
-
-
 
 ## Meta model
 
