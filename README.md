@@ -5,8 +5,10 @@ Static production line analysis based on reusable pattern.
 # Demo
 
 # How to use
-
+Here is a qlakthrough on how to use this software
+Here you see the starting interface
 ![step1](doc/doc1.png)
+You can select presets to quickly load demo data
 ![step1](doc/doc2.png)
 ![step1](doc/doc3.png)
 ![step1](doc/doc4.png)
