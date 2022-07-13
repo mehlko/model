@@ -106,12 +106,6 @@ model:Property rdfs:subClassOf model:InputModelElement.
 ```
 
 
-## Relations
-![step1](doc/doc11.png)
-
-Screenshot
-
-
 
 # Pattern
 You can show a pattern list inside the apllication.
@@ -119,3 +113,7 @@ You can show a pattern list inside the apllication.
 
 Or you can look how the pattern are defined in the  source code:
 [Pattern](./pattern.js)
+
+
+## Relations
+![step1](doc/doc11.png)
