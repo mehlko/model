@@ -3,6 +3,7 @@
 Static production line analysis based on reusable pattern.
 
 # Demo
+https://mehlko.github.io/model/
 
 # How to use for demos
 
@@ -37,9 +38,10 @@ Then you can press "Load Input Model "
 https://github.com/mehlko/XapsModelRenderer
 
 # Input Model
+The input model and its meta-model are defined in RDF.
+[Pattern](./model/inputModel.ttl)
 
-Link
-
+Input Model
 ```
 PREFIX model: <http://uni-ko-ld.de/ist/model#>
 PREFIX prod: <http://uni-ko-ld.de/ist/product#>
@@ -80,16 +82,9 @@ proc:QualityControl001 model:hasResource res:Scale001.
 proc:QualityControl001 model:hasMeasurement prop:LeakageRate001.
 proc:QualityControl001 model:hasMeasurement prop:Weight001.
 proc:QualityControl001 model:hasOutputProduct prod:TestedProduct001.
-
-
-## Relations
-![step1](doc/doc11.png)
-
-Screenshot
-
-## Meta model
 ```
 
+Meta-Model
 ```
 PREFIX model: <http://uni-ko-ld.de/ist/model#>
 PREFIX rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
@@ -109,6 +104,14 @@ model:Process rdfs:subClassOf model:InputModelElement.
 model:Resource rdfs:subClassOf model:InputModelElement.
 model:Property rdfs:subClassOf model:InputModelElement.
 ```
+
+
+## Relations
+![step1](doc/doc11.png)
+
+Screenshot
+
+
 
 # Pattern
 You can show a pattern list inside the apllication.
