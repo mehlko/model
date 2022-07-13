@@ -10,10 +10,8 @@ https://mehlko.github.io/model/
 
 Here is a qlakthrough on how to use this software.
 
-1. Here you see the starting interface.
-   ![step1](doc/doc1.png)
-2. You can select presets to quickly load demo data.
-   ![step1](doc/doc2.png)
+1. Here you see the starting interface. ![step1](doc/doc1.png)
+2. You can select presets to quickly load demo data. ![step1](doc/doc2.png)
 3. Pressing "LOAD INPUT MODEL" will load the ninput model.
    ![step1](doc/doc3.png)
 4. This will display the loaded model.
