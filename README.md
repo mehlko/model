@@ -25,13 +25,13 @@ https://github.com/mehlko/XapsModelRenderer
 # Input Model
 
 Link
+
 ```
 PREFIX model: <http://uni-ko-ld.de/ist/model#>
 PREFIX prod: <http://uni-ko-ld.de/ist/product#>
 PREFIX proc: <http://uni-ko-ld.de/ist/process#>
 PREFIX res: <http://uni-ko-ld.de/ist/resource#>
 PREFIX prop: <http://uni-ko-ld.de/ist/property#>
-
 
 proc:SensorFlashing001 model:hasInputProduct prod:RadarSensor001.
 proc:SensorFlashing001 model:hasResource res:FirmwareFlasher001. 
