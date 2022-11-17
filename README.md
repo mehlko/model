@@ -123,3 +123,21 @@ Or you can look how the pattern are defined in the source code:
 ## Relations
 
 ![step1](doc/doc11.png)
+
+## Overview
+
+![](doc/graph.png)
+
+## Classes
+
+![](doc/process.png)
+
+## Instances
+
+![](doc/constraintInstance.png)
+![](doc/processInstance.png)
+
+## Properties
+
+![](doc/objectProperty.png)
+![](doc/dataProperty.png)
