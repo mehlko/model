@@ -120,12 +120,9 @@ You can show a pattern list inside the application.
 Or you can look how the pattern are defined in the source code:
 [Pattern](./pattern.js)
 
-## Relations
+## Relations Overview
 
 ![step1](doc/doc11.png)
-
-## Overview
-
 ![](doc/graph.png)
 
 ## Classes
